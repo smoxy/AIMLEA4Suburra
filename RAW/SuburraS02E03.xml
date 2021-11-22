@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<tt xmlns:tt="http://www.w3.org/ns/ttml" xmlns:ttm="http://www.w3.org/ns/ttml#metadata" xmlns:ttp="http://www.w3.org/ns/ttml#parameter" xmlns:tts="http://www.w3.org/ns/ttml#styling" ttp:tickRate="10000000" ttp:timeBase="media" xmlns="http://www.w3.org/ns/ttml">
+<head>
+<ttp:profile use="http://netflix.com/ttml/profile/dfxp-ls-sdh"/>
+<styling>
+<style tts:backgroundColor="transparent" tts:color="white" tts:fontSize="100%" tts:fontWeight="normal" tts:textAlign="center" xml:id="style0"/>
+<style tts:color="white" tts:fontSize="100%" tts:fontStyle="italic" tts:fontWeight="normal" xml:id="style1"/>
+</styling>
+<layout>
+<region tts:displayAlign="after" xml:id="region0"/>
+</layout>
+</head>
+<body>
+<div xml:space="preserve">
+<p begin="1434050000t" end="1448450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle0">[Aureliano] Dove stanno tutti?</p>
+<p begin="1449250000t" end="1480450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle1">[Romolo] Se ne sono andati.<br/>Mentre non c'eri sono venuti in otto.</p>
+<p begin="1481250000t" end="1500050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle2">I Gravoni e gli altri capi famiglia.</p>
+<p begin="1504850000t" end="1535250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle3">Stavo solo, gli ho dovuto di'<br/>dove stavano le armi.</p>
+<p begin="1536050000t" end="1546850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle4">Se le so' prese tutte.</p>
+<p begin="1547650000t" end="1596850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle5">[Aureliano sospira]</p>
+<p begin="1631650000t" end="1654450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle6">Va beh, andiamoci a riprendere<br/>la roba nostra.</p>
+<p begin="1769250000t" end="1796050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle7">Mi dispiace. Per Livia, per tutto.</p>
+<p begin="1796850000t" end="1812850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle8">Ma stavolta non vengo.</p>
+<p begin="1826450000t" end="1839650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle9">Guardati intorno.</p>
+<p begin="1840450000t" end="1856850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle10">Qui non c'è più niente da fa'.</p>
+<p begin="1868050000t" end="1883650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle11">Sei l'ultimo degli Adami rimasto.</p>
+<p begin="1887650000t" end="1904050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle12">Vedi di non farti spara'.</p>
+<p begin="2144850000t" end="2165650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle13">[Cinaglia] <span style="style1">Lei così mi mette in imbarazzo.</span></p>
+<p begin="2166450000t" end="2198450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle14">[Cinaglia] <span style="style1">Se proprio glielo devo dire,</span><br/><span style="style1">sono orgogliosamente romanista.</span></p>
+<p begin="2199250000t" end="2229650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle15">Oh, e questo non può farci che piacere.</p>
+<p begin="2230450000t" end="2261650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle16">- Calcio giocato, invece?<br/>- Giocavo da ragazzino.</p>
+<p begin="2262450000t" end="2275250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle17">E dove le piaceva stare?</p>
+<p begin="2276050000t" end="2295250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle18">- In che zona di campo?<br/>- A destra.</p>
+<p begin="2298850000t" end="2326050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle19">Tecnica mai avuta, però correvo parecchio.</p>
+<p begin="2326850000t" end="2351250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle20">Ah, allora parlando di politica,</p>
+<p begin="2352050000t" end="2383250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle21">possiamo dire che tornerà a giocare<br/>nel vecchio ruolo.</p>
+<p begin="2384050000t" end="2394050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle22">A Destra.</p>
+<p begin="2394850000t" end="2430450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle23">Perché lei ha un tesoretto di voti<br/>che dovrebbe anda' alla Sinistra.</p>
+<p begin="2431250000t" end="2459650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle24">Però 'sta dichiarazione d'amore<br/>per la Sinistra non è arrivata.</p>
+<p begin="2460450000t" end="2470450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle25">È vero.</p>
+<p begin="2471250000t" end="2499250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle26">Perché la mia parte politica<br/>è rimasta indietro su molti temi</p>
+<p begin="2500050000t" end="2513250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle27">che prima erano i nostri:</p>
+<p begin="2514050000t" end="2535650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle28">le periferie,<br/>la sicurezza dei cittadini...</p>
+<p begin="2540050000t" end="2573250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle29">È molto semplice, io sto<br/>con chi ha a cuore l'interesse di Roma.</p>
+<p begin="2574050000t" end="2589650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle30">Ecco, a proposito,</p>
+<p begin="2590450000t" end="2623250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle31">ci può spiega' che succede<br/>nella nostra città con gli immigrati?</p>
+<p begin="2624049999t" end="2640849999t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle32">Dunque, sono stati capaci</p>
+<p begin="2641650000t" end="2666450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle33">di trasferire centinaia di migranti<br/>nel cuore di Ostia.</p>
+<p begin="2667250000t" end="2691650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle34">Pare siano 500 gli extracomunitari.</p>
+<p begin="2692450000t" end="2712050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle35">Questa è una vera e propria invasione.</p>
+<p begin="2712850000t" end="2728050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle36">Poi, per non farci manca' niente,</p>
+<p begin="2728850000t" end="2757650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle37">parliamo di terreni che sono stati<br/>al centro di molti interessi.</p>
+<p begin="2758450000t" end="2788450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle38">Sì, ma al di là di questo,<br/>la cosa che io ritengo più grave</p>
+<p begin="2789250000t" end="2833250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle39">è che una cosa del genere non può accadere<br/>di nascosto e all'insaputa dei cittadini.</p>
+<p begin="2834050000t" end="2848050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle40">- Certo.<br/>- È inaccettabile.</p>
+<p begin="2848850000t" end="2878850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle41">Certo, infatti poi<br/>i cittadini si sono ribellati.</p>
+<p begin="2879650000t" end="2899650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle42">Va bene, dottor Cinaglia, la ringrazio.</p>
+<p begin="2900450000t" end="2918450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle43">- Grazie del suo tempo.<br/>- Grazie a voi.</p>
+<p begin="2919250000t" end="2939250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle44">Grazie per l'incontro<br/>tutt'altro che banale.</p>
+<p begin="2940050000t" end="2960850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle45">Adesso facciamo un attimo di pausa</p>
+<p begin="2961650000t" end="2987650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle46">e poi torniamo a parlare<br/>della nostra squadra del cuore.</p>
+<p begin="2988450000t" end="2998450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle47">A tra poco.</p>
+<p begin="3008050000t" end="3025250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle48">[nitriti]</p>
+<p begin="3052850000t" end="3081250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle49">Se non vi sbrigate,<br/>quello perde lo zoccolo.</p>
+<p begin="3082050000t" end="3098050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle50">Mo vi intendete pure di cavalli?</p>
+<p begin="3098850000t" end="3115250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle51">Cavalli, cani,</p>
+<p begin="3116050000t" end="3136450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle52">pecore, cristiani...</p>
+<p begin="3137250000t" end="3153650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle53">Tutto quello che rende.</p>
+<p begin="3159650000t" end="3173650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle54">Va bene, grazie.</p>
+<p begin="3188450000t" end="3216450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle55">- Che siete venuta a fare?<br/>- A riscuotere.</p>
+<p begin="3220850000t" end="3231250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle56">Livia te la sei presa.</p>
+<p begin="3232050000t" end="3250850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle57">Tutta la piazza di Ostia, eh?</p>
+<p begin="3251650000t" end="3266050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle58">Senza avere problemi.</p>
+<p begin="3276850000t" end="3292450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle59">Ostia è più grande di Venezia.</p>
+<p begin="3300850000t" end="3344450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle60">Ce l'avete il capitale da investire?<br/>Se no, i problemi iniziano subito.</p>
+<p begin="3442050000t" end="3453250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle61">Tutto qui?</p>
+<p begin="3458450000t" end="3484450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle62">Bastano per ungere un po' di amici<br/>e avviare i primi mesi.</p>
+<p begin="3485250000t" end="3510450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle63">- Forse.<br/>- Di quanto parliamo per stare tranquilli?</p>
+<p begin="3511250000t" end="3525650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle64">Almeno il triplo.</p>
+<p begin="3536050000t" end="3561650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle65">- I soldi li troviamo.<br/>- Allora trovateli, prima.</p>
+<p begin="3562450000t" end="3575250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle66">Poi ne riparliamo.</p>
+<p begin="3576050000t" end="3598850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle67">Ho sentito quello<br/>che è successo con gli Adami.</p>
+<p begin="3616050000t" end="3654450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle68">- Mo come ti metti con lui?<br/>- Gli Adami non sono più un problema mio.</p>
+<p begin="3696850000t" end="3720450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle69">T'ho sentito alla radio.<br/>Sei andato benissimo.</p>
+<p begin="3721250000t" end="3733250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle70">- Sì?<br/>- Sì.</p>
+<p begin="3734050000t" end="3755250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle71">Adesso avranno capito<br/>quello che vuoi fare.</p>
+<p begin="3772850000t" end="3794050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle72">- Hai già parlato con la Destra, no?<br/>- No.</p>
+<p begin="3800050000t" end="3828050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle73">Loro devono chiamare me.<br/>Io quello che dovevo dire l'ho detto.</p>
+<p begin="3828850000t" end="3860450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle74">Forse non hanno il tuo numero<br/>perché qui hanno già chiamato tre volte.</p>
+<p begin="3861250000t" end="3873250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle75">[squilli di telefono]</p>
+<p begin="3874050000t" end="3883650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle76">Ma chi?</p>
+<p begin="3884450000t" end="3909250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle77">Pronto? Sì, è appena entrato.</p>
+<p begin="3916850000t" end="3943250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle78">- Glielo passo subito.<br/>- E questa è la terza.</p>
+<p begin="3944050000t" end="3980450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle79">Si immagini.<br/>Enrico Barzacci del Centrodestra.</p>
+<p begin="3994450000t" end="4005250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle80">Sì.</p>
+<p begin="4099250000t" end="4121650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle81">[rumore di passi]</p>
+<p begin="4307250000t" end="4323650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle82">Samurai m'ha levato tutto.</p>
+<p begin="4360850000t" end="4374850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle83">Non c'ho più niente.</p>
+<p begin="4404850000t" end="4426450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle84">Mo lo voglio ammazza', Spadi'.</p>
+<p begin="4440850000t" end="4458050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle85">Lo voglio ammazza' con le mani mie.</p>
+<p begin="4474850000t" end="4493250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle86">Spadino m'ha detto quello che hai fatto.</p>
+<p begin="4494050000t" end="4513250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle87">- Ho fatto quello che potevo.<br/>- Lo so.</p>
+<p begin="4580050000t" end="4594850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle88">M'hanno accannato tutti.</p>
+<p begin="4602850000t" end="4621250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle89">E invece voi ancora state qua.</p>
+<p begin="4634450000t" end="4667650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle90">Prima il problema erano mio padre,<br/>tuo padre, tuo fratello...</p>
+<p begin="4678050000t" end="4703250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle91">Mo non ci sono più<br/>però il problema ce l'abbiamo ancora.</p>
+<p begin="4704050000t" end="4724050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle92">Finché c'è Samurai, siamo bloccati.</p>
+<p begin="4724850000t" end="4744850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle93">Invece ci dobbiamo prendere tutto.</p>
+<p begin="4752050000t" end="4775650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle94">È ora che 'sta città passa di mano.</p>
+<p begin="4778850000t" end="4801250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle95">Lo sapevo che ero scemo a torna' con voi.</p>
+<p begin="4817250000t" end="4845650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle96">Va beh...<br/>quando la dobbiamo fa' 'sta prodezza?</p>
+<p begin="4856850000t" end="4866850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle97">Oggi.</p>
+<p begin="4892450000t" end="4902450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle98">Oggi.</p>
+<p begin="4936850000t" end="4946850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle99">[Lele] Oggi.</p>
+<p begin="5030050000t" end="5046050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle100">E che ci facciamo con questa carta?</p>
+<p begin="5060450000t" end="5080050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle101">I terreni degli Adami sono nostri adesso.</p>
+<p begin="5083250000t" end="5115250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle102">Sì, ma sui terreni<br/>che hai comprato al Vaticano</p>
+<p begin="5116050000t" end="5137650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle103">ci stanno accampati centinaia di profughi.</p>
+<p begin="5138450000t" end="5162450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle104">E per fare il porto<br/>ci servono entrambi i lotti.</p>
+<p begin="5163250000t" end="5185250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle105">Non saranno quei morti di fame<br/>il problema, no?</p>
+<p begin="5188049999t" end="5199650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle106">No.</p>
+<p begin="5200449999t" end="5218850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle107">Il problema sai qual è? Te lo dico io.</p>
+<p begin="5219650000t" end="5239249999t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle108">È che tra poco ci sarà la giunta nuova</p>
+<p begin="5240050000t" end="5278450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle109">e noi su quei terreni<br/>non ci abbiamo piazzato ancora niente.</p>
+<p begin="5279249999t" end="5301250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle110">Né una casa né un palo della luce,<br/>un cazzo.</p>
+<p begin="5302050000t" end="5334850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle111">Se uno sale al Campidoglio e decide<br/>che là non possiamo piazzarci niente,</p>
+<p begin="5335650000t" end="5344050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle112">che facciamo?</p>
+<p begin="5344850000t" end="5361250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle113">La politica la controlliamo noi.</p>
+<p begin="5367650000t" end="5380850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle114">E tu sei sicuro?</p>
+<p begin="5402050000t" end="5430850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle115">Su quei terreni devo cominciare<br/>a farci girare un po' di soldi.</p>
+<p begin="5440450000t" end="5454850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle116">E ora come ora,</p>
+<p begin="5455650000t" end="5472850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle117">io mi fido solo del cemento.</p>
+<p begin="5590050000t" end="5598450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle118">Cristiana?</p>
+<p begin="5656050000t" end="5677650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle119">La relazione di Casa Adami è pronta?</p>
+<p begin="5683650000t" end="5709250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle120">- Quasi, ci sto lavorando.<br/>- Ce la fai entro stasera?</p>
+<p begin="5710050000t" end="5720050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle121">Sì.</p>
+<p begin="5723650000t" end="5734050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle122">Bene, grazie.</p>
+<p begin="5738850000t" end="5749250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle123">Lele.</p>
+<p begin="5778450000t" end="5800850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle124">Quella fonte di cui mi parlavi<br/>è affidabile?</p>
+<p begin="5801650000t" end="5814050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle125">Certo che lo è.</p>
+<p begin="5819250000t" end="5837650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle126">Era di mio padre, te l'ho detto.</p>
+<p begin="5845650000t" end="5867250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle127">- Perché?<br/>- Sono solo curiosa.</p>
+<p begin="5880050000t" end="5908450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle128">- Oh, non scrivere niente in merito.<br/>- No, lo so.</p>
+<p begin="5909250000t" end="5931650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle129">Appena hai finito,<br/>mettila sulla mia scrivania.</p>
+<p begin="5990450000t" end="6020450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle130">[urla di protesta]</p>
+<p begin="6021250000t" end="6056050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle131">[uomo] Andatevene via!<br/>Bisogna dargli fuoco!</p>
+<p begin="6056850000t" end="6100450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle132">[urla di protesta]</p>
+<p begin="6140450000t" end="6186450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle133">[uomo] Via! Fuori!</p>
+<p begin="6187250000t" end="6204050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle134">[voci indistinte]</p>
+<p begin="6204850000t" end="6230850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle135">[donna] Via! Ve ne dovete anda'!</p>
+<p begin="6231650000t" end="6260450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle136">[uomo] Non vi vogliamo qui! Via!</p>
+<p begin="6312450000t" end="6362850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle137">[folla] Fuori! Fuori! Fuori! Fuori! Fuori!</p>
+<p begin="6363650000t" end="6378450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle138">Dottoressa Monaschi!</p>
+<p begin="6389250000t" end="6401250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle139">[Cinaglia] Dottoressa!</p>
+<p begin="6419650000t" end="6442450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle140">[urla di protesta]</p>
+<p begin="6510450000t" end="6523250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle141">Buongiorno.</p>
+<p begin="6524050000t" end="6561650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle142">Vedo che ha abbandonato il mattone.<br/>Adesso fa affari con la solidarietà.</p>
+<p begin="6562450000t" end="6592850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle143">Io sono qui perché tutte queste persone<br/>hanno bisogno di aiuto.</p>
+<p begin="6593650000t" end="6611250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle144">E lei invece con chi fa affari?</p>
+<p begin="6612050000t" end="6640450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle145">- Io non faccio affari, faccio politica.<br/>- Certo.</p>
+<p begin="6641250000t" end="6668450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle146">Allora è venuto qui per capire<br/>come ributtarli tutti a mare.</p>
+<p begin="6680450000t" end="6698450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle147">A me queste persone non danno fastidio.</p>
+<p begin="6699250000t" end="6724450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle148">Ah, beh, non l'avrei mai detto.</p>
+<p begin="6725250000t" end="6748050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle149">Almeno da quello<br/>che dichiara pubblicamente.</p>
+<p begin="6748850000t" end="6773650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle150">[urla di protesta]</p>
+<p begin="6774450000t" end="6788450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle151">Le sente queste persone?</p>
+<p begin="6796450000t" end="6821650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle152">Ce ne sono tante incazzate come loro.</p>
+<p begin="6822450000t" end="6834850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle153">Sono i miei elettori.</p>
+<p begin="6840450000t" end="6873650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle154">- Io sono qui per ascoltarli.<br/>- Bel modo di fare politica.</p>
+<p begin="6882050000t" end="6902450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle155">Anche se me la ricordavo diverso.</p>
+<p begin="6909250000t" end="6935250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle156">Comunque io ho deciso di stare<br/>dalla parte dei più deboli.</p>
+<p begin="6936050000t" end="6957650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle157">Quanto valgono i più deboli, dottoressa?</p>
+<p begin="6963650000t" end="6988050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle158">- Che cosa vuole, Cinaglia?<br/>- Io non voglio niente.</p>
+<p begin="6988850000t" end="7008850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle159">Gliel'ho detto,<br/>sono qui per fare politica.</p>
+<p begin="7009650000t" end="7034450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle160">Se i suoi profughi restano qui,<br/>a me va benissimo.</p>
+<p begin="7035250000t" end="7056850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle161">Per me valgono<br/>più di 1.000 passaggi televisivi.</p>
+<p begin="7063650000t" end="7073650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle162">Complimenti.</p>
+<p begin="7083250000t" end="7114850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle163">Vedo che ha proprio capito<br/>come farsi strada in questa città.</p>
+<p begin="7123650000t" end="7138850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle164">Dire una cosa e farne un'altra.</p>
+<p begin="7139650000t" end="7157650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle165">Allora abbiamo qualcosa in comune.</p>
+<p begin="7184050000t" end="7197250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle166">Torno a lavorare.</p>
+<p begin="7207650000t" end="7217650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle167">Stia bene.</p>
+<p begin="7222850000t" end="7282850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle168">[folla] Ostia libera! Ostia libera!<br/>Ostia libera! Ostia libera! Ostia libera!</p>
+<p begin="7356450000t" end="7369650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle169">Eleonora?</p>
+<p begin="7370450000t" end="7380450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle170">- Sì, Sara?<br/>- Scusa.</p>
+<p begin="7388450000t" end="7423650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle171">Allora, ci mancano dieci letti<br/>e una sessantina di coperte.</p>
+<p begin="7424450000t" end="7442850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle172">Sì, dovevano arrivare stamattina.</p>
+<p begin="7443650000t" end="7473650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle173">- Allora chiamali.<br/>- Vado a richiamarli e ti faccio sapere.</p>
+<p begin="7474450000t" end="7494450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle174">- Anche più di 60.<br/>- Va bene.</p>
+<p begin="7502450000t" end="7518050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle175">[Samurai] Che è sta pagliacciata?</p>
+<p begin="7518850000t" end="7542450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle176">- È un'operazione di soccorso.<br/>- È sua sta gente?</p>
+<p begin="7543250000t" end="7566050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle177">- No, gestisco solo l'accoglienza.<br/>- Devono spari'.</p>
+<p begin="7566850000t" end="7585650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle178">- Entro oggi!<br/>- Ma non decido io.</p>
+<p begin="7586450000t" end="7600850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle179">Decide la polizia, la procura.</p>
+<p begin="7601650000t" end="7630450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle180">Questi terreni sono stati messi<br/>a disposizione dal Vaticano.</p>
+<p begin="7631250000t" end="7655250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle181">I terreni sono i miei,<br/>vanno sgomberati, capito?</p>
+<p begin="7656050000t" end="7670450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle182">Ma è una soluzione temporanea.</p>
+<p begin="7671250000t" end="7699250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle183">Lei è una donna molto intraprendente<br/>e anche piena di fascino.</p>
+<p begin="7700050000t" end="7718850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle184">Però si distrae facilmente.</p>
+<p begin="7726450000t" end="7752450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle185">Si dovrebbe ricordare bene<br/>che io non minaccio e basta.</p>
+<p begin="7918050000t" end="7928050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle186">[Mara] Cristiana?</p>
+<p begin="7942450000t" end="7952450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle187">Sì.</p>
+<p begin="7961650000t" end="7976450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle188">Grazie per essere venuta.</p>
+<p begin="7983650000t" end="8001250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle189">Mi hanno detto grandi cose di te.</p>
+<p begin="8006450000t" end="8017650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle190">Faccio il mio dovere.</p>
+<p begin="8023650000t" end="8036050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle191">Sei anche modesta.</p>
+<p begin="8040450000t" end="8074050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle192">Allora, di che cosa volevi parlarmi?</p>
+<p begin="8077250000t" end="8094050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle193">Lei era amico di Franco Marchilli,</p>
+<p begin="8094850000t" end="8119250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle194">il padre del Viceispettore<br/>Gabriele Marchilli, vero?</p>
+<p begin="8125250000t" end="8134850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle195">Sì.</p>
+<p begin="8139650000t" end="8156450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle196">Eravamo colleghi.</p>
+<p begin="8157250000t" end="8168850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle197">E molto uniti.</p>
+<p begin="8193650000t" end="8212450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle198">- Come lo sai?<br/>- Ho chiesto in giro.</p>
+<p begin="8215250000t" end="8243250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle199">Dovevo parlare con qualcuno<br/>al di fuori del mio commissariato.</p>
+<p begin="8254850000t" end="8273650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle200">- Di cosa?<br/>- Di Gabriele.</p>
+<p begin="8303250000t" end="8313250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle201">Continua.</p>
+<p begin="8330050000t" end="8358850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle202">Non lo so, ha degli atteggiamenti strani.</p>
+<p begin="8370050000t" end="8385650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle203">Però forse è una mia impressione.</p>
+<p begin="8401650000t" end="8419650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle204">Puoi parlarmene liberamente.</p>
+<p begin="8433250000t" end="8464450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle205">In tre mesi ha fatto avanzamenti<br/>di carriera che si fanno in un anno,</p>
+<p begin="8465250000t" end="8475650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle206">non è normale.</p>
+<p begin="8484850000t" end="8511650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle207">Nemmeno per il figlio di un poliziotto<br/>caduto in servizio.</p>
+<p begin="8543650000t" end="8555250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle208">Che cosa ha fatto?</p>
+<p begin="8556050000t" end="8580450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle209">Abbiamo fatto un'identificazione<br/>a Villa Adami.</p>
+<p begin="8584850000t" end="8612050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle210">Abbiamo avuto un'informazione<br/>da un confidente di suo padre.</p>
+<p begin="8624450000t" end="8642850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle211">Ma non abbiamo trovato niente.</p>
+<p begin="8654450000t" end="8671650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle212">Franco non aveva informatori.</p>
+<p begin="8699650000t" end="8712050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle213">E non è tutto.</p>
+<p begin="8712850000t" end="8740850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle214">Durante l'identificazione lui è sparito.</p>
+<p begin="8741650000t" end="8779250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle215">E quando stavamo per entrare,<br/>è tornato e ci ha detto di andare via.</p>
+<p begin="8808450000t" end="8836050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle216">Il padre mi aveva detto<br/>che Lele aveva dei giri poco puliti.</p>
+<p begin="8865650000t" end="8885250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle217">E che l'aveva visto insieme a Samurai.</p>
+<p begin="8892850000t" end="8902850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle218">Samurai.</p>
+<p begin="8918850000t" end="8945650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle219">Sono tre mesi<br/>che cerco qualche cosa su di lui.</p>
+<p begin="8946450000t" end="8974850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle220">Sono convinta che abbia a che fare<br/>con la morte di suo padre.</p>
+<p begin="8990450000t" end="9002050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle221">Cosa devo fare?</p>
+<p begin="9028850000t" end="9041650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle222">Tienilo d'occhio.</p>
+<p begin="9046450000t" end="9064850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle223">Sorveglia tutti i suoi spostamenti</p>
+<p begin="9065650000t" end="9080450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle224">e tienimi informata.</p>
+<p begin="9190450000t" end="9214850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle225">Perché mi sono ritrovato davanti<br/>Sara Monaschi?</p>
+<p begin="9215650000t" end="9250850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle226">- Come ci è finita dentro?<br/>- È in combutta con un cardinale.</p>
+<p begin="9251650000t" end="9275250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle227">- Fiorenzo Nascari.<br/>- Me lo devi togliere di mezzo.</p>
+<p begin="9276050000t" end="9308050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle228">In questo momento<br/>non posso compromettermi.</p>
+<p begin="9308850000t" end="9331650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle229">Sono in attesa di una nomina importante.</p>
+<p begin="9332450000t" end="9361650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle230">- Devo stare tranquillo.<br/>- Non me ne frega un cazzo della nomina.</p>
+<p begin="9362450000t" end="9391250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle231">Io devo cominciare i lavori<br/>prima che si insedi la nuova giunta.</p>
+<p begin="9392050000t" end="9415250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle232">- Perché?<br/>- Perché gente importante vuole così.</p>
+<p begin="9416050000t" end="9432450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle233">Questa volta non posso farci niente.</p>
+<p begin="9433250000t" end="9466450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle234">E guarda che Nascari non è tipo<br/>che si lascia convincere.</p>
+<p begin="9467250000t" end="9481250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle235">Che significa?</p>
+<p begin="9484450000t" end="9497250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle236">Che non è come me.</p>
+<p begin="9551650000t" end="9568850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle237">[Samurai] Sarà solo più costoso.</p>
+<p begin="9581650000t" end="9620050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle238">[brusio]</p>
+<p begin="9620850000t" end="9641250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle239">- Dove sta Alberto?<br/>- Non lo so.</p>
+<p begin="9651650000t" end="9682450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle240">Quando lo senti, perché so che lo senti,</p>
+<p begin="9683250000t" end="9713650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle241">gli dici che con quello che ha fatto<br/>si è messo contro la famiglia.</p>
+<p begin="9720450000t" end="9735650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle242">Ha fatto bene a scappa'.</p>
+<p begin="9741250000t" end="9764050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle243">Da oggi tu e lui qua dentro<br/>non ci potete più sta'.</p>
+<p begin="9770850000t" end="9788850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle244">- Questa è casa nostra.<br/>- No.</p>
+<p begin="9795250000t" end="9814050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle245">Questa è casa mia.</p>
+<p begin="9823650000t" end="9848850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle246">E mo tu parti, da sola.</p>
+<p begin="9854050000t" end="9882450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle247">Se tuo marito non si degna<br/>neanche di starti accanto,</p>
+<p begin="9883250000t" end="9904050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle248">vai dai parenti nostri in Abruzzo.</p>
+<p begin="9909650000t" end="9934850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle249">Cosa dirà mio padre<br/>che mi stai sbattendo fuori di casa?</p>
+<p begin="9938450000t" end="9964050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle250">Tuo padre non si deve impicciare,<br/>lui non comanda più.</p>
+<p begin="9970850000t" end="10003250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle251">Ti sei presa Spadino<br/>e mo devi dare retta a me.</p>
+<p begin="10050450000t" end="10067250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle252">Di giorno sta al maneggio.</p>
+<p begin="10068050000t" end="10090050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle253">- Devi solo aspetta' che esce.<br/>- E poi lo seguo.</p>
+<p begin="10090850000t" end="10116450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle254">Tocca beccarlo in un posto<br/>dove non c'è gente sua.</p>
+<p begin="10117250000t" end="10138050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle255">Così finalmente ce lo leviamo dal cazzo.</p>
+<p begin="10138850000t" end="10173650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle256">Mi raccomando, vacci con questa macchina,<br/>così ti beccano dopo cinque minuti.</p>
+<p begin="10174450000t" end="10193250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle257">Tranquillo, ne rimedio un'altra.</p>
+<p begin="10205250000t" end="10217250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle258">Io rimedio un ferro.</p>
+<p begin="10224450000t" end="10269250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle259">[squilli di cellulare]</p>
+<p begin="10270050000t" end="10281650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle260">Ange'?</p>
+<p begin="10302850000t" end="10316450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle261">Che vuole fa'?</p>
+<p begin="10352050000t" end="10369650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle262">No, Ange', devi sta' tranquilla.</p>
+<p begin="10370450000t" end="10378850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle263">Sì.</p>
+<p begin="10379650000t" end="10415650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle264">Mo fai come ti dice mia madre,<br/>poi quando torno io, sistemo tutto.</p>
+<p begin="10430849999t" end="10446049999t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle265">No, non ti mollo.</p>
+<p begin="10455650000t" end="10473649999t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle266">Mo ho una cosa importante da fa'.</p>
+<p begin="10482850000t" end="10509250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle267">Sta per cambia' tutto,<br/>te lo prometto, fidati di me.</p>
+<p begin="10510050000t" end="10520050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle268">Ciao.</p>
+<p begin="10546450000t" end="10568450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle269">[Spadino sospira]</p>
+<p begin="10575650000t" end="10596850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle270">[rombo di motore]</p>
+<p begin="10642050000t" end="10656850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle271">Come va con Angelica?</p>
+<p begin="10694450000t" end="10705650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle272">Le voglio bene.</p>
+<p begin="10718050000t" end="10729650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle273">"Bene" che vuol di'?</p>
+<p begin="10730450000t" end="10738850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle274">"Bene."</p>
+<p begin="10770050000t" end="10781650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle275">[Spadino] E che vuol di'?</p>
+<p begin="10803250000t" end="10819250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle276">Vuol dire che aspettiamo un figlio.</p>
+<p begin="10857650000t" end="10875650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle277">E che mi vedo con uno.</p>
+<p begin="10912450000t" end="10927250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle278">Che ti devo dire, Aurelia'.</p>
+<p begin="10928050000t" end="10946050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle279">Il matrimonio è una cosa seria,</p>
+<p begin="10946850000t" end="10967650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle280">bisogna trovare il modo<br/>di farlo funziona'.</p>
+<p begin="10975650000t" end="10986450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle281">[Aureliano] Mm.</p>
+<p begin="11037650000t" end="11050850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle282">Gira qua a destra.</p>
+<p begin="11198850000t" end="11222850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle283">Stai a diventa' un padre,<br/>vedi di non farti spara'.</p>
+<p begin="11371650000t" end="11385250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle284">E mo che vuoi?</p>
+<p begin="11408050000t" end="11427250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle285">Ho avuto un problema,<br/>mi servono due ferri.</p>
+<p begin="11437650000t" end="11448450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle286">Li chiedi a me?</p>
+<p begin="11479650000t" end="11503250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle287">T'hanno accannato, ve'? Che è successo?</p>
+<p begin="11504050000t" end="11525250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle288">Non è successo niente, mi aiuti o no?</p>
+<p begin="11526050000t" end="11560050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle289">Mi dispiace, non ti posso aiuta'.<br/>I cugini miei si so' presi tutto.</p>
+<p begin="11560850000t" end="11580050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle290">- Mo comandano loro.<br/>- Pensa un po'.</p>
+<p begin="11584450000t" end="11597250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle291">Te l'avevo detto, no?</p>
+<p begin="11616450000t" end="11634050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle292">Va beh, dove stanno 'sti due coglioni?</p>
+<p begin="11659250000t" end="11678450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle293">A che ti servono 'ste pistole?</p>
+<p begin="11701250000t" end="11726050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle294">- Se vuoi che t'aiuto, me lo devi di'.<br/>- Va beh, dai.</p>
+<p begin="11758450000t" end="11771250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle295">[in sinti] Attenzione!</p>
+<p begin="11779650000t" end="11800850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle296">[in sinti] Attenzione, silenzio!</p>
+<p begin="11805250000t" end="11815250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle297">[in sinti] Silenzio!</p>
+<p begin="11856050000t" end="11882850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle298">[in sinti] Oggi dobbiamo prendere<br/>una decisione importante.</p>
+<p begin="11883650000t" end="11908850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle299">[in sinti] E lo dobbiamo fare insieme.</p>
+<p begin="11919250000t" end="11946050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle300">[Adelaide in sinti] Abbiamo l'occasione<br/>di entrare a Ostia,</p>
+<p begin="11946850000t" end="11971250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle301">è tutto pronto, ma servono più soldi.</p>
+<p begin="11975250000t" end="12002050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle302">[in sinti] E li dobbiamo mettere<br/>noi Anacleti.</p>
+<p begin="12012050000t" end="12031250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle303">[in sinti] E quando<br/>rientrerebbero i soldi?</p>
+<p begin="12034850000t" end="12057250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle304">[Adelaide in sinti] Non è ora<br/>di pensare a questo,</p>
+<p begin="12058050000t" end="12074050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle305">pensa a quello che guadagneremo.</p>
+<p begin="12088450000t" end="12113250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle306">[uomo in sinti] Ci servono soldi<br/>per doti, matrimoni...</p>
+<p begin="12114050000t" end="12126850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle307">Vieni con me.</p>
+<p begin="12127650000t" end="12148050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle308">[Adelaide in sinti]<br/>Non vogliamo comandare?</p>
+<p begin="12148850000t" end="12176050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle309">[voci indistinte]</p>
+<p begin="12258050000t" end="12276050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle310">La vecchia sta avvelenata.</p>
+<p begin="12287650000t" end="12312450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle311">Vuole comanda'<br/>e invece deve perdere tempo a discutere.</p>
+<p begin="12313250000t" end="12336450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle312">Le discussioni ci sarebbero state<br/>pure con Manfredi.</p>
+<p begin="12337250000t" end="12353250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle313">- Non credo proprio.<br/>- No?</p>
+<p begin="12360850000t" end="12390450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle314">Quando si tratta di tira' fuori<br/>i contanti, diventano tutti sordi.</p>
+<p begin="12403250000t" end="12422850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle315">E nessuno caccia una lira.</p>
+<p begin="12423650000t" end="12443650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle316">Dipende da come le chiedi le cose.</p>
+<p begin="12450850000t" end="12474050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle317">Il problema nostro è<br/>che non pensiamo mai in grande.</p>
+<p begin="12518850000t" end="12532050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle318">Dove mi stai a porta'?</p>
+<p begin="12575650000t" end="12590050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle319">Da certi parenti a Sulmona.</p>
+<p begin="12682850000t" end="12718450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle320">- Però prima devo passare da una parte.<br/>- Non crearmi problemi, Ange'.</p>
+<p begin="12719250000t" end="12758450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle321">Non voglio creare problemi, ma forse<br/>so come risolvere quelli di Adelaide.</p>
+<p begin="12776050000t" end="12800050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle322">Se mi aiuti e ho ragione,<br/>fai felice pure lei.</p>
+<p begin="12818050000t" end="12828050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle323">Oh.</p>
+<p begin="12842050000t" end="12858850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle324">Io non c'ho voglia di gioca'.</p>
+<p begin="12900850000t" end="12910850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle325">Dove?</p>
+<p begin="12919250000t" end="12929250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle326">Parti, va'.</p>
+<p begin="12955650000t" end="12975650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle327">[mette in moto]</p>
+<p begin="13085250000t" end="13098850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle328">[Guerri] Oh, sbrigatevi.</p>
+<p begin="13108850000t" end="13126850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle329">Andate al deposito e preparate tutto.</p>
+<p begin="13127650000t" end="13147650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle330">[rumori di ferraglia]</p>
+<p begin="13260050000t" end="13273250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle331">- Ehi, Aurelia'.<br/><span style="style1">- Oh.</span></p>
+<p begin="13274050000t" end="13285250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle332">Qua si stanno muovendo.</p>
+<p begin="13286050000t" end="13313650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle333">Saranno più di dieci.<br/>Hanno caricato benzina e altra roba.</p>
+<p begin="13320850000t" end="13346450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle334">[Aureliano]<span style="style1"> Staranno a fa'</span><br/><span style="style1">qualche movimento. Lui c'è?</span></p>
+<p begin="13347250000t" end="13355650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle335">[Spadino] No.</p>
+<p begin="13356450000t" end="13375250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle336">Provo a entra', vedo se scopro qualcosa.</p>
+<p begin="13376050000t" end="13402050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle337">[Aureliano]<span style="style1"> Non fa' cazzate,</span><br/><span style="style1">aspetta che recupero i ferri.</span></p>
+<p begin="13402850000t" end="13422050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle338">Va beh, aspetto qua, sì.</p>
+<p begin="13428050000t" end="13441650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle339">Ciao.</p>
+<p begin="13612050000t" end="13636450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle340">- Che succede?<br/>- Ti devo parla', pa'.</p>
+<p begin="13637250000t" end="13651250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle341">[portiera che si chiude]</p>
+<p begin="13664450000t" end="13675250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle342">Andiamo dentro.</p>
+<p begin="13744850000t" end="13758850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle343">Dimmi dove stanno 'sti ferri.</p>
+<p begin="13759650000t" end="13781650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle344">Appena entri, ci sta un furgoncino bianco.</p>
+<p begin="13782450000t" end="13796050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle345">Stanno là dentro.</p>
+<p begin="13821250000t" end="13843250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle346">Se vedi qualcosa di strano, avvertimi.</p>
+<p begin="14581650000t" end="14595650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle347">[uomo] Oh, ma che cazzo...</p>
+<p begin="14596450000t" end="14610050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle348">Oh, merda!</p>
+<p begin="14610850000t" end="14642850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle349">[spari]</p>
+<p begin="14657650000t" end="14721650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle350">- [spari]<br/>- [rumore di vetri infranti]</p>
+<p begin="14755650000t" end="14780450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle351">["Da vicino" dei Brokenspeakers,<br/>dalla colonna sonora]</p>
+<p begin="14781250000t" end="14803650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle352"><span style="style1">♪ È da vicino per guardare meglio ♪</span></p>
+<p begin="14804450000t" end="14838050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle353"><span style="style1">♪ Per ricordarmi che se tutto va una merda</span><br/><span style="style1">Io reggo il fardello ♪</span></p>
+<p begin="14838850000t" end="14858850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle354"><span style="style1">♪ Per ricordarmi quanto è stato bello ♪</span></p>
+<p begin="14859650000t" end="14895250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle355"><span style="style1">♪ Se chi mi stava vicino poi m'ha lasciato</span><br/><span style="style1">E m'ha lasciato il segno ♪</span></p>
+<p begin="14896050000t" end="14923250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle356"><span style="style1">♪ Pure se adesso brucia</span><br/><span style="style1">Io non rinuncio alla fiducia in me ♪</span></p>
+<p begin="14924050000t" end="14950850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle357"><span style="style1">♪ Convivi col dolore e trovi un nuovo te ♪</span></p>
+<p begin="14951650000t" end="14987250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle358"><span style="style1">♪ E mi dispiace se ogni pezzo che faccio</span><br/><span style="style1">È un colpaccio nello stomaco ♪</span></p>
+<p begin="14988050000t" end="15006050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle359"><span style="style1">♪ E me sento de ghiaccio ♪</span></p>
+<p begin="15006850000t" end="15028450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle360"><span style="style1">♪ E m'hanno detto</span><br/><span style="style1">Da sta merda non s'esce ♪</span></p>
+<p begin="15029250000t" end="15062450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle361"><span style="style1">♪ Non è vero, c'è qualcuno che stimo</span><br/><span style="style1">Che gli riesce ♪</span></p>
+<p begin="15063250000t" end="15091250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle362"><span style="style1">♪ E m'hanno detto la gente non cambia</span><br/><span style="style1">E diffido ♪</span></p>
+<p begin="15092050000t" end="15116450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle363"><span style="style1">♪ Io guardo Marco e sorrido ♪</span></p>
+<p begin="15117250000t" end="15150050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle364"><span style="style1">♪ E vedo il posto dove cresco</span><br/><span style="style1">Diventare inferno e prego ♪</span></p>
+<p begin="15150850000t" end="15173650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle365"><span style="style1">♪ Tu chiedimi di tutto</span><br/><span style="style1">Non di stare fermo ♪</span></p>
+<p begin="15174450000t" end="15204050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle366"><span style="style1">♪ E non lo so il destino</span><br/><span style="style1">Metto l'amore per primo ♪</span></p>
+<p begin="15204850000t" end="15229650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle367"><span style="style1">♪ Vivo allo sbaraglio</span><br/><span style="style1">Come un clandestino ♪</span></p>
+<p begin="15230450000t" end="15258050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle368"><span style="style1">♪ Io voglio starti vicino</span><br/><span style="style1">Tu stammi accanto ♪</span></p>
+<p begin="15258850000t" end="15285650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle369"><span style="style1">♪ È rimanendo vicini che andremo in alto ♪</span></p>
+<p begin="15286450000t" end="15322050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle370"><span style="style1">♪ È con la giusta distanza</span><br/><span style="style1">Che tutto quanto diventa più chiaro ♪</span></p>
+<p begin="15322850000t" end="15342450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle371"><span style="style1">♪ E fa male tanto, tanto ♪</span></p>
+<p begin="15343250000t" end="15370450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle372"><span style="style1">♪ Io voglio starti vicino</span><br/><span style="style1">Tu stammi accanto ♪</span></p>
+<p begin="15371250000t" end="15397650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle373"><span style="style1">♪ È rimanendo vicini che andremo in alto ♪</span></p>
+<p begin="15398450000t" end="15434850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle374"><span style="style1">♪ È con la giusta distanza</span><br/><span style="style1">Che tutto quanto diventa più chiaro ♪</span></p>
+<p begin="15435650000t" end="15456050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle375"><span style="style1">♪ E fa male tanto, tanto ♪</span></p>
+<p begin="15466850000t" end="15489250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle376">[uomo] Grazie di essere venuto<br/>a quest'ora.</p>
+<p begin="15490050000t" end="15509650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle377">[veterinario] Si figuri, è il lavoro mio.</p>
+<p begin="15592450000t" end="15609650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle378">[uomo] Lo vede com'è conciato?</p>
+<p begin="15623650000t" end="15648050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle379">[uomo] Si è imbizzarrito,<br/>ma non mi chieda per cosa.</p>
+<p begin="15674450000t" end="15705650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle380">[uomo] Ah, dottore, dobbiamo controllare<br/>anche quest'altra cavalla.</p>
+<p begin="15757250000t" end="15769250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle381">Gliel'avevo detto.</p>
+<p begin="15770050000t" end="15780050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle382">Lo conosco.</p>
+<p begin="15780850000t" end="15802050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle383">Non è un uomo<br/>a cui si possono pestare i piedi.</p>
+<p begin="15802850000t" end="15816450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle384">Stia calma.</p>
+<p begin="15823250000t" end="15866450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle385">- L'ha minacciata?<br/>- Certo! Cosa crede sia venuto a fare là?</p>
+<p begin="15880850000t" end="15903250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle386">Ci siamo messi contro gente potente.</p>
+<p begin="15912450000t" end="15925650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle387">Lo sapevamo.</p>
+<p begin="15936050000t" end="15974450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle388">Ma stiamo proteggendo queste persone<br/>e ci vuole un po' di coraggio.</p>
+<p begin="15975250000t" end="15996450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle389">E sono sicuro che a lei non manchi.</p>
+<p begin="16001650000t" end="16016450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle390">È per questo che l'ho scelta.</p>
+<p begin="16017250000t" end="16031250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle391">A me non manca...</p>
+<p begin="16036850000t" end="16076050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle392">...ma da sola contro quell'uomo<br/>io non posso fare niente.</p>
+<p begin="16080450000t" end="16103250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle393">Sara, lei non è sola.</p>
+<p begin="16129250000t" end="16159250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle394">Non mi devi venire<br/>a rompere i coglioni qua, hai capito?</p>
+<p begin="16160050000t" end="16177650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle395">Ehi, stai calmo.</p>
+<p begin="16178450000t" end="16195250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle396">È roba di un minuto.</p>
+<p begin="16200450000t" end="16226050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle397">La fate voi la sorveglianza<br/>sui terreni dei profughi, no?</p>
+<p begin="16245250000t" end="16278050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle398">Allora tu stasera fai in modo<br/>che quando una pattuglia stacca</p>
+<p begin="16278850000t" end="16298850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle399">l'altra riattacca dopo una mezz'oretta.</p>
+<p begin="16299650000t" end="16317650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle400">E ci dici quando il campo è libero.</p>
+<p begin="16318450000t" end="16329250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle401">- Facile facile.<br/>- No.</p>
+<p begin="16330050000t" end="16342450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle402">Non si può.</p>
+<p begin="16343250000t" end="16358450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle403">Non gestisco io le pattuglie.</p>
+<p begin="16359250000t" end="16368050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle404">Beh?</p>
+<p begin="16372850000t" end="16402850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle405">Sei viceispettore, non mi dire<br/>che non conti un cazzo, Lele.</p>
+<p begin="16421250000t" end="16433250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle406">Mo te ne puoi pure anda'.</p>
+<p begin="16452050000t" end="16462050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle407">Oh, daje!</p>
+<p begin="16620050000t" end="16644450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle408">[Sale in sinti] Questi soldi<br/>te li posso trovare io.</p>
+<p begin="16650850000t" end="16681250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle409">- [Sale in sinti] Ma a una condizione.<br/>- [Adelaide in sinti] Quale?</p>
+<p begin="16685650000t" end="16713650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle410">[in sinti] Che mia figlia<br/>è la garanzia dell'affare.</p>
+<p begin="16719250000t" end="16727650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle411">Cioè?</p>
+<p begin="16733250000t" end="16761650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle412">[Sale] Mi sa che è meglio<br/>che Angelica gestisce tutto l'affare.</p>
+<p begin="16762450000t" end="16779250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle413">E quindi rimane a Roma.</p>
+<p begin="16782850000t" end="16792850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle414">Dentro 'sta casa.</p>
+<p begin="16797250000t" end="16811250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle415">Dov'è sposata con tuo figlio.</p>
+<p begin="16812050000t" end="16838050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle416">[in sinti] Le cose della nuora<br/>le decide solo la suocera,</p>
+<p begin="16838850000t" end="16848850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle417">non il padre.</p>
+<p begin="16849650000t" end="16866850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle418">I soldi li chiedi al padre, però.</p>
+<p begin="16943650000t" end="16952050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle419">Allora?</p>
+<p begin="16955250000t" end="16965250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle420">S'è fatto tardi.</p>
+<p begin="16974050000t" end="16982450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle421">Va beh.</p>
+<p begin="16997250000t" end="17013250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle422">Facciamo come dici tu.</p>
+<p begin="17313250000t" end="17337650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle423">[aziona la stampante]</p>
+<p begin="17718450000t" end="17740050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle424">[veterinario] Quello che potevo fare<br/>l'ho fatto.</p>
+<p begin="17744050000t" end="17762850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle425">[veterinario] Ripasso tra qualche giorno.</p>
+<p begin="17774850000t" end="17794050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle426">[veterinario] Dovrebbe riprendersi presto.</p>
+<p begin="18078050000t" end="18100450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle427">[nitrito]</p>
+<p begin="18291650000t" end="18322850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle428">[rumore di passi]</p>
+<p begin="18400050000t" end="18416050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle429">[nitrito]</p>
+<p begin="18631650000t" end="18641250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle430">[Aureliano] Annamo.</p>
+<p begin="18708850000t" end="18720850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle431">Chiudi la porta.</p>
+<p begin="18836850000t" end="18859250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle432">- E mo che è 'sto posto?<br/>- Un albergo.</p>
+<p begin="18870050000t" end="18895250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle433">Era nostro, ma so' 20 anni<br/>che non ci entra nessuno.</p>
+<p begin="18915250000t" end="18927250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle434">Mo ci sto io.</p>
+<p begin="18928050000t" end="18957250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle435">I tuoi cugini ti staranno a cerca'<br/>quindi te rimani qua stanotte.</p>
+<p begin="18966050000t" end="18982450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle436">- Chi lo dice?<br/>- Lo dico io.</p>
+<p begin="19011650000t" end="19052050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle437">[squilli di cellulare]</p>
+<p begin="19068050000t" end="19080850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle438">- Oh, Spadi'.<br/><span style="style1">- Aurelia'.</span></p>
+<p begin="19081650000t" end="19106850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle439">Finalmente il sorcio<br/>è uscito allo scoperto.</p>
+<p begin="19107650000t" end="19136850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle440"><span style="style1">- Perché parli così? Dove stai?</span><br/>- Dentro al maneggio.</p>
+<p begin="19137650000t" end="19152850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle441">Come, dentro al maneggio?</p>
+<p begin="19155650000t" end="19185650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle442"><span style="style1">Sì, sono riuscito a entra' di nascosto.</span><br/><span style="style1">Mo ci penso io.</span></p>
+<p begin="19190850000t" end="19208850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle443">- Lui dove sta?<br/>- Sta qua.</p>
+<p begin="19217250000t" end="19232850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle444"><span style="style1">E mo che vuoi fa', Spadi'?</span></p>
+<p begin="19239650000t" end="19263650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle445">[Guerri] Li ho appena sentiti.<br/>I ragazzi so' pronti.</p>
+<p begin="19264450000t" end="19276850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle446">Devo chiudere. Ti richiamo.</p>
+<p begin="19277650000t" end="19294850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle447">[Samurai] Fate le cose fatte bene.</p>
+<p begin="19295650000t" end="19312050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle448">Aspetta, Spadi'.</p>
+<p begin="19312850000t" end="19322850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle449">Spadi'?</p>
+<p begin="19335250000t" end="19362850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle450">[Samurai] Deve sembrare<br/>che non sopportate più la situazione.</p>
+<p begin="19363650000t" end="19396050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle451">Non ci deve scappare il morto,<br/>se no mi sequestrano i terreni</p>
+<p begin="19396850000t" end="19407650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle452">e buonanotte.</p>
+<p begin="19415250000t" end="19425250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle453">[Samurai] Ok?</p>
+<p begin="19598450000t" end="19608050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle454">[Guerri] Samurai.</p>
+<p begin="19608850000t" end="19617250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle455">Che c'è?</p>
+<p begin="19665650000t" end="19689650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle456">- Beh?<br/>- C'è una persona che ti vuole.</p>
+<p begin="19710050000t" end="19732050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle457">Senti, levami dal cazzo 'sti volantini.</p>
+<p begin="19742450000t" end="19783250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle458">Con quello che ho speso per la campagna<br/>elettorale almeno li potevate da' in giro.</p>
+<p begin="19866050000t" end="19884450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle459">[nitriti]</p>
+<p begin="20072850000t" end="20106050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle460">Samurai mi ha chiesto di levargli di mezzo<br/>una volante dal campo profughi.</p>
+<p begin="20115250000t" end="20130450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle461">No, non lo so perché.</p>
+<p begin="20145650000t" end="20156050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle462">Quindi, che facciamo?</p>
+<p begin="20160850000t" end="20180450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle463">Aspettiamo che Spadino ci richiama.</p>
+<p begin="20202450000t" end="20218450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle464">Te intanto vie' qua.</p>
+<p begin="20226050000t" end="20240850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle465">- Dove?<br/><span style="style1">- All'albergo.</span></p>
+<p begin="20247250000t" end="20261250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle466">Ok, arrivo.</p>
+<p begin="20294450000t" end="20313250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle467">Com'è che hai deciso di venirmi a trova'?</p>
+<p begin="20314050000t" end="20329250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle468">Ti volevo guarda' in faccia.</p>
+<p begin="20346050000t" end="20358850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle469">Vede' quanto eri cambiato.</p>
+<p begin="20363650000t" end="20384450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle470">Mi sarebbe piaciuto averti a fianco.</p>
+<p begin="20389650000t" end="20407250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle471">Sei tu che te ne sei andato.</p>
+<p begin="20408050000t" end="20430850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle472">- Ci sarà stato un motivo, no?<br/>- Ah.</p>
+<p begin="20440850000t" end="20455250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle473">Sempre duro e puro tu, eh?</p>
+<p begin="20456050000t" end="20470050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle474">Io so' sempre lo stesso.</p>
+<p begin="20482850000t" end="20504450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle475">- Io l'ideale non l'ho tradito.<br/>- Manco io.</p>
+<p begin="20510050000t" end="20524050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle476">So' solo più grande di te.</p>
+<p begin="20534850000t" end="20544850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle477">Più saggio.</p>
+<p begin="20557249999t" end="20591649999t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle478">Una volta c'aveva senso<br/>fa' a botte per un ideale, non adesso.</p>
+<p begin="20612049999t" end="20633650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle479">Dai, su, non ci facciamo il sangue amaro.</p>
+<p begin="20634450000t" end="20653650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle480">So' anni che non ci vediamo, vieni.</p>
+<p begin="20688050000t" end="20704050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle481">Ti ricordavo ragazzino.</p>
+<p begin="20709650000t" end="20743250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle482">- Guarda lì, ti se fatto uomo.<br/>- E tu ti sei fatto vecchio.</p>
+<p begin="20822449999t" end="20861250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle483">Ho sentito la guardia, tutto a posto.<br/>Vado dai ragazzi al deposito e partiamo.</p>
+<p begin="20862049999t" end="20874850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle484">Vengo pure io.</p>
+<p begin="20878450000t" end="20899250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle485">Voglio essere sicuro che non fate cazzate.</p>
+<p begin="20930450000t" end="20952449999t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle486">Io e te la pensiamo<br/>ancora allo stesso modo.</p>
+<p begin="20957249999t" end="20978850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle487">E stanotte te lo dimostro.</p>
+<p begin="20979650000t" end="20988050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle488">Vieni con me.</p>
+<p begin="20992049999t" end="21010050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle489">Ti faccio vedere che non sono cambiato.</p>
+<p begin="21182450000t" end="21208050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle490">[squilli di cellulare]</p>
+<p begin="21225650000t" end="21242850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle491">Così mi fai preoccupa', che succede?</p>
+<p begin="21243650000t" end="21279650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle492">Qua da Samurai stanno organizzando<br/>qualcosa, ma non ho capito dove vanno.</p>
+<p begin="21280450000t" end="21297650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle493">- Ma lui sta lì?<br/>- S'è mosso adesso.</p>
+<p begin="21341650000t" end="21352050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle494">Aurelia'.</p>
+<p begin="21352850000t" end="21361250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle495">Aspetta.</p>
+<p begin="21387650000t" end="21412050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle496">Samurai a che ora ti ha chiesto<br/>di sposta' le guardie?</p>
+<p begin="21421650000t" end="21433650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle497">Fra un'ora.</p>
+<p begin="21443650000t" end="21470850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle498">Spadi', so io dove sta andando.</p>
+<p begin="21471650000t" end="21488850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle499"><span style="style1">- Vieni al campo profughi.</span><br/>- Va bene.</p>
+<p begin="21652850000t" end="21662850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle500">Un gin tonic.</p>
+<p begin="21672850000t" end="21686050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle501">Sto a posto così, grazie.</p>
+<p begin="21703250000t" end="21714050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle502">Allora?</p>
+<p begin="21717250000t" end="21742450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle503">Neanche hai cominciato<br/>e già vuoi cambiare casacca?</p>
+<p begin="21748050000t" end="21769250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle504">- Guarda che non è assolutamente...<br/>- Cosa fai?</p>
+<p begin="21770050000t" end="21780450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle505">Ti giustifichi?</p>
+<p begin="21798850000t" end="21811250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle506">Quanti voti hai preso?</p>
+<p begin="21821250000t" end="21833250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle507">Perché, non lo sai?</p>
+<p begin="21837250000t" end="21869650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle508">Sì, ma scommetto che uno precisino come te<br/>si ricorda il numero esatto.</p>
+<p begin="21897250000t" end="21918850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle509">Sono 230.423.</p>
+<p begin="21919650000t" end="21930450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle510">Ecco, hai visto?</p>
+<p begin="21938850000t" end="21952850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle511">Non te l'aspettavi, eh?</p>
+<p begin="21953650000t" end="21977650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle512">Beh, ma ho fatto una campagna elettorale<br/>molto lunga.</p>
+<p begin="21989250000t" end="22003250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle513">Non mi sono fermato un attimo.</p>
+<p begin="22004050000t" end="22035250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle514">Si vede,<br/>sei uno che si sbatte, che lavora.</p>
+<p begin="22040450000t" end="22052850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle515">Cosa vuoi in cambio?</p>
+<p begin="22064450000t" end="22088050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle516">- Apparentarmi con la vostra lista.<br/>- Questo lo so.</p>
+<p begin="22105650000t" end="22121250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle517">Dico, cosa vuoi in cambio per te?</p>
+<p begin="22140050000t" end="22162450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle518">Ma come, non parliamo di progetti?</p>
+<p begin="22163250000t" end="22182450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle519">- Di programmi?<br/>- Sì?</p>
+<p begin="22186050000t" end="22222850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle520">- Di intese trasversali?<br/>- E come risollevare le politiche sociali?</p>
+<p begin="22274450000t" end="22316050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle521">Noi della Destra siamo un partito pratico.<br/>Gente che va al sodo. Dimmi.</p>
+<p begin="22343650000t" end="22371250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle522">Un assessorato e un mio uomo<br/>capo gabinetto del sindaco.</p>
+<p begin="22407650000t" end="22431250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle523">Più siete piccoli e più volete mangiare.</p>
+<p begin="22480050000t" end="22504450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle524">- Allora?<br/>- Allora niente, non decido io.</p>
+<p begin="22516050000t" end="22535650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle525">Parlo col mio partito e ti faccio sapere.</p>
+<p begin="22552050000t" end="22582050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle526">Barzacci, non sono venuto qui<br/>per farmi prendere per il culo.</p>
+<p begin="22586450000t" end="22604050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle527">Queste sono cose che decidi tu.</p>
+<p begin="22604850000t" end="22625650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle528">Ma che non si risolvono<br/>al bancone di un bar.</p>
+<p begin="22714850000t" end="22729650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle529">Ti faccio sapere io.</p>
+<p begin="22984450000t" end="22994850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle530">[Spadino] Allora?</p>
+<p begin="22995650000t" end="23011650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle531">Qua ancora non si è visto nessuno.</p>
+<p begin="23041650000t" end="23054450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle532">Ecco che se ne vanno.</p>
+<p begin="23095250000t" end="23118050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle533">[portiere che si chiudono]</p>
+<p begin="23118850000t" end="23133650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle534">[accensione motore]</p>
+<p begin="23275250000t" end="23296450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle535">- Ciao, amore.<br/>- Come mai non stai a casa?</p>
+<p begin="23297250000t" end="23320050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle536">Ho fatto tardi al comitato,<br/>sono arrivata adesso.</p>
+<p begin="23320850000t" end="23344850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle537">- Com'è andata con Barzacci?<br/>- Ha preso tempo.</p>
+<p begin="23358450000t" end="23374850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle538">Ha detto che non è lui che decide.</p>
+<p begin="23387650000t" end="23419250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle539">Come se non sapessi che il suo partito<br/>l'ha chiamato "Roma" apposta.</p>
+<p begin="23420050000t" end="23428850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle540">[Alice] E quindi?</p>
+<p begin="23429650000t" end="23468050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle541">E quindi niente, Alice, a questi qui non è<br/>che gli leggi in faccia ciò che pensano.</p>
+<p begin="23468850000t" end="23484850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle542">Va beh, però ti sembrava positivo.</p>
+<p begin="23485650000t" end="23512850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle543">I miei omaggi, signora.<br/>Dottor Cinaglia, buonasera.</p>
+<p begin="23516050000t" end="23538850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle544">Venga con noi,<br/>c'è una persona che le deve parlare.</p>
+<p begin="23644850000t" end="23662450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle545">- Quando vuole.<br/>- Sì, certo.</p>
+<p begin="23672450000t" end="23684050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle546">- Prego.<br/>- Amore, vai.</p>
+<p begin="23684850000t" end="23708450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle547">La baby-sitter deve tornare a casa,<br/>è tardi.</p>
+<p begin="23725650000t" end="23735650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle548">Arrivederci.</p>
+<p begin="23756450000t" end="23769250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle549">Ci sentiamo dopo.</p>
+<p begin="23817250000t" end="23835650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle550">[stridio di gomme]</p>
+<p begin="23838850000t" end="23850050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle551">Eccoli.</p>
+<p begin="24012050000t" end="24028450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle552">[Aureliano] Io Samurai non lo vedo.</p>
+<p begin="24038850000t" end="24052450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle553">Ci deve sta' per forza.</p>
+<p begin="24072450000t" end="24082450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle554">Annamo.</p>
+<p begin="24257250000t" end="24280450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle555">[Samurai] Stanno tutti a dormi',<br/>entrate piano.</p>
+<p begin="24288050000t" end="24320050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle556">[Samurai] Mi raccomando,<br/>non dovete mirare alle tende dove dormono.</p>
+<p begin="24339250000t" end="24376850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle557">Hanno preso Ostia per una discarica<br/>e mo imparano la lezione.</p>
+<p begin="24617250000t" end="24646450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle558">[urla]</p>
+<p begin="24678050000t" end="24715250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle559">[urlano]</p>
+<p begin="24730050000t" end="24776050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle560">[urla e voci confuse]</p>
+<p begin="24899650000t" end="24908450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle561">Dividiamoci.</p>
+<p begin="24923250000t" end="24964050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle562">- [esplosione]<br/>- [urla]</p>
+<p begin="24964850000t" end="24982450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle563">Che cazzo sta succedendo?</p>
+<p begin="24983250000t" end="24993650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle564">Aspetta qui.</p>
+<p begin="24994450000t" end="25010450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle565">[Samurai] Ha preso fuoco una tenda.</p>
+<p begin="25011250000t" end="25023250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle566">[urla]</p>
+<p begin="25073250000t" end="25097250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle567">[urla di panico]</p>
+<p begin="25133650000t" end="25142050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle568">Ti sei persa?</p>
+<p begin="25270450000t" end="25278850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle569">Vieni qua!</p>
+<p begin="25279650000t" end="25319650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle570">Che cazzo state a fa'?<br/>Vi avevo detto "no alle tende"!</p>
+<p begin="25320850000t" end="25335250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle571">- Dove sta Saverio?<br/>- Non lo so!</p>
+<p begin="25336050000t" end="25350850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle572">E vallo a cercare!</p>
+<p begin="25356450000t" end="25371650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle573">[sparo]</p>
+<p begin="25392050000t" end="25407650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle574">[spari]</p>
+<p begin="25419250000t" end="25438050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle575">Vieni. Vieni con me.</p>
+<p begin="25501650000t" end="25522850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle576">- [Spadino] Dai, annamo!<br/>- [Aureliano] Dov'è?</p>
+<p begin="25523650000t" end="25558050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle577">[urla]</p>
+<p begin="25616850000t" end="25627250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle578">[Sara] Aiuto!</p>
+<p begin="25670050000t" end="25682050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle579">[Sara] Aiuto!</p>
+<p begin="25686050000t" end="25697250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle580">[Sara] Aiuto!</p>
+<p begin="25825650000t" end="25836050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle581">Sali.</p>
+<p begin="25855650000t" end="25868050000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle582">Adria', dobbiamo andarcene.</p>
+<p begin="25868850000t" end="25884450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle583">Questo non c'entra con l'ideale.</p>
+<p begin="25901250000t" end="25919250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle584">Che interessi hai su 'sti terreni?</p>
+<p begin="25920050000t" end="25935650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle585">Perché ti volevano ammazza'?</p>
+<p begin="25945250000t" end="25970850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle586">[Guerri] Che dobbiamo fare?<br/>Qua sta a scoppia' l'inferno!</p>
+<p begin="25984450000t" end="25995250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle587">Andiamo.</p>
+<p begin="26090450000t" end="26125250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle588">[urla]</p>
+<p begin="26204450000t" end="26228850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle589">Sara!</p>
+<p begin="26229650000t" end="26245250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle590">Svegliati, Sara!</p>
+<p begin="26252850000t" end="26262850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle591">Sara, dai!</p>
+<p begin="26267650000t" end="26286850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle592">[ansimano]</p>
+<p begin="26287650000t" end="26316850000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle593">[versi di sforzo]</p>
+<p begin="26578050000t" end="26617250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle594">[portiera che si apre e si chiude]</p>
+<p begin="26891250000t" end="26902450000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle595">Cinaglia.</p>
+<p begin="26908850000t" end="26921650000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle596">Ma che mi combini?</p>
+<p begin="27020050000t" end="27043250000t" region="region0" style="style0" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" xml:id="subtitle597">Sottotitoli: M. D. Piccininni</p>
+</div>
+</body>
+</tt>

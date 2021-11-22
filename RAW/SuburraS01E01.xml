@@ -1,0 +1,745 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<tt xmlns:tt="http://www.w3.org/ns/ttml" xmlns:ttm="http://www.w3.org/ns/ttml#metadata" xmlns:ttp="http://www.w3.org/ns/ttml#parameter" xmlns:tts="http://www.w3.org/ns/ttml#styling" ttp:tickRate="10000000" ttp:timeBase="media" xmlns="http://www.w3.org/ns/ttml">
+<head>
+<ttp:profile use="http://netflix.com/ttml/profile/dfxp-ls-sdh"/>
+<styling>
+<style tts:color="white" tts:fontSize="100%" tts:fontStyle="italic" tts:fontWeight="normal" xml:id="style_1"/>
+<style tts:color="white" tts:fontSize="100%" tts:fontWeight="normal" xml:id="style_2"/>
+</styling>
+<layout>
+<region tts:displayAlign="after" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" tts:textAlign="center" xml:id="region_1"/>
+<region tts:displayAlign="before" tts:extent="80.00% 80.00%" tts:origin="10.00% 10.00%" tts:textAlign="center" xml:id="region_2"/>
+</layout>
+</head>
+<body>
+<div xml:space="preserve">
+<p begin="496800000t" end="518800000t" region="region_1" xml:id="subtitle0"><span style="style_2">[radio] </span><span style="style_1">Oggi, dopo sette anni di mandato,</span></p>
+<p begin="519600000t" end="546000000t" region="region_1" xml:id="subtitle1"><span style="style_1">il sindaco di Roma ha presentato</span><br/><span style="style_1">le proprie dimissioni</span></p>
+<p begin="546800000t" end="567200000t" region="region_1" xml:id="subtitle2"><span style="style_1">che saranno effettive entro 20 giorni.</span></p>
+<p begin="573600000t" end="605200000t" region="region_1" xml:id="subtitle3"><span style="style_2">[radio] </span><span style="style_1">Nel suo discorso di addio</span><br/><span style="style_1">all'ultima riunione di Consiglio,</span></p>
+<p begin="606000000t" end="648799999t" region="region_1" xml:id="subtitle4"><span style="style_1">ha ribadito come la sua scelta</span><br/><span style="style_1">sia stata molto sofferta, ma ponderata.</span></p>
+<p begin="697200000t" end="715200000t" region="region_1" xml:id="subtitle5"><span style="style_2">[radio] </span><span style="style_1">Il sindaco uscente ha ricordato</span></p>
+<p begin="716000000t" end="744800000t" region="region_1" xml:id="subtitle6"><span style="style_1">che il rispetto per gli elettori</span><br/><span style="style_1">e per i cittadini di Roma</span></p>
+<p begin="745600000t" end="764000000t" region="region_1" xml:id="subtitle7"><span style="style_1">è sempre stato messo al primo posto.</span></p>
+<p begin="768400000t" end="798000000t" region="region_1" xml:id="subtitle8"><span style="style_2">[radio] </span><span style="style_1">Adesso si prospetta</span><br/><span style="style_1">uno scenario di forte indecisione</span></p>
+<p begin="798800000t" end="816800000t" region="region_1" xml:id="subtitle9"><span style="style_1">per tutti gli schieramenti politici,</span></p>
+<p begin="817600000t" end="856000000t" region="region_1" xml:id="subtitle10"><span style="style_1">per la scelta del nuovo candidato</span><br/><span style="style_1">da presentare per le prossime elezioni.</span></p>
+<p begin="1046400000t" end="1057200000t" region="region_1" xml:id="subtitle11"><span style="style_2">[suona il citofono]</span></p>
+<p begin="1297599999t" end="1337600000t" region="region_1" xml:id="subtitle12"><span style="style_2">[musica elettronica]</span></p>
+<p begin="1338400000t" end="1374000000t" region="region_1" xml:id="subtitle13"><span style="style_2">[gemiti]</span></p>
+<p begin="1454800000t" end="1475200000t" region="region_1" xml:id="subtitle14"><span style="style_2">[gemiti]</span></p>
+<p begin="1540000000t" end="1548400000t" region="region_1" xml:id="subtitle15"><span style="style_2">[sniffa]</span></p>
+<p begin="1572400000t" end="1625200000t" region="region_1" xml:id="subtitle16"><span style="style_2">[gemiti]</span></p>
+<p begin="1645600000t" end="1655600000t" region="region_1" xml:id="subtitle17"><span style="style_2">[gemiti]</span></p>
+<p begin="1656400000t" end="1665200000t" region="region_1" xml:id="subtitle18"><span style="style_2">Ah!</span></p>
+<p begin="1679200000t" end="1688000000t" region="region_1" xml:id="subtitle19"><span style="style_2">[gemiti]</span></p>
+<p begin="1710000000t" end="1731200000t" region="region_1" xml:id="subtitle20"><span style="style_2">[ansima]</span></p>
+<p begin="1732000000t" end="1744400000t" region="region_1" xml:id="subtitle21"><span style="style_2">Che succede?</span></p>
+<p begin="1889600000t" end="1928800000t" region="region_1" xml:id="subtitle22"><span style="style_2">[voci indistinte]</span></p>
+<p begin="1958400000t" end="1972000000t" region="region_1" xml:id="subtitle23"><span style="style_2">[ansima]</span></p>
+<p begin="2348000000t" end="2371200000t" region="region_1" xml:id="subtitle24"><span style="style_2">Porca di quella puttana,</span><br/><span style="style_2">ma ce li hai gli occhi?</span></p>
+<p begin="2377600000t" end="2399200000t" region="region_1" xml:id="subtitle25"><span style="style_2">Lo vedi o no</span><br/><span style="style_2">la gente che locali vuole frequentare?</span></p>
+<p begin="2400000000t" end="2424400000t" region="region_1" xml:id="subtitle26"><span style="style_2">Su quel chiosco,</span><br/><span style="style_2">ci butti due spicci e si riempie.</span></p>
+<p begin="2425200000t" end="2452400000t" region="region_1" xml:id="subtitle27"><span style="style_2">Un certo tipo di clientela,</span><br/><span style="style_2">oltre a mangiare e bere, vuole pippare.</span></p>
+<p begin="2459200000t" end="2495600000t" region="region_1" xml:id="subtitle28"><span style="style_2">Livia, senti questa che fa ridere!</span><br/><span style="style_2">Questo vuole insegnarmi a fare i soldi.</span></p>
+<p begin="2496400000t" end="2512800000t" region="region_1" xml:id="subtitle29"><span style="style_2">Quel posto non è tuo, era di mamma.</span></p>
+<p begin="2513600000t" end="2524000000t" region="region_1" xml:id="subtitle30"><span style="style_2">Oh!</span></p>
+<p begin="2524800000t" end="2547200000t" region="region_1" xml:id="subtitle31"><span style="style_2">- "Oh" che?</span><br/><span style="style_2">- Te l'ho detto duemila volte!</span></p>
+<p begin="2548000000t" end="2561200000t" region="region_1" xml:id="subtitle32"><span style="style_2">Tua madre lasciala perdere.</span></p>
+<p begin="2562000000t" end="2570400000t" region="region_1" xml:id="subtitle33"><span style="style_2">Papà.</span></p>
+<p begin="2603200000t" end="2620400000t" region="region_1" xml:id="subtitle34"><span style="style_2">Vedi se con te ragiona 'sto coglione.</span></p>
+<p begin="2649600000t" end="2675200000t" region="region_1" xml:id="subtitle35"><span style="style_2">Pure te non insistere, no?</span><br/><span style="style_2">Lo sai che gli dà fastidio.</span></p>
+<p begin="2676000000t" end="2689200000t" region="region_1" xml:id="subtitle36"><span style="style_2">Lasciami perdere.</span></p>
+<p begin="2803600000t" end="2823200000t" region="region_1" xml:id="subtitle37"><span style="style_2">Ci sta uno zingaro</span><br/><span style="style_2">fuori dal locale nostro.</span></p>
+<p begin="2929600000t" end="2950400000t" region="region_2" xml:id="subtitle38"><span style="style_2">[stridio di gomme]</span></p>
+<p begin="2964400000t" end="2997200000t" region="region_1" xml:id="subtitle39"><span style="style_2">[brusio]</span></p>
+<p begin="3028000000t" end="3049200000t" region="region_1" xml:id="subtitle40"><span style="style_2">- Zingaro, ti devo dire una cosa.</span><br/><span style="style_2">- Dimmi.</span></p>
+<p begin="3050000000t" end="3060000000t" region="region_1" xml:id="subtitle41"><span style="style_2">Scusate.</span></p>
+<p begin="3060800000t" end="3076400000t" region="region_1" xml:id="subtitle42"><span style="style_2">Volevo dirti che sei un pezzo di merda.</span></p>
+<p begin="3077200000t" end="3090400000t" region="region_1" xml:id="subtitle43"><span style="style_2">[urla]</span></p>
+<p begin="3109600000t" end="3121600000t" region="region_1" xml:id="subtitle44"><span style="style_2">Pezzo di merda!</span></p>
+<p begin="3132800000t" end="3171200000t" region="region_1" xml:id="subtitle45"><span style="style_2">Fate stare zitto 'sto cazzo di cane</span><br/><span style="style_2">e 'sto parassita buttatelo a mare.</span></p>
+<p begin="3251200000t" end="3281200000t" region="region_1" xml:id="subtitle46"><span style="style_2">[musica funky]</span></p>
+<p begin="3312400000t" end="3350800000t" region="region_1" xml:id="subtitle47"><span style="style_2">Non ci posso credere! Guarda chi ci sta!</span></p>
+<p begin="3388000000t" end="3410400000t" region="region_1" xml:id="subtitle48"><span style="style_2">[musica funky e voci confuse]</span></p>
+<p begin="3445600000t" end="3484000000t" region="region_1" xml:id="subtitle49"><span style="style_2">[parole non udibili]</span></p>
+<p begin="3526800000t" end="3545200000t" region="region_1" xml:id="subtitle50"><span style="style_2">[parole non udibili]</span></p>
+<p begin="3546000000t" end="3555200000t" region="region_1" xml:id="subtitle51"><span style="style_2">Ciao.</span></p>
+<p begin="3627600000t" end="3656800000t" region="region_1" xml:id="subtitle52"><span style="style_2">- Marchilli Gabriele?</span><br/><span style="style_2">- Sì, che ti serve?</span></p>
+<p begin="3657600000t" end="3668800000t" region="region_1" xml:id="subtitle53"><span style="style_2">Vieni fuori.</span></p>
+<p begin="3854000000t" end="3866000000t" region="region_1" xml:id="subtitle54"><span style="style_2">Lo sai chi sono io, sì?</span></p>
+<p begin="3883200000t" end="3918800000t" region="region_1" xml:id="subtitle55"><span style="style_2">Meno male, così evitiamo le presentazioni</span><br/><span style="style_2">e arriviamo subito al dunque.</span></p>
+<p begin="3928400000t" end="3940400000t" region="region_1" xml:id="subtitle56"><span style="style_2">Facciamo due passi, vieni.</span></p>
+<p begin="3958000000t" end="3996000000t" region="region_1" xml:id="subtitle57"><span style="style_2">Sai che c'è? Tu sei un bravo ragazzo,</span><br/><span style="style_2">intelligente, caruccio.</span></p>
+<p begin="3996800000t" end="4021200000t" region="region_1" xml:id="subtitle58"><span style="style_2">Però hai fatto una cosa</span><br/><span style="style_2">che non dovevi fare.</span></p>
+<p begin="4027600000t" end="4057600000t" region="region_1" xml:id="subtitle59"><span style="style_2">Ti sei messo a spacciare le pasticche tue</span><br/><span style="style_2">nella palestra di Samurai.</span></p>
+<p begin="4069200000t" end="4083200000t" region="region_1" xml:id="subtitle60"><span style="style_2">Ma che ti dice 'sta capoccia?</span></p>
+<p begin="4094400000t" end="4108400000t" region="region_1" xml:id="subtitle61"><span style="style_2">Mannaggia a te.</span></p>
+<p begin="4152800000t" end="4179200000t" region="region_1" xml:id="subtitle62"><span style="style_2">Mo lui lo sai com'è, no?</span><br/><span style="style_2">C'è rimasto male.</span></p>
+<p begin="4180000000t" end="4197200000t" region="region_1" xml:id="subtitle63"><span style="style_2">Anzi, s'è proprio incazzato.</span></p>
+<p begin="4198000000t" end="4226400000t" region="region_1" xml:id="subtitle64"><span style="style_2">Pensa che voleva</span><br/><span style="style_2">i soldi del danno più gli interessi.</span></p>
+<p begin="4234000000t" end="4252000000t" region="region_1" xml:id="subtitle65"><span style="style_2">Ma siccome è una persona generosa...</span></p>
+<p begin="4271600000t" end="4287200000t" region="region_1" xml:id="subtitle66"><span style="style_2">vuole solo 20.000 euro!</span></p>
+<p begin="4304000000t" end="4318800000t" region="region_1" xml:id="subtitle67"><span style="style_2">Come, 20.000 euro?</span></p>
+<p begin="4319600000t" end="4346000000t" region="region_1" xml:id="subtitle68"><span style="style_2">Avrò venduto cinque piotte di pasticche.</span><br/><span style="style_2">Che siete, matti?</span></p>
+<p begin="4380000000t" end="4395600000t" region="region_1" xml:id="subtitle69"><span style="style_2">Come cazzo ti permetti, eh?</span></p>
+<p begin="4396400000t" end="4419600000t" region="region_1" xml:id="subtitle70"><span style="style_2">Prima di tutto,</span><br/><span style="style_2">quando ti dico una cosa io, stai muto.</span></p>
+<p begin="4420400000t" end="4445200000t" region="region_1" xml:id="subtitle71"><span style="style_2">Secondo, hai 24 ore di tempo</span><br/><span style="style_2">per portarmi i soldi.</span></p>
+<p begin="4446000000t" end="4454800000t" region="region_1" xml:id="subtitle72"><span style="style_2">- Hai capito?</span><br/><span style="style_2">- Sì.</span></p>
+<p begin="4460400000t" end="4478400000t" region="region_1" xml:id="subtitle73"><span style="style_2">Oh! Hai capito?</span></p>
+<p begin="4486400000t" end="4506800000t" region="region_1" xml:id="subtitle74"><span style="style_2">Mo vatti a divertire, forza.</span></p>
+<p begin="4541200000t" end="4553200000t" region="region_1" xml:id="subtitle75"><span style="style_2">Andiamo, Cla'.</span></p>
+<p begin="4804000000t" end="4822800000t" region="region_1" xml:id="subtitle76"><span style="style_2">[uomo in sinti] Adesso sei tu lo sposo.</span></p>
+<p begin="4828400000t" end="4861600000t" region="region_1" xml:id="subtitle77"><span style="style_2">[uomo in sinti] Onora il cognome</span><br/><span style="style_2">che porti e le nostre tradizioni.</span></p>
+<p begin="4883200000t" end="4894800000t" region="region_1" xml:id="subtitle78"><span style="style_2">[uomo in sinti] Avanti!</span></p>
+<p begin="4903600000t" end="4918400000t" region="region_1" xml:id="subtitle79"><span style="style_2">[uomo in sinti] Avanti, Spadi'!</span></p>
+<p begin="4928800000t" end="4938000000t" region="region_1" xml:id="subtitle80"><span style="style_2">[in sinti] Avanti!</span></p>
+<p begin="4957200000t" end="4971200000t" region="region_1" xml:id="subtitle81"><span style="style_2">[in sinti] Avanti, Spadi'!</span></p>
+<p begin="5004800000t" end="5025200000t" region="region_1" xml:id="subtitle82"><span style="style_2">[in sinti] Ammazza 'sta bestia, Spadi'.</span></p>
+<p begin="5050400000t" end="5068800000t" region="region_1" xml:id="subtitle83"><span style="style_2">[in sinti] Avanti. Levati.</span></p>
+<p begin="5091600000t" end="5100800000t" region="region_1" xml:id="subtitle84"><span style="style_2">[in sinti] Ammazzala!</span></p>
+<p begin="5125599999t" end="5152400000t" region="region_1" xml:id="subtitle85"><span style="style_2">[urlando in sinti]</span><br/><span style="style_2">Ammazzala, Spadi'! Ammazzala!</span></p>
+<p begin="5167600000t" end="5187999999t" region="region_1" xml:id="subtitle86"><span style="style_2">[in sinti] Fa' l'uomo!</span></p>
+<p begin="5199199999t" end="5212400000t" region="region_1" xml:id="subtitle87"><span style="style_2">[urlando in sinti] Ammazzala!</span></p>
+<p begin="5213200000t" end="5226799999t" region="region_1" xml:id="subtitle88"><span style="style_2">[Spadino urla]</span></p>
+<p begin="5312800000t" end="5332000000t" region="region_1" xml:id="subtitle89"><span style="style_2">[in sinti] Ci voleva tanto?</span></p>
+<p begin="5332800000t" end="5354000000t" region="region_1" xml:id="subtitle90"><span style="style_2">È che non mi volevo sporcare.</span></p>
+<p begin="5377200000t" end="5401200000t" region="region_1" xml:id="subtitle91"><span style="style_2">[belati]</span></p>
+<p begin="5414800000t" end="5433200000t" region="region_1" xml:id="subtitle92"><span style="style_2">[in sinti] Mo puoi conoscere la sposa.</span></p>
+<p begin="5490000000t" end="5501600000t" region="region_1" xml:id="subtitle93"><span style="style_2">[in sinti] Andiamo.</span></p>
+<p begin="5506000000t" end="5514400000t" region="region_1" xml:id="subtitle94"><span style="style_2">[belati]</span></p>
+<p begin="5544000000t" end="5558000000t" region="region_1" xml:id="subtitle95"><span style="style_2">[uomo] </span><span style="style_1">Il sindaco si dimette</span></p>
+<p begin="5558800000t" end="5584400000t" region="region_1" xml:id="subtitle96"><span style="style_1">e sto andando ora</span><br/><span style="style_1">alla riunione del Consiglio.</span></p>
+<p begin="5585200000t" end="5594000000t" region="region_1" xml:id="subtitle97"><span style="style_2">Quindi?</span></p>
+<p begin="5594800000t" end="5632400000t" region="region_1" xml:id="subtitle98"><span style="style_2">[uomo]</span><span style="style_1"> Il piano regolatore è approvato,</span><br/><span style="style_1">ma per sapere chi ci si arricchirà sopra</span></p>
+<p begin="5633200000t" end="5668800000t" region="region_1" xml:id="subtitle99"><span style="style_2">bisogna farlo in 20 giorni, il tempo</span><br/><span style="style_2">che le dimissioni diventano effettive.</span></p>
+<p begin="5669600000t" end="5698000000t" region="region_1" xml:id="subtitle100"><span style="style_2">- Ti devi sbrigare.</span><br/><span style="style_2">- Ti pago per risolvere i problemi.</span></p>
+<p begin="5698800000t" end="5710800000t" region="region_1" xml:id="subtitle101"><span style="style_2">[uomo] </span><span style="style_1">Io sono un tecnico.</span></p>
+<p begin="5711600000t" end="5741200000t" region="region_1" xml:id="subtitle102"><span style="style_2">Posso dire che il tuo progetto</span><br/><span style="style_2">per Ostia rispetta la Legge,</span></p>
+<p begin="5742000000t" end="5774800000t" region="region_1" xml:id="subtitle103"><span style="style_2">ma per farlo, me lo devono mettere</span><br/><span style="style_2">sul tavolo, devono dargli priorità.</span></p>
+<p begin="5779600000t" end="5801200000t" region="region_1" xml:id="subtitle104"><span style="style_2">[voci non udibili]</span></p>
+<p begin="5802000000t" end="5826000000t" region="region_1" xml:id="subtitle105"><span style="style_2">Ti serve... la politica.</span></p>
+<p begin="5844000000t" end="5862800000t" region="region_1" xml:id="subtitle106"><span style="style_2">- Chi?</span><br/><span style="style_2">- Cinaglia.</span></p>
+<p begin="5868400000t" end="5890000000t" region="region_1" xml:id="subtitle107"><span style="style_2">Il presidente della Commissione Edilizia,</span></p>
+<p begin="5890800000t" end="5910400000t" region="region_1" xml:id="subtitle108"><span style="style_2">un rappresentante del popolo,</span></p>
+<p begin="5911200000t" end="5926400000t" region="region_1" xml:id="subtitle109"><span style="style_2">un frustrato con gli ideali.</span></p>
+<p begin="5983600000t" end="6006400000t" region="region_1" xml:id="subtitle110"><span style="style_2">- Che c'è?</span><br/><span style="style_2">- C'è un problema con gli zingari.</span></p>
+<p begin="6032400000t" end="6056400000t" region="region_1" xml:id="subtitle111"><span style="style_2">Va bene, France',</span><br/><span style="style_2">mi pare che si è scaricato.</span></p>
+<p begin="6070400000t" end="6093600000t" region="region_1" xml:id="subtitle112"><span style="style_2">[tv] </span><span style="style_1">Ci troviamo</span><br/><span style="style_1">in Piazza del Campidoglio,</span></p>
+<p begin="6094400000t" end="6124000000t" region="region_1" xml:id="subtitle113"><span style="style_1">alle nostre spalle</span><br/><span style="style_1">sta per iniziare la seduta straordinaria</span></p>
+<p begin="6124800000t" end="6148800000t" region="region_1" xml:id="subtitle114"><span style="style_1">del Consiglio comunale</span><br/><span style="style_1">della Capitale, in cui...</span></p>
+<p begin="6149600000t" end="6158000000t" region="region_1" xml:id="subtitle115"><span style="style_2">Sara!</span></p>
+<p begin="6158800000t" end="6177600000t" region="region_1" xml:id="subtitle116"><span style="style_1">...il sindaco presenterà le dimissioni.</span></p>
+<p begin="6204800000t" end="6214800000t" region="region_1" xml:id="subtitle117"><span style="style_2">D'accordo.</span></p>
+<p begin="6218800000t" end="6252800000t" region="region_1" xml:id="subtitle118"><span style="style_2">[Sara] La Commissione è spaccata e l'altro</span><br/><span style="style_2">consorzio è in mano alla maggioranza.</span></p>
+<p begin="6253600000t" end="6271200000t" region="region_1" xml:id="subtitle119"><span style="style_2">[uomo] Sara!</span><br/><span style="style_2">[Sara] Arrivo.</span></p>
+<p begin="6274800000t" end="6298400000t" region="region_1" xml:id="subtitle120"><span style="style_2">[Sara] Quello che conta è il voto</span><br/><span style="style_2">del Monsignor Theodosiou,</span></p>
+<p begin="6299200000t" end="6312800000t" region="region_1" xml:id="subtitle121"><span style="style_2">sono mesi che ci lavoro.</span></p>
+<p begin="6331600000t" end="6348800000t" region="region_1" xml:id="subtitle122"><span style="style_2">[Sara] Va bene, oggi lo inchioderò.</span></p>
+<p begin="6361200000t" end="6372800000t" region="region_1" xml:id="subtitle123"><span style="style_2">[Sara] La richiamo dopo.</span></p>
+<p begin="6373600000t" end="6425600000t" region="region_1" xml:id="subtitle124"><span style="style_2">[tv] </span><span style="style_1">Bisognerà aspettare i 20 giorni</span><br/><span style="style_1">che la Legge mette a disposizione</span></p>
+<p begin="6426400000t" end="6444400000t" region="region_1" xml:id="subtitle125"><span style="style_1">per rendere effettive le dimissioni,</span></p>
+<p begin="6445200000t" end="6480000000t" region="region_1" xml:id="subtitle126"><span style="style_1">anche se la scelta del sindaco</span><br/><span style="style_1">sembra ormai irrevocabile...</span></p>
+<p begin="6487600000t" end="6497600000t" region="region_1" xml:id="subtitle127"><span style="style_2">Che facciamo?</span></p>
+<p begin="6514800000t" end="6549200000t" region="region_1" xml:id="subtitle128"><span style="style_2">Hanno 20 giorni per chiudere tutto</span><br/><span style="style_2">e per decidere chi costruisce e dove.</span></p>
+<p begin="6577200000t" end="6588400000t" region="region_1" xml:id="subtitle129"><span style="style_2">Abbiamo tempo, Sara.</span></p>
+<p begin="6594800000t" end="6604800000t" region="region_1" xml:id="subtitle130"><span style="style_2">E lo sai bene.</span></p>
+<p begin="6605600000t" end="6639200000t" region="region_1" xml:id="subtitle131"><span style="style_2">Siamo pieni di debiti</span><br/><span style="style_2">e non mi va di finire in bancarotta.</span></p>
+<p begin="6640000000t" end="6658800000t" region="region_1" xml:id="subtitle132"><span style="style_2">Sì, ma a questo punto anche loro.</span></p>
+<p begin="6666400000t" end="6696800000t" region="region_1" xml:id="subtitle133"><span style="style_2">Tra i bilanci in rosso</span><br/><span style="style_2">e i vescovi sotto processo in America...</span></p>
+<p begin="6702400000t" end="6727200000t" region="region_1" xml:id="subtitle134"><span style="style_2">Hanno bisogno di soldi, devono vendere.</span></p>
+<p begin="6739600000t" end="6769200000t" region="region_1" xml:id="subtitle135"><span style="style_2">- Chi viene oggi dal Papa?</span><br/><span style="style_2">- I reali di Svezia.</span></p>
+<p begin="6770000000t" end="6787200000t" region="region_1" xml:id="subtitle136"><span style="style_2">E allora sarà una cosa lunga.</span></p>
+<p begin="6818400000t" end="6833200000t" region="region_1" xml:id="subtitle137"><span style="style_2">Fammi sapere come va la riunione.</span></p>
+<p begin="6847200000t" end="6856000000t" region="region_1" xml:id="subtitle138"><span style="style_2">Scappo.</span></p>
+<p begin="6869600000t" end="6880000000t" region="region_1" xml:id="subtitle139"><span style="style_2">Tranquillo.</span></p>
+<p begin="6923200000t" end="6936000000t" region="region_1" xml:id="subtitle140"><span style="style_2">[brusio]</span></p>
+<p begin="6949600000t" end="6959600000t" region="region_1" xml:id="subtitle141"><span style="style_2">Cinaglia!</span></p>
+<p begin="6970000000t" end="7004800000t" region="region_1" xml:id="subtitle142"><span style="style_2">Ho sentito dire che il suo partito</span><br/><span style="style_2">vuole dare un segnale di svolta.</span></p>
+<p begin="7005600000t" end="7046000000t" region="region_1" xml:id="subtitle143"><span style="style_2">Facce nuove in Campidoglio.</span><br/><span style="style_2">Sono anni che lei sta in Consiglio, no?</span></p>
+<p begin="7050800000t" end="7083200000t" region="region_1" xml:id="subtitle144"><span style="style_2">- Ho sempre preso parecchi voti.</span><br/><span style="style_2">- Lo so bene.</span></p>
+<p begin="7093200000t" end="7115600000t" region="region_1" xml:id="subtitle145"><span style="style_2">Quello che le sto dicendo</span><br/><span style="style_2">è che stavolta, però,</span></p>
+<p begin="7116400000t" end="7142400000t" region="region_1" xml:id="subtitle146"><span style="style_2">rischia di rimanere fuori</span><br/><span style="style_2">dalle liste dei candidati.</span></p>
+<p begin="7148000000t" end="7161600000t" region="region_1" xml:id="subtitle147"><span style="style_2">Rischia di restare a casa.</span></p>
+<p begin="7162400000t" end="7189600000t" region="region_1" xml:id="subtitle148"><span style="style_2">Fortunatamente questo</span><br/><span style="style_2">non la riguarda, no, Finucci?</span></p>
+<p begin="7190400000t" end="7205200000t" region="region_1" xml:id="subtitle149"><span style="style_2">Ha ragione, ma mi dia retta,</span></p>
+<p begin="7206000000t" end="7229600000t" region="region_1" xml:id="subtitle150"><span style="style_2">gli anni qua dentro</span><br/><span style="style_2">non si buttano via così.</span></p>
+<p begin="7230400000t" end="7263200000t" region="region_1" xml:id="subtitle151"><span style="style_2">Lei dovrebbe avere un incarico</span><br/><span style="style_2">più importante di quello che ha,</span></p>
+<p begin="7264000000t" end="7277200000t" region="region_1" xml:id="subtitle152"><span style="style_2">un assessorato...</span></p>
+<p begin="7291600000t" end="7322000000t" region="region_1" xml:id="subtitle153"><span style="style_2">Ne parli col sindaco</span><br/><span style="style_2">o con qualcuno che conta veramente.</span></p>
+<p begin="7322800000t" end="7333200000t" region="region_1" xml:id="subtitle154"><span style="style_2">La sua ex moglie.</span></p>
+<p begin="7369200000t" end="7378000000t" region="region_1" xml:id="subtitle155"><span style="style_2">Arrivederci.</span></p>
+<p begin="7464800000t" end="7480400000t" region="region_1" xml:id="subtitle156"><span style="style_2">[uomo] Signori!</span></p>
+<p begin="7481200000t" end="7520800000t" region="region_1" xml:id="subtitle157"><span style="style_2">Signori consiglieri,</span><br/><span style="style_2">un attimo di silenzio, per favore,</span></p>
+<p begin="7521600000t" end="7552000000t" region="region_1" xml:id="subtitle158"><span style="style_2">il sindaco sta facendo il suo ingresso.</span></p>
+<p begin="7727600000t" end="7750800000t" region="region_1" xml:id="subtitle159"><span style="style_2">[ragazzo in sinti] Spadi'!</span><br/><span style="style_2">Sei pronto per stasera?</span></p>
+<p begin="7760800000t" end="7769600000t" region="region_1" xml:id="subtitle160"><span style="style_2">Auguri.</span></p>
+<p begin="7775200000t" end="7797600000t" region="region_1" xml:id="subtitle161"><span style="style_2">[ragazzo in sinti]</span><br/><span style="style_2">Ho sentito che è molto bella.</span></p>
+<p begin="7832000000t" end="7857200000t" region="region_1" xml:id="subtitle162"><span style="style_2">Hai finito, Spadi'? Eh?</span></p>
+<p begin="7876800000t" end="7899600000t" region="region_1" xml:id="subtitle163"><span style="style_2">- Che vuoi?</span><br/><span style="style_2">- Va' con lui.</span></p>
+<p begin="7908800000t" end="7932000000t" region="region_1" xml:id="subtitle164"><span style="style_2">- Dove?</span><br/><span style="style_2">- Vai con lui.</span></p>
+<p begin="7996000000t" end="8011600000t" region="region_1" xml:id="subtitle165"><span style="style_2">- Che c'è?</span><br/><span style="style_2">- Vieni fuori.</span></p>
+<p begin="8160000000t" end="8168800000t" region="region_1" xml:id="subtitle166"><span style="style_2">[in sinti] Vai.</span></p>
+<p begin="8178400000t" end="8194800000t" region="region_1" xml:id="subtitle167"><span style="style_2">Improvvisatona, eh?</span></p>
+<p begin="8229200000t" end="8243200000t" region="region_1" xml:id="subtitle168"><span style="style_2">Entra, oggi è un giorno di festa.</span></p>
+<p begin="8244000000t" end="8265600000t" region="region_1" xml:id="subtitle169"><span style="style_2">Vieni a prendere un caffè,</span><br/><span style="style_2">mio fratello si fidanza.</span></p>
+<p begin="8266400000t" end="8274800000t" region="region_1" xml:id="subtitle170"><span style="style_2">Stiamo bene qua.</span></p>
+<p begin="8281200000t" end="8297200000t" region="region_1" xml:id="subtitle171"><span style="style_2">Non sono venuto per gli auguri.</span></p>
+<p begin="8306800000t" end="8343600000t" region="region_1" xml:id="subtitle172"><span style="style_2">Hai mandato un coglione a rompere il cazzo</span><br/><span style="style_2">a un locale degli Adami ieri sera, eh?</span></p>
+<p begin="8355200000t" end="8372800000t" region="region_1" xml:id="subtitle173"><span style="style_2">Che c'è? Ti vuoi allargare?</span></p>
+<p begin="8373600000t" end="8393600000t" region="region_1" xml:id="subtitle174"><span style="style_2">Mica sono zone tue.</span></p>
+<p begin="8394400000t" end="8410400000t" region="region_1" xml:id="subtitle175"><span style="style_2">Tutta Roma è zona mia.</span></p>
+<p begin="8439200000t" end="8463600000t" region="region_1" xml:id="subtitle176"><span style="style_2">Boris è un pischello,</span><br/><span style="style_2">stava lì per divertirsi.</span></p>
+<p begin="8464400000t" end="8489200000t" region="region_1" xml:id="subtitle177"><span style="style_2">Sono 'sti cazzo di Adami</span><br/><span style="style_2">che hanno il minimo alto.</span></p>
+<p begin="8490000000t" end="8512000000t" region="region_1" xml:id="subtitle178"><span style="style_2">Vai a domandare a loro</span><br/><span style="style_2">come sono andate le cose.</span></p>
+<p begin="8517600000t" end="8536000000t" region="region_1" xml:id="subtitle179"><span style="style_2">Forse tu non capisci bene l'italiano.</span></p>
+<p begin="8541200000t" end="8571200000t" region="region_1" xml:id="subtitle180"><span style="style_2">Io il sinti non lo parlo</span><br/><span style="style_2">e neanche m'interessa di impararlo.</span></p>
+<p begin="8581600000t" end="8621200000t" region="region_1" xml:id="subtitle181"><span style="style_2">È la prima e l'ultima volta che vengo</span><br/><span style="style_2">in questo posto di merda a dirtelo.</span></p>
+<p begin="8622000000t" end="8653600000t" region="region_1" xml:id="subtitle182"><span style="style_2">Attento a fare scoppiare la guerra.</span><br/><span style="style_2">La perdi!</span></p>
+<p begin="8661200000t" end="8672000000t" region="region_1" xml:id="subtitle183"><span style="style_2">E lo sai.</span></p>
+<p begin="8677600000t" end="8716800000t" region="region_1" xml:id="subtitle184"><span style="style_2">Sì, ma l'offesa a mio cugino rimane</span><br/><span style="style_2">e quello bisogna calmarlo, che dici?</span></p>
+<p begin="8730400000t" end="8746000000t" region="region_1" xml:id="subtitle185"><span style="style_2">Vedo che sei svelto a capire.</span></p>
+<p begin="8763600000t" end="8784000000t" region="region_1" xml:id="subtitle186"><span style="style_2">Quanto ti devono dare</span><br/><span style="style_2">per chiudere 'sta storia?</span></p>
+<p begin="8885600000t" end="8911600000t" region="region_1" xml:id="subtitle187"><span style="style_2">La situazione</span><br/><span style="style_2">del nostro bilancio è critica,</span></p>
+<p begin="8917600000t" end="8946400000t" region="region_1" xml:id="subtitle188"><span style="style_2">ma noi siamo chiamati</span><br/><span style="style_2">a dare fondamento alla speranza.</span></p>
+<p begin="8955200000t" end="8985200000t" region="region_1" xml:id="subtitle189"><span style="style_2">L'offerta di cui ti parlavo</span><br/><span style="style_2">per i nostri terreni di Ostia</span></p>
+<p begin="8986000000t" end="9013600000t" region="region_1" xml:id="subtitle190"><span style="style_2">ricevuta dal Consorzio Specchio Azzurro,</span></p>
+<p begin="9014400000t" end="9042800000t" region="region_1" xml:id="subtitle191"><span style="style_2">è importante proprio perché</span><br/><span style="style_2">può dare fondamento</span></p>
+<p begin="9047600000t" end="9104800000t" region="region_1" xml:id="subtitle192"><span style="style_2">alla speranza di risanare</span><br/><span style="style_2">almeno in parte il nostro bilancio.</span></p>
+<p begin="9114400000t" end="9127600000t" region="region_1" xml:id="subtitle193"><span style="style_2">[Theodosiou] Cosimo, è vero,</span></p>
+<p begin="9128400000t" end="9150400000t" region="region_1" xml:id="subtitle194"><span style="style_2">noi, però, dobbiamo sapere a chi vendiamo.</span></p>
+<p begin="9151200000t" end="9178000000t" region="region_1" xml:id="subtitle195"><span style="style_2">Io voglio che le nostre vendite</span><br/><span style="style_2">siano cristalline.</span></p>
+<p begin="9209600000t" end="9228400000t" region="region_1" xml:id="subtitle196"><span style="style_2">Lei è il nostro revisore dei conti.</span></p>
+<p begin="9229200000t" end="9250800000t" region="region_1" xml:id="subtitle197"><span style="style_2">Allora, spieghi lei, Dr.ssa Monaschi,</span></p>
+<p begin="9251600000t" end="9287200000t" region="region_1" xml:id="subtitle198"><span style="style_2">che a volte è difficile</span><br/><span style="style_2">dire di no a certe offerte.</span></p>
+<p begin="9288000000t" end="9318400000t" region="region_1" xml:id="subtitle199"><span style="style_2">Eminenza, la nostra situazione</span><br/><span style="style_2">di bilancio è molto critica,</span></p>
+<p begin="9319200000t" end="9349600000t" region="region_1" xml:id="subtitle200"><span style="style_2">ma... condivido le preoccupazioni</span><br/><span style="style_2">di Monsignor Theodosiou.</span></p>
+<p begin="9350400000t" end="9365200000t" region="region_1" xml:id="subtitle201"><span style="style_2">Ascolti, dottoressa.</span></p>
+<p begin="9375600000t" end="9415200000t" region="region_1" xml:id="subtitle202"><span style="style_2">Io voglio che ognuno di noi</span><br/><span style="style_2">pensi bene a cosa è meglio per la Chiesa.</span></p>
+<p begin="9424000000t" end="9454000000t" region="region_1" xml:id="subtitle203"><span style="style_2">E per pensare bene</span><br/><span style="style_2">è necessario prendersi delle pause.</span></p>
+<p begin="9470000000t" end="9489200000t" region="region_1" xml:id="subtitle204"><span style="style_2">La riunione è aggiornata, fratelli.</span></p>
+<p begin="9606000000t" end="9621200000t" region="region_1" xml:id="subtitle205"><span style="style_2">Monsignore, mi scusi.</span></p>
+<p begin="9626800000t" end="9662800000t" region="region_1" xml:id="subtitle206"><span style="style_2">Penso sia il caso che la pausa</span><br/><span style="style_2">che ha chiesto non sia troppo lunga.</span></p>
+<p begin="9673600000t" end="9696800000t" region="region_1" xml:id="subtitle207"><span style="style_2">- Il sindaco si è appena dimesso e...</span><br/><span style="style_2">- Lo so.</span></p>
+<p begin="9709200000t" end="9737600000t" region="region_1" xml:id="subtitle208"><span style="style_2">Ma come ha detto anche lei,</span><br/><span style="style_2">bisogna valutare con molta attenzione</span></p>
+<p begin="9738400000t" end="9751200000t" region="region_1" xml:id="subtitle209"><span style="style_2">la società a cui vendiamo.</span></p>
+<p begin="9767200000t" end="9802800000t" region="region_1" xml:id="subtitle210"><span style="style_2">Sia il Consorzio che la Edilcigno</span><br/><span style="style_2">di cui fa parte suo marito.</span></p>
+<p begin="9819200000t" end="9829200000t" region="region_1" xml:id="subtitle211"><span style="style_2">Certo.</span></p>
+<p begin="9853600000t" end="9864400000t" region="region_1" xml:id="subtitle212"><span style="style_2">Magari...</span></p>
+<p begin="9869200000t" end="9880400000t" region="region_1" xml:id="subtitle213"><span style="style_2">una di quelle...</span></p>
+<p begin="9886800000t" end="9924800000t" region="region_1" xml:id="subtitle214"><span style="style_2">serate senza pensieri può aiutarla</span><br/><span style="style_2">a velocizzare queste pratiche.</span></p>
+<p begin="10042800000t" end="10058400000t" region="region_1" xml:id="subtitle215"><span style="style_2">Vogliamo fare stasera?</span></p>
+<p begin="10059200000t" end="10072800000t" region="region_1" xml:id="subtitle216"><span style="style_2">Stasera?</span></p>
+<p begin="10083600000t" end="10094400000t" region="region_1" xml:id="subtitle217"><span style="style_2">Perché no?</span></p>
+<p begin="10111600000t" end="10125200000t" region="region_1" xml:id="subtitle218"><span style="style_2">Mi fa sapere lei?</span></p>
+<p begin="10142400000t" end="10153600000t" region="region_1" xml:id="subtitle219"><span style="style_2">Ci penso io.</span></p>
+<p begin="10252400000t" end="10285200000t" region="region_1" xml:id="subtitle220"><span style="style_2">[voci non udibili]</span></p>
+<p begin="10382400000t" end="10398399999t" region="region_1" xml:id="subtitle221"><span style="style_2">- Hai messo lo zucchero?</span><br/><span style="style_2">- Sì.</span></p>
+<p begin="10424400000t" end="10440000000t" region="region_1" xml:id="subtitle222"><span style="style_2">Hai visto tuo padre, sì?</span></p>
+<p begin="10451600000t" end="10465999999t" region="region_1" xml:id="subtitle223"><span style="style_2">Lo schiavo del Samurai.</span></p>
+<p begin="10466800000t" end="10485600000t" region="region_1" xml:id="subtitle224"><span style="style_2">Almeno è schiavo di uno potente.</span></p>
+<p begin="10486400000t" end="10508000000t" region="region_1" xml:id="subtitle225"><span style="style_2">Oh, ma che cazzo hai fatto?</span></p>
+<p begin="10522000000t" end="10546800000t" region="region_1" xml:id="subtitle226"><span style="style_2">- Niente. Che ho fatto?</span><br/><span style="style_2">- Hai menato un Anacleti?</span></p>
+<p begin="10547600000t" end="10569200000t" region="region_1" xml:id="subtitle227"><span style="style_2">Mo te li dice Samurai</span><br/><span style="style_2">i cazzi di tuo figlio?</span></p>
+<p begin="10570000000t" end="10595600000t" region="region_1" xml:id="subtitle228"><span style="style_2">No, mi dice che sei un coglione,</span><br/><span style="style_2">quello che dice tutta Roma.</span></p>
+<p begin="10596400000t" end="10619200000t" region="region_1" xml:id="subtitle229"><span style="style_2">- Stavano in un locale nostro, papà.</span><br/><span style="style_2">- Ecco.</span></p>
+<p begin="10620000000t" end="10648000000t" region="region_1" xml:id="subtitle230"><span style="style_2">- Mo ha capito che non lo può fare.</span><br/><span style="style_2">- No, invece tu adesso vai lì,</span></p>
+<p begin="10648800000t" end="10670800000t" region="region_1" xml:id="subtitle231"><span style="style_2">gli vai a chiedere scusa</span><br/><span style="style_2">e gli porti i soldi!</span></p>
+<p begin="10671600000t" end="10699200000t" region="region_1" xml:id="subtitle232"><span style="style_2">I tuoi, per la precisione,</span><br/><span style="style_2">quelli che prendi dalla roba dei Cancelli.</span></p>
+<p begin="10700000000t" end="10730400000t" region="region_1" xml:id="subtitle233"><span style="style_2">Ma stai zitto? Il Samurai parla</span><br/><span style="style_2">e tu apri la bocca! Sei un pupazzo!</span></p>
+<p begin="10731200000t" end="10746400000t" region="region_1" xml:id="subtitle234"><span style="style_2">- Testa di cazzo!</span><br/><span style="style_2">- Stai buono.</span></p>
+<p begin="10747200000t" end="10759600000t" region="region_1" xml:id="subtitle235"><span style="style_2">Vai di là, per favore?</span></p>
+<p begin="10760400000t" end="10774400000t" region="region_1" xml:id="subtitle236"><span style="style_2">Stai calmo.</span></p>
+<p begin="10809600000t" end="10827600000t" region="region_1" xml:id="subtitle237"><span style="style_2">Guarda che spettacolo questa!</span></p>
+<p begin="10828400000t" end="10841200000t" region="region_1" xml:id="subtitle238"><span style="style_2">Dodici cilindri.</span></p>
+<p begin="10850400000t" end="10882400000t" region="region_1" xml:id="subtitle239"><span style="style_2">Tuo fratello sta sbroccando, Spadi',</span><br/><span style="style_2">non ci sta più col cervello.</span></p>
+<p begin="10887600000t" end="10925200000t" region="region_1" xml:id="subtitle240"><span style="style_2">Col fatto che ti sposi con una Sale,</span><br/><span style="style_2">è convinto che ci possiamo allargare.</span></p>
+<p begin="10926000000t" end="10962000000t" region="region_1" xml:id="subtitle241"><span style="style_2">Mi ha mandato al locale degli Adami,</span><br/><span style="style_2">così, per vedere come reagivano.</span></p>
+<p begin="10977200000t" end="10991200000t" region="region_1" xml:id="subtitle242"><span style="style_2">Guarda qua.</span></p>
+<p begin="10992000000t" end="11009200000t" region="region_1" xml:id="subtitle243"><span style="style_2">Ma sei contento? Sì?</span></p>
+<p begin="11023200000t" end="11050000000t" region="region_1" xml:id="subtitle244"><span style="style_2">Devi scegliere una macchina</span><br/><span style="style_2">di un certo stile, Spadi'.</span></p>
+<p begin="11056000000t" end="11082400000t" region="region_1" xml:id="subtitle245"><span style="style_2">Alla fine 'sta Angelica</span><br/><span style="style_2">deve essere tua per tutta la vita, no?</span></p>
+<p begin="11088400000t" end="11102000000t" region="region_1" xml:id="subtitle246"><span style="style_2">Tie', oh!</span></p>
+<p begin="11112800000t" end="11136800000t" region="region_1" xml:id="subtitle247"><span style="style_2">Ti presenti con una di queste...</span></p>
+<p begin="11137600000t" end="11158000000t" region="region_1" xml:id="subtitle248"><span style="style_2">Ti casca ai piedi.</span></p>
+<p begin="11174000000t" end="11187200000t" region="region_1" xml:id="subtitle249"><span style="style_2">[bussano]</span></p>
+<p begin="11188000000t" end="11208000000t" region="region_1" xml:id="subtitle250"><span style="style_2">[uomo] Lele?</span></p>
+<p begin="11217200000t" end="11240000000t" region="region_1" xml:id="subtitle251"><span style="style_2">Sempre due ore dentro a 'sto bagno stai.</span></p>
+<p begin="11246000000t" end="11275600000t" region="region_1" xml:id="subtitle252"><span style="style_2">- Papà, hai fatto colazione?</span><br/><span style="style_2">- Che hai fatto al labbro?</span></p>
+<p begin="11276400000t" end="11296400000t" region="region_1" xml:id="subtitle253"><span style="style_2">Niente, dai. Fammi andare che è tardi.</span></p>
+<p begin="11325600000t" end="11349600000t" region="region_1" xml:id="subtitle254"><span style="style_2">Che hai stamattina? Ti vedo nervoso.</span></p>
+<p begin="11353600000t" end="11365600000t" region="region_1" xml:id="subtitle255"><span style="style_2">È successo qualcosa?</span></p>
+<p begin="11370400000t" end="11380400000t" region="region_1" xml:id="subtitle256"><span style="style_2">No, niente, pa'.</span></p>
+<p begin="11381200000t" end="11406800000t" region="region_1" xml:id="subtitle257"><span style="style_2">- Problemi all'università?</span><br/><span style="style_2">- No, tranquillo.</span></p>
+<p begin="11407600000t" end="11421200000t" region="region_1" xml:id="subtitle258"><span style="style_2">Dai che manca poco!</span></p>
+<p begin="11439600000t" end="11456000000t" region="region_1" xml:id="subtitle259"><span style="style_2">Ti aspetto da Gianni?</span></p>
+<p begin="11466400000t" end="11474800000t" region="region_1" xml:id="subtitle260"><span style="style_2">Sì.</span></p>
+<p begin="11475600000t" end="11490000000t" region="region_1" xml:id="subtitle261"><span style="style_2">Scusa, sto in ritardo.</span></p>
+<p begin="11519600000t" end="11528400000t" region="region_1" xml:id="subtitle262"><span style="style_2">Ciao!</span></p>
+<p begin="11536000000t" end="11544400000t" region="region_1" xml:id="subtitle263"><span style="style_2">Ciao.</span></p>
+<p begin="11545200000t" end="11555600000t" region="region_1" xml:id="subtitle264"><span style="style_2">[porta che si chiude]</span></p>
+<p begin="11655200000t" end="11663600000t" region="region_1" xml:id="subtitle265"><span style="style_2">Sì.</span></p>
+<p begin="11668800000t" end="11681200000t" region="region_1" xml:id="subtitle266"><span style="style_2">Mi devi aiutare, Marco.</span></p>
+<p begin="11688400000t" end="11725600000t" region="region_1" xml:id="subtitle267"><span style="style_2">Ho fatto un casino. Ho fatto incazzare</span><br/><span style="style_2">uno grosso e gli devo dare 20.000 euro.</span></p>
+<p begin="11731600000t" end="11744800000t" region="region_1" xml:id="subtitle268"><span style="style_2">Oggi, ti prego!</span></p>
+<p begin="11776800000t" end="11788000000t" region="region_1" xml:id="subtitle269"><span style="style_2">Marco?</span></p>
+<p begin="11803600000t" end="11817600000t" region="region_1" xml:id="subtitle270"><span style="style_2">Cazzo!</span></p>
+<p begin="11828000000t" end="11842400000t" region="region_1" xml:id="subtitle271"><span style="style_2">'Fanculo!</span></p>
+<p begin="11928400000t" end="11946400000t" region="region_1" xml:id="subtitle272"><span style="style_2">[squilli di cellulare]</span></p>
+<p begin="12054800000t" end="12065600000t" region="region_1" xml:id="subtitle273"><span style="style_2">Ehi, Sara!</span></p>
+<p begin="12071200000t" end="12080000000t" region="region_1" xml:id="subtitle274"><span style="style_2">Come stai?</span></p>
+<p begin="12116000000t" end="12125600000t" region="region_1" xml:id="subtitle275"><span style="style_2">Ehm...</span></p>
+<p begin="12134400000t" end="12150400000t" region="region_1" xml:id="subtitle276"><span style="style_2">Oggi sto un po' incasinato, però...</span></p>
+<p begin="12159600000t" end="12171200000t" region="region_1" xml:id="subtitle277"><span style="style_2">Però dai, ce la potrei fare.</span></p>
+<p begin="12202400000t" end="12215600000t" region="region_1" xml:id="subtitle278"><span style="style_2">Dove ci vediamo?</span></p>
+<p begin="12240000000t" end="12259200000t" region="region_1" xml:id="subtitle279"><span style="style_2">Ok, a dopo.</span></p>
+<p begin="12268400000t" end="12278800000t" region="region_1" xml:id="subtitle280"><span style="style_2">Ciao.</span></p>
+<p begin="12463600000t" end="12477600000t" region="region_1" xml:id="subtitle281"><span style="style_2">Presidente Cinaglia?</span></p>
+<p begin="12516000000t" end="12536000000t" region="region_1" xml:id="subtitle282"><span style="style_2">Avrei bisogno di un minuto del suo tempo.</span></p>
+<p begin="12570400000t" end="12581600000t" region="region_1" xml:id="subtitle283"><span style="style_2">Cosa fa?</span></p>
+<p begin="12582400000t" end="12608000000t" region="region_1" xml:id="subtitle284"><span style="style_2">Non è neanche curioso</span><br/><span style="style_2">di sentire cosa ho da dirle?</span></p>
+<p begin="12613200000t" end="12623200000t" region="region_1" xml:id="subtitle285"><span style="style_2">No.</span></p>
+<p begin="12625200000t" end="12648400000t" region="region_1" xml:id="subtitle286"><span style="style_2">Io da lei non voglio sentire niente.</span><br/><span style="style_2">Arrivederci.</span></p>
+<p begin="13305200000t" end="13327600000t" region="region_1" xml:id="subtitle287"><span style="style_2">Un politico che prende l'autobus.</span></p>
+<p begin="13356000000t" end="13386800000t" region="region_1" xml:id="subtitle288"><span style="style_2">Di solito, ci salite</span><br/><span style="style_2">in campagna elettorale a caccia di voti.</span></p>
+<p begin="13403600000t" end="13417600000t" region="region_1" xml:id="subtitle289"><span style="style_2">Io lo prendo tutti i giorni.</span></p>
+<p begin="13448800000t" end="13472400000t" region="region_1" xml:id="subtitle290"><span style="style_2">Perché lei è</span><br/><span style="style_2">un vero rappresentante del popolo.</span></p>
+<p begin="13473200000t" end="13504800000t" region="region_1" xml:id="subtitle291"><span style="style_2">Esatto.</span><br/><span style="style_2">Solo che non rappresento quelli come lei.</span></p>
+<p begin="13505600000t" end="13515600000t" region="region_1" xml:id="subtitle292"><span style="style_2">Dice?</span></p>
+<p begin="13524000000t" end="13551600000t" region="region_1" xml:id="subtitle293"><span style="style_2">- Pensi che io posso anche averla votata.</span><br/><span style="style_2">- Lo escludo.</span></p>
+<p begin="13570400000t" end="13592000000t" region="region_1" xml:id="subtitle294"><span style="style_2">Roma ha bisogno di politici come lei.</span></p>
+<p begin="13603200000t" end="13635600000t" region="region_1" xml:id="subtitle295"><span style="style_2">Politici che stanno in mezzo alla gente</span><br/><span style="style_2">e amano questa città.</span></p>
+<p begin="13726400000t" end="13762000000t" region="region_1" xml:id="subtitle296"><span style="style_2">Vanno valorizzati questi uomini,</span><br/><span style="style_2">perché ce ne sono sempre di meno.</span></p>
+<p begin="13770000000t" end="13796000000t" region="region_1" xml:id="subtitle297"><span style="style_2">Certo. E lei sa come valorizzarli.</span></p>
+<p begin="13810000000t" end="13821200000t" region="region_1" xml:id="subtitle298"><span style="style_2">Ma in cambio?</span></p>
+<p begin="13832000000t" end="13840400000t" region="region_1" xml:id="subtitle299"><span style="style_2">Cosa vuole?</span></p>
+<p begin="13856400000t" end="13874800000t" region="region_1" xml:id="subtitle300"><span style="style_2">Io e lei vogliamo la stessa cosa.</span></p>
+<p begin="13893200000t" end="13906400000t" region="region_1" xml:id="subtitle301"><span style="style_2">Il bene di Roma.</span></p>
+<p begin="14305600000t" end="14325200000t" region="region_1" xml:id="subtitle302"><span style="style_2">- Ehi, come stai?</span><br/><span style="style_2">- Ciao.</span></p>
+<p begin="14362400000t" end="14376800000t" region="region_1" xml:id="subtitle303"><span style="style_2">Mi sei mancata.</span></p>
+<p begin="14406000000t" end="14438800000t" region="region_1" xml:id="subtitle304"><span style="style_2">Senti, Lele, io ti ho chiamato</span><br/><span style="style_2">perché mi serve il tuo aiuto.</span></p>
+<p begin="14446400000t" end="14476400000t" region="region_1" xml:id="subtitle305"><span style="style_2">Devo organizzare una festa stasera.</span><br/><span style="style_2">Mi devi dare una mano.</span></p>
+<p begin="14493600000t" end="14522800000t" region="region_1" xml:id="subtitle306"><span style="style_2">- Mi hai chiamato per una festa?</span><br/><span style="style_2">- Sì, ma è una cosa importante.</span></p>
+<p begin="14536800000t" end="14568000000t" region="region_1" xml:id="subtitle307"><span style="style_2">- Un ospite particolare a cui tengo molto.</span><br/><span style="style_2">- Ci provo.</span></p>
+<p begin="14568800000t" end="14586000000t" region="region_1" xml:id="subtitle308"><span style="style_2">- Non mi basta un tentativo.</span><br/><span style="style_2">- Sara.</span></p>
+<p begin="14586800000t" end="14610400000t" region="region_1" xml:id="subtitle309"><span style="style_2">- Non mi chiami da tre mesi.</span><br/><span style="style_2">- Dai, Gabriele.</span></p>
+<p begin="14611200000t" end="14627200000t" region="region_1" xml:id="subtitle310"><span style="style_2">Gabriele, per favore.</span></p>
+<p begin="14638000000t" end="14653200000t" region="region_1" xml:id="subtitle311"><span style="style_2">- Va bene.</span><br/><span style="style_2">- Ti prego.</span></p>
+<p begin="14658800000t" end="14681600000t" region="region_1" xml:id="subtitle312"><span style="style_2">Avrai le migliori puttane</span><br/><span style="style_2">e la migliore cocaina di Roma</span></p>
+<p begin="14682400000t" end="14698000000t" region="region_1" xml:id="subtitle313"><span style="style_2">però è l'ultima cosa che faccio per te.</span></p>
+<p begin="14769600000t" end="14801200000t" region="region_1" xml:id="subtitle314"><span style="style_2">[Livia] Guarda come s'è ridotto</span><br/><span style="style_2">'sto posto. Fa schifo.</span></p>
+<p begin="14819600000t" end="14857600000t" region="region_1" xml:id="subtitle315"><span style="style_2">- Ma tu te lo devi immaginare diverso.</span><br/><span style="style_2">- E quanto mi costa immaginarlo diverso?</span></p>
+<p begin="14858400000t" end="14879600000t" region="region_1" xml:id="subtitle316"><span style="style_2">Una piotta o una piotta e mezzo.</span></p>
+<p begin="14927200000t" end="14971600000t" region="region_1" xml:id="subtitle317"><span style="style_2">Tuo padre caccia i soldi per uno zingaro</span><br/><span style="style_2">di merda, ma niente per sistemare qui.</span></p>
+<p begin="14972400000t" end="15008000000t" region="region_1" xml:id="subtitle318"><span style="style_2">Perché non gli proponi un'altra cosa?</span><br/><span style="style_2">Se non te lo vuole dare, non te lo dà.</span></p>
+<p begin="15008800000t" end="15024400000t" region="region_1" xml:id="subtitle319"><span style="style_2">Perché questo era di mamma.</span></p>
+<p begin="15052400000t" end="15071200000t" region="region_1" xml:id="subtitle320"><span style="style_2">Io questo voglio,</span><br/><span style="style_2">non voglio un'altra cosa.</span></p>
+<p begin="15160400000t" end="15183600000t" region="region_1" xml:id="subtitle321"><span style="style_2">Ristorante, discoteca e slot.</span></p>
+<p begin="15184400000t" end="15210000000t" region="region_1" xml:id="subtitle322"><span style="style_2">Con meno di 300.000 euro</span><br/><span style="style_2">non te la cavi, Aurelia'.</span></p>
+<p begin="15227200000t" end="15245600000t" region="region_1" xml:id="subtitle323"><span style="style_2">I conti sono roba tua.</span></p>
+<p begin="15275200000t" end="15300000000t" region="region_1" xml:id="subtitle324"><span style="style_2">Infatti questo posto</span><br/><span style="style_2">devi gestirlo tu, mica io.</span></p>
+<p begin="15312400000t" end="15350000000t" region="region_1" xml:id="subtitle325"><span style="style_2">Facciamo una cosa. Tu chiedi scusa</span><br/><span style="style_2">allo zingaro e io parlo con papà.</span></p>
+<p begin="15356000000t" end="15370800000t" region="region_1" xml:id="subtitle326"><span style="style_2">E vediamo che si può fare.</span></p>
+<p begin="15396800000t" end="15434000000t" region="region_1" xml:id="subtitle327"><span style="style_2">Così avremo una cosa mia e tua</span><br/><span style="style_2">senza quel rompicoglioni di mezzo.</span></p>
+<p begin="15441200000t" end="15462000000t" region="region_1" xml:id="subtitle328"><span style="style_2">Il migliore stabilimento di Ostia.</span></p>
+<p begin="15466400000t" end="15492400000t" region="region_1" xml:id="subtitle329"><span style="style_2">Pareggia 'sta storia e io parlo con papà.</span></p>
+<p begin="15511600000t" end="15536800000t" region="region_1" xml:id="subtitle330"><span style="style_2">Andiamo, va', che sento freddo.</span></p>
+<p begin="15590000000t" end="15608000000t" region="region_1" xml:id="subtitle331"><span style="style_2">Facciamo che prima parli con papà.</span></p>
+<p begin="15608800000t" end="15636800000t" region="region_1" xml:id="subtitle332"><span style="style_2">Se dice di sì,</span><br/><span style="style_2">pareggio la cosa con lo zingaro.</span></p>
+<p begin="15663600000t" end="15687200000t" region="region_1" xml:id="subtitle333"><span style="style_2">Ti ho detto che c'ho freddo, andiamo.</span></p>
+<p begin="15702400000t" end="15741600000t" region="region_1" xml:id="subtitle334"><span style="style_2">[Livia] Facciamo una passerella,</span><br/><span style="style_2">che mi si rovinano le scarpe.</span></p>
+<p begin="15846400000t" end="15866800000t" region="region_1" xml:id="subtitle335"><span style="style_2">[parole non udibili]</span></p>
+<p begin="15969200000t" end="16002800000t" region="region_1" xml:id="subtitle336"><span style="style_2">Ma che cazzo guardi!</span><br/><span style="style_2">Mo vado lì e gli spacco la faccia.</span></p>
+<p begin="16012800000t" end="16041200000t" region="region_1" xml:id="subtitle337"><span style="style_2">Vai. Chi te lo vieta?</span><br/><span style="style_2">L'hai già fatto quando ti ho lasciato, no?</span></p>
+<p begin="16042000000t" end="16058400000t" region="region_1" xml:id="subtitle338"><span style="style_1">-</span><span style="style_2"> "Repetita iuvant."</span><br/><span style="style_2">- A cosa?</span></p>
+<p begin="16059200000t" end="16080400000t" region="region_1" xml:id="subtitle339"><span style="style_2">- Al mio umore.</span><br/><span style="style_2">- Amedeo, che vuoi?</span></p>
+<p begin="16081200000t" end="16102400000t" region="region_1" xml:id="subtitle340"><span style="style_2">- Sapere se il sindaco ci ripenserà.</span><br/><span style="style_2">- No, ha deciso.</span></p>
+<p begin="16103200000t" end="16126000000t" region="region_1" xml:id="subtitle341"><span style="style_2">Il partito ha già scelto</span><br/><span style="style_2">il prossimo candidato?</span></p>
+<p begin="16126800000t" end="16147600000t" region="region_1" xml:id="subtitle342"><span style="style_2">Vuoi farlo tu?</span><br/><span style="style_2">Non hai il profilo e lo sai.</span></p>
+<p begin="16148400000t" end="16164000000t" region="region_1" xml:id="subtitle343"><span style="style_2">- Non lo so, Gabriella.</span><br/><span style="style_2">- Amedeo.</span></p>
+<p begin="16164800000t" end="16196000000t" region="region_1" xml:id="subtitle344"><span style="style_2">Presto ci saranno nuove elezioni.</span><br/><span style="style_2">Voglio che il partito mi sostenga.</span></p>
+<p begin="16196800000t" end="16212800000t" region="region_1" xml:id="subtitle345"><span style="style_2">- L'abbiamo sempre fatto.</span><br/><span style="style_2">- No!</span></p>
+<p begin="16213600000t" end="16224800000t" region="region_1" xml:id="subtitle346"><span style="style_2">Voi mi avete usato.</span></p>
+<p begin="16225600000t" end="16253600000t" region="region_1" xml:id="subtitle347"><span style="style_2">Vi sono serviti i voti delle periferie!</span><br/><span style="style_2">Vi facevano comodo.</span></p>
+<p begin="16254400000t" end="16279600000t" region="region_1" xml:id="subtitle348"><span style="style_2">Poi invece mi avete sbattuto</span><br/><span style="style_2">in una commissione del cazzo.</span></p>
+<p begin="16280400000t" end="16300000000t" region="region_1" xml:id="subtitle349"><span style="style_2">- Non ti ricordavo così ambizioso.</span><br/><span style="style_2">- Non lo sono.</span></p>
+<p begin="16300800000t" end="16331200000t" region="region_1" xml:id="subtitle350"><span style="style_2">Voglio solo portare avanti le mie idee,</span><br/><span style="style_2">che un tempo erano anche le tue.</span></p>
+<p begin="16332000000t" end="16362800000t" region="region_1" xml:id="subtitle351"><span style="style_2">- Dello stronzo lì in fondo, non credo.</span><br/><span style="style_2">- Esattamente cosa vuoi?</span></p>
+<p begin="16377600000t" end="16395200000t" region="region_1" xml:id="subtitle352"><span style="style_2">Voglio essere tra i primi tre della lista</span></p>
+<p begin="16396000000t" end="16423200000t" region="region_1" xml:id="subtitle353"><span style="style_2">e se vinciamo,</span><br/><span style="style_2">l'Assessorato alle Politiche Sociali.</span></p>
+<p begin="16428800000t" end="16465600000t" region="region_1" xml:id="subtitle354"><span style="style_2">Non posso, gli assessori li sceglie</span><br/><span style="style_2">il sindaco, è lui che fa la squadra.</span></p>
+<p begin="16466400000t" end="16482400000t" region="region_1" xml:id="subtitle355"><span style="style_2">Da quand'è che lo fate scegliere?</span></p>
+<p begin="16483200000t" end="16494400000t" region="region_1" xml:id="subtitle356"><span style="style_2">Oh, Amedeo...</span></p>
+<p begin="16520000000t" end="16538000000t" region="region_1" xml:id="subtitle357"><span style="style_2">Tu pensi che io non sono all'altezza.</span></p>
+<p begin="16550000000t" end="16563200000t" region="region_1" xml:id="subtitle358"><span style="style_2">- Vado.</span><br/><span style="style_2">- Perché?</span></p>
+<p begin="16569600000t" end="16605600000t" region="region_1" xml:id="subtitle359"><span style="style_2">Perché? Perché la politica,</span><br/><span style="style_2">quella vera, è l'arte del possibile</span></p>
+<p begin="16606400000t" end="16629600000t" region="region_1" xml:id="subtitle360"><span style="style_2">e tu sei ancora qui</span><br/><span style="style_2">che lotti per l'impossibile.</span></p>
+<p begin="16630400000t" end="16652800000t" region="region_1" xml:id="subtitle361"><span style="style_2">Un povero coglione con degli ideali. Eh?</span></p>
+<p begin="16659600000t" end="16671200000t" region="region_1" xml:id="subtitle362"><span style="style_2">Sono un coglione.</span></p>
+<p begin="16682400000t" end="16695600000t" region="region_1" xml:id="subtitle363"><span style="style_2">Sono un coglione, Gabrie'?</span></p>
+<p begin="16784000000t" end="16814400000t" region="region_1" xml:id="subtitle364"><span style="style_2">Theodosiou ormai non ha più orecchie</span><br/><span style="style_2">che per la Monaschi.</span></p>
+<p begin="16837200000t" end="16852400000t" region="region_1" xml:id="subtitle365"><span style="style_2">Io non ho più potere in Commissione.</span></p>
+<p begin="16865600000t" end="16896400000t" region="region_1" xml:id="subtitle366"><span style="style_2">Devi convincere Theodosiou</span><br/><span style="style_2">a far vendere quei terreni a noi.</span></p>
+<p begin="16897200000t" end="16915200000t" region="region_1" xml:id="subtitle367"><span style="style_2">Dietro 'sto affare</span><br/><span style="style_2">ci sono le famiglie di giù.</span></p>
+<p begin="16916000000t" end="16939600000t" region="region_1" xml:id="subtitle368"><span style="style_2">Con la mafia non si scherza,</span><br/><span style="style_2">lo capisci o no?</span></p>
+<p begin="16945600000t" end="16971200000t" region="region_1" xml:id="subtitle369"><span style="style_2">E vorresti farli entrare a Roma</span><br/><span style="style_2">dalla porta principale?</span></p>
+<p begin="16980000000t" end="17015600000t" region="region_1" xml:id="subtitle370"><span style="style_2">Eminenza, hai riciclato</span><br/><span style="style_2">i loro soldi per 30 anni.</span></p>
+<p begin="17070000000t" end="17084000000t" region="region_1" xml:id="subtitle371"><span style="style_2">La Monaschi.</span></p>
+<p begin="17270400000t" end="17282800000t" region="region_1" xml:id="subtitle372"><span style="style_2">Scusa.</span></p>
+<p begin="17296400000t" end="17315200000t" region="region_1" xml:id="subtitle373"><span style="style_2">Scusa, tu sei Aureliano?</span></p>
+<p begin="17325200000t" end="17351200000t" region="region_1" xml:id="subtitle374"><span style="style_2">- Chi cazzo sei?</span><br/><span style="style_2">- Sergio ti ha chiamato?</span></p>
+<p begin="17356400000t" end="17379200000t" region="region_1" xml:id="subtitle375"><span style="style_2">Ti ho chiesto: "Chi cazzo sei?"</span></p>
+<p begin="17385600000t" end="17403600000t" region="region_1" xml:id="subtitle376"><span style="style_2">Sergio t'ha chiamato o no?</span></p>
+<p begin="17422800000t" end="17431600000t" region="region_1" xml:id="subtitle377"><span style="style_2">Che vuoi?</span></p>
+<p begin="17438800000t" end="17451600000t" region="region_1" xml:id="subtitle378"><span style="style_2">Mi serve la coca.</span></p>
+<p begin="17476000000t" end="17492000000t" region="region_1" xml:id="subtitle379"><span style="style_2">Ti pare che sto lavorando?</span></p>
+<p begin="17496400000t" end="17516400000t" region="region_1" xml:id="subtitle380"><span style="style_2">- No, però immagino che...</span><br/><span style="style_2">- Però un cazzo!</span></p>
+<p begin="17543600000t" end="17563200000t" region="region_1" xml:id="subtitle381"><span style="style_2">Qua se vuoi parlare ti metti i guantoni.</span></p>
+<p begin="17571600000t" end="17590400000t" region="region_1" xml:id="subtitle382"><span style="style_2">- Stai scherzando?</span><br/><span style="style_2">- No.</span></p>
+<p begin="17611600000t" end="17643600000t" region="region_1" xml:id="subtitle383"><span style="style_2">Adria', porta un paio</span><br/><span style="style_2">di guantoni a 'sto ragazzo.</span></p>
+<p begin="17704400000t" end="17712800000t" region="region_1" xml:id="subtitle384"><span style="style_2">[Aureliano] Dai.</span></p>
+<p begin="17713600000t" end="17735600000t" region="region_1" xml:id="subtitle385"><span style="style_2">[Lele] Piano.</span><br/><span style="style_2">[Aureliano] Copriti.</span></p>
+<p begin="17736400000t" end="17761600000t" region="region_1" xml:id="subtitle386"><span style="style_2">[Aureliano] Copriti.</span></p>
+<p begin="17770000000t" end="17791600000t" region="region_1" xml:id="subtitle387"><span style="style_2">Dai, però. Va bene, facciamo così.</span></p>
+<p begin="17792400000t" end="17812000000t" region="region_1" xml:id="subtitle388"><span style="style_2">Facciamo così, dai, forza.</span></p>
+<p begin="17817600000t" end="17845200000t" region="region_1" xml:id="subtitle389"><span style="style_2">Dai. Forza.</span></p>
+<p begin="17846000000t" end="17858800000t" region="region_1" xml:id="subtitle390"><span style="style_2">[Lele urla]</span></p>
+<p begin="17909600000t" end="17923200000t" region="region_1" xml:id="subtitle391"><span style="style_2">Ma guarda, mi ha preso!</span></p>
+<p begin="18040800000t" end="18054800000t" region="region_1" xml:id="subtitle392"><span style="style_2">Mo possiamo parlare.</span></p>
+<p begin="18225200000t" end="18233600000t" region="region_1" xml:id="subtitle393"><span style="style_2">Sara.</span></p>
+<p begin="18234400000t" end="18253200000t" region="region_1" xml:id="subtitle394"><span style="style_2">[parole non udibili]</span></p>
+<p begin="18254000000t" end="18262400000t" region="region_1" xml:id="subtitle395"><span style="style_2">Chi?</span></p>
+<p begin="18263200000t" end="18273200000t" region="region_1" xml:id="subtitle396"><span style="style_2">[parole non udibili]</span></p>
+<p begin="18396000000t" end="18414000000t" region="region_1" xml:id="subtitle397"><span style="style_2">Mi dispiace di averla interrotta.</span></p>
+<p begin="18418400000t" end="18444000000t" region="region_1" xml:id="subtitle398"><span style="style_2">Ma passavo di qui</span><br/><span style="style_2">ed ero curioso di conoscerla.</span></p>
+<p begin="18468000000t" end="18478800000t" region="region_1" xml:id="subtitle399"><span style="style_2">Conoscermi?</span></p>
+<p begin="18486400000t" end="18507200000t" region="region_1" xml:id="subtitle400"><span style="style_2">Beh, ho sentito molto parlare di lei.</span></p>
+<p begin="18513600000t" end="18542400000t" region="region_1" xml:id="subtitle401"><span style="style_2">Del fatto che adesso sta</span><br/><span style="style_2">in quella Commissione del Vaticano.</span></p>
+<p begin="18559600000t" end="18571200000t" region="region_1" xml:id="subtitle402"><span style="style_2">Perché non si siede?</span></p>
+<p begin="18598400000t" end="18628800000t" region="region_1" xml:id="subtitle403"><span style="style_2">- Senta, che cosa vuole da me?</span><br/><span style="style_2">- I terreni di Ostia.</span></p>
+<p begin="18641600000t" end="18679200000t" region="region_1" xml:id="subtitle404"><span style="style_2">Quei 20 ettari che adesso col nuovo</span><br/><span style="style_2">piano regolatore diventeranno edificabili</span></p>
+<p begin="18680000000t" end="18706800000t" region="region_1" xml:id="subtitle405"><span style="style_2">e che il Vaticano</span><br/><span style="style_2">deve solo decidere a chi vendere.</span></p>
+<p begin="18733600000t" end="18755600000t" region="region_1" xml:id="subtitle406"><span style="style_2">Guardi che non sono io</span><br/><span style="style_2">a decidere a chi vendere.</span></p>
+<p begin="18756400000t" end="18775200000t" region="region_1" xml:id="subtitle407"><span style="style_2">Io sono solo un revisore dei conti.</span></p>
+<p begin="18780000000t" end="18809600000t" region="region_1" xml:id="subtitle408"><span style="style_2">- Mi dispiace, ma non posso aiutarla.</span><br/><span style="style_2">- Dr.ssa Monaschi.</span></p>
+<p begin="18863200000t" end="18891600000t" region="region_1" xml:id="subtitle409"><span style="style_2">Scommetto che mentre lei</span><br/><span style="style_2">rivede i conti del Vaticano,</span></p>
+<p begin="18897200000t" end="18932000000t" region="region_1" xml:id="subtitle410"><span style="style_2">quei terreni finiscono</span><br/><span style="style_2">nelle mani della società di suo marito.</span></p>
+<p begin="18949600000t" end="18982000000t" region="region_1" xml:id="subtitle411"><span style="style_2">Roma è una città chiacchierona.</span><br/><span style="style_2">Le voci girano.</span></p>
+<p begin="18993200000t" end="19011600000t" region="region_1" xml:id="subtitle412"><span style="style_2">Vede? Sapevo dove trovarla.</span></p>
+<p begin="19018800000t" end="19037600000t" region="region_1" xml:id="subtitle413"><span style="style_2">E so anche dove ritrovarla.</span></p>
+<p begin="19042800000t" end="19051600000t" region="region_1" xml:id="subtitle414"><span style="style_2">Se serve.</span></p>
+<p begin="19082800000t" end="19093600000t" region="region_1" xml:id="subtitle415"><span style="style_2">Ci pensi su.</span></p>
+<p begin="19102000000t" end="19126000000t" region="region_1" xml:id="subtitle416"><span style="style_2">Mi faccia sapere</span><br/><span style="style_2">quanto vuole per quei terreni.</span></p>
+<p begin="19131600000t" end="19151200000t" region="region_1" xml:id="subtitle417"><span style="style_2">Posso essere molto generoso.</span></p>
+<p begin="19288800000t" end="19299600000t" region="region_1" xml:id="subtitle418"><span style="style_2">Oh, Livie'.</span></p>
+<p begin="19330400000t" end="19347200000t" region="region_1" xml:id="subtitle419"><span style="style_2">Che c'è? Mi devi dire qualcosa?</span></p>
+<p begin="19360400000t" end="19396400000t" region="region_1" xml:id="subtitle420"><span style="style_2">Pa', l'idea di Aureliano di ristrutturare</span><br/><span style="style_2">il chiosco di mamma non è male.</span></p>
+<p begin="19397200000t" end="19434400000t" region="region_1" xml:id="subtitle421"><span style="style_2">Pure tu con 'sta storia di tua madre.</span><br/><span style="style_2">Ragazzi, vi ho detto di lasciarla perdere.</span></p>
+<p begin="19435200000t" end="19468000000t" region="region_1" xml:id="subtitle422"><span style="style_2">Guarda che l'idea è buona.</span><br/><span style="style_2">Ci si possono fare un sacco di soldi.</span></p>
+<p begin="19479200000t" end="19497600000t" region="region_1" xml:id="subtitle423"><span style="style_2">- No.</span><br/><span style="style_2">- Perché?</span></p>
+<p begin="19509600000t" end="19530000000t" region="region_1" xml:id="subtitle424"><span style="style_2">Ragazzino, va'.</span></p>
+<p begin="19586800000t" end="19613600000t" region="region_1" xml:id="subtitle425"><span style="style_2">[sospira]</span></p>
+<p begin="19643200000t" end="19673200000t" region="region_1" xml:id="subtitle426"><span style="style_2">- È roba che interessa a Samurai.</span><br/><span style="style_2">- Samurai?</span></p>
+<p begin="19678000000t" end="19693600000t" region="region_1" xml:id="subtitle427"><span style="style_2">Che se ne fa Samurai?</span></p>
+<p begin="19706400000t" end="19739200000t" region="region_1" xml:id="subtitle428"><span style="style_2">Non è solo la spiaggia, Livie'.</span><br/><span style="style_2">È tutta la zona.</span></p>
+<p begin="19748400000t" end="19776000000t" region="region_1" xml:id="subtitle429"><span style="style_2">Dice che le famiglie del sud</span><br/><span style="style_2">ci vogliono fare un porto.</span></p>
+<p begin="19780400000t" end="19794400000t" region="region_1" xml:id="subtitle430"><span style="style_2">E noi che ci guadagniamo?</span></p>
+<p begin="19795200000t" end="19807200000t" region="region_1" xml:id="subtitle431"><span style="style_2">Come che ci guadagniamo?</span></p>
+<p begin="19815200000t" end="19832400000t" region="region_1" xml:id="subtitle432"><span style="style_2">Ci siamo noi qua, Livia.</span></p>
+<p begin="19838800000t" end="19871200000t" region="region_1" xml:id="subtitle433"><span style="style_2">Se questi davvero ci fanno il porto,</span><br/><span style="style_2">la coca entra, esce.</span></p>
+<p begin="19872000000t" end="19885200000t" region="region_1" xml:id="subtitle434"><span style="style_2">Qualcosa arriva pure a noi, no?</span></p>
+<p begin="19948400000t" end="19966400000t" region="region_1" xml:id="subtitle435"><span style="style_2">Perché non l'hai detto ad Aureliano?</span></p>
+<p begin="19996000000t" end="20021600000t" region="region_1" xml:id="subtitle436"><span style="style_2">Aureliano non è pronto</span><br/><span style="style_2">per sapere certe cose.</span></p>
+<p begin="20027200000t" end="20045600000t" region="region_1" xml:id="subtitle437"><span style="style_2">A me, però, le dici.</span></p>
+<p begin="20063200000t" end="20082000000t" region="region_1" xml:id="subtitle438"><span style="style_2">Tu non sei come tuo fratello.</span></p>
+<p begin="20205600000t" end="20236400000t" region="region_1" xml:id="subtitle439"><span style="style_2">Vedrai che bella figura farai stasera.</span></p>
+<p begin="20250000000t" end="20267600000t" region="region_1" xml:id="subtitle440"><span style="style_2">Devi essere contento.</span></p>
+<p begin="20279600000t" end="20311200000t" region="region_1" xml:id="subtitle441"><span style="style_2">Abbiamo scelto bene.</span><br/><span style="style_2">Angelica è giusta per te.</span></p>
+<p begin="20322400000t" end="20339200000t" region="region_1" xml:id="subtitle442"><span style="style_2">Ti voglio vedere felice, Alberto.</span></p>
+<p begin="20350000000t" end="20364400000t" region="region_1" xml:id="subtitle443"><span style="style_2">Una donna è l'unico modo.</span></p>
+<p begin="20365200000t" end="20388000000t" region="region_1" xml:id="subtitle444"><span style="style_2">- Perché? Chi lo dice?</span><br/><span style="style_2">- Albe'.</span></p>
+<p begin="20416400000t" end="20430000000t" region="region_1" xml:id="subtitle445"><span style="style_2">[in sinti] Lo dico io.</span></p>
+<p begin="20459600000t" end="20490000000t" region="region_1" xml:id="subtitle446"><span style="style_2">[in sinti] Io lo so cosa sei. L'ho capito.</span></p>
+<p begin="20499600000t" end="20510400000t" region="region_1" xml:id="subtitle447"><span style="style_2">E che sono?</span></p>
+<p begin="20519200000t" end="20554800000t" region="region_1" xml:id="subtitle448"><span style="style_2">[in sinti]</span><br/><span style="style_2">Quello che sei, qualsiasi cosa tu sia...</span></p>
+<p begin="20563200000t" end="20578400000t" region="region_1" xml:id="subtitle449"><span style="style_2">non puoi esserlo, qui.</span></p>
+<p begin="20584000000t" end="20620800000t" region="region_1" xml:id="subtitle450"><span style="style_2">[in sinti] Dentro questa casa</span><br/><span style="style_2">e questa famiglia, non puoi.</span></p>
+<p begin="20701599999t" end="20726000000t" region="region_1" xml:id="subtitle451"><span style="style_2">[uomo] Questo è l'incasso della zona nord.</span></p>
+<p begin="20767600000t" end="20782800000t" region="region_1" xml:id="subtitle452"><span style="style_2">[Livia] Poca roba.</span></p>
+<p begin="20851200000t" end="20866000000t" region="region_1" xml:id="subtitle453"><span style="style_2">Ha detto di no, vero?</span></p>
+<p begin="20904000000t" end="20913600000t" region="region_1" xml:id="subtitle454"><span style="style_2">Perché?</span></p>
+<p begin="20934400000t" end="20950400000t" region="region_1" xml:id="subtitle455"><span style="style_2">Dice che non è un buon affare.</span></p>
+<p begin="20992000000t" end="21008800000t" region="region_1" xml:id="subtitle456"><span style="style_2">Certo, è un'idea mia.</span></p>
+<p begin="21024400000t" end="21037200000t" region="region_1" xml:id="subtitle457"><span style="style_2">No, non è per questo.</span></p>
+<p begin="21042800000t" end="21057200000t" region="region_1" xml:id="subtitle458"><span style="style_2">E perché, allora?</span></p>
+<p begin="21068000000t" end="21089200000t" region="region_1" xml:id="subtitle459"><span style="style_2">La storia con gli zingari</span><br/><span style="style_2">si deve risolvere.</span></p>
+<p begin="21134000000t" end="21146800000t" region="region_1" xml:id="subtitle460"><span style="style_2">È importante.</span></p>
+<p begin="21184000000t" end="21199200000t" region="region_1" xml:id="subtitle461"><span style="style_2">Però a me non me ne frega un cazzo.</span></p>
+<p begin="21218000000t" end="21240000000t" region="region_1" xml:id="subtitle462"><span style="style_2">Non lo vuoi fare</span><br/><span style="style_2">perché te l'ha chiesto papà?</span></p>
+<p begin="21244800000t" end="21254800000t" region="region_1" xml:id="subtitle463"><span style="style_2">Fallo per me.</span></p>
+<p begin="21277200000t" end="21296000000t" region="region_1" xml:id="subtitle464"><span style="style_2">Fallo perché te lo chiedo io.</span></p>
+<p begin="21309600000t" end="21318800000t" region="region_1" xml:id="subtitle465"><span style="style_2">Aurelia'?</span></p>
+<p begin="21356800000t" end="21365600000t" region="region_1" xml:id="subtitle466"><span style="style_2">Oh!</span></p>
+<p begin="21395600000t" end="21406800000t" region="region_1" xml:id="subtitle467"><span style="style_2">Mi rispondi?</span></p>
+<p begin="21689600000t" end="21709600000t" region="region_1" xml:id="subtitle468"><span style="style_2">Cento e facciamo tutto con calma.</span></p>
+<p begin="21747600000t" end="21756000000t" region="region_1" xml:id="subtitle469"><span style="style_2">Andiamo.</span></p>
+<p begin="21825200000t" end="21836400000t" region="region_1" xml:id="subtitle470"><span style="style_2">Vaffanculo.</span></p>
+<p begin="21862400000t" end="21885200000t" region="region_1" xml:id="subtitle471"><span style="style_2">- So che stai per laurearti.</span><br/><span style="style_2">- Sì.</span></p>
+<p begin="21891600000t" end="21911600000t" region="region_1" xml:id="subtitle472"><span style="style_2">- Manca la tesi.</span><br/><span style="style_2">- E poi che fai?</span></p>
+<p begin="21912400000t" end="21928800000t" region="region_1" xml:id="subtitle473"><span style="style_2">Boh, mo vediamo.</span></p>
+<p begin="21929600000t" end="21963600000t" region="region_1" xml:id="subtitle474"><span style="style_2">- Fra', che fa dopo la laurea?</span><br/><span style="style_2">- Il concorso in Polizia, no?</span></p>
+<p begin="21964400000t" end="21976800000t" region="region_1" xml:id="subtitle475"><span style="style_2">Il poliziotto?</span></p>
+<p begin="21977600000t" end="21990400000t" region="region_1" xml:id="subtitle476"><span style="style_2">È una vita di merda.</span></p>
+<p begin="21991200000t" end="22006400000t" region="region_1" xml:id="subtitle477"><span style="style_2">Non il poliziotto come me e te.</span></p>
+<p begin="22007200000t" end="22029200000t" region="region_1" xml:id="subtitle478"><span style="style_2">- No?</span><br/><span style="style_2">- Farà il funzionario.</span></p>
+<p begin="22030000000t" end="22042400000t" region="region_1" xml:id="subtitle479"><span style="style_2">- Il funzionario!</span><br/><span style="style_2">- Sì.</span></p>
+<p begin="22043200000t" end="22067600000t" region="region_1" xml:id="subtitle480"><span style="style_2">Scusate, devo andare.</span><br/><span style="style_2">Ciao, Gianni. Grazie.</span></p>
+<p begin="22068400000t" end="22086000000t" region="region_1" xml:id="subtitle481"><span style="style_2">[Gianni] Auguri.</span><br/><span style="style_2">[Lele] Grazie.</span></p>
+<p begin="22086800000t" end="22098000000t" region="region_1" xml:id="subtitle482"><span style="style_2">Ci vediamo.</span></p>
+<p begin="22136400000t" end="22192400000t" region="region_1" xml:id="subtitle483"><span style="style_2">[clacson]</span></p>
+<p begin="22193200000t" end="22232000000t" region="region_1" xml:id="subtitle484"><span style="style_2">[applausi]</span></p>
+<p begin="22297600000t" end="22309200000t" region="region_1" xml:id="subtitle485"><span style="style_2">[parole non udibili]</span></p>
+<p begin="22351600000t" end="22360400000t" region="region_1" xml:id="subtitle486"><span style="style_2">Spadino?</span></p>
+<p begin="22361200000t" end="22377600000t" region="region_1" xml:id="subtitle487"><span style="style_2">[in sinti] Sta arrivando Spadino.</span></p>
+<p begin="22380800000t" end="22389200000t" region="region_1" xml:id="subtitle488"><span style="style_2">[in sinti] Andiamo.</span></p>
+<p begin="22490400000t" end="22504800000t" region="region_1" xml:id="subtitle489"><span style="style_2">[sospira]</span></p>
+<p begin="22536400000t" end="22545600000t" region="region_1" xml:id="subtitle490"><span style="style_2">Oh.</span></p>
+<p begin="22551600000t" end="22562400000t" region="region_1" xml:id="subtitle491"><span style="style_2">Dammene un altro.</span></p>
+<p begin="22563200000t" end="22599200000t" region="region_1" xml:id="subtitle492"><span style="style_2">[uomo] Giovanotto,</span><br/><span style="style_2">siamo al quinto. Vattene a casa.</span></p>
+<p begin="22607200000t" end="22627200000t" region="region_1" xml:id="subtitle493"><span style="style_2">Ti ho detto: "Dammene un altro".</span></p>
+<p begin="23214800000t" end="23253600000t" region="region_1" xml:id="subtitle494"><span style="style_2">[ansima]</span></p>
+<p begin="23458400000t" end="23500400000t" region="region_1" xml:id="subtitle495"><span style="style_2">[ansima]</span></p>
+<p begin="23875600000t" end="23911200000t" region="region_1" xml:id="subtitle496"><span style="style_2">[uomo in sinti] Ma che è, ubriaco?</span></p>
+<p begin="23921600000t" end="23960000000t" region="region_1" xml:id="subtitle497"><span style="style_2">[brusio]</span></p>
+<p begin="24188400000t" end="24212800000t" region="region_1" xml:id="subtitle498"><span style="style_2">[urlando] Dai, canta!</span><br/><span style="style_2">[ragazzo] Dai!</span></p>
+<p begin="24213600000t" end="24225200000t" region="region_1" xml:id="subtitle499"><span style="style_2">[Spadino] Canta!</span></p>
+<p begin="24226000000t" end="24251600000t" region="region_1" xml:id="subtitle500"><span style="style_2">[musica neomelodica]</span></p>
+<p begin="24270000000t" end="24302000000t" region="region_1" xml:id="subtitle501"><span style="style_2">[musica neomelodica e voci confuse]</span></p>
+<p begin="24368000000t" end="24390000000t" region="region_1" xml:id="subtitle502"><span style="style_2">Eh!</span></p>
+<p begin="24396000000t" end="24435200000t" region="region_1" xml:id="subtitle503"><span style="style_1">♪ Tutta la famiglia è riunita</span><br/><span style="style_1">Per 'sta serenata ♪</span></p>
+<p begin="24436000000t" end="24457200000t" region="region_1" xml:id="subtitle504"><span style="style_1">♪ Per te siamo qua ♪</span></p>
+<p begin="24458000000t" end="24468000000t" region="region_1" xml:id="subtitle505"><span style="style_2">[Spadino esulta]</span></p>
+<p begin="24468800000t" end="24522000000t" region="region_1" xml:id="subtitle506"><span style="style_1">♪ Tutta la notte cantiamo</span><br/><span style="style_1">'Sta bella canzone che ho scritto per te ♪</span></p>
+<p begin="24530400000t" end="24559600000t" region="region_1" xml:id="subtitle507"><span style="style_1">♪ Perciò mi devi dire di sì ♪</span></p>
+<p begin="24560400000t" end="24588400000t" region="region_1" xml:id="subtitle508"><span style="style_1">♪ Se no mi fai morire ♪</span></p>
+<p begin="24600000000t" end="24651200000t" region="region_1" xml:id="subtitle509"><span style="style_1">♪ Di te mi sono innamorato</span><br/><span style="style_1">Non farmi aspettare ♪</span></p>
+<p begin="24652000000t" end="24686400000t" region="region_1" xml:id="subtitle510"><span style="style_1">♪ Ma com'è bella questa serenata ♪</span></p>
+<p begin="24687200000t" end="24722800000t" region="region_1" xml:id="subtitle511"><span style="style_1">♪ La sto portando a te</span><br/><span style="style_1">Con tutto il cuore ♪</span></p>
+<p begin="24723600000t" end="24755200000t" region="region_1" xml:id="subtitle512"><span style="style_1">♪ Tutta la famiglia mia si è innamorata ♪</span></p>
+<p begin="24756000000t" end="24784000000t" region="region_1" xml:id="subtitle513"><span style="style_1">♪ Perché tu sei una stella ♪</span></p>
+<p begin="24784800000t" end="24820800000t" region="region_1" xml:id="subtitle514"><span style="style_1">♪ Stanno tutti aspettando domani ♪</span></p>
+<p begin="24821600000t" end="24851600000t" region="region_1" xml:id="subtitle515"><span style="style_1">♪ Questo matrimonio si deve festeggiare ♪</span></p>
+<p begin="24857200000t" end="24887200000t" region="region_1" xml:id="subtitle516"><span style="style_1">♪ Un brillante ti devo regalare ♪</span></p>
+<p begin="24888000000t" end="24911600000t" region="region_1" xml:id="subtitle517"><span style="style_1">♪ Tu mi hai rubato questo cuore ♪</span></p>
+<p begin="24912400000t" end="24935600000t" region="region_1" xml:id="subtitle518"><span style="style_2">[voci confuse]</span></p>
+<p begin="24984400000t" end="25021200000t" region="region_1" xml:id="subtitle519"><span style="style_2">[urla di gioia]</span></p>
+<p begin="25040000000t" end="25058800000t" region="region_1" xml:id="subtitle520"><span style="style_2">[la musica finisce]</span></p>
+<p begin="25073200000t" end="25094800000t" region="region_1" xml:id="subtitle521"><span style="style_2">[voci confuse]</span></p>
+<p begin="25175200000t" end="25194800000t" region="region_1" xml:id="subtitle522"><span style="style_2">[urla di gioia]</span></p>
+<p begin="25206800000t" end="25240000000t" region="region_1" xml:id="subtitle523"><span style="style_2">[uomo] Viva gli sposi!</span></p>
+<p begin="25264400000t" end="25291200000t" region="region_1" xml:id="subtitle524"><span style="style_2">[voci confuse]</span></p>
+<p begin="25363200000t" end="25387200000t" region="region_1" xml:id="subtitle525"><span style="style_2">[urla di gioia]</span></p>
+<p begin="25388000000t" end="25414000000t" region="region_1" xml:id="subtitle526"><span style="style_2">Mi raccomando col parcheggio,</span><br/><span style="style_2">non facciamo il solito casino.</span></p>
+<p begin="25414800000t" end="25424800000t" region="region_1" xml:id="subtitle527"><span style="style_2">Vado subito.</span></p>
+<p begin="25431200000t" end="25464400000t" region="region_1" xml:id="subtitle528"><span style="style_2">Sono contenta che siate venuti</span><br/><span style="style_2">nonostante il poco preavviso,</span></p>
+<p begin="25465200000t" end="25496800000t" region="region_1" xml:id="subtitle529"><span style="style_2">ma chi poteva immaginare</span><br/><span style="style_2">le dimissioni del sindaco proprio oggi?</span></p>
+<p begin="25497600000t" end="25537600000t" region="region_1" xml:id="subtitle530"><span style="style_2">- Contessa, finalmente la rivedo.</span><br/><span style="style_2">- Sandro, carissimo!</span></p>
+<p begin="25542800000t" end="25566800000t" region="region_1" xml:id="subtitle531"><span style="style_2">- Tu devi essere Sara.</span><br/><span style="style_2">- Buonasera.</span></p>
+<p begin="25567600000t" end="25584800000t" region="region_1" xml:id="subtitle532"><span style="style_2">Tutta Roma parla di te.</span></p>
+<p begin="25592400000t" end="25614400000t" region="region_1" xml:id="subtitle533"><span style="style_2">Una donna in Vaticano fa sempre notizia.</span></p>
+<p begin="25626800000t" end="25653200000t" region="region_1" xml:id="subtitle534"><span style="style_2">- Te la rubo un attimo, permetti?</span><br/><span style="style_2">- Prego.</span></p>
+<p begin="25683600000t" end="25716400000t" region="region_1" xml:id="subtitle535"><span style="style_2">Sandro è un bravo ragazzo,</span><br/><span style="style_2">un po' troppo formale,</span></p>
+<p begin="25717200000t" end="25737600000t" region="region_1" xml:id="subtitle536"><span style="style_2">ma tra i Gesuiti e la madre...</span></p>
+<p begin="25746800000t" end="25789200000t" region="region_1" xml:id="subtitle537"><span style="style_2">[sottovoce] Guardali, i ricchi di Roma,</span><br/><span style="style_2">tutti costruttori, palazzinari...</span></p>
+<p begin="25797600000t" end="25816000000t" region="region_1" xml:id="subtitle538"><span style="style_2">- Buonasera.</span><br/><span style="style_2">- Contessa.</span></p>
+<p begin="25820400000t" end="25843600000t" region="region_1" xml:id="subtitle539"><span style="style_2">- Buonasera, avvocato.</span><br/><span style="style_2">- Buonasera.</span></p>
+<p begin="25848800000t" end="25894800000t" region="region_1" xml:id="subtitle540"><span style="style_2">Il sindaco si è dimesso e loro sono lì</span><br/><span style="style_2">a disquisire sul futuro della città.</span></p>
+<p begin="25900400000t" end="25922400000t" region="region_1" xml:id="subtitle541"><span style="style_2">Un branco di lupi attorno a un osso.</span></p>
+<p begin="25946000000t" end="25985600000t" region="region_1" xml:id="subtitle542"><span style="style_2">Non dev'essere facile per una donna</span><br/><span style="style_2">stare in una commissione del genere,</span></p>
+<p begin="25992000000t" end="26022400000t" region="region_1" xml:id="subtitle543"><span style="style_2">dove si decide</span><br/><span style="style_2">sulle vendite e sui soldi del Vaticano.</span></p>
+<p begin="26023200000t" end="26053600000t" region="region_1" xml:id="subtitle544"><span style="style_2">Io sono solo un revisore dei conti,</span><br/><span style="style_2">non ho un ruolo decisionale.</span></p>
+<p begin="26054400000t" end="26082800000t" region="region_1" xml:id="subtitle545"><span style="style_2">A una persona intelligente come te,</span><br/><span style="style_2">basta ascoltare.</span></p>
+<p begin="26087200000t" end="26131200000t" region="region_1" xml:id="subtitle546"><span style="style_2">Lo sa bene tuo marito, che senza di te</span><br/><span style="style_2">non saprebbe come muoversi.</span></p>
+<p begin="26132000000t" end="26170400000t" region="region_1" xml:id="subtitle547"><span style="style_2">Lo sanno benissimo anche gli investitori</span><br/><span style="style_2">che stanno dietro la vostra società,</span></p>
+<p begin="26171200000t" end="26192800000t" region="region_1" xml:id="subtitle548"><span style="style_2">soprattutto in questa situazione.</span></p>
+<p begin="26198400000t" end="26210000000t" region="region_1" xml:id="subtitle549"><span style="style_2">Quale situazione?</span></p>
+<p begin="26210800000t" end="26228000000t" region="region_1" xml:id="subtitle550"><span style="style_2">I terreni di Ostia.</span></p>
+<p begin="26234800000t" end="26253600000t" region="region_1" xml:id="subtitle551"><span style="style_2">Prima li volevano tutti.</span></p>
+<p begin="26254400000t" end="26294400000t" region="region_1" xml:id="subtitle552"><span style="style_2">Adesso c'è una persona che li pretende,</span><br/><span style="style_2">una persona che fa paura a tutta Roma.</span></p>
+<p begin="26300000000t" end="26334800000t" region="region_1" xml:id="subtitle553"><span style="style_2">Per quello che può fare</span><br/><span style="style_2">e soprattutto per quello che può dire.</span></p>
+<p begin="26348800000t" end="26390000000t" region="region_1" xml:id="subtitle554"><span style="style_2">- Credo... di averla incontrata oggi.</span><br/><span style="style_2">- Lo immaginavo.</span></p>
+<p begin="26406000000t" end="26444800000t" region="region_1" xml:id="subtitle555"><span style="style_2">Stai trattando con la persona</span><br/><span style="style_2">che a Roma ha sempre deciso tutto.</span></p>
+<p begin="26469600000t" end="26495200000t" region="region_1" xml:id="subtitle556"><span style="style_2">Sta a te scegliere se passare la mano</span></p>
+<p begin="26501600000t" end="26517200000t" region="region_1" xml:id="subtitle557"><span style="style_2">oppure rischiare.</span></p>
+<p begin="26616000000t" end="26643200000t" region="region_1" xml:id="subtitle558"><span style="style_2">[uomo] Sono arrivati dalla Sicilia,</span><br/><span style="style_2">ma c'è solo il figlio.</span></p>
+<p begin="26789200000t" end="26798000000t" region="region_1" xml:id="subtitle559"><span style="style_2">E tuo padre?</span></p>
+<p begin="26805200000t" end="26814800000t" region="region_1" xml:id="subtitle560"><span style="style_2">Aveva da fare.</span></p>
+<p begin="26844400000t" end="26872400000t" region="region_1" xml:id="subtitle561"><span style="style_2">Ma queste dimissioni del sindaco?</span><br/><span style="style_2">Che significano?</span></p>
+<p begin="26873200000t" end="26898800000t" region="region_1" xml:id="subtitle562"><span style="style_2">Niente, devo solo accelerare i tempi.</span></p>
+<p begin="26904400000t" end="26928000000t" region="region_1" xml:id="subtitle563"><span style="style_2">Però i terreni del Vaticano</span><br/><span style="style_2">ancora non li abbiamo.</span></p>
+<p begin="26932800000t" end="26950400000t" region="region_1" xml:id="subtitle564"><span style="style_2">È solo questione di tempo.</span></p>
+<p begin="26970000000t" end="26982800000t" region="region_1" xml:id="subtitle565"><span style="style_2">Il tempo l'hai avuto.</span></p>
+<p begin="27001600000t" end="27018400000t" region="region_1" xml:id="subtitle566"><span style="style_2">Questo affare l'ho creato io</span></p>
+<p begin="27024000000t" end="27047200000t" region="region_1" xml:id="subtitle567"><span style="style_2">e so come gestire Roma e i suoi tempi.</span></p>
+<p begin="27069200000t" end="27094000000t" region="region_1" xml:id="subtitle568"><span style="style_2">[in siciliano]</span><br/><span style="style_2">Sentito? Il pidocchio ha la tosse!</span></p>
+<p begin="27094800000t" end="27116400000t" region="region_1" xml:id="subtitle569"><span style="style_2">Però si è scordato</span><br/><span style="style_2">che i piccioli sono i nostri.</span></p>
+<p begin="27140400000t" end="27158800000t" region="region_1" xml:id="subtitle570"><span style="style_2">Forse sta diventando vecchio.</span></p>
+<p begin="27175200000t" end="27187600000t" region="region_1" xml:id="subtitle571"><span style="style_2">E si dimentica.</span></p>
+<p begin="27212400000t" end="27234800000t" region="region_1" xml:id="subtitle572"><span style="style_2">Però mio padre dice</span><br/><span style="style_2">che sei un uomo di parola.</span></p>
+<p begin="27243200000t" end="27260800000t" region="region_1" xml:id="subtitle573"><span style="style_2">Tuo padre conosce gli uomini.</span></p>
+<p begin="27274800000t" end="27291200000t" region="region_1" xml:id="subtitle574"><span style="style_2">E allora non lo deludere.</span></p>
+<p begin="27292000000t" end="27300400000t" region="region_1" xml:id="subtitle575"><span style="style_2">Andiamo.</span></p>
+<p begin="27687600000t" end="27724000000t" region="region_1" xml:id="subtitle576"><span style="style_2">Amore. Oggi, di 'sta cosa del sindaco</span><br/><span style="style_2">a scuola ne parlavano tutti.</span></p>
+<p begin="27724800000t" end="27734800000t" region="region_1" xml:id="subtitle577"><span style="style_2">- Sì?</span><br/><span style="style_2">- Sì.</span></p>
+<p begin="27750000000t" end="27770000000t" region="region_1" xml:id="subtitle578"><span style="style_2">Ho pure discusso con la preside.</span></p>
+<p begin="27780000000t" end="27789200000t" region="region_1" xml:id="subtitle579"><span style="style_2">Come mai?</span></p>
+<p begin="27798000000t" end="27826400000t" region="region_1" xml:id="subtitle580"><span style="style_2">Perché due maestre sono malate...</span></p>
+<p begin="27835600000t" end="27859200000t" region="region_1" xml:id="subtitle581"><span style="style_2">e non hanno i soldi per le supplenti.</span></p>
+<p begin="27860000000t" end="27890400000t" region="region_1" xml:id="subtitle582"><span style="style_2">Quindi hanno mandato Fabrizio</span><br/><span style="style_2">in classe coi più grandi,</span></p>
+<p begin="27891200000t" end="27903200000t" region="region_1" xml:id="subtitle583"><span style="style_2">solo che ha fatto casino,</span></p>
+<p begin="27904800000t" end="27924400000t" region="region_1" xml:id="subtitle584"><span style="style_2">mi hanno chiamata</span><br/><span style="style_2">e sono andata a prenderlo.</span></p>
+<p begin="27935600000t" end="27946400000t" region="region_1" xml:id="subtitle585"><span style="style_2">Che c'entra la preside?</span></p>
+<p begin="27959600000t" end="27984000000t" region="region_1" xml:id="subtitle586"><span style="style_2">Dice che i tagli li fa il Comune.</span></p>
+<p begin="27997200000t" end="28032000000t" region="region_1" xml:id="subtitle587"><span style="style_2">Dice di chiedere a te, così magari...</span></p>
+<p begin="28032800000t" end="28060800000t" region="region_1" xml:id="subtitle588"><span style="style_2">Queste cose non le faccio. Lo sai, no?</span><br/><span style="style_2">Non li chiedo i favori.</span></p>
+<p begin="28061600000t" end="28088400000t" region="region_1" xml:id="subtitle589"><span style="style_2">Infatti io lo so, certo, sì.</span></p>
+<p begin="28126400000t" end="28157200000t" region="region_1" xml:id="subtitle590"><span style="style_2">Poi comunque è venuto con me al lavoro.</span><br/><span style="style_2">L'ho portato con me.</span></p>
+<p begin="28204400000t" end="28237200000t" region="region_1" xml:id="subtitle591"><span style="style_2">Male che va, può venire</span><br/><span style="style_2">a fare i profumi con me, no?</span></p>
+<p begin="28252800000t" end="28262800000t" region="region_1" xml:id="subtitle592"><span style="style_2">Certo.</span></p>
+<p begin="28344000000t" end="28356000000t" region="region_1" xml:id="subtitle593"><span style="style_2">[bambino] </span><span style="style_1">Mamma, vieni.</span></p>
+<p begin="28401600000t" end="28416400000t" region="region_1" xml:id="subtitle594"><span style="style_2">- Io vado di là.</span><br/><span style="style_2">- Ora vengo.</span></p>
+<p begin="28622800000t" end="28692400000t" region="region_1" xml:id="subtitle595"><span style="style_2">[voci non udibili]</span></p>
+<p begin="29152000000t" end="29192800000t" region="region_1" xml:id="subtitle596"><span style="style_2">[squilli di cellulare]</span></p>
+<p begin="29210000000t" end="29220800000t" region="region_1" xml:id="subtitle597"><span style="style_2">[rifiuta la chiamata]</span></p>
+<p begin="29456000000t" end="29472800000t" region="region_1" xml:id="subtitle598"><span style="style_2">Quel coglione non viene?</span></p>
+<p begin="29473600000t" end="29520000000t" region="region_1" xml:id="subtitle599"><span style="style_2">[squilli di cellulare]</span></p>
+<p begin="29525600000t" end="29538800000t" region="region_1" xml:id="subtitle600"><span style="style_2">[stridio di gomme]</span></p>
+<p begin="29730000000t" end="29741200000t" region="region_1" xml:id="subtitle601"><span style="style_2">Allora?</span></p>
+<p begin="29894400000t" end="29903200000t" region="region_1" xml:id="subtitle602"><span style="style_2">Tie'.</span></p>
+<p begin="30030000000t" end="30047600000t" region="region_1" xml:id="subtitle603"><span style="style_2">Ti ho fatto un favore.</span></p>
+<p begin="30076400000t" end="30117200000t" region="region_1" xml:id="subtitle604"><span style="style_2">Con questo coso sul naso non senti</span><br/><span style="style_2">'sta puzza di merda che ti porti dietro.</span></p>
+<p begin="30149200000t" end="30164000000t" region="region_1" xml:id="subtitle605"><span style="style_2">La mancia per il servizio.</span></p>
+<p begin="30182800000t" end="30192400000t" region="region_1" xml:id="subtitle606"><span style="style_2">[in sinti] Andiamo.</span></p>
+<p begin="30321600000t" end="30371200000t" region="region_1" xml:id="subtitle607"><span style="style_2">[squilli di cellulare]</span></p>
+<p begin="30372000000t" end="30385600000t" region="region_1" xml:id="subtitle608"><span style="style_2">[rifiuta la chiamata]</span></p>
+<p begin="30386400000t" end="30397600000t" region="region_1" xml:id="subtitle609"><span style="style_2">[campanello]</span></p>
+<p begin="30398400000t" end="30408400000t" region="region_1" xml:id="subtitle610"><span style="style_2">Cazzo.</span></p>
+<p begin="30464000000t" end="30480400000t" region="region_1" xml:id="subtitle611"><span style="style_2">- Buonasera.</span><br/><span style="style_2">- Buonasera.</span></p>
+<p begin="30481200000t" end="30498000000t" region="region_1" xml:id="subtitle612"><span style="style_2">C'è una stanza giù per cambiarvi.</span></p>
+<p begin="30507200000t" end="30516000000t" region="region_1" xml:id="subtitle613"><span style="style_2">Wow!</span></p>
+<p begin="30626800000t" end="30664000000t" region="region_1" xml:id="subtitle614"><span style="style_2">Sergio, quello stronzo dell'amico tuo</span><br/><span style="style_2">non si è presentato e non mi risponde.</span></p>
+<p begin="30672800000t" end="30698400000t" region="region_1" xml:id="subtitle615"><span style="style_2">Non posso aspettare</span><br/><span style="style_2">perché la gente sta arrivando.</span></p>
+<p begin="30711200000t" end="30725200000t" region="region_1" xml:id="subtitle616"><span style="style_2">Trovami una soluzione.</span></p>
+<p begin="30739600000t" end="30756000000t" region="region_1" xml:id="subtitle617"><span style="style_2">Sì, tutto a posto.</span></p>
+<p begin="30763600000t" end="30781600000t" region="region_1" xml:id="subtitle618"><span style="style_2">Ha fatto pippa, che doveva fare?</span></p>
+<p begin="30782400000t" end="30820400000t" region="region_1" xml:id="subtitle619"><span style="style_2">["Pop Porno" dalla radio]</span></p>
+<p begin="30821200000t" end="30862800000t" region="region_1" xml:id="subtitle620"><span style="style_1">♪ Ma quando viene sera ♪</span></p>
+<p begin="30870400000t" end="30936400000t" region="region_1" xml:id="subtitle621"><span style="style_1">♪ Tu mi parli d'amore ♪</span></p>
+<p begin="30937200000t" end="31002000000t" region="region_1" xml:id="subtitle622"><span style="style_1">♪ E guardandomi negli occhi ♪</span></p>
+<p begin="31002800000t" end="31046800000t" region="region_1" xml:id="subtitle623"><span style="style_1">♪ Mi fai sentire davvero</span><br/><span style="style_1">Una donna un po' porno ♪</span></p>
+<p begin="31047600000t" end="31074800000t" region="region_1" xml:id="subtitle624"><span style="style_1">♪ Pop porno ♪</span></p>
+<p begin="31085600000t" end="31116800000t" region="region_1" xml:id="subtitle625"><span style="style_1">♪ Pop porno ♪</span></p>
+<p begin="31139600000t" end="31180000000t" region="region_1" xml:id="subtitle626"><span style="style_1">♪ Pop porno ♪</span></p>
+<p begin="31180800000t" end="31212000000t" region="region_1" xml:id="subtitle627"><span style="style_1">♪ Tu sei cattivo con me perché ♪</span></p>
+<p begin="31224800000t" end="31236400000t" region="region_1" xml:id="subtitle628"><span style="style_1">♪ Ti svegli alle tre... ♪</span></p>
+<p begin="31237200000t" end="31248800000t" region="region_1" xml:id="subtitle629"><span style="style_2">Vieni qua, pezzo di merda!</span></p>
+<p begin="31268400000t" end="31314800000t" region="region_1" xml:id="subtitle630"><span style="style_1">♪ Pop porno ♪</span></p>
+<p begin="31315600000t" end="31350000000t" region="region_1" xml:id="subtitle631"><span style="style_1">♪ Tu sei cattivo con me perché ♪</span></p>
+<p begin="31350800000t" end="31401200000t" region="region_1" xml:id="subtitle632"><span style="style_1">♪ Mi guardi come se</span><br/><span style="style_1">Io fossi un'attrice un po' porno ♪</span></p>
+<p begin="31402000000t" end="31439200000t" region="region_1" xml:id="subtitle633"><span style="style_1">♪ Pop porno ♪</span></p>
+<p begin="31454800000t" end="31514400000t" region="region_1" xml:id="subtitle634"><span style="style_1">♪ Pop porno ♪</span></p>
+<p begin="31573200000t" end="31599600000t" region="region_1" xml:id="subtitle635"><span style="style_2">[la musica dalla radio finisce]</span></p>
+<p begin="31604400000t" end="31626000000t" region="region_1" xml:id="subtitle636"><span style="style_2">[ansima]</span></p>
+<p begin="32146400000t" end="32155200000t" region="region_1" xml:id="subtitle637"><span style="style_2">Dai.</span></p>
+<p begin="32269600000t" end="32281200000t" region="region_1" xml:id="subtitle638"><span style="style_2">[segnale di sms]</span></p>
+<p begin="32337200000t" end="32348800000t" region="region_1" xml:id="subtitle639"><span style="style_2">Cazzo.</span></p>
+<p begin="32647200000t" end="32667600000t" region="region_1" xml:id="subtitle640"><span style="style_2">Bisogna che impari a stare al mondo.</span></p>
+<p begin="32668400000t" end="32688000000t" region="region_1" xml:id="subtitle641"><span style="style_2">Ti sei messo a fare il piripicchio.</span></p>
+<p begin="32688800000t" end="32701600000t" region="region_1" xml:id="subtitle642"><span style="style_2">Buffone!</span></p>
+<p begin="32710000000t" end="32730800000t" region="region_1" xml:id="subtitle643"><span style="style_2">Non ho un cazzo da imparare da te.</span></p>
+<p begin="32731600000t" end="32752400000t" region="region_1" xml:id="subtitle644"><span style="style_2">Mi hai fatto fare una figura di merda.</span></p>
+<p begin="32753200000t" end="32780400000t" region="region_1" xml:id="subtitle645"><span style="style_2">Ti sei presentato ubriaco</span><br/><span style="style_2">la sera della festa.</span></p>
+<p begin="32781200000t" end="32811200000t" region="region_1" xml:id="subtitle646"><span style="style_2">Hai capito che vuol dire</span><br/><span style="style_2">'sto matrimonio per la famiglia nostra?</span></p>
+<p begin="32812000000t" end="32823600000t" region="region_1" xml:id="subtitle647"><span style="style_2">Per noi? Per te!</span></p>
+<p begin="32841600000t" end="32876000000t" region="region_1" xml:id="subtitle648"><span style="style_2">Intanto, c'è da andare a una villa</span><br/><span style="style_2">a ritirare i soldi di una consegna.</span></p>
+<p begin="32876800000t" end="32894000000t" region="region_1" xml:id="subtitle649"><span style="style_2">Devi muovere il culo, hai capito o no?</span></p>
+<p begin="32894800000t" end="32920000000t" region="region_1" xml:id="subtitle650"><span style="style_2">Almeno capisci che non puoi fare</span><br/><span style="style_2">sempre come cazzo ti pare.</span></p>
+<p begin="32920800000t" end="32948800000t" region="region_1" xml:id="subtitle651"><span style="style_2">Meno male, avevo voglia di lavorare</span><br/><span style="style_2">dopo 'sta rottura di coglioni!</span></p>
+<p begin="32995600000t" end="33022800001t" region="region_1" xml:id="subtitle652"><span style="style_2">[latrati]</span></p>
+<p begin="33068000000t" end="33077600000t" region="region_1" xml:id="subtitle653"><span style="style_2">Stai zitto.</span></p>
+<p begin="33106400000t" end="33145600000t" region="region_1" xml:id="subtitle654"><span style="style_2">Ho detto di stare zitto</span><br/><span style="style_2">o ti butto sotto la macchina!</span></p>
+<p begin="33162800000t" end="33210800000t" region="region_1" xml:id="subtitle655"><span style="style_2">[gemiti]</span></p>
+<p begin="33386800000t" end="33402800000t" region="region_1" xml:id="subtitle656"><span style="style_2">[Lele] Guarda che ci stanno tutti.</span></p>
+<p begin="33403600000t" end="33422400000t" region="region_1" xml:id="subtitle657"><span style="style_2">Sì, ma io li conto, sai com'è.</span></p>
+<p begin="33516000000t" end="33535200000t" region="region_1" xml:id="subtitle658"><span style="style_2">Che ci fa qua 'sta merda?</span></p>
+<p begin="33540000000t" end="33564000000t" region="region_1" xml:id="subtitle659"><span style="style_2">Ti ho chiamato tre volte.</span><br/><span style="style_2">Anzi mi stavi per far fare...</span></p>
+<p begin="33564800000t" end="33582800000t" region="region_1" xml:id="subtitle660"><span style="style_2">Che stavo per farti fare? Pezzo di merda!</span></p>
+<p begin="33583600000t" end="33610000000t" region="region_1" xml:id="subtitle661"><span style="style_2">Mettiti qui e non ti muovere</span><br/><span style="style_2">o ti sfondo, hai capito?</span></p>
+<p begin="33618400000t" end="33644800000t" region="region_1" xml:id="subtitle662"><span style="style_2">Avete rotto il cazzo, te ne devi andare</span><br/><span style="style_2">da qua, zingaro di merda.</span></p>
+<p begin="33645600000t" end="33676800000t" region="region_1" xml:id="subtitle663"><span style="style_2">[Spadino] Oddio, scusa, non t'hanno detto</span><br/><span style="style_2">che io vado dove cazzo mi pare?</span></p>
+<p begin="33677600000t" end="33695200000t" region="region_1" xml:id="subtitle664"><span style="style_2">[lamenti]</span></p>
+<p begin="33712400000t" end="33721200000t" region="region_1" xml:id="subtitle665"><span style="style_2">Oh!</span></p>
+<p begin="33722000000t" end="33738000000t" region="region_1" xml:id="subtitle666"><span style="style_2">[Aureliano] Chi cazzo è questo?</span></p>
+<p begin="33738800000t" end="33748400000t" region="region_1" xml:id="subtitle667"><span style="style_2">[Lele] Oh!</span></p>
+<p begin="33749200000t" end="33766000000t" region="region_1" xml:id="subtitle668"><span style="style_2">Quanto cazzo ha pippato?</span></p>
+<p begin="33766800000t" end="33791600000t" region="region_1" xml:id="subtitle669"><span style="style_2">- È la roba di merda che vendete voi.</span><br/><span style="style_2">- Respira.</span></p>
+<p begin="33792400000t" end="33826000000t" region="region_1" xml:id="subtitle670"><span style="style_2">[Lele] Mi date una mano a tirarlo su?</span><br/><span style="style_2">[Spadino] No, lo devi lasciare giù.</span></p>
+<p begin="33826800000t" end="33841600000t" region="region_1" xml:id="subtitle671"><span style="style_2">Stai buono.</span></p>
+<p begin="33842400000t" end="33856000000t" region="region_1" xml:id="subtitle672"><span style="style_2">[Lele] Come cazzo faccio, mo?</span></p>
+<p begin="33876800000t" end="33904000000t" region="region_1" xml:id="subtitle673"><span style="style_2">[Aureliano] Ti conviene </span><br/><span style="style_2">chiamare un'ambulanza, questo mo stira.</span></p>
+<p begin="33904800000t" end="33928800000t" region="region_1" xml:id="subtitle674"><span style="style_2">- Cazzo!</span><br/><span style="style_2">- Aspetta che gli passa, mo gli passa.</span></p>
+<p begin="33935600000t" end="33960000000t" region="region_1" xml:id="subtitle675"><span style="style_2">[Aureliano] Perché non chiami l'ambulanza?</span><br/><span style="style_2">Chi cazzo è questo?</span></p>
+<p begin="33965200000t" end="33996000000t" region="region_1" xml:id="subtitle676"><span style="style_2">È un prete, cazzo!</span><br/><span style="style_2">Non la posso chiamare l'ambulanza.</span></p>
+<p begin="33996800000t" end="34009600000t" region="region_1" xml:id="subtitle677"><span style="style_2">Questo è un prete?</span></p>
+<p begin="34015200000t" end="34024000000t" region="region_1" xml:id="subtitle678"><span style="style_2">Eh?</span></p>
+<p begin="34030000000t" end="34048800000t" region="region_1" xml:id="subtitle679"><span style="style_2">Amico mio, questo è un prete!</span></p>
+<p begin="34049600000t" end="34077200000t" region="region_1" xml:id="subtitle680"><span style="style_2">Quanto è grosso 'sto prete?</span><br/><span style="style_2">Più è grosso, più soldi sono!</span></p>
+<p begin="34078000000t" end="34095200000t" region="region_1" xml:id="subtitle681"><span style="style_2">- Che soldi?</span><br/><span style="style_2">- Pippa, tromba e sturba!</span></p>
+<p begin="34096000000t" end="34118400000t" region="region_1" xml:id="subtitle682"><span style="style_2">Più è grosso e più paga</span><br/><span style="style_2">per non farlo sapere in giro.</span></p>
+<p begin="34119200000t" end="34139200000t" region="region_1" xml:id="subtitle683"><span style="style_2">- Sono Gabriele.</span><br/><span style="style_2">- Mo chi cazzo sta a chiamare?</span></p>
+<p begin="34140000000t" end="34152000000t" region="region_1" xml:id="subtitle684"><span style="style_2">Che cazzo ne so.</span></p>
+<p begin="34157600000t" end="34189200000t" region="region_1" xml:id="subtitle685"><span style="style_2">Senti, è successo un casino.</span><br/><span style="style_2">Il prete ha collassato.</span></p>
+<p begin="34217200000t" end="34229600000t" region="region_1" xml:id="subtitle686"><span style="style_2">Io non ho fatto niente!</span></p>
+<p begin="34243600000t" end="34272800000t" region="region_1" xml:id="subtitle687"><span style="style_2">- Stavi spiando?</span><br/><span style="style_2">- Mi faccio i cazzi miei, sta' tranquillo.</span></p>
+<p begin="34273600000t" end="34282800000t" region="region_1" xml:id="subtitle688"><span style="style_2">Che hai là?</span></p>
+<p begin="34283600000t" end="34316000000t" region="region_1" xml:id="subtitle689"><span style="style_2">- Mi faccio i cazzi miei, fatteli pure te.</span><br/><span style="style_2">- Oh!</span></p>
+<p begin="34351600000t" end="34372400000t" region="region_1" xml:id="subtitle690"><span style="style_2">È colpa mia se quello ha collassato?</span></p>
+<p begin="34391200000t" end="34401600000t" region="region_1" xml:id="subtitle691"><span style="style_2">Facevi un filmino?</span></p>
+<p begin="34424400000t" end="34438400000t" region="region_1" xml:id="subtitle692"><span style="style_2">Ridammi il telefono.</span></p>
+<p begin="34444000000t" end="34464400000t" region="region_1" xml:id="subtitle693"><span style="style_2">Gli volevi chiedere la stecca, zoccola?</span></p>
+<p begin="34511600000t" end="34520400000t" region="region_1" xml:id="subtitle694"><span style="style_2">Non ti muovere.</span></p>
+<p begin="34532000000t" end="34541600000t" region="region_1" xml:id="subtitle695"><span style="style_2">[sottovoce] Cazzo.</span></p>
+<p begin="34542400000t" end="34559200000t" region="region_1" xml:id="subtitle696"><span style="style_2">Stasera ti togliamo tutto!</span></p>
+<p begin="34569200000t" end="34619200000t" region="region_1" xml:id="subtitle697"><span style="style_2">- Si stava divertendo, il prete.</span><br/><span style="style_2">- Vedi che robetta! Ti dai da fare!</span></p>
+<p begin="34620000000t" end="34650800000t" region="region_1" xml:id="subtitle698"><span style="style_2">- Stanno venendo a prenderlo.</span><br/><span style="style_2">- Così mi fai sapere dove lo portano.</span></p>
+<p begin="34656400000t" end="34674400000t" region="region_1" xml:id="subtitle699"><span style="style_2">Ragazzi, c'è un problema.</span></p>
+<p begin="34685200000t" end="34725200000t" region="region_1" xml:id="subtitle700"><span style="style_2">- L'idea è mia, il prete me lo prendo io.</span><br/><span style="style_2">- Il telefono ce l'ho io. Come facciamo?</span></p>
+<p begin="34745600000t" end="34756800000t" region="region_1" xml:id="subtitle701"><span style="style_2">Il prete me lo prendo io.</span></p>
+<p begin="34762400000t" end="34776000000t" region="region_1" xml:id="subtitle702"><span style="style_2">- Siete matti?</span><br/><span style="style_2">- Zitto.</span></p>
+<p begin="34776800000t" end="34792800000t" region="region_1" xml:id="subtitle703"><span style="style_2">- Volete ricattare il prete?</span><br/><span style="style_2">- Zitto!</span></p>
+<p begin="34807600000t" end="34825600000t" region="region_1" xml:id="subtitle704"><span style="style_2">Non sbagliare con me. Io ti faccio male.</span></p>
+<p begin="34826400000t" end="34852400000t" region="region_1" xml:id="subtitle705"><span style="style_2">Te lo rispiego. Il prete è roba mia.</span></p>
+<p begin="34853200000t" end="34871200000t" region="region_1" xml:id="subtitle706"><span style="style_2">Se vuoi, ti do una percentuale, il 5%.</span></p>
+<p begin="34872000000t" end="34894400000t" region="region_1" xml:id="subtitle707"><span style="style_2">Il 5% dallo</span><br/><span style="style_2">a quel parassita di tuo fratello,</span></p>
+<p begin="34895200000t" end="34918800000t" region="region_1" xml:id="subtitle708"><span style="style_2">che la famiglia tua</span><br/><span style="style_2">non è buona neanche per pulirci il culo.</span></p>
+<p begin="34919600000t" end="34934400000t" region="region_1" xml:id="subtitle709"><span style="style_2">A chi, a voi? I cravattari di Ostia?</span></p>
+<p begin="34935200000t" end="34961600000t" region="region_1" xml:id="subtitle710"><span style="style_2">- Ma vattene affanculo!</span><br/><span style="style_2">- Vieni qua! Pezzo di merda.</span></p>
+<p begin="34996000000t" end="35012400000t" region="region_1" xml:id="subtitle711"><span style="style_2">Voglio un terzo dei soldi.</span></p>
+<p begin="35061200000t" end="35105200000t" region="region_1" xml:id="subtitle712"><span style="style_2">- Con te finisco dopo. Tu che hai detto?</span><br/><span style="style_2">- Ricattiamo il prete, ma voglio un terzo.</span></p>
+<p begin="35106000000t" end="35137200000t" region="region_1" xml:id="subtitle713"><span style="style_2">Io vi posso far sapere chi è,</span><br/><span style="style_2">quanto è grosso.</span></p>
+<p begin="35138000000t" end="35151200000t" region="region_1" xml:id="subtitle714"><span style="style_2">Però dividiamo in tre.</span></p>
+<p begin="35174400000t" end="35187200000t" region="region_1" xml:id="subtitle715"><span style="style_2">Allora?</span></p>
+<p begin="35188000000t" end="35220000000t" region="region_1" xml:id="subtitle716"><span style="style_2">Allora un cazzo.</span><br/><span style="style_2">Mo s'è messo a parlare pure questo.</span></p>
+<p begin="35220800000t" end="35249200000t" region="region_1" xml:id="subtitle717"><span style="style_2">Lo stanno venendo a prendere.</span><br/><span style="style_2">È meglio che ti sbrighi a decidere.</span></p>
+<p begin="35259200000t" end="35271200000t" region="region_1" xml:id="subtitle718"><span style="style_2">[Spadino] Ma è grosso davvero?</span></p>
+<p begin="35276000000t" end="35288400000t" region="region_1" xml:id="subtitle719"><span style="style_2">Da dividerlo in tre?</span></p>
+<p begin="35289200000t" end="35314000000t" region="region_1" xml:id="subtitle720"><span style="style_2">- È grosso.</span><br/><span style="style_2">- Non me ne frega un cazzo.</span></p>
+<p begin="35314800000t" end="35337600000t" region="region_1" xml:id="subtitle721"><span style="style_2">- Perché?</span><br/><span style="style_2">- Non faccio impicci con voi due.</span></p>
+<p begin="35338400000t" end="35363600000t" region="region_1" xml:id="subtitle722"><span style="style_2">Pensaci un attimo.</span><br/><span style="style_2">Ci spartiamo una fetta per uno.</span></p>
+<p begin="35370000000t" end="35389200000t" region="region_1" xml:id="subtitle723"><span style="style_2">Poi da domani ognuno per i cazzi suoi.</span></p>
+<p begin="35464400000t" end="35476400000t" region="region_1" xml:id="subtitle724"><span style="style_2">Allora?</span></p>
+<p begin="35506000000t" end="35517600000t" region="region_1" xml:id="subtitle725"><span style="style_2">Ci stai?</span></p>
+<p begin="35661600000t" end="35679600000t" region="region_1" xml:id="subtitle726"><span style="style_2">Traduzione dal sinti: Sonia Cerci</span></p>
+</div>
+</body>
+</tt>

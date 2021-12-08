@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 import os
 import json
 
@@ -38,6 +39,10 @@ def xmlCleaner(line):
         line = line.replace('  ',' ')
     while '- ' in line:
         line = line.replace('- ','\n').strip()
+    if line.count('[') > 1:
+        while '[' in line:
+            line = line.replace(line[line.find('['):line.find(']')+2],'\n').strip()
+
     return line
 
 
@@ -116,7 +121,7 @@ except FileNotFoundError:
 
 def shortcut():
     ################# ASSEGNAZIONE TASTI SHORTCUT JSON
-    personaggi_Season01 = ['Amedeo Cinaglia','Monsignor Theodosiou','Samurai','Numero 8','Manfredi Anacleti','Lele Marchilli','Spadino','Sara Monaschi','Angelica','Guerri','Isabelle','Livia Adami','Romolo','Boris','Franco Marchilli','Sandro Monaschi','Quirino','Cardinale Cosimo Giunti','Contessa','Alice','Tullio Adami','Boss Zingaro Vincenzo','Madre Samurai','Gabriella','Gianni Taccon','Mara','Stefano','Dottor Trieste','Monsignor De Cano']
+    624
     js_file = open(py_wd + os.sep + 'shortcut.json', 'r', encoding="utf-8")
     diz = json.load(js_file)
     js_file.close()
@@ -135,6 +140,7 @@ def shortcut():
     js_file.close()
 
 
+
 ################ LABELLING
 def labelling(df, start=0):
     for i in range(start,len(df)):
@@ -145,9 +151,13 @@ def labelling(df, start=0):
             df.loc[i,'personaggio'] = label
         elif label[0].upper() in diz.keys() and len(label)<3:
             label = diz[label[0].upper()]
+            df.loc[i,'personaggio'] = label
         elif label == '0':
             df.to_csv(py_wd+os.sep+'Suburra_data.csv', index=False, encoding='UTF-8')
             break
+        elif label == ' ':
+            label = np.nan
+            df.loc[i,'personaggio'] = label
         else:
             df.loc[i,'personaggio'] = label
         os.system('clear')

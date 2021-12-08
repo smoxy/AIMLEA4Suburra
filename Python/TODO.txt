@@ -1,0 +1,40 @@
+Pulizia XML
+Creazione dataset con le seguenti variabili: personaggio, battuta, stagione, episodio.
+Compattazione del dataset:
+    - Unificare le battute dello stesso personaggio, stagione, episodio tra loro adiacenti.
+Pulizia del dataset per il pre-processing:
+    - Rimuovere testo tra [] che sono i suoni
+
+
+
+
+ELENCO PERSONAGGI:
+- Amedeo Cinaglia
+Monsignor Theodosiou
+- Samurai
+Numero 8
+- Manfredi Anacleti
+- Lele Marchilli
+- Spadino
+Sara Monaschi
+- Angelica
+Guerri
+Isabelle
+- Livia Adami
+Romolo
+Boris
+Franco Marchilli
+Sandro Monaschi
+Quirino
+Cardinale Cosimo Giunti
+Contessa
+- Alice
+Tullio Adami
+Boss Zingaro Vincenzo
+Madre Samurai
+Gabriella
+Gianni Taccon
+Mara
+Stefano
+Dottor Trieste
+Monsignor De Cano

@@ -5,8 +5,8 @@ import json
 
 os.system('clear') #clear console for linux
 
-# ROW = 2204
-# Time = E4 -24:07
+# ROW = 2463
+# Time = E5
 # 17.03.2022
 
 ################## GET full path for raw and py dir

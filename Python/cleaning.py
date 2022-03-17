@@ -5,6 +5,9 @@ import json
 
 os.system('clear') #clear console for linux
 
+# ROW = 1867
+# 17.03.2022
+
 ################## GET full path for raw and py dir
 wd = os.getcwd()
 py_wd = wd + os.sep + 'Python'
@@ -121,7 +124,6 @@ except FileNotFoundError:
 
 def shortcut():
     ################# ASSEGNAZIONE TASTI SHORTCUT JSON
-    624
     js_file = open(py_wd + os.sep + 'shortcut.json', 'r', encoding="utf-8")
     diz = json.load(js_file)
     js_file.close()

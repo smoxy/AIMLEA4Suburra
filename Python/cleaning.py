@@ -2,8 +2,13 @@ import pandas as pd
 import numpy as np
 import os
 import json
+import platform
 
-os.system('clear') #clear console for linux
+def clear_cli():
+    if platform.system().lower() == "windows":
+        os.system('cls') #clear console for linux
+    else:
+        os.system('clear') #clear console for linux
 
 # ROW = 2463
 # Time = E5
@@ -15,7 +20,7 @@ py_wd = wd + os.sep + 'Python'
 raw_path = wd + os.sep + 'RAW'
 diz = json.load(open(py_wd + os.sep + 'shortcut.json', 'r', encoding="utf-8"))
 
-
+clear_cli()
 
 def xmlCleaner(line):
     """
@@ -125,6 +130,8 @@ except FileNotFoundError:
 
 def shortcut():
     ################# ASSEGNAZIONE TASTI SHORTCUT JSON
+    personaggi_Season01 = ["Aureliano Adami", "Gabriella", "Amedeo Cinaglia", "Adelaide Anacleti", "Angelica Sale", "Franco Marchilli", "Gabriele Marchilli", "Sandro Monaschi", "Isabelle Mbamba", "Livia Adami", "Sara Monaschi", "Manfredi Anacleti", "Contessa Sveva Della Rocca Croce", "Quirino", "Cardinale Cosimo Giunti", "Alberto Anacleti", "Monsignor Theodosiou", "Tullio Adami", "Samurai Valerio", "Saverio Boiardo Guerri", "Ferdinando Badali", "Alice", "Taccon"] 
+                         #['Amedeo Cinaglia','Monsignor Theodosiou','Samurai','Numero 8','Manfredi Anacleti','Lele Marchilli','Spadino','Sara Monaschi','Angelica','Guerri','Isabelle','Livia Adami','Romolo','Boris','Franco Marchilli','Sandro Monaschi','Quirino','Cardinale Cosimo Giunti','Contessa','Alice','Tullio Adami','Boss Zingaro Vincenzo','Madre Samurai','Gabriella','Gianni Taccon','Mara','Stefano','Dottor Trieste','Monsignor De Cano']
     js_file = open(py_wd + os.sep + 'shortcut.json', 'r', encoding="utf-8")
     diz = json.load(js_file)
     js_file.close()
@@ -147,7 +154,7 @@ def shortcut():
 ################ LABELLING
 def labelling(df, start=0):
     for i in range(start,len(df)):
-        print('\n',i,'\t',df.loc[i,'battuta'], sep='')
+        print('\n',i,'\t',df.loc[i,'battuta'],'\n',"(0) SAVE\t' ' nan", sep='')
         label = input(helper()).lower()
         if len(label)==0:
             label = df.loc[i-1,'personaggio']
@@ -162,9 +169,10 @@ def labelling(df, start=0):
             label = np.nan
             df.loc[i,'personaggio'] = label
         else:
-            df.loc[i,'personaggio'] = label
-        os.system('clear')
-        print('\t',label)
+            label = ' '.join([name.capitalize() for name in label.split(' ')])
+            df.loc[i,'personaggio'] = label.strip()
+        clear_cli()
+        print('\t',label,':\t',df.loc[i,'battuta'],sep='')
 
 
 

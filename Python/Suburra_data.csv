@@ -1,15 +1,15 @@
 personaggio,battuta,stagione,episodio,index
-radio,"[radio] Oggi, dopo sette anni di mandato,",1,1,1
-radio,il sindaco di Roma ha presentato le proprie dimissioni,1,1,2
-radio,che saranno effettive entro 20 giorni.,1,1,3
-radio,"[radio] Nel suo discorso di addio all'ultima riunione di Consiglio,",1,1,4
-radio,"ha ribadito come la sua scelta sia stata molto sofferta, ma ponderata.",1,1,5
-radio,[radio] Il sindaco uscente ha ricordato,1,1,6
-radio,che il rispetto per gli elettori e per i cittadini di Roma,1,1,7
-radio,è sempre stato messo al primo posto.,1,1,8
-radio,[radio] Adesso si prospetta uno scenario di forte indecisione,1,1,9
-radio,"per tutti gli schieramenti politici,",1,1,10
-radio,per la scelta del nuovo candidato da presentare per le prossime elezioni.,1,1,11
+,"[radio] Oggi, dopo sette anni di mandato,",1,1,1
+,il sindaco di Roma ha presentato le proprie dimissioni,1,1,2
+,che saranno effettive entro 20 giorni.,1,1,3
+,"[radio] Nel suo discorso di addio all'ultima riunione di Consiglio,",1,1,4
+,"ha ribadito come la sua scelta sia stata molto sofferta, ma ponderata.",1,1,5
+,[radio] Il sindaco uscente ha ricordato,1,1,6
+,che il rispetto per gli elettori e per i cittadini di Roma,1,1,7
+,è sempre stato messo al primo posto.,1,1,8
+,[radio] Adesso si prospetta uno scenario di forte indecisione,1,1,9
+,"per tutti gli schieramenti politici,",1,1,10
+,per la scelta del nuovo candidato da presentare per le prossime elezioni.,1,1,11
 ,[suona il citofono],1,1,12
 ,[musica elettronica],1,1,13
 ,[gemiti],1,1,14
@@ -37,15 +37,15 @@ Livia Adami,Papà.,1,1,35
 Tullio Adami,Vedi se con te ragiona 'sto coglione.,1,1,36
 Livia Adami,"Pure te non insistere, no? Lo sai che gli dà fastidio.",1,1,37
 Aureliano Adami,Lasciami perdere.,1,1,38
-sottoposto,Ci sta uno zingaro fuori dal locale nostro.,1,1,39
+,Ci sta uno zingaro fuori dal locale nostro.,1,1,39
 ,[stridio di gomme],1,1,40
 ,[brusio],1,1,41
 Aureliano Adami,"Zingaro, ti devo dire una cosa.",1,1,42
-zingaro,Dimmi.,1,1,43
+Boris,Dimmi.,1,1,43
 Aureliano Adami,Scusate.,1,1,44
 Aureliano Adami,Volevo dirti che sei un pezzo di merda.,1,1,45
 ,[urla],1,1,46
-zingaro,Pezzo di merda!,1,1,47
+Boris,Pezzo di merda!,1,1,47
 Aureliano Adami,Fate stare zitto 'sto cazzo di cane e 'sto parassita buttatelo a mare.,1,1,48
 ,[musica funky],1,1,49
 Gabriele Marchilli,Non ci posso credere! Guarda chi ci sta!,1,1,50
@@ -53,9 +53,9 @@ Gabriele Marchilli,Non ci posso credere! Guarda chi ci sta!,1,1,50
 ,[parole non udibili],1,1,52
 ,[parole non udibili],1,1,53
 ,Ciao.,1,1,54
-xxxxxxxxxx,Marchilli Gabriele?,1,1,55
+,Marchilli Gabriele?,1,1,55
 Gabriele Marchilli,"Sì, che ti serve?",1,1,56
-xxxxxxxxx,Vieni fuori.,1,1,57
+,Vieni fuori.,1,1,57
 Saverio Boiardo Guerri,"Lo sai chi sono io, sì?",1,1,58
 Saverio Boiardo Guerri,"Meno male, così evitiamo le presentazioni e arriviamo subito al dunque.",1,1,59
 Saverio Boiardo Guerri,"Facciamo due passi, vieni.",1,1,60
@@ -71,9 +71,9 @@ Saverio Boiardo Guerri,Ma siccome è una persona generosa...,1,1,69
 Saverio Boiardo Guerri,vuole solo 20.000 euro!,1,1,70
 Gabriele Marchilli,"Come, 20.000 euro?",1,1,71
 Gabriele Marchilli,"Avrò venduto cinque piotte di pasticche. Che siete, matti?",1,1,72
-xx,"Come cazzo ti permetti, eh?",1,1,73
-xxx,"Prima di tutto, quando ti dico una cosa io, stai muto.",1,1,74
-xxx,"Secondo, hai 24 ore di tempo per portarmi i soldi.",1,1,75
+Saverio Boiardo Guerri,"Come cazzo ti permetti, eh?",1,1,73
+Saverio Boiardo Guerri,"Prima di tutto, quando ti dico una cosa io, stai muto.",1,1,74
+Saverio Boiardo Guerri,"Secondo, hai 24 ore di tempo per portarmi i soldi.",1,1,75
 Saverio Boiardo Guerri,Hai capito?,1,1,76
 Gabriele Marchilli,Sì.,1,1,77
 Saverio Boiardo Guerri,Oh! Hai capito?,1,1,78
@@ -96,25 +96,25 @@ Manfredi Anacleti,[in sinti] Ci voleva tanto?,1,1,94
 Alberto Anacleti,È che non mi volevo sporcare.,1,1,95
 ,[belati],1,1,96
 Manfredi Anacleti,[in sinti] Mo puoi conoscere la sposa.,1,1,97
-zingaro,[in sinti] Andiamo.,1,1,98
+,[in sinti] Andiamo.,1,1,98
 ,[belati],1,1,99
-Finucci,[uomo] Il sindaco si dimette,1,1,100
-Finucci,e sto andando ora alla riunione del Consiglio.,1,1,101
+Giacomo Finucci,[uomo] Il sindaco si dimette,1,1,100
+Giacomo Finucci,e sto andando ora alla riunione del Consiglio.,1,1,101
 Samurai Valerio,Quindi?,1,1,102
-Finucci,"[uomo] Il piano regolatore è approvato, ma per sapere chi ci si arricchirà sopra",1,1,103
-Finucci,"bisogna farlo in 20 giorni, il tempo che le dimissioni diventano effettive.",1,1,104
-Finucci,Ti devi sbrigare.,1,1,105
+Giacomo Finucci,"[uomo] Il piano regolatore è approvato, ma per sapere chi ci si arricchirà sopra",1,1,103
+Giacomo Finucci,"bisogna farlo in 20 giorni, il tempo che le dimissioni diventano effettive.",1,1,104
+Giacomo Finucci,Ti devi sbrigare.,1,1,105
 Samurai Valerio,Ti pago per risolvere i problemi.,1,1,106
-Finucci,[uomo] Io sono un tecnico.,1,1,107
-Finucci,"Posso dire che il tuo progetto per Ostia rispetta la Legge,",1,1,108
-Finucci,"ma per farlo, me lo devono mettere sul tavolo, devono dargli priorità.",1,1,109
+Giacomo Finucci,[uomo] Io sono un tecnico.,1,1,107
+Giacomo Finucci,"Posso dire che il tuo progetto per Ostia rispetta la Legge,",1,1,108
+Giacomo Finucci,"ma per farlo, me lo devono mettere sul tavolo, devono dargli priorità.",1,1,109
 ,[voci non udibili],1,1,110
-Finucci,Ti serve... la politica.,1,1,111
+Giacomo Finucci,Ti serve... la politica.,1,1,111
 Samurai Valerio,Chi?,1,1,112
-Finucci,Cinaglia.,1,1,113
-Finucci,"Il presidente della Commissione Edilizia,",1,1,114
-Finucci,"un rappresentante del popolo,",1,1,115
-Finucci,un frustrato con gli ideali.,1,1,116
+Giacomo Finucci,Cinaglia.,1,1,113
+Giacomo Finucci,"Il presidente della Commissione Edilizia,",1,1,114
+Giacomo Finucci,"un rappresentante del popolo,",1,1,115
+Giacomo Finucci,un frustrato con gli ideali.,1,1,116
 Samurai Valerio,Che c'è?,1,1,117
 Saverio Boiardo Guerri,C'è un problema con gli zingari.,1,1,118
 Samurai Valerio,"Va bene, France', mi pare che si è scaricato.",1,1,119
@@ -149,21 +149,21 @@ Sandro Monaschi,Fammi sapere come va la riunione.,1,1,147
 Sara Monaschi,Scappo.,1,1,148
 Sara Monaschi,Tranquillo.,1,1,149
 ,[brusio],1,1,150
-Finucci,Cinaglia!,1,1,151
-Finucci,Ho sentito dire che il suo partito vuole dare un segnale di svolta.,1,1,152
-Finucci,"Facce nuove in Campidoglio. Sono anni che lei sta in Consiglio, no?",1,1,153
+Giacomo Finucci,Cinaglia!,1,1,151
+Giacomo Finucci,Ho sentito dire che il suo partito vuole dare un segnale di svolta.,1,1,152
+Giacomo Finucci,"Facce nuove in Campidoglio. Sono anni che lei sta in Consiglio, no?",1,1,153
 Amedeo Cinaglia,Ho sempre preso parecchi voti.,1,1,154
-Finucci,Lo so bene.,1,1,155
-Finucci,"Quello che le sto dicendo è che stavolta, però,",1,1,156
-Finucci,rischia di rimanere fuori dalle liste dei candidati.,1,1,157
-Finucci,Rischia di restare a casa.,1,1,158
+Giacomo Finucci,Lo so bene.,1,1,155
+Giacomo Finucci,"Quello che le sto dicendo è che stavolta, però,",1,1,156
+Giacomo Finucci,rischia di rimanere fuori dalle liste dei candidati.,1,1,157
+Giacomo Finucci,Rischia di restare a casa.,1,1,158
 Amedeo Cinaglia,"Fortunatamente questo non la riguarda, no, Finucci?",1,1,159
-Finucci,"Ha ragione, ma mi dia retta,",1,1,160
-Finucci,gli anni qua dentro non si buttano via così.,1,1,161
-Finucci,"Lei dovrebbe avere un incarico più importante di quello che ha,",1,1,162
-Finucci,un assessorato...,1,1,163
-Finucci,Ne parli col sindaco o con qualcuno che conta veramente.,1,1,164
-Finucci,La sua ex moglie.,1,1,165
+Giacomo Finucci,"Ha ragione, ma mi dia retta,",1,1,160
+Giacomo Finucci,gli anni qua dentro non si buttano via così.,1,1,161
+Giacomo Finucci,"Lei dovrebbe avere un incarico più importante di quello che ha,",1,1,162
+Giacomo Finucci,un assessorato...,1,1,163
+Giacomo Finucci,Ne parli col sindaco o con qualcuno che conta veramente.,1,1,164
+Giacomo Finucci,La sua ex moglie.,1,1,165
 Amedeo Cinaglia,Arrivederci.,1,1,166
 ,[uomo] Signori!,1,1,167
 ,"Signori consiglieri, un attimo di silenzio, per favore,",1,1,168
@@ -255,18 +255,18 @@ Tullio Adami,Testa di cazzo!,1,1,253
 Livia Adami,Stai buono.,1,1,254
 Livia Adami,"Vai di là, per favore?",1,1,255
 Livia Adami,Stai calmo.,1,1,256
-zingaro,Guarda che spettacolo questa!,1,1,257
-zingaro,Dodici cilindri.,1,1,258
-zingaro,"Tuo fratello sta sbroccando, Spadi', non ci sta più col cervello.",1,1,259
-zingaro,"Col fatto che ti sposi con una Sale, è convinto che ci possiamo allargare.",1,1,260
-zingaro,"Mi ha mandato al locale degli Adami, così, per vedere come reagivano.",1,1,261
-zingaro,Guarda qua.,1,1,262
-zingaro,Ma sei contento? Sì?,1,1,263
-zingaro,"Devi scegliere una macchina di un certo stile, Spadi'.",1,1,264
-zingaro,"Alla fine 'sta Angelica deve essere tua per tutta la vita, no?",1,1,265
-zingaro,"Tie', oh!",1,1,266
-zingaro,Ti presenti con una di queste...,1,1,267
-zingaro,Ti casca ai piedi.,1,1,268
+Boris,Guarda che spettacolo questa!,1,1,257
+Boris,Dodici cilindri.,1,1,258
+Boris,"Tuo fratello sta sbroccando, Spadi', non ci sta più col cervello.",1,1,259
+Boris,"Col fatto che ti sposi con una Sale, è convinto che ci possiamo allargare.",1,1,260
+Boris,"Mi ha mandato al locale degli Adami, così, per vedere come reagivano.",1,1,261
+Boris,Guarda qua.,1,1,262
+Boris,Ma sei contento? Sì?,1,1,263
+Boris,"Devi scegliere una macchina di un certo stile, Spadi'.",1,1,264
+Boris,"Alla fine 'sta Angelica deve essere tua per tutta la vita, no?",1,1,265
+Boris,"Tie', oh!",1,1,266
+Boris,Ti presenti con una di queste...,1,1,267
+Boris,Ti casca ai piedi.,1,1,268
 ,[bussano],1,1,269
 Franco Marchilli,[uomo] Lele?,1,1,270
 Franco Marchilli,Sempre due ore dentro a 'sto bagno stai.,1,1,271
@@ -365,38 +365,38 @@ Livia Adami,"Ti ho detto che c'ho freddo, andiamo.",1,1,363
 Livia Adami,"[Livia] Facciamo una passerella, che mi si rovinano le scarpe.",1,1,364
 ,[parole non udibili],1,1,365
 Amedeo Cinaglia,Ma che cazzo guardi! Mo vado lì e gli spacco la faccia.,1,1,366
-gabriella,"Vai. Chi te lo vieta? L'hai già fatto quando ti ho lasciato, no?",1,1,367
+Gabriella,"Vai. Chi te lo vieta? L'hai già fatto quando ti ho lasciato, no?",1,1,367
 Amedeo Cinaglia,"""Repetita iuvant.""",1,1,368
-gabriella,A cosa?,1,1,369
+Gabriella,A cosa?,1,1,369
 Amedeo Cinaglia,Al mio umore.,1,1,370
-gabriella,"Amedeo, che vuoi?",1,1,371
+Gabriella,"Amedeo, che vuoi?",1,1,371
 Amedeo Cinaglia,Sapere se il sindaco ci ripenserà.,1,1,372
-gabriella,"No, ha deciso.",1,1,373
+Gabriella,"No, ha deciso.",1,1,373
 Amedeo Cinaglia,Il partito ha già scelto il prossimo candidato?,1,1,374
-gabriella,Vuoi farlo tu? Non hai il profilo e lo sai.,1,1,375
+Gabriella,Vuoi farlo tu? Non hai il profilo e lo sai.,1,1,375
 Amedeo Cinaglia,"Non lo so, Gabriella.",1,1,376
-gabriella,Amedeo.,1,1,377
+Gabriella,Amedeo.,1,1,377
 Amedeo Cinaglia,Presto ci saranno nuove elezioni. Voglio che il partito mi sostenga.,1,1,378
-gabriella,L'abbiamo sempre fatto.,1,1,379
+Gabriella,L'abbiamo sempre fatto.,1,1,379
 Amedeo Cinaglia,No!,1,1,380
 Amedeo Cinaglia,Voi mi avete usato.,1,1,381
 Amedeo Cinaglia,Vi sono serviti i voti delle periferie! Vi facevano comodo.,1,1,382
 Amedeo Cinaglia,Poi invece mi avete sbattuto in una commissione del cazzo.,1,1,383
-gabriella,Non ti ricordavo così ambizioso.,1,1,384
+Gabriella,Non ti ricordavo così ambizioso.,1,1,384
 Amedeo Cinaglia,Non lo sono.,1,1,385
 Amedeo Cinaglia,"Voglio solo portare avanti le mie idee, che un tempo erano anche le tue.",1,1,386
 Amedeo Cinaglia,"Dello stronzo lì in fondo, non credo.",1,1,387
-gabriella,Esattamente cosa vuoi?,1,1,388
+Gabriella,Esattamente cosa vuoi?,1,1,388
 Amedeo Cinaglia,Voglio essere tra i primi tre della lista,1,1,389
 Amedeo Cinaglia,"e se vinciamo, l'Assessorato alle Politiche Sociali.",1,1,390
-gabriella,"Non posso, gli assessori li sceglie il sindaco, è lui che fa la squadra.",1,1,391
+Gabriella,"Non posso, gli assessori li sceglie il sindaco, è lui che fa la squadra.",1,1,391
 Amedeo Cinaglia,Da quand'è che lo fate scegliere?,1,1,392
-gabriella,"Oh, Amedeo...",1,1,393
+Gabriella,"Oh, Amedeo...",1,1,393
 Amedeo Cinaglia,Tu pensi che io non sono all'altezza.,1,1,394
-gabriella,Vado.,1,1,395
+Gabriella,Vado.,1,1,395
 Amedeo Cinaglia,Perché?,1,1,396
-gabriella,"Perché? Perché la politica, quella vera, è l'arte del possibile",1,1,397
-gabriella,e tu sei ancora qui che lotti per l'impossibile.,1,1,398
+Gabriella,"Perché? Perché la politica, quella vera, è l'arte del possibile",1,1,397
+Gabriella,e tu sei ancora qui che lotti per l'impossibile.,1,1,398
 Amedeo Cinaglia,Un povero coglione con degli ideali. Eh?,1,1,399
 Amedeo Cinaglia,Sono un coglione.,1,1,400
 Amedeo Cinaglia,"Sono un coglione, Gabrie'?",1,1,401
@@ -856,24 +856,24 @@ Alberto Anacleti,Ma... con 300.000 stai tranquillo.,1,2,49
 Monsignor Theodosiou,Trecento...,1,2,50
 Alberto Anacleti,Non serve che dici altro.,1,2,51
 Alberto Anacleti,Me li devi dare oggi alle 16:00.,1,2,52
-Quirino,Nove per cento.,1,2,53
-Quirino,"In tre mesi, nella zona nord abbiamo perso il 9%, Livia.",1,2,54
-Quirino,Vuoi che ne parliamo un'altra volta?,1,2,55
+Ezio Quirino,Nove per cento.,1,2,53
+Ezio Quirino,"In tre mesi, nella zona nord abbiamo perso il 9%, Livia.",1,2,54
+Ezio Quirino,Vuoi che ne parliamo un'altra volta?,1,2,55
 Livia Adami,No.,1,2,56
 Livia Adami,"Scusa, dicevi? Nella zona nord?",1,2,57
-Quirino,"Abbiamo perso un sacco di soldi. È zona di tuo fratello, no?",1,2,58
+Ezio Quirino,"Abbiamo perso un sacco di soldi. È zona di tuo fratello, no?",1,2,58
 Aureliano Adami,"[Aureliano] ""Abbiamo"" chi?",1,2,59
-Quirino,Stavo illustrando a tua sorella la situazione e non è affatto buona.,1,2,60
+Ezio Quirino,Stavo illustrando a tua sorella la situazione e non è affatto buona.,1,2,60
 Aureliano Adami,"È roba di famiglia, Quirino. Tu devi fare i conti e basta.",1,2,61
-Quirino,"Sì, i conti dicono che perdete ogni mese di più.",1,2,62
+Ezio Quirino,"Sì, i conti dicono che perdete ogni mese di più.",1,2,62
 Aureliano Adami,Rifalli.,1,2,63
 Aureliano Adami,Magari ti sbagli.,1,2,64
-Quirino,Va bene.,1,2,65
+Ezio Quirino,Va bene.,1,2,65
 Livia Adami,"Aurelia', aspetta. Dobbiamo parlare.",1,2,66
 Aureliano Adami,C'ho da fare.,1,2,67
 Aureliano Adami,Parliamo un'altra volta.,1,2,68
 Livia Adami,"Senti, non dire niente a mio padre.",1,2,69
-Quirino,Se ne accorgerebbe anche un bambino.,1,2,70
+Ezio Quirino,Se ne accorgerebbe anche un bambino.,1,2,70
 Livia Adami,"Non gli dire niente, me la vedo io.",1,2,71
 Livia Adami,"Anzi, fammi vedere.",1,2,72
 Adelaide Anacleti,[donna in sinti] Oggi vanno a vedere la sala ricevimenti.,1,2,73
@@ -1138,28 +1138,28 @@ Amedeo Cinaglia,Da quand'è che ti occupi di politica?,1,2,326
 ,Non si può...,1,2,332
 Amedeo Cinaglia,Hai visto Finucci?,1,2,333
 ,L'ho visto passare poco fa.,1,2,334
-Finucci,Presidente.,1,2,335
+Giacomo Finucci,Presidente.,1,2,335
 Amedeo Cinaglia,Quanto le dà?,1,2,336
-Finucci,Mi scusi?,1,2,337
+Giacomo Finucci,Mi scusi?,1,2,337
 Amedeo Cinaglia,"Samurai, quanto le dà?",1,2,338
 Amedeo Cinaglia,Allora?,1,2,339
-Finucci,Che c'è? Vuole sapere quanto deve chiedere?,1,2,340
+Giacomo Finucci,Che c'è? Vuole sapere quanto deve chiedere?,1,2,340
 Amedeo Cinaglia,"Gli altri consiglieri, stanno pure loro sul libro paga?",1,2,341
-Finucci,Non che io sappia.,1,2,342
-Finucci,Almeno non su questo affare.,1,2,343
-Finucci,Su questo affare bastiamo io e lei.,1,2,344
+Giacomo Finucci,Non che io sappia.,1,2,342
+Giacomo Finucci,Almeno non su questo affare.,1,2,343
+Giacomo Finucci,Su questo affare bastiamo io e lei.,1,2,344
 Amedeo Cinaglia,Potrei far sapere la cosa.,1,2,345
 Amedeo Cinaglia,Far scoppiare uno scandalo.,1,2,346
-Finucci,L'avrebbe già fatto.,1,2,347
-Finucci,"Quando avrà smesso di litigare con la sua coscienza,",1,2,348
-Finucci,convochi la Commissione e chieda una modifica all'ordine del giorno.,1,2,349
-Finucci,Sarà lei a chiedere di discutere la pratica di Ostia per prima.,1,2,350
-Finucci,"Io mi opporrò, ma il mio sarà soltanto un parere tecnico.",1,2,351
+Giacomo Finucci,L'avrebbe già fatto.,1,2,347
+Giacomo Finucci,"Quando avrà smesso di litigare con la sua coscienza,",1,2,348
+Giacomo Finucci,convochi la Commissione e chieda una modifica all'ordine del giorno.,1,2,349
+Giacomo Finucci,Sarà lei a chiedere di discutere la pratica di Ostia per prima.,1,2,350
+Giacomo Finucci,"Io mi opporrò, ma il mio sarà soltanto un parere tecnico.",1,2,351
 Amedeo Cinaglia,Che rimarrà a verbale.,1,2,352
 Amedeo Cinaglia,Così lei avrà un alibi.,1,2,353
-Finucci,Ostia è un affare strano.,1,2,354
-Finucci,Accetti un consiglio.,1,2,355
-Finucci,Si faccia pagare bene.,1,2,356
+Giacomo Finucci,Ostia è un affare strano.,1,2,354
+Giacomo Finucci,Accetti un consiglio.,1,2,355
+Giacomo Finucci,Si faccia pagare bene.,1,2,356
 Sara Monaschi,Non c'è più molto tempo.,1,2,357
 Sara Monaschi,Quindi mi ascolti bene.,1,2,358
 Sara Monaschi,Andrò io all'appuntamento al posto suo e risolverò tutto.,1,2,359
@@ -1168,30 +1168,30 @@ Sara Monaschi,dove farà votare tutti come ci siamo messi d'accordo.,1,2,361
 Sara Monaschi,Va bene?,1,2,362
 Monsignor Theodosiou,Lei non è diversa da quelle persone.,1,2,363
 Sara Monaschi,Ci vediamo alle 20:00.,1,2,364
-Quirino,Quale sarebbe la quota della famiglia?,1,2,365
+Ezio Quirino,Quale sarebbe la quota della famiglia?,1,2,365
 Livia Adami,"Nessuna quota, l'affare è più grosso.",1,2,366
 Livia Adami,Riguarda la terra che vedi e tutto quello che ci sta intorno.,1,2,367
 Livia Adami,Ci faranno un porto.,1,2,368
 Livia Adami,La mia famiglia avrà parte della coca che arriva.,1,2,369
 Livia Adami,Tonnellate di coca.,1,2,370
-Quirino,Tuo fratello ancora non ne sa niente?,1,2,371
+Ezio Quirino,Tuo fratello ancora non ne sa niente?,1,2,371
 Livia Adami,"No, mio padre non glielo vuole dire.",1,2,372
 Livia Adami,Pensa che Aureliano qua ci voleva fare lo stabilimento.,1,2,373
-Quirino,"Che stronzata, siete pieni di stabilimenti.",1,2,374
+Ezio Quirino,"Che stronzata, siete pieni di stabilimenti.",1,2,374
 Livia Adami,"Non ti mettere in mezzo, Ezio.",1,2,375
-Quirino,"Non mi metto in mezzo, io sto proprio dalla parte tua, Livia.",1,2,376
+Ezio Quirino,"Non mi metto in mezzo, io sto proprio dalla parte tua, Livia.",1,2,376
 Livia Adami,Forse è un po' troppo.,1,2,377
-Quirino,Perché? È un male?,1,2,378
+Ezio Quirino,Perché? È un male?,1,2,378
 Livia Adami,Che c'è?,1,2,379
 Livia Adami,No.,1,2,380
-Quirino,Scusami.,1,2,381
+Ezio Quirino,Scusami.,1,2,381
 Livia Adami,Non si può fare.,1,2,382
-Quirino,Ma perché?,1,2,383
+Ezio Quirino,Ma perché?,1,2,383
 Livia Adami,Perché no.,1,2,384
 Livia Adami,E questo?,1,2,385
-Quirino,Non ti avvicinare.,1,2,386
+Ezio Quirino,Non ti avvicinare.,1,2,386
 Livia Adami,È legato.,1,2,387
-Quirino,Ma non ti avvicinare.,1,2,388
+Ezio Quirino,Ma non ti avvicinare.,1,2,388
 Livia Adami,"Ehi, piccolino.",1,2,389
 Livia Adami,Ciao.,1,2,390
 ,[brusio],1,2,391
@@ -1275,10 +1275,10 @@ Gabriele Marchilli,Tutto bene.,1,2,468
 Samurai Valerio,Chi cazzo è?,1,2,469
 Saverio Boiardo Guerri,Uno dei tanti che ci deve pagare.,1,2,470
 Aureliano Adami,"Ciao, Ro'.",1,2,471
-Romolo,Ehi.,1,2,472
-Romolo,Ti cerca tua sorella.,1,2,473
+Romolo Lucci,Ehi.,1,2,472
+Romolo Lucci,Ti cerca tua sorella.,1,2,473
 Aureliano Adami,Dove sta?,1,2,474
-Romolo,In terrazza.,1,2,475
+Romolo Lucci,In terrazza.,1,2,475
 Livia Adami,Sono stata al chiosco.,1,2,476
 Aureliano Adami,E com'è?,1,2,477
 Aureliano Adami,Papà ha cambiato idea?,1,2,478
@@ -1770,13 +1770,13 @@ Gabriele Marchilli,"O magari non sai come trovarli per me, eh, Sara?",1,3,315
 Sara Monaschi,Per favore.,1,3,316
 Gabriele Marchilli,"Ho capito, non c'è problema.",1,3,317
 Gabriele Marchilli,Fai conto che non te li abbia mai chiesti.,1,3,318
-Finucci,C'era tutta 'sta fretta di vedersi?,1,3,319
-Finucci,Con 'sta giornata di merda che ho avuto... E mi sa che è solamente l'inizio.,1,3,320
+Giacomo Finucci,C'era tutta 'sta fretta di vedersi?,1,3,319
+Giacomo Finucci,Con 'sta giornata di merda che ho avuto... E mi sa che è solamente l'inizio.,1,3,320
 Samurai Valerio,"Parliamo qui dentro, che questa l'hanno portata oggi.",1,3,321
 Samurai Valerio,Magari non hanno fatto in tempo a metterci le cimici.,1,3,322
 Samurai Valerio,Perché a noi non piace finire sulla bocca di tutti.,1,3,323
-Finucci,Guarda che io non dico niente.,1,3,324
-Finucci,Non ho mai fatto l'infame.,1,3,325
+Giacomo Finucci,Guarda che io non dico niente.,1,3,324
+Giacomo Finucci,Non ho mai fatto l'infame.,1,3,325
 Samurai Valerio,"Ma sei sotto pressione. La gente, sotto pressione, cambia.",1,3,326
 Samurai Valerio,"Non fare il coglione, Giacomi'.",1,3,327
 Samurai Valerio,Io non ti mando l'avviso di garanzia.,1,3,328
@@ -2178,9 +2178,9 @@ Samurai Valerio,Il padre dell'amico tuo.,1,4,310
 Saverio Boiardo Guerri,Tie'.,1,4,311
 Saverio Boiardo Guerri,Apri 'sto regalo.,1,4,312
 Saverio Boiardo Guerri,E tanti auguri.,1,4,313
-Quirino,"Tullio, a dirti la verità, queste fatture non mi tornano.",1,4,314
-Quirino,"Avrei bisogno di un po' di giorni per dargli un'altra controllata,",1,4,315
-Quirino,se per te va bene.,1,4,316
+Ezio Quirino,"Tullio, a dirti la verità, queste fatture non mi tornano.",1,4,314
+Ezio Quirino,"Avrei bisogno di un po' di giorni per dargli un'altra controllata,",1,4,315
+Ezio Quirino,se per te va bene.,1,4,316
 Aureliano Adami,"Quiri', levati dal cazzo, non è ora di fare i conti.",1,4,317
 ,[Quirino chiude la porta],1,4,318
 Aureliano Adami,Mo ho capito perché il chiosco di mamma non lo posso toccare.,1,4,319
@@ -2205,36 +2205,36 @@ Aureliano Adami,Dai.,1,4,337
 Aureliano Adami,Vaffanculo.,1,4,338
 Amedeo Cinaglia,Sì?,1,4,339
 Amedeo Cinaglia,Dott. Taccon.,1,4,340
-Taccon,Buongiorno.,1,4,341
+Gianni Taccon,Buongiorno.,1,4,341
 Amedeo Cinaglia,Buongiorno. Cinaglia.,1,4,342
 Amedeo Cinaglia,"Prego, si accomodi.",1,4,343
-Taccon,Non si disturbi.,1,4,344
+Gianni Taccon,Non si disturbi.,1,4,344
 Amedeo Cinaglia,Non si ricorda di me.,1,4,345
 Amedeo Cinaglia,Io invece mi ricordo molto bene di lei.,1,4,346
 Amedeo Cinaglia,"Nel '99, al partito, il giorno in cui fece quel bellissimo discorso",1,4,347
 Amedeo Cinaglia,e lanciò l'idea sugli stadi generali della cultura.,1,4,348
-Taccon,Altri tempi.,1,4,349
-Taccon,Come vanno i lavori qua in Commissione?,1,4,350
+Gianni Taccon,Altri tempi.,1,4,349
+Gianni Taccon,Come vanno i lavori qua in Commissione?,1,4,350
 Amedeo Cinaglia,Bene.,1,4,351
 Amedeo Cinaglia,D'ora in poi lavoreremo insieme.,1,4,352
-Taccon,Non sarà un'impresa facile.,1,4,353
-Taccon,Questa Commissione fa gola a molti.,1,4,354
+Gianni Taccon,Non sarà un'impresa facile.,1,4,353
+Gianni Taccon,Questa Commissione fa gola a molti.,1,4,354
 Amedeo Cinaglia,Lo so.,1,4,355
-Taccon,Non direi.,1,4,356
-Taccon,Finucci gliela faceva sotto il naso.,1,4,357
+Gianni Taccon,Non direi.,1,4,356
+Gianni Taccon,Finucci gliela faceva sotto il naso.,1,4,357
 Amedeo Cinaglia,"Mi sono fidato. Quando ti fidi, non ti metti a controllare.",1,4,358
-Taccon,"Comunque, adesso ci sono io.",1,4,359
-Taccon,Le posso garantire che qualsiasi cosa non chiara,1,4,360
-Taccon,o qualsiasi passaggio poco trasparente,1,4,361
-Taccon,con me non passerà.,1,4,362
+Gianni Taccon,"Comunque, adesso ci sono io.",1,4,359
+Gianni Taccon,Le posso garantire che qualsiasi cosa non chiara,1,4,360
+Gianni Taccon,o qualsiasi passaggio poco trasparente,1,4,361
+Gianni Taccon,con me non passerà.,1,4,362
 Amedeo Cinaglia,"C'era davvero bisogno di una persona come lei, qui.",1,4,363
-Taccon,"Bene, buon lavoro, allora.",1,4,364
+Gianni Taccon,"Bene, buon lavoro, allora.",1,4,364
 Amedeo Cinaglia,Grazie.,1,4,365
-mara,[donna] Lele!,1,4,366
+Mara Guagli,[donna] Lele!,1,4,366
 Gabriele Marchilli,"Ciao, Mara.",1,4,367
-mara,Cerchi tuo padre?,1,4,368
+Mara Guagli,Cerchi tuo padre?,1,4,368
 Gabriele Marchilli,Sì.,1,4,369
-mara,"Aspettalo dentro, dai, lo vado a chiamare.",1,4,370
+Mara Guagli,"Aspettalo dentro, dai, lo vado a chiamare.",1,4,370
 Gabriele Marchilli,Grazie.,1,4,371
 Franco Marchilli,[Franco] Lele!,1,4,372
 Franco Marchilli,Bello di papà. Chiudo il verbale con il dirigente e arrivo.,1,4,373
@@ -2392,34 +2392,34 @@ Manfredi Anacleti,[in sinti] Com'è andata con Angelica?,1,4,524
 Alberto Anacleti,"Una favola, ci sposiamo, tranquillo.",1,4,525
 Manfredi Anacleti,[in sinti] Vorrei vedere.,1,4,526
 ,[segnale di sms],1,4,527
-Finucci,Che ci fa qui?,1,4,528
+Giacomo Finucci,Che ci fa qui?,1,4,528
 Amedeo Cinaglia,Le devo parlare.,1,4,529
-Finucci,Non posso vedere nessuno senza il permesso del magistrato.,1,4,530
-Finucci,Rischia pure lei.,1,4,531
+Giacomo Finucci,Non posso vedere nessuno senza il permesso del magistrato.,1,4,530
+Giacomo Finucci,Rischia pure lei.,1,4,531
 Amedeo Cinaglia,Cinque minuti.,1,4,532
 Amedeo Cinaglia,Al posto suo ci hanno messo Taccon.,1,4,533
-Finucci,Vogliono dare un segnale con uno fuori dai giochi.,1,4,534
-Finucci,Un intellettuale.,1,4,535
+Giacomo Finucci,Vogliono dare un segnale con uno fuori dai giochi.,1,4,534
+Giacomo Finucci,Un intellettuale.,1,4,535
 Amedeo Cinaglia,Cosa troverà su quelle carte?,1,4,536
-Finucci,Troverà tutti gli impicci di Roma.,1,4,537
+Giacomo Finucci,Troverà tutti gli impicci di Roma.,1,4,537
 Amedeo Cinaglia,Finucci.,1,4,538
 Amedeo Cinaglia,Non sto scherzando.,1,4,539
 Amedeo Cinaglia,"Sulle carte di Ostia, cosa trova?",1,4,540
-Finucci,Stammi a sentire.,1,4,541
-Finucci,Ostia è una vicenda più grande di tutti noi.,1,4,542
-Finucci,I soldi che ci stanno lì sono tanti che nemmeno te li immagini.,1,4,543
-Finucci,E quello che costruiranno ne porterà ancora di più.,1,4,544
-Finucci,Io te l'ho già detto.,1,4,545
-Finucci,"Fatti dare i soldi, tanti, e non fare altre domande.",1,4,546
-Finucci,Dimmi la verità.,1,4,547
-Finucci,"T'ha mandato lui, eh?",1,4,548
-Finucci,Vuole capire se reggo la pressione.,1,4,549
+Giacomo Finucci,Stammi a sentire.,1,4,541
+Giacomo Finucci,Ostia è una vicenda più grande di tutti noi.,1,4,542
+Giacomo Finucci,I soldi che ci stanno lì sono tanti che nemmeno te li immagini.,1,4,543
+Giacomo Finucci,E quello che costruiranno ne porterà ancora di più.,1,4,544
+Giacomo Finucci,Io te l'ho già detto.,1,4,545
+Giacomo Finucci,"Fatti dare i soldi, tanti, e non fare altre domande.",1,4,546
+Giacomo Finucci,Dimmi la verità.,1,4,547
+Giacomo Finucci,"T'ha mandato lui, eh?",1,4,548
+Giacomo Finucci,Vuole capire se reggo la pressione.,1,4,549
 Amedeo Cinaglia,Samurai non sa un cazzo.,1,4,550
 Amedeo Cinaglia,Che ci sta sulle carte?,1,4,551
 Amedeo Cinaglia,Dimmelo.,1,4,552
-Finucci,Samurai ha deciso di fare il grande salto.,1,4,553
-Finucci,Ha deciso di portare la mafia negli affari legali di Roma.,1,4,554
-Finucci,E Ostia è la porta d'ingresso.,1,4,555
+Giacomo Finucci,Samurai ha deciso di fare il grande salto.,1,4,553
+Giacomo Finucci,Ha deciso di portare la mafia negli affari legali di Roma.,1,4,554
+Giacomo Finucci,E Ostia è la porta d'ingresso.,1,4,555
 ,[squilli di cellulare],1,4,556
 Gabriele Marchilli,"Ohi, papà.",1,4,557
 Gabriele Marchilli,"Scusa, sono dovuto andare via di corsa, ma c'era un amico mio che mi aspettava.",1,4,558
@@ -2523,33 +2523,33 @@ Samurai Valerio,Che vuoi dire?,1,5,60
 Amedeo Cinaglia,Niente.,1,5,61
 Samurai Valerio,Lo sapevo che dovevo passare a trovarti.,1,5,62
 Samurai Valerio,"Non m'importa come, ma Taccon dev'essere nostro.",1,5,63
-Taccon,Gianni Taccon,1,5,64
+Gianni Taccon,Gianni Taccon,1,5,64
 Sara Monaschi,Sara Monaschi.,1,5,65
 Sara Monaschi,Prego.,1,5,66
-Taccon,Se sono qui è per la stima che ho per la contessa.,1,5,67
-Taccon,"Io adesso l'ascolto, ma non farò niente che possa violare il mio mandato.",1,5,68
+Gianni Taccon,Se sono qui è per la stima che ho per la contessa.,1,5,67
+Gianni Taccon,"Io adesso l'ascolto, ma non farò niente che possa violare il mio mandato.",1,5,68
 Sara Monaschi,"Sì, ma certo, è per questo che io volevo parlarle.",1,5,69
 Sara Monaschi,Sa che io lavoro in Vaticano.,1,5,70
-Taccon,Sì.,1,5,71
+Gianni Taccon,Sì.,1,5,71
 Sara Monaschi,E mio marito è un imprenditore.,1,5,72
 Sara Monaschi,E anche lui è interessato al nuovo piano regolatore.,1,5,73
-Taccon,So anche questo.,1,5,74
+Gianni Taccon,So anche questo.,1,5,74
 Sara Monaschi,E sa anche che ho ricevuto pressioni,1,5,75
 Sara Monaschi,per cedere i terreni di Ostia ad una cordata di imprenditori.,1,5,76
-Taccon,E chi sarebbero questi imprenditori?,1,5,77
+Gianni Taccon,E chi sarebbero questi imprenditori?,1,5,77
 Sara Monaschi,"Guardi, le dico chi c'è dietro.",1,5,78
-Taccon,La ascolto.,1,5,79
+Gianni Taccon,La ascolto.,1,5,79
 Sara Monaschi,Samurai.,1,5,80
 Sara Monaschi,Sa chi è?,1,5,81
-Taccon,Sì.,1,5,82
+Gianni Taccon,Sì.,1,5,82
 Sara Monaschi,E allora sa anche chi ha corrotto Finucci.,1,5,83
-Taccon,Questo lo diranno i processi.,1,5,84
+Gianni Taccon,Questo lo diranno i processi.,1,5,84
 Sara Monaschi,"Sì, ma intanto lei può cambiare le cose.",1,5,85
-Taccon,E farò del mio meglio.,1,5,86
-Taccon,Sia nei confronti di suo marito,1,5,87
-Taccon,che di chiunque sia interessato a quei terreni.,1,5,88
+Gianni Taccon,E farò del mio meglio.,1,5,86
+Gianni Taccon,Sia nei confronti di suo marito,1,5,87
+Gianni Taccon,che di chiunque sia interessato a quei terreni.,1,5,88
 Sara Monaschi,Ma mio marito non è un criminale e soprattutto dietro di lui non c'è nessuno.,1,5,89
-Taccon,Arrivederci.,1,5,90
+Gianni Taccon,Arrivederci.,1,5,90
 Sara Monaschi,Arrivederci.,1,5,91
 Cardinale Cosimo Giunti,"Theodosiou non si è presentato, non abbiamo potuto votare.",1,5,92
 Samurai Valerio,"Come, non si è presentato? Dove sta?",1,5,93
@@ -2590,19 +2590,19 @@ Adelaide Anacleti,[in sinti] Oggi diventi uomo.,1,5,127
 Adelaide Anacleti,[in sinti] E da uomo devi comportarti.,1,5,128
 Adelaide Anacleti,"[in sinti] È tuo, lo devi portare sempre.",1,5,129
 ,[porta che si chiude],1,5,130
-Quirino,Aureliano ha preso una parte dei soldi in mezzo alle dune.,1,5,131
-Quirino,Sai che vuol dire?,1,5,132
+Ezio Quirino,Aureliano ha preso una parte dei soldi in mezzo alle dune.,1,5,131
+Ezio Quirino,Sai che vuol dire?,1,5,132
 Livia Adami,Zitto.,1,5,133
-Quirino,Vuol dire che si vuole vendicare,1,5,134
-Quirino,perché pensa di essere lui adesso il capo di questa famiglia.,1,5,135
-Quirino,E tu...,1,5,136
+Ezio Quirino,Vuol dire che si vuole vendicare,1,5,134
+Ezio Quirino,perché pensa di essere lui adesso il capo di questa famiglia.,1,5,135
+Ezio Quirino,E tu...,1,5,136
 Livia Adami,T'ho detto di stare zitto.,1,5,137
 Aureliano Adami,"Mo abbiamo pianto, asciughiamoci le lacrime e riapriamo gli occhi.",1,5,138
 Aureliano Adami,Voglio che stiamo attaccati a 'sti zingari di merda.,1,5,139
 Aureliano Adami,"Voglio sapere quanti sono, dove stanno, quello che fanno.",1,5,140
 Aureliano Adami,"Appena abbassano gli occhi, li ammazziamo tutti.",1,5,141
 Aureliano Adami,Uno per uno.,1,5,142
-Romolo,Aurelia'.,1,5,143
+Romolo Lucci,Aurelia'.,1,5,143
 Samurai Valerio,"Condoglianze, Aurelia'.",1,5,144
 Aureliano Adami,Grazie.,1,5,145
 Samurai Valerio,Tuo padre lo conosco da quand'ero pischello.,1,5,146
@@ -2626,13 +2626,13 @@ Aureliano Adami,Gli impicci che facevate tu e papà con Samurai come li ho scope
 Livia Adami,Quello è un affare molto più grosso...,1,5,164
 Aureliano Adami,"Va bene, ma basta, è passato.",1,5,165
 Aureliano Adami,"Le cose cambiano, io ho una guerra da fare.",1,5,166
-Quirino,Ma di che guerra stai a parlare?,1,5,167
+Ezio Quirino,Ma di che guerra stai a parlare?,1,5,167
 Aureliano Adami,Non t'hanno insegnato a scuola che per parlare devi alzare la mano?,1,5,168
 Aureliano Adami,Io la tua non l'ho vista.,1,5,169
 Livia Adami,Per favore.,1,5,170
 Aureliano Adami,"Aspetta, fallo parlare.",1,5,171
-Quirino,"Se mi posso permettere, sono sette anni che seguo i conti di questa famiglia.",1,5,172
-Quirino,"Sette anni, giorno e notte appiccicato a tuo padre.",1,5,173
+Ezio Quirino,"Se mi posso permettere, sono sette anni che seguo i conti di questa famiglia.",1,5,172
+Ezio Quirino,"Sette anni, giorno e notte appiccicato a tuo padre.",1,5,173
 Aureliano Adami,Bravo.,1,5,174
 Aureliano Adami,Mo vattene affanculo.,1,5,175
 Aureliano Adami,E non tornare più che le guerre non si fanno col pallottoliere.,1,5,176
@@ -2666,19 +2666,19 @@ Amedeo Cinaglia,Sì.,1,5,202
 ,[parole non udibili],1,5,204
 Livia Adami,Dove sta?,1,5,205
 Livia Adami,Ancora qua stai?,1,5,206
-Quirino,"Non ti lascio sola, Livia.",1,5,207
+Ezio Quirino,"Non ti lascio sola, Livia.",1,5,207
 Livia Adami,Stai qua solo per difendere il posto tuo?,1,5,208
-Quirino,Sto qua per difendere te...,1,5,209
-Quirino,...e il futuro tuo.,1,5,210
-Quirino,Non puoi lasciare la famiglia in mano a un pazzo del genere.,1,5,211
+Ezio Quirino,Sto qua per difendere te...,1,5,209
+Ezio Quirino,...e il futuro tuo.,1,5,210
+Ezio Quirino,Non puoi lasciare la famiglia in mano a un pazzo del genere.,1,5,211
 Livia Adami,"Tu e mio fratello siete uguali, sempre a pensare a 'sto cazzo di futuro.",1,5,212
 Livia Adami,Papà non l'abbiamo ancora seppellito.,1,5,213
-Quirino,È proprio per tuo padre che devi reagire.,1,5,214
-Quirino,Lui si fidava solo di te.,1,5,215
+Ezio Quirino,È proprio per tuo padre che devi reagire.,1,5,214
+Ezio Quirino,Lui si fidava solo di te.,1,5,215
 Livia Adami,Tu non lo devi nominare mio padre.,1,5,216
 Livia Adami,E mo vattene.,1,5,217
 Livia Adami,Lasciami stare.,1,5,218
-Quirino,La cravatta sta sotto il vestito nero.,1,5,219
+Ezio Quirino,La cravatta sta sotto il vestito nero.,1,5,219
 Samurai Valerio,Tutto bene?,1,5,220
 Samurai Valerio,La pistola?,1,5,221
 Gabriele Marchilli,In fondo al mare.,1,5,222
@@ -2749,12 +2749,12 @@ Livia Adami,Hai ragione tu.,1,5,286
 Livia Adami,Prima Aureliano.,1,5,287
 Livia Adami,E poi gli zingari di merda.,1,5,288
 Livia Adami,Una guerra alla volta.,1,5,289
-Quirino,Come ti vuoi muovere?,1,5,290
+Ezio Quirino,Come ti vuoi muovere?,1,5,290
 Livia Adami,"Aureliano si è preso i soldi che stavano in mezzo alle dune,",1,5,291
 Livia Adami,ma degli affari miei non sa un cazzo.,1,5,292
 Livia Adami,Mi devi portare tutti i conti della famiglia.,1,5,293
 Livia Adami,Devo sapere fino a che punto mi posso spingere.,1,5,294
-Quirino,Che vuoi fare?,1,5,295
+Ezio Quirino,Che vuoi fare?,1,5,295
 Livia Adami,Prima voglio parlare con le famiglie di Ostia che lavorano per noi.,1,5,296
 Livia Adami,Mi devono appoggiare.,1,5,297
 ,[parole non udibili],1,5,298
@@ -2799,37 +2799,37 @@ Aureliano Adami,Che cazzo è tutta 'sta gente?,1,5,336
 ,[smettono di parlare],1,5,337
 Aureliano Adami,"Mo sì che ti riconosco, sorellina.",1,5,338
 Aureliano Adami,Che schifo mi fai.,1,5,339
-Taccon,Buonasera.,1,5,340
+Gianni Taccon,Buonasera.,1,5,340
 Amedeo Cinaglia,Buonasera.,1,5,341
-Taccon,Aveva bisogno di parlarmi?,1,5,342
+Gianni Taccon,Aveva bisogno di parlarmi?,1,5,342
 Amedeo Cinaglia,Volevo solo capire quando potevamo vederci per coordinare i lavori.,1,5,343
-Taccon,È un po' presto. Io devo ancora leggere tutte le carte.,1,5,344
-Taccon,Adesso mi scusi.,1,5,345
+Gianni Taccon,È un po' presto. Io devo ancora leggere tutte le carte.,1,5,344
+Gianni Taccon,Adesso mi scusi.,1,5,345
 Amedeo Cinaglia,Che fine ha fatto quel suo progetto sui musei di Roma?,1,5,346
-Taccon,Hanno scelto quello di un altro.,1,5,347
-Taccon,Ma lei che ne sa?,1,5,348
+Gianni Taccon,Hanno scelto quello di un altro.,1,5,347
+Gianni Taccon,Ma lei che ne sa?,1,5,348
 Amedeo Cinaglia,Me lo ricordo bene.,1,5,349
 Amedeo Cinaglia,Era un bel progetto.,1,5,350
 Amedeo Cinaglia,Ci pensa mai?,1,5,351
-Taccon,Si ricorda quando il Comune aveva fatto mettere una gabbia,1,5,352
-Taccon,con una lupa dentro?,1,5,353
-Taccon,Proprio qua vicino.,1,5,354
+Gianni Taccon,Si ricorda quando il Comune aveva fatto mettere una gabbia,1,5,352
+Gianni Taccon,con una lupa dentro?,1,5,353
+Gianni Taccon,Proprio qua vicino.,1,5,354
 Amedeo Cinaglia,"Era un simbolo. Roma, i lupi l'hanno fondata.",1,5,355
-Taccon,Ma la tenevano in gabbia.,1,5,356
-Taccon,Come Finucci.,1,5,357
-Taccon,Sto controllando le ditte su Ostia. C'è qualcosa di strano.,1,5,358
+Gianni Taccon,Ma la tenevano in gabbia.,1,5,356
+Gianni Taccon,Come Finucci.,1,5,357
+Gianni Taccon,Sto controllando le ditte su Ostia. C'è qualcosa di strano.,1,5,358
 Amedeo Cinaglia,Prima mi ha detto che non aveva ancora visto le carte.,1,5,359
-Taccon,Non posso fidarmi di nessuno.,1,5,360
+Gianni Taccon,Non posso fidarmi di nessuno.,1,5,360
 Amedeo Cinaglia,Noi non siamo lupi.,1,5,361
-Taccon,No.,1,5,362
-Taccon,Direi di no.,1,5,363
+Gianni Taccon,No.,1,5,362
+Gianni Taccon,Direi di no.,1,5,363
 Amedeo Cinaglia,Ma lei cosa farebbe se oggi le offrissero,1,5,364
 Amedeo Cinaglia,di realizzare il suo progetto sui musei di Roma?,1,5,365
-Taccon,Non ci crederei.,1,5,366
-Taccon,E comunque non me lo offriranno.,1,5,367
-Taccon,"Adesso, mi scusi, ma devo andare.",1,5,368
+Gianni Taccon,Non ci crederei.,1,5,366
+Gianni Taccon,E comunque non me lo offriranno.,1,5,367
+Gianni Taccon,"Adesso, mi scusi, ma devo andare.",1,5,368
 Amedeo Cinaglia,Buonanotte.,1,5,369
-Taccon,'Notte.,1,5,370
+Gianni Taccon,'Notte.,1,5,370
 Gabriele Marchilli,Adesso posso sapere perché mi hai chiamato?,1,5,371
 Sara Monaschi,Perché stavi là da Samurai?,1,5,372
 Gabriele Marchilli,Il debito ce l'avevo con lui.,1,5,373
@@ -2848,13 +2848,13 @@ Gabriele Marchilli,Ora me lo dici perché siamo qua?,1,5,385
 ,[rumore di passi],1,5,386
 Livia Adami,Oh.,1,5,387
 Livia Adami,Dove vai?,1,5,388
-Quirino,"Io vado a casa a dormire, dove vuoi che vado?",1,5,389
+Ezio Quirino,"Io vado a casa a dormire, dove vuoi che vado?",1,5,389
 Livia Adami,Vieni qua.,1,5,390
-Quirino,Che c'è?,1,5,391
+Ezio Quirino,Che c'è?,1,5,391
 Livia Adami,Ti volevo ringraziare.,1,5,392
 Livia Adami,Senza di te non avrei fatto niente.,1,5,393
-Quirino,Hai fatto tutto da sola.,1,5,394
-Quirino,"Volevo solo difendere il posto di lavoro, no?",1,5,395
+Ezio Quirino,Hai fatto tutto da sola.,1,5,394
+Ezio Quirino,"Volevo solo difendere il posto di lavoro, no?",1,5,395
 ,[parole non udibili],1,5,396
 ,[brusio],1,5,397
 ,"T'affido la vita mia, Spadi'.",1,5,398
@@ -3102,16 +3102,16 @@ Alberto Anacleti,Buh!,1,6,111
 ,[parole non udibili],1,6,112
 ,[parole non udibili],1,6,113
 Amedeo Cinaglia,"Ciao, Ste'. Posso?",1,6,114
-Stefano,Il cappotto.,1,6,115
+Stefano Forsini,Il cappotto.,1,6,115
 Amedeo Cinaglia,Come stai?,1,6,116
 Amedeo Cinaglia,Ti trovo invecchiato.,1,6,117
-Stefano,Te invece sembri sempre il solito stronzo.,1,6,118
+Stefano Forsini,Te invece sembri sempre il solito stronzo.,1,6,118
 Amedeo Cinaglia,"No, sono invecchiato anche io, invece.",1,6,119
-Stefano,"Se permetti, vorrei mangiare un boccone.",1,6,120
+Stefano Forsini,"Se permetti, vorrei mangiare un boccone.",1,6,120
 Amedeo Cinaglia,Ti faccio compagnia.,1,6,121
-Stefano,Preferisco pranzare da solo.,1,6,122
+Stefano Forsini,Preferisco pranzare da solo.,1,6,122
 Amedeo Cinaglia,E quella volta che hai pranzato con Ferinelli?,1,6,123
-Stefano,Non so di che parli.,1,6,124
+Stefano Forsini,Non so di che parli.,1,6,124
 Amedeo Cinaglia,"Io penso di sì, invece.",1,6,125
 Amedeo Cinaglia,Ti ricordi di quello strano pranzo che hai organizzato tanti anni fa?,1,6,126
 Amedeo Cinaglia,"Con quel lobbista molto particolare, un grande sostenitore dell'eolico.",1,6,127
@@ -3120,26 +3120,26 @@ Amedeo Cinaglia,"Poi, però, finì tutto nel dimenticatoio, anche le foto tue e 
 Amedeo Cinaglia,"Poco dopo, però, le pale iniziarono a girare in mezza Italia.",1,6,130
 Amedeo Cinaglia,"Tu lo sai come si dice, no?",1,6,131
 Amedeo Cinaglia,"A pensare male si fa peccato, ma molto spesso ci si azzecca.",1,6,132
-Stefano,"Togliti dal cazzo, Amedeo.",1,6,133
+Stefano Forsini,"Togliti dal cazzo, Amedeo.",1,6,133
 Amedeo Cinaglia,No.,1,6,134
 Amedeo Cinaglia,Voglio che usi tutto il potere che hai conquistato in questi anni,1,6,135
 Amedeo Cinaglia,per affidare la direzione dei musei di Roma a un amico comune.,1,6,136
-Stefano,Tu sei fuori di testa.,1,6,137
+Stefano Forsini,Tu sei fuori di testa.,1,6,137
 Amedeo Cinaglia,Ma come? Non sei curioso di sapere chi è l'amico?,1,6,138
 Amedeo Cinaglia,È Taccon.,1,6,139
 Amedeo Cinaglia,"Il povero Taccon ha sempre desiderato quel posto,",1,6,140
 Amedeo Cinaglia,"solo che il partito aveva altri piani, altri raccomandati.",1,6,141
-Stefano,Veramente ti sei venduto l'anima al diavolo per due terreni a Ostia?,1,6,142
+Stefano Forsini,Veramente ti sei venduto l'anima al diavolo per due terreni a Ostia?,1,6,142
 Amedeo Cinaglia,Il diavolo ha pure la tua.,1,6,143
 Amedeo Cinaglia,Quanto t'hanno dato per far girare quelle pale? Eh?,1,6,144
-Stefano,"Sei un fallito, Cinaglia, e bluffi da fallito.",1,6,145
-Stefano,"Non hai niente in mano, solo voci del passato",1,6,146
-Stefano,"che, evidentemente, non hai ancora digerito.",1,6,147
+Stefano Forsini,"Sei un fallito, Cinaglia, e bluffi da fallito.",1,6,145
+Stefano Forsini,"Non hai niente in mano, solo voci del passato",1,6,146
+Stefano Forsini,"che, evidentemente, non hai ancora digerito.",1,6,147
 Amedeo Cinaglia,"Mi ha fatto piacere rivederti, Stefano.",1,6,148
-Stefano,A me no.,1,6,149
+Stefano Forsini,A me no.,1,6,149
 Amedeo Cinaglia,"Meglio dell'ultima volta che ci siamo visti, no?",1,6,150
 Amedeo Cinaglia,T'ho spaccato la faccia.,1,6,151
-Stefano,L'ultima volta che ci siamo visti ti ho portato via tua moglie.,1,6,152
+Stefano Forsini,L'ultima volta che ci siamo visti ti ho portato via tua moglie.,1,6,152
 Amedeo Cinaglia,"Beh, allora vediamo che succede la prossima volta.",1,6,153
 Amedeo Cinaglia,Aspetto tue notizie.,1,6,154
 Amedeo Cinaglia,Diciamo entro stasera.,1,6,155
@@ -3225,26 +3225,26 @@ Adelaide Anacleti,Mercedes!,1,6,234
 Adelaide Anacleti,Vieni qua.,1,6,235
 Adelaide Anacleti,Vai con lei.,1,6,236
 ,Va bene.,1,6,237
-Quirino,"Mannaggia a te, quanto sei bella.",1,6,238
-Quirino,Che è? Che c'è?,1,6,239
+Ezio Quirino,"Mannaggia a te, quanto sei bella.",1,6,238
+Ezio Quirino,Che è? Che c'è?,1,6,239
 Livia Adami,Niente.,1,6,240
 Livia Adami,Il bello di casa è sempre stato Aureliano.,1,6,241
 Livia Adami,È spiccicato a mamma.,1,6,242
-Quirino,Te la ricordi ancora?,1,6,243
+Ezio Quirino,Te la ricordi ancora?,1,6,243
 Livia Adami,Sì.,1,6,244
-Quirino,"Sta' tranquilla, Livia.",1,6,245
-Quirino,Hai fatto la cosa giusta.,1,6,246
-Quirino,Per te e per lui.,1,6,247
+Ezio Quirino,"Sta' tranquilla, Livia.",1,6,245
+Ezio Quirino,Hai fatto la cosa giusta.,1,6,246
+Ezio Quirino,Per te e per lui.,1,6,247
 ,[porta che si chiude],1,6,248
-Quirino,Dove vai?,1,6,249
+Ezio Quirino,Dove vai?,1,6,249
 Livia Adami,Hai sentito?,1,6,250
-Quirino,"Sì, ma dove vai?",1,6,251
+Ezio Quirino,"Sì, ma dove vai?",1,6,251
 Livia Adami,Di là.,1,6,252
 Livia Adami,Perché stai qua?,1,6,253
 Aureliano Adami,Non lo vedi?,1,6,254
 Aureliano Adami,E comunque questa è casa mia.,1,6,255
 Aureliano Adami,Che cazzo stai a fare te qua?,1,6,256
-Quirino,"Falla finita, Aurelia'.",1,6,257
+Ezio Quirino,"Falla finita, Aurelia'.",1,6,257
 Aureliano Adami,"No, tu.",1,6,258
 Aureliano Adami,Ti scopi mia sorella e pensi di parlare con me?,1,6,259
 Aureliano Adami,Faccia di merda.,1,6,260
@@ -3702,10 +3702,10 @@ Samurai Valerio,Magari stai facendo questa cosa per i tuoi interessi.,1,7,114
 Amedeo Cinaglia,Magari adesso mando tutto per aria e 'sto gioco te lo giochi da solo.,1,7,115
 Samurai Valerio,Toh.,1,7,116
 Samurai Valerio,Vedi se con questi ti torna la memoria.,1,7,117
-Romolo,Stanno a fare le prove 'sti zingari di merda.,1,7,118
-Quirino,Allora perché non hanno preso di mira direttamente un bar nostro?,1,7,119
+Romolo Lucci,Stanno a fare le prove 'sti zingari di merda.,1,7,118
+Ezio Quirino,Allora perché non hanno preso di mira direttamente un bar nostro?,1,7,119
 Livia Adami,Perché lo sanno che rispetto a noi non sono niente.,1,7,120
-Romolo,Intanto però hanno provato a tirare fuori la testa.,1,7,121
+Romolo Lucci,Intanto però hanno provato a tirare fuori la testa.,1,7,121
 Livia Adami,Adesso che non c'è più mio padre vogliono capire che sono in grado di fare.,1,7,122
 Livia Adami,[Livia] 'Ste merde.,1,7,123
 Livia Adami,Devo sapere che succede all'EUR. Buttaci un occhio.,1,7,124
@@ -3751,12 +3751,12 @@ Aureliano Adami,E mi prendo casa di mamma.,1,7,162
 ,[l'uomo parla in russo],1,7,164
 ,[l'uomo parla in russo],1,7,165
 Amedeo Cinaglia,Stefano!,1,7,166
-Stefano,Che cazzo vuoi ancora?,1,7,167
+Stefano Forsini,Che cazzo vuoi ancora?,1,7,167
 Amedeo Cinaglia,Mi dovevi una risposta e invece non mi hai fatto sapere niente.,1,7,168
-Stefano,"Non mi rompere i coglioni, Amedeo.",1,7,169
-Stefano,Che cos'è?,1,7,170
-Stefano,"Hai imparato subito, vedo.",1,7,171
-Stefano,Gabriella lo sa?,1,7,172
+Stefano Forsini,"Non mi rompere i coglioni, Amedeo.",1,7,169
+Stefano Forsini,Che cos'è?,1,7,170
+Stefano Forsini,"Hai imparato subito, vedo.",1,7,171
+Stefano Forsini,Gabriella lo sa?,1,7,172
 Amedeo Cinaglia,Che sei un corrotto e una merda? Io penso che l'abbia capito.,1,7,173
 Amedeo Cinaglia,Ci prendiamo un caffè o parliamo qua del nostro amico Taccon,1,7,174
 Amedeo Cinaglia,e di quella nomina ai musei di Roma?,1,7,175
@@ -3918,14 +3918,14 @@ Aureliano Adami,Ci ha messo un attimo a scriverla.,1,7,330
 Alberto Anacleti,Si vede che non gli piaceva la compagnia.,1,7,331
 Aureliano Adami,"Non ci guardare, ha fatto tutto Lele.",1,7,332
 Sara Monaschi,Grazie.,1,7,333
-Taccon,Siete già tutti riuniti? Faccio l'ultimo tiro e arrivo.,1,7,334
+Gianni Taccon,Siete già tutti riuniti? Faccio l'ultimo tiro e arrivo.,1,7,334
 Amedeo Cinaglia,"Presiedo la Commissione, non faccio mica il cane da guardia.",1,7,335
 Amedeo Cinaglia,Fumi pure tranquillo.,1,7,336
 Amedeo Cinaglia,"Ce l'ho, grazie.",1,7,337
 Amedeo Cinaglia,Mi ricordo certe riunioni anni fa.,1,7,338
 Amedeo Cinaglia,Con le sale...,1,7,339
 Amedeo Cinaglia,che erano camere a gas.,1,7,340
-Taccon,Fumare e appassionarsi alla politica erano piaceri ancora concessi.,1,7,341
+Gianni Taccon,Fumare e appassionarsi alla politica erano piaceri ancora concessi.,1,7,341
 Amedeo Cinaglia,La politica non l'appassiona più?,1,7,342
 Amedeo Cinaglia,Posso capirla.,1,7,343
 Amedeo Cinaglia,Io e lei siamo stati usati come ruote di scorta.,1,7,344
@@ -3933,13 +3933,13 @@ Amedeo Cinaglia,Piazzati lì dove serviva al momento.,1,7,345
 Amedeo Cinaglia,"Ma la politica, quella vera, la facevano gli altri.",1,7,346
 Amedeo Cinaglia,Però la sua passione è l'arte.,1,7,347
 Amedeo Cinaglia,"Il suo sogno, i musei di Roma, giusto?",1,7,348
-Taccon,Lei vuole farmi soffrire oggi?,1,7,349
+Gianni Taccon,Lei vuole farmi soffrire oggi?,1,7,349
 Amedeo Cinaglia,"Non sarebbe bello recuperarlo, questo sogno?",1,7,350
 Amedeo Cinaglia,Quella nomina...,1,7,351
 Amedeo Cinaglia,Direttore dei musei di Roma.,1,7,352
 Amedeo Cinaglia,È pronta.,1,7,353
 Amedeo Cinaglia,Ha la firma.,1,7,354
-Taccon,"Credo che a questo punto non abbiamo più niente da dirci, Dott. Cinaglia.",1,7,355
+Gianni Taccon,"Credo che a questo punto non abbiamo più niente da dirci, Dott. Cinaglia.",1,7,355
 Amedeo Cinaglia,Certe occasioni passano una volta sola nella vita.,1,7,356
 Amedeo Cinaglia,Sarebbe un peccato sprecarle.,1,7,357
 Amedeo Cinaglia,Si prenda un po' di tempo per pensarci.,1,7,358
@@ -4096,10 +4096,10 @@ Manfredi Anacleti,Spadino ha fatto quello che doveva fare?,1,7,508
 Angelica Sale,Sì.,1,7,509
 Manfredi Anacleti,[Manfredi in sinti] Colpisci!,1,7,510
 Manfredi Anacleti,[Manfredi in sinti] Ammazzalo!,1,7,511
-Taccon,Dottor Cinaglia.,1,7,512
+Gianni Taccon,Dottor Cinaglia.,1,7,512
 Amedeo Cinaglia,Buonasera.,1,7,513
-Taccon,C'ho pensato.,1,7,514
-Taccon,Per me va bene.,1,7,515
+Gianni Taccon,C'ho pensato.,1,7,514
+Gianni Taccon,Per me va bene.,1,7,515
 Amedeo Cinaglia,"Bravo, Taccon.",1,7,516
 Amedeo Cinaglia,Ha fatto la scelta giusta.,1,7,517
 Amedeo Cinaglia,Approvi in Commissione...,1,7,518
@@ -4234,9 +4234,9 @@ Aureliano Adami,Mi piace che stai qui.,1,8,77
 Aureliano Adami,Che giri per casa.,1,8,78
 Isabelle Mbamba,Non ho mai visto una casa così grande.,1,8,79
 Aureliano Adami,Dopo prendiamo la roba tua così la riempiamo.,1,8,80
-Quirino,"Senti, vengo con te.",1,8,81
+Ezio Quirino,"Senti, vengo con te.",1,8,81
 Livia Adami,"Non ti preoccupare, ci sta Romolo.",1,8,82
-Quirino,"Ho capito, ma io non sono come tuo fratello, io non ti lascio sola.",1,8,83
+Ezio Quirino,"Ho capito, ma io non sono come tuo fratello, io non ti lascio sola.",1,8,83
 Livia Adami,"Non sto da sola, te l'ho già detto.",1,8,84
 Livia Adami,Ci sta Romolo.,1,8,85
 Livia Adami,Tranquillo.,1,8,86
@@ -4362,29 +4362,29 @@ Alberto Anacleti,Te la stai portando a casa?,1,8,205
 Aureliano Adami,"Ci dovrò provare pure io, no?",1,8,206
 Aureliano Adami,"Sta meglio a te che a me 'sto cappello, tieni, te lo regalo.",1,8,207
 Aureliano Adami,Va' da tua moglie che c'ha bisogno.,1,8,208
-Quirino,"Mi sembra che dovresti essere contenta, no?",1,8,209
+Ezio Quirino,"Mi sembra che dovresti essere contenta, no?",1,8,209
 Livia Adami,Hai ragione.,1,8,210
 Livia Adami,Ma Aureliano non ha ancora firmato,1,8,211
 Livia Adami,e Samurai vuole subito i terreni che gli ho promesso.,1,8,212
-Quirino,"Devi parlare con tuo fratello, Li'.",1,8,213
+Ezio Quirino,"Devi parlare con tuo fratello, Li'.",1,8,213
 Livia Adami,Se mi risponde! Chissà che sta a fare?,1,8,214
-Quirino,La vita sua sta a fare.,1,8,215
+Ezio Quirino,La vita sua sta a fare.,1,8,215
 Livia Adami,"Che dovrebbe essere qua, in questa famiglia.",1,8,216
-Quirino,"Sì, ma a un certo punto uno cresce e se ne fa un'altra di famiglia, no?",1,8,217
+Ezio Quirino,"Sì, ma a un certo punto uno cresce e se ne fa un'altra di famiglia, no?",1,8,217
 Livia Adami,Che mi stai a dire?,1,8,218
 Livia Adami,Eh?,1,8,219
-Quirino,"Niente, l'hanno visto in giro per Ostia con una negra, tutto qua.",1,8,220
+Ezio Quirino,"Niente, l'hanno visto in giro per Ostia con una negra, tutto qua.",1,8,220
 Livia Adami,"Non può essere, ma che dici?",1,8,221
-Quirino,"Sì, è normale.",1,8,222
-Quirino,"È meglio per lui, è meglio per tutti, dai.",1,8,223
+Ezio Quirino,"Sì, è normale.",1,8,222
+Ezio Quirino,"È meglio per lui, è meglio per tutti, dai.",1,8,223
 Livia Adami,Una negra del cazzo?,1,8,224
-Quirino,Sì.,1,8,225
+Ezio Quirino,Sì.,1,8,225
 Livia Adami,Spiccicato a mio padre.,1,8,226
-Quirino,Sono pure andati a vivere insieme.,1,8,227
+Ezio Quirino,Sono pure andati a vivere insieme.,1,8,227
 Livia Adami,E dove stanno?,1,8,228
-Quirino,Dai.,1,8,229
+Ezio Quirino,Dai.,1,8,229
 Livia Adami,Dimmi dove cazzo stanno.,1,8,230
-Quirino,A casa di tua madre.,1,8,231
+Ezio Quirino,A casa di tua madre.,1,8,231
 ,Ci vediamo dopo.,1,8,232
 ,Ciao.,1,8,233
 Gabriele Marchilli,Papà.,1,8,234
@@ -4458,26 +4458,26 @@ Adelaide Anacleti,"Se lo lasci ora, mio figlio rischia la vita",1,8,301
 Adelaide Anacleti,e tu di non contare più niente.,1,8,302
 Adelaide Anacleti,[in sinti] Noi donne ragioniamo con la pancia.,1,8,303
 Adelaide Anacleti,[in sinti] E un modo per salvare il matrimonio lo troviamo sempre.,1,8,304
-Finucci,Chi è lei? Che vuole?,1,8,305
+Giacomo Finucci,Chi è lei? Che vuole?,1,8,305
 Sara Monaschi,"Mi chiamo Sara Monaschi, ho bisogno di parlare con lei.",1,8,306
-Finucci,"Io sto ai domiciliari, non posso far entrare nessuno.",1,8,307
+Giacomo Finucci,"Io sto ai domiciliari, non posso far entrare nessuno.",1,8,307
 Sara Monaschi,Io e lei abbiamo una cosa in comune.,1,8,308
 Sara Monaschi,Samurai.,1,8,309
 Sara Monaschi,Ci ha usati entrambi.,1,8,310
-Finucci,"Non so di che parla, arrivederci.",1,8,311
+Giacomo Finucci,"Non so di che parla, arrivederci.",1,8,311
 Sara Monaschi,Lavoro in Vaticano e posso dargli molto fastidio.,1,8,312
 Sara Monaschi,Ma mi serve qualcosa da poter usare contro di lui.,1,8,313
 Sara Monaschi,Posso proteggerla.,1,8,314
-Finucci,Ha idea di chi ci sia dietro di lui nell'affare del piano regolatore?,1,8,315
-Finucci,Se sono ancora vivo è perché non mi sono mai venute in mente cazzate del genere.,1,8,316
+Giacomo Finucci,Ha idea di chi ci sia dietro di lui nell'affare del piano regolatore?,1,8,315
+Giacomo Finucci,Se sono ancora vivo è perché non mi sono mai venute in mente cazzate del genere.,1,8,316
 Sara Monaschi,Ma lei non deve esporsi.,1,8,317
 Sara Monaschi,Mi deve dare qualcosa. La faccia ce la metto io.,1,8,318
-Finucci,La faccia? In faccia ci sparano a tutti e due.,1,8,319
-Finucci,Quanto crede che ci metterebbe la mafia a capire che sono stato io a fotterli?,1,8,320
+Giacomo Finucci,La faccia? In faccia ci sparano a tutti e due.,1,8,319
+Giacomo Finucci,Quanto crede che ci metterebbe la mafia a capire che sono stato io a fotterli?,1,8,320
 Sara Monaschi,La mafia?,1,8,321
 Sara Monaschi,E allora mi dia una prova! Qualcosa!,1,8,322
-Finucci,La trovi da sola.,1,8,323
-Finucci,"Ma si sbrighi, e per noi due forse c'è ancora una speranza.",1,8,324
+Giacomo Finucci,La trovi da sola.,1,8,323
+Giacomo Finucci,"Ma si sbrighi, e per noi due forse c'è ancora una speranza.",1,8,324
 Aureliano Adami,"Oh, frate'.",1,8,325
 Gabriele Marchilli,Come va?,1,8,326
 Aureliano Adami,Che dici?,1,8,327
@@ -4562,16 +4562,16 @@ Livia Adami,E si vede che è più furbo di suo padre.,1,8,405
 Livia Adami,Ti sta scopando gratis.,1,8,406
 ,[porta che si chiude],1,8,407
 Aureliano Adami,Ahó.,1,8,408
-Romolo,Ma che impicci stai a fare?,1,8,409
+Romolo Lucci,Ma che impicci stai a fare?,1,8,409
 Aureliano Adami,Sto a fare un favore a un amico.,1,8,410
-Romolo,Bocca buona 'sto amico.,1,8,411
+Romolo Lucci,Bocca buona 'sto amico.,1,8,411
 Aureliano Adami,"Mia sorella, invece?",1,8,412
 Aureliano Adami,Fa sempre la galoppina del Samurai?,1,8,413
-Romolo,Quel pezzo di merda lo puoi sistemare solo te.,1,8,414
-Romolo,Non è roba per femmine.,1,8,415
-Romolo,"Torna a casa, Aurelia'.",1,8,416
-Romolo,Fa' pace con tua sorella.,1,8,417
-Romolo,Lì dentro ci sta un vuoto che mi fa star male.,1,8,418
+Romolo Lucci,Quel pezzo di merda lo puoi sistemare solo te.,1,8,414
+Romolo Lucci,Non è roba per femmine.,1,8,415
+Romolo Lucci,"Torna a casa, Aurelia'.",1,8,416
+Romolo Lucci,Fa' pace con tua sorella.,1,8,417
+Romolo Lucci,Lì dentro ci sta un vuoto che mi fa star male.,1,8,418
 Aureliano Adami,"Quanto sei bello, Romole'.",1,8,419
 Aureliano Adami,Il problema è che non sono tutti come te.,1,8,420
 Angelica Sale,Mo sì che ho capito che mi dovevi dire.,1,8,421
@@ -4622,35 +4622,35 @@ Aureliano Adami,Invece di essere contento...,1,8,465
 Aureliano Adami,Dammi 'sta cosa.,1,8,466
 Aureliano Adami,Andiamo.,1,8,467
 ,[campanello],1,8,468
-Finucci,Bello che sei venuto.,1,8,469
-Finucci,Ma non ti posso far entrare.,1,8,470
+Giacomo Finucci,Bello che sei venuto.,1,8,469
+Giacomo Finucci,Ma non ti posso far entrare.,1,8,470
 Samurai Valerio,Si tratta così un amico?,1,8,471
-Finucci,Le guardie saranno qui a momenti. Controllano tutte le visite.,1,8,472
+Giacomo Finucci,Le guardie saranno qui a momenti. Controllano tutte le visite.,1,8,472
 Samurai Valerio,"Potevi venire tu, allora.",1,8,473
-Finucci,Diciamo che ho qualche problema.,1,8,474
+Giacomo Finucci,Diciamo che ho qualche problema.,1,8,474
 Samurai Valerio,"La verità è che sarei passato pure prima,",1,8,475
 Samurai Valerio,"ma sto invecchiando, Giacomi'.",1,8,476
-Finucci,"Sì, ma invecchiamo bene, dai.",1,8,477
+Giacomo Finucci,"Sì, ma invecchiamo bene, dai.",1,8,477
 Samurai Valerio,So come farti uscire da questa prigione.,1,8,478
 Samurai Valerio,"Però,",1,8,479
 Samurai Valerio,ti tocca andare il più lontano possibile.,1,8,480
-Finucci,Vuoi bere qualcosa?,1,8,481
+Giacomo Finucci,Vuoi bere qualcosa?,1,8,481
 Samurai Valerio,Da mo che ho smesso.,1,8,482
-Finucci,"Eh, no!",1,8,483
-Finucci,Così non invecchiamo bene.,1,8,484
+Giacomo Finucci,"Eh, no!",1,8,483
+Giacomo Finucci,Così non invecchiamo bene.,1,8,484
 Samurai Valerio,Lascia perdere.,1,8,485
-Finucci,Ti ricordi quando ci scolavamo sei o sette birre a testa?,1,8,486
-Finucci,E quando poi andavamo a menare le zecche?,1,8,487
-Finucci,Che botte che abbiamo dato!,1,8,488
-Finucci,Che botte abbiamo preso.,1,8,489
-Finucci,Bei tempi.,1,8,490
+Giacomo Finucci,Ti ricordi quando ci scolavamo sei o sette birre a testa?,1,8,486
+Giacomo Finucci,E quando poi andavamo a menare le zecche?,1,8,487
+Giacomo Finucci,Che botte che abbiamo dato!,1,8,488
+Giacomo Finucci,Che botte abbiamo preso.,1,8,489
+Giacomo Finucci,Bei tempi.,1,8,490
 Samurai Valerio,Bei tempi.,1,8,491
-Finucci,Ma... senti un po'.,1,8,492
-Finucci,"Quanto lontano dovrei arrivare,",1,8,493
-Finucci,secondo te?,1,8,494
+Giacomo Finucci,Ma... senti un po'.,1,8,492
+Giacomo Finucci,"Quanto lontano dovrei arrivare,",1,8,493
+Giacomo Finucci,secondo te?,1,8,494
 ,[urla strozzate],1,8,495
-Finucci,"Lontano, Giacomi'.",1,8,496
-Finucci,Lontano.,1,8,497
+Giacomo Finucci,"Lontano, Giacomi'.",1,8,496
+Giacomo Finucci,Lontano.,1,8,497
 Aureliano Adami,[Aureliano] Dove cazzo sta questo?,1,8,498
 Alberto Anacleti,[Spadino] Doveva arrivare alle dieci.,1,8,499
 ,[squilli di cellulare],1,8,500
@@ -4794,7 +4794,7 @@ Aureliano Adami,"Fino a quando respiro,",1,9,100
 Aureliano Adami,il chiosco mio Samurai non lo deve guardare neanche da lontano.,1,9,101
 Aureliano Adami,"Ciao, Li'.",1,9,102
 Aureliano Adami,Levati dal cazzo.,1,9,103
-Quirino,Va' di là!,1,9,104
+Ezio Quirino,Va' di là!,1,9,104
 Sara Monaschi,L'atto di rinuncia.,1,9,105
 Sara Monaschi,I terreni sono tuoi.,1,9,106
 Samurai Valerio,Onore al merito.,1,9,107
@@ -4803,25 +4803,25 @@ Samurai Valerio,"Ma, purtroppo per te, hai sbagliato avversario.",1,9,109
 Sara Monaschi,Mi sono messa contro uno pronto ad uccidere.,1,9,110
 Sara Monaschi,"Vuoi ammazzare anche me adesso, dopo Finucci?",1,9,111
 Samurai Valerio,Le donne non si toccano neanche con un fiore.,1,9,112
-Quirino,"Livia, devi prendere una decisione.",1,9,113
+Ezio Quirino,"Livia, devi prendere una decisione.",1,9,113
 Livia Adami,Di che stai parlando?,1,9,114
-Quirino,Di Aureliano.,1,9,115
-Quirino,Devi chiudere 'sta faccenda.,1,9,116
-Quirino,"Non sto parlando di dispetti tra fratelli, sto parlando di affari.",1,9,117
-Quirino,Parlo di quello che tuo padre ha costruito,1,9,118
-Quirino,e che tuo fratello ogni giorno prova a distruggere.,1,9,119
-Quirino,Oh.,1,9,120
-Quirino,Si è messo con Anacleti.,1,9,121
-Quirino,Che altro deve fare prima che lo fermi?,1,9,122
+Ezio Quirino,Di Aureliano.,1,9,115
+Ezio Quirino,Devi chiudere 'sta faccenda.,1,9,116
+Ezio Quirino,"Non sto parlando di dispetti tra fratelli, sto parlando di affari.",1,9,117
+Ezio Quirino,Parlo di quello che tuo padre ha costruito,1,9,118
+Ezio Quirino,e che tuo fratello ogni giorno prova a distruggere.,1,9,119
+Ezio Quirino,Oh.,1,9,120
+Ezio Quirino,Si è messo con Anacleti.,1,9,121
+Ezio Quirino,Che altro deve fare prima che lo fermi?,1,9,122
 Livia Adami,Fammi capire.,1,9,123
 Livia Adami,"Io che dovrei fare, secondo te?",1,9,124
-Quirino,Non lo so.,1,9,125
+Ezio Quirino,Non lo so.,1,9,125
 Livia Adami,Ecco.,1,9,126
-Quirino,So solo che non può essere un problema per te.,1,9,127
+Ezio Quirino,So solo che non può essere un problema per te.,1,9,127
 ,[Livia sospira],1,9,128
-Quirino,Devi essere libera di fare quello che ti pare,1,9,129
-Quirino,e non mettere sempre le pezze ai casini che combina lui.,1,9,130
-Quirino,Allora?,1,9,131
+Ezio Quirino,Devi essere libera di fare quello che ti pare,1,9,129
+Ezio Quirino,e non mettere sempre le pezze ai casini che combina lui.,1,9,130
+Ezio Quirino,Allora?,1,9,131
 Livia Adami,Allora che?,1,9,132
 Livia Adami,Tu non t'impicciare.,1,9,133
 Livia Adami,"Sono affari nostri, questi.",1,9,134
@@ -4869,9 +4869,9 @@ Aureliano Adami,Da'.,1,9,175
 Alberto Anacleti,[urlando] Pezzo di merda!,1,9,176
 Alberto Anacleti,[Spadino urla] Cazzo!,1,9,177
 Samurai Valerio,Che fa Livia? Mi manda un portavoce?,1,9,178
-Quirino,Sto qui per risolvere una questione che interessa pure a te.,1,9,179
+Ezio Quirino,Sto qui per risolvere una questione che interessa pure a te.,1,9,179
 Samurai Valerio,Che sarebbe?,1,9,180
-Quirino,Aureliano.,1,9,181
+Ezio Quirino,Aureliano.,1,9,181
 Sara Monaschi,Ho ceduto tutto a Samurai.,1,9,182
 ,[segnale di sms],1,9,183
 Sandro Monaschi,Ti cercano.,1,9,184
@@ -5144,11 +5144,11 @@ Livia Adami,Aureliano!,1,9,450
 ,[sirena],1,9,451
 Livia Adami,Tu solo una cosa non dovevi fare a casa mia.,1,9,452
 Livia Adami,Torcere un capello a mio fratello.,1,9,453
-Quirino,Lo so.,1,9,454
-Quirino,Ma era l'unica cosa da fare per me e per te.,1,9,455
-Quirino,"T'ho voluto bene, Li'.",1,9,456
-Quirino,Tanto.,1,9,457
-Quirino,Mi dispiace solo non aver capito che dentro a 'sta storia ero da solo.,1,9,458
+Ezio Quirino,Lo so.,1,9,454
+Ezio Quirino,Ma era l'unica cosa da fare per me e per te.,1,9,455
+Ezio Quirino,"T'ho voluto bene, Li'.",1,9,456
+Ezio Quirino,Tanto.,1,9,457
+Ezio Quirino,Mi dispiace solo non aver capito che dentro a 'sta storia ero da solo.,1,9,458
 Livia Adami,Si nasce soli e si muore soli.,1,9,459
 Livia Adami,Lo dovresti sapere.,1,9,460
 ,[sparo],1,9,461
@@ -5218,9 +5218,9 @@ Aureliano Adami,"Guardami, sta' ferma qua.",1,10,62
 Isabelle Mbamba,Che succede?,1,10,63
 Aureliano Adami,Fa' come t'ho detto.,1,10,64
 Aureliano Adami,Siete venuti a finire il lavoro?,1,10,65
-Romolo,"Buono, Aurelia'. Ti vuole parlare Livia.",1,10,66
-Romolo,Ti vuole solo parlare. Non c'entra un cazzo con quello che ti è successo.,1,10,67
-Romolo,"Ha fatto tutto Quirino, fidati.",1,10,68
+Romolo Lucci,"Buono, Aurelia'. Ti vuole parlare Livia.",1,10,66
+Romolo Lucci,Ti vuole solo parlare. Non c'entra un cazzo con quello che ti è successo.,1,10,67
+Romolo Lucci,"Ha fatto tutto Quirino, fidati.",1,10,68
 Aureliano Adami,Mo vediamo.,1,10,69
 Gabriele Marchilli,Ciao.,1,10,70
 Gabriele Marchilli,Che ci fai qui?,1,10,71
@@ -5363,18 +5363,18 @@ Amedeo Cinaglia,Scusate.,1,10,207
 ,[parole non udibili],1,10,208
 ,[brusio],1,10,209
 Amedeo Cinaglia,Qual è il problema?,1,10,210
-Taccon,Chi c'è dietro a quella società?,1,10,211
+Gianni Taccon,Chi c'è dietro a quella società?,1,10,211
 Amedeo Cinaglia,"Taccon, per favore, nessuno potrà mai contestarle nulla.",1,10,212
 Amedeo Cinaglia,Glielo garantisco.,1,10,213
 Amedeo Cinaglia,"Pensi a lei, al suo futuro lontano da qui.",1,10,214
 Amedeo Cinaglia,Firmi quell'atto.,1,10,215
-Taccon,A chi andranno quei terreni?,1,10,216
+Gianni Taccon,A chi andranno quei terreni?,1,10,216
 Amedeo Cinaglia,Andranno a dei costruttori né meglio né peggio di altri.,1,10,217
 Amedeo Cinaglia,Ma guardi al risultato.,1,10,218
 Amedeo Cinaglia,Ostia avrà un porto.,1,10,219
 Amedeo Cinaglia,"Lavoro, sviluppo, la città si muove, va avanti.",1,10,220
-Taccon,Conservi le bugie per la campagna elettorale.,1,10,221
-Taccon,Le serviranno.,1,10,222
+Gianni Taccon,Conservi le bugie per la campagna elettorale.,1,10,221
+Gianni Taccon,Le serviranno.,1,10,222
 Amedeo Cinaglia,Ormai sei dentro.,1,10,223
 Amedeo Cinaglia,Ti credi così furbo da poterti tirare indietro?,1,10,224
 Amedeo Cinaglia,A me non sembri furbo.,1,10,225
@@ -5383,7 +5383,7 @@ Amedeo Cinaglia,Finucci.,1,10,227
 Amedeo Cinaglia,Finucci era furbo.,1,10,228
 Amedeo Cinaglia,Guarda che fine ha fatto.,1,10,229
 Amedeo Cinaglia,"Firma quelle carte, fidati.",1,10,230
-Taccon,Ma come dorme la notte?,1,10,231
+Gianni Taccon,Ma come dorme la notte?,1,10,231
 Amedeo Cinaglia,Come un pupo.,1,10,232
 Amedeo Cinaglia,È meglio andare.,1,10,233
 Amedeo Cinaglia,Bene.,1,10,234
@@ -5416,12 +5416,12 @@ Amedeo Cinaglia,E adesso mi vuoi.,1,10,260
 Amedeo Cinaglia,Dovresti smettere anche tu.,1,10,261
 Amedeo Cinaglia,Ti fanno male.,1,10,262
 Aureliano Adami,"Siamo pronti, Romole'?",1,10,263
-Romolo,Tutto a posto.,1,10,264
+Romolo Lucci,Tutto a posto.,1,10,264
 Livia Adami,Vengo pure io.,1,10,265
 Aureliano Adami,"No, mi serve che vai a casa.",1,10,266
 Aureliano Adami,Chiama quel pezzo di merda e digli che stai arrivando con i documenti firmati.,1,10,267
 Livia Adami,Andiamo.,1,10,268
-Romolo,"More', va' con Livia.",1,10,269
+Romolo Lucci,"More', va' con Livia.",1,10,269
 Samurai Valerio,Va bene.,1,10,270
 Samurai Valerio,Era Livia.,1,10,271
 Samurai Valerio,Tutto a posto.,1,10,272
@@ -5458,10 +5458,10 @@ Samurai Valerio,Salutami tua sorella.,1,10,300
 ,"Gianlu', tutto a posto?",1,10,303
 ,"Ah, ma sei te.",1,10,304
 ,Gianluca? Dove sta?,1,10,305
-Romolo,Sta fuori.,1,10,306
-Romolo,Va' fuori pure te che devo parlare con Livia.,1,10,307
-Romolo,Dai.,1,10,308
-Romolo,Tuo fratello ti vuole vedere.,1,10,309
+Romolo Lucci,Sta fuori.,1,10,306
+Romolo Lucci,Va' fuori pure te che devo parlare con Livia.,1,10,307
+Romolo Lucci,Dai.,1,10,308
+Romolo Lucci,Tuo fratello ti vuole vedere.,1,10,309
 Aureliano Adami,Andate via.,1,10,310
 Aureliano Adami,Prendi 'sti soldi e vattene.,1,10,311
 Livia Adami,"Ma che stai dicendo, Aurelia'?",1,10,312

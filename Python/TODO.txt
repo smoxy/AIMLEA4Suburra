@@ -1,11 +1,20 @@
-Pulizia XML
-Creazione dataset con le seguenti variabili: personaggio, battuta, stagione, episodio.
+✔️ Pulizia XML
+✔️ Creazione dataset con le seguenti variabili: personaggio, battuta, stagione, episodio.
+🔘 Modificare il dataset inserendo:
+    🔘 il tempo di inizio e fine della battuta;
+    🔘 dummy feature bad_word
+    🔘 dummy feature gender
+    🔘 caratteri 
+
 Compattazione del dataset:
-    - Unificare le battute dello stesso personaggio, stagione, episodio tra loro adiacenti.
+    🔘 Unificare le battute consecutive dello stesso personaggio all'interno dello stesso episodio.
+
 Pulizia del dataset per il pre-processing:
-    - Rimuovere testo tra [] che sono i suoni
+    🔘 Rimuovere testo tra []
+    🔘 Rimuovere "traduzione in sinti"
+    🔘 Rimuovere testo canzoni (iniziano con ♪)
 
-
+Cercare di identificare la vicinanza temporale dei personaggi (chi è vicino è probabile stia dialogando con l'altro)
 
 
 ELENCO PERSONAGGI:

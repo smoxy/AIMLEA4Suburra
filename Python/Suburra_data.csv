@@ -1,4 +1,4 @@
-personaggio,battuta,stagione,episodio,index
+personaggio,battuta,stagione,episodio,episode_index
 ,"[radio] Oggi, dopo sette anni di mandato,",1,1,1
 ,il sindaco di Roma ha presentato le proprie dimissioni,1,1,2
 ,che saranno effettive entro 20 giorni.,1,1,3
@@ -537,9 +537,9 @@ Gabriele Marchilli,Grazie.,1,1,534
 ,[clacson],1,1,536
 ,[applausi],1,1,537
 ,[parole non udibili],1,1,538
-,Spadino?,1,1,539
+Vincenzo Sale,Spadino?,1,1,539
 Manfredi Anacleti,[in sinti] Sta arrivando Spadino.,1,1,540
-,[in sinti] Andiamo.,1,1,541
+Vincenzo Sale,[in sinti] Andiamo.,1,1,541
 ,[sospira],1,1,542
 Alberto Anacleti,Oh.,1,1,543
 Alberto Anacleti,Dammene un altro.,1,1,544
@@ -661,12 +661,12 @@ Amedeo Cinaglia,Ora vengo.,1,1,656
 Aureliano Adami,Quel coglione non viene?,1,1,660
 ,[squilli di cellulare],1,1,661
 ,[stridio di gomme],1,1,662
-,Allora?,1,1,663
+Boris,Allora?,1,1,663
 Aureliano Adami,Tie'.,1,1,664
 Aureliano Adami,Ti ho fatto un favore.,1,1,665
 Aureliano Adami,Con questo coso sul naso non senti 'sta puzza di merda che ti porti dietro.,1,1,666
 ,La mancia per il servizio.,1,1,667
-,[in sinti] Andiamo.,1,1,668
+Boris,[in sinti] Andiamo.,1,1,668
 ,[squilli di cellulare],1,1,669
 ,[rifiuta la chiamata],1,1,670
 ,[campanello],1,1,671
@@ -1870,7 +1870,7 @@ Alberto Anacleti,L'abbiamo perso.,1,3,412
 Tullio Adami,Pezzo di merda!,1,4,3
 Gabriele Marchilli,Oh!,1,4,4
 ,[Tullio urla],1,4,5
-,Sei ancora qui?,1,4,6
+Madre Samurai,Sei ancora qui?,1,4,6
 Samurai Valerio,Rimettiti a dormire. È notte!,1,4,7
 ,Ma tu non dormi!,1,4,8
 Samurai Valerio,"Adesso vado a casa, non ti preoccupare.",1,4,9
@@ -1910,7 +1910,7 @@ Aureliano Adami,"Ah, un'altra cosa.",1,4,42
 Aureliano Adami,Fammi parlare con Spadino di persona.,1,4,43
 Gabriele Marchilli,Ci penso io.,1,4,44
 ,[pianti e lamenti],1,4,45
-,Non si può morire così.,1,4,46
+Vincenzo Sale,Non si può morire così.,1,4,46
 ,Non doveva succedere.,1,4,47
 ,"Mi dispiace, Manfre'.",1,4,48
 Manfredi Anacleti,Questo succede quando nasci zingaro.,1,4,49
@@ -2096,7 +2096,7 @@ Samurai Valerio,La soluzione l'ho vista dentro casa loro.,1,4,228
 ,"Buongiorno, signori, bentornati.",1,4,229
 ,Buongiorno.,1,4,230
 ,Abbiamo prenotato per quattro...,1,4,231
-,[Spadino] Vieni qua.,1,4,232
+Alberto Anacleti,[Spadino] Vieni qua.,1,4,232
 ,"Buongiorno, signori.",1,4,233
 Alberto Anacleti,Ciao.,1,4,234
 ,Avete prenotato?,1,4,235
@@ -2857,7 +2857,7 @@ Ezio Quirino,Hai fatto tutto da sola.,1,5,394
 Ezio Quirino,"Volevo solo difendere il posto di lavoro, no?",1,5,395
 ,[parole non udibili],1,5,396
 ,[brusio],1,5,397
-,"T'affido la vita mia, Spadi'.",1,5,398
+Vincenzo Sale,"T'affido la vita mia, Spadi'.",1,5,398
 Adelaide Anacleti,Adesso fai parte della famiglia.,1,5,399
 Manfredi Anacleti,Mo devi fare l'uomo. Fatti onore.,1,5,400
 ,[campanello insistente e colpi alla porta],1,5,401
@@ -3888,7 +3888,7 @@ Isabelle Mbamba,Che cazzo fai?,1,7,299
 ,Ritorna in mezzo alle scimmie perché tra la gente normale non ci sai vivere.,1,7,301
 ,[Isabel piange],1,7,302
 ,[bussano alla porta e aprono la porta],1,7,303
-,"[Anna] Dottore, c'è una persona.",1,7,304
+Anna,"[Anna] Dottore, c'è una persona.",1,7,304
 Sandro Monaschi,"Grazie, Anna.",1,7,305
 Sandro Monaschi,Lei è?,1,7,306
 Samurai Valerio,Uno che tua moglie crede di prendere in giro.,1,7,307
@@ -4106,7 +4106,7 @@ Amedeo Cinaglia,Approvi in Commissione...,1,7,518
 Amedeo Cinaglia,e avrà i musei.,1,7,519
 Amedeo Cinaglia,Buonanotte.,1,7,520
 ,[rombo di motore],1,7,521
-,Ah!,1,7,522
+Angelica Sale,Ah!,1,7,522
 ,[urla],1,7,523
 ,[spari],1,7,524
 ,[spari],1,7,525
@@ -4156,7 +4156,7 @@ Contessa Sveva Della Rocca Croce,Sara Monaschi.,1,7,568
 ,Traduzione dal sinti: Sonia Cerci,1,7,569
 ,[sirena],1,8,1
 ,[stridio di gomme],1,8,2
-,Dai!,1,8,3
+Franco Marchilli,Dai!,1,8,3
 ,[stridio di gomme],1,8,4
 Franco Marchilli,Fai il giro da dietro.,1,8,5
 ,[sirena],1,8,6
@@ -4979,7 +4979,7 @@ Alberto Anacleti,Spadino se ne va.,1,9,279
 Gabriele Marchilli,No.,1,9,286
 Gabriele Marchilli,Non ti preoccupare.,1,9,287
 ,[parole non udibili],1,9,288
-,"Oh, Lele.",1,9,289
+Mara Guagli,"Oh, Lele.",1,9,289
 Gabriele Marchilli,Ciao.,1,9,290
 ,Queste sono le cose che tuo padre teneva in ufficio.,1,9,291
 ,"Per il resto dovresti aspettare un attimo, stanno svuotando l'armadietto,",1,9,292

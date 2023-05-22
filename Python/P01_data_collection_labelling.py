@@ -173,6 +173,7 @@ def labelling(df, start=0):
             df.loc[i,'personaggio'] = label.strip()
         clear_cli()
         print('\t',label,':\t',df.loc[i,'battuta'],sep='')
+    df.to_csv(py_wd+os.sep+'Suburra_data.csv', index=False, encoding='UTF-8')
 
 
 

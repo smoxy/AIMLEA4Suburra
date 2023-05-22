@@ -1,9 +1,10 @@
 ✔️ Pulizia XML
+✔️ Rimozione whitespaces duplici
 ✔️ Creazione dataset con le seguenti variabili: personaggio, battuta, stagione, episodio.
 🔘 Modificare il dataset inserendo:
-    🔘 il tempo di inizio e fine della battuta;
-    🔘 dummy feature bad_word
-    🔘 dummy feature gender
+    ✔️ il tempo di inizio e fine della battuta;
+    ✔️ dummy feature bad_word
+    ✔️ dummy feature gender
     🔘 caratteri 
 
 Compattazione del dataset:

@@ -139,7 +139,7 @@ def make_df():
                     return None
                 for i in range(0,len(script_lines)):
                     condition2 = (old_df['episode_index'] == i+1)
-                    character_name = old_df.loc[condition1 & condition2, 'personaggio'].values[0]
+                    character_name = str(old_df.loc[condition1 & condition2, 'personaggio'].values[0]).strip()
                     if character_name in Personaggi:
                         is_character = 1
                     else:
@@ -257,7 +257,7 @@ def labelling(df, start=0):
 
 
 
-done = False
+done = True
 while not done:
     #start = input("da quale battuta vuoi ripartire? ")
     start = df[df['character'].isnull()].index[0]

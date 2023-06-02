@@ -4,6 +4,7 @@
 #####                                                                      #####
 ################################################################################
 installAndLoadPackages(c("caret", "smotefamily", "parallel", "doParallel"))
+library(languageserver)
 
 
 # START CLUSTERS
@@ -20,7 +21,7 @@ doParallel::registerDoParallel(cl)
 set.seed(1234)
 # crea un oggetto di controllo per l'addestramento del modello.
 ctrl <- caret::trainControl(method = "repeatedcv", # metodo di validazione incrociata da utilizzare
-                     number = 10,         # il numero di fold nella validazione incrociata (10)
+                     number = 3,         # il numero di fold nella validazione incrociata (10)
                      repeats = 10,        # il numero di ripetizioni per la validazione incrociata (10)
                      verboseIter = FALSE, # stampare o meno i messaggi iterativi durante l'addestramento
                      sampling = "smote")  # metodo di campionamento da utilizzare ("smote")

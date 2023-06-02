@@ -245,14 +245,14 @@ suburra_hybrid$character    <- droplevels(suburra_hybrid$character)
 get_badwords <- function(){
     bad_w1 <- httr::content(httr::GET("https://raw.githubusercontent.com/LDNOOBW/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words/master/it"), "text")
     bad_w2 <- httr::content(httr::GET("https://raw.githubusercontent.com/napolux/paroleitaliane/master/paroleitaliane/lista_badwords.txt"), "text")
-    badwords <- unique(c(str_split(bad_w1, "\n")[[1]], str_split(bad_w2, "\n")[[1]]))
+    badwords <- unique(c(stringr::str_split(bad_w1, "\n")[[1]], stringr::str_split(bad_w2, "\n")[[1]]))
     return(badwords)
 }
 
 # 2 set bad words
 set_badwords <- function(df){
     badwords <- get_badwords()
-    df <- df %>% mutate(bad_words = map_int(str_split(script_line, " "), ~ifelse(any(.x %in% badwords), 1, 0)))
+    df <- df %>% mutate(bad_words = purrr::map_int(stringr::str_split(script_line, " "), ~ifelse(any(.x %in% badwords), 1, 0)))
     return(df)
 }
 
@@ -275,7 +275,7 @@ italian.vit <- udpipe::udpipe_download_model(language = "italian-vit",
 
 italian.vit <- udpipe::udpipe_load_model(italian.vit$file_model)
 
-ifelse(detectCores() <= 12, cores<-(as.numeric(detectCores()-1)), cores<-12)
+ifelse(parallel::detectCores() <= 12, cores<-(as.numeric(parallel::detectCores()-1)), cores<-12)
 
 
 ## ABILITARE SE SI VUOLE IL POST TAGGING groupby character (IN ONE-HOT-ENCODE)
@@ -292,7 +292,7 @@ df.pos.counts <- df.pos %>%
 df.pos.matrix <- df.pos.counts %>%
   tidyr::pivot_wider(names_from = upos, values_from = count, values_fill = 0)
 
-df_collapsed.pos <- udpipe(df_collapsed$script_line, object = italian.vit, parallel.cores = cores)
+df_collapsed.pos <- udpipe::udpipe(df_collapsed$script_line, object = italian.vit, parallel.cores = cores)
 df_collapsed.pos$doc_id <- as.integer(df_collapsed.pos$doc_id)
 df_collapsed.pos.counts <- df_collapsed.pos %>%
   group_by(doc_id, upos) %>%
@@ -300,7 +300,7 @@ df_collapsed.pos.counts <- df_collapsed.pos %>%
 df_collapsed.pos.matrix <- df_collapsed.pos.counts %>%
   tidyr::pivot_wider(names_from = upos, values_from = count, values_fill = 0)
 
-df_hybrid.pos <- udpipe(df_hybrid$script_line, object = italian.vit, parallel.cores = cores)
+df_hybrid.pos <- udpipe::udpipe(df_hybrid$script_line, object = italian.vit, parallel.cores = cores)
 df_hybrid.pos$doc_id <- as.integer(df_hybrid.pos$doc_id)
 df_hybrid.pos.counts <- df_hybrid.pos %>%
   group_by(doc_id, upos) %>%

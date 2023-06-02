@@ -1,6 +1,13 @@
 ################################################################################
-#####                        Functions for packages                        #####
+#####                                                                      #####
+#####                             PRE-PROCESSING                           #####
+#####                                                                      #####
+################################################################################
 
+
+
+################################################################################
+#####                        Functions for packages                        #####
 installAndLoadPackages <- function(packageNames) {
   # Convert packageNames to a character vector if it's a single package name
   if (is.character(packageNames)) {
@@ -32,15 +39,18 @@ installAndLoadPackages <- function(packageNames) {
 
 installAndLoadPackages(c("reshape2", "magrittr", "dplyr", "tidyr", "ggplot2", "tm", "SnowballC",
                          "slam", "e1071", "stopwords", "koRpus", "koRpus.lang.it", "udpipe",
-                         "parallel", "httr"))
+                         "parallel", "httr", "stringr", "purrr"))
 
+#library(readr)
+#library(lubridate)
+Sys.setenv(LANG = "en")
 
-# Installazione lingua italiana per la lemmatizzazione
-install.koRpus.lang(
-  lang = "it",
-  repos = "https://undocumeantit.github.io/repos/l10n/"
-  )
-set.kRp.env(TT.cmd=paste(path.expand(getwd()),"tree-tagger-italian"))
+## Installazione lingua italiana per la lemmatizzazione
+#install.koRpus.lang(
+#  lang = "it",
+#  repos = "https://undocumeantit.github.io/repos/l10n/"
+#  )
+#set.kRp.env(TT.cmd=paste(path.expand(getwd()),"tree-tagger-italian"))
 
 ################################### NOTE #######################################
 # Se l'obiettivo è eseguire l'analisi del testo su un grande corpus di testo
@@ -48,13 +58,6 @@ set.kRp.env(TT.cmd=paste(path.expand(getwd()),"tree-tagger-italian"))
 #   libreria spaCy, che fornisce un robusto supporto per la
 #    lemmatizzazione in molte lingue, inclusa l'italiana.
 ################################################################################
-
-
-#library(readr)
-#library(stringr)
-library(lubridate)
-library(purrr)
-Sys.setenv(LANG = "en")
 
 ################################################################################
 #####                           Load Dataframe                             #####
@@ -225,6 +228,19 @@ suburra$is_male <- as.factor(suburra$is_male)
 suburra_collapsed$is_male <- as.factor(suburra_collapsed$is_male)
 suburra_hybrid$is_male <- as.factor(suburra_hybrid$is_male)
 
+# Vector of allowed character names (TOP 10)
+allowed_characters <- c("Alberto Anacleti", "Amedeo Cinaglia", "Aureliano Adami", "Gabriele Marchilli", "Samurai Valerio", "Sara Monaschi", "Livia Adami", "Contessa Sveva Della Rocca Croce", "Angelica Sale", "Manfredi Anacleti")
+
+# Drop rows where df$character is not in the allowed_characters vector
+suburra <- suburra[suburra$character %in% allowed_characters, ]
+suburra_collapsed <- suburra_collapsed[suburra_collapsed$character %in% allowed_characters, ]
+suburra_hybrid <- suburra_hybrid[suburra_hybrid$character %in% allowed_characters, ]
+
+
+suburra$character           <- droplevels(suburra$character)
+suburra_collapsed$character <- droplevels(suburra_collapsed$character)
+suburra_hybrid$character    <- droplevels(suburra_hybrid$character)
+
 
 get_badwords <- function(){
     bad_w1 <- httr::content(httr::GET("https://raw.githubusercontent.com/LDNOOBW/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words/master/it"), "text")
@@ -259,7 +275,7 @@ italian.vit <- udpipe::udpipe_download_model(language = "italian-vit",
 
 italian.vit <- udpipe::udpipe_load_model(italian.vit$file_model)
 
-ifelse(detectCores() <= 8, cores<-(as.numeric(detectCores()-1)), cores<-8)
+ifelse(detectCores() <= 12, cores<-(as.numeric(detectCores()-1)), cores<-12)
 
 
 ## ABILITARE SE SI VUOLE IL POST TAGGING groupby character (IN ONE-HOT-ENCODE)
@@ -294,93 +310,119 @@ df_hybrid.pos.matrix <- df_hybrid.pos.counts %>%
 
 rm(df_collapsed.pos, df_collapsed.pos.counts, df_hybrid.pos, df_hybrid.pos.counts, df.pos, df.pos.counts)
 
+
 df.final           <- left_join(df, df.pos.matrix, by = "doc_id")
 df_collapsed.final <- left_join(df_collapsed, df_collapsed.pos.matrix, by = "doc_id")
 df_hybrid.final    <- left_join(df_hybrid, df_hybrid.pos.matrix, by = "doc_id")
+rm(df, df_collapsed, df_hybrid)
 
 df.final           <- df.final[,-9]
 df_collapsed.final <- df_collapsed.final[,-9]
 df_hybrid.final    <- df_hybrid.final[,-9]
 
+################################################################################
 # Creazione di un Corpus a partire dal dataset
-corpus <- Corpus(VectorSource(df$script_line))
-corpus_collapsed <- Corpus(VectorSource(df_collapsed$script_line))
-corpus_hybrid <- Corpus(VectorSource(df_hybrid$script_line))
-
-
-# Definizione della lingua del corpus
-attr(corpus, "language") <- "it"
-attr(corpus_collapsed, "language") <- "it"
-attr(corpus_hybrid, "language") <- "it"
+corpus <- Corpus(VectorSource(df.final$script_line))
+corpus_collapsed <- Corpus(VectorSource(df_collapsed.final$script_line))
+corpus_hybrid <- Corpus(VectorSource(df_hybrid.final$script_line))
 
 corpus           <- tm_map(corpus, content_transformer(tolower))
 corpus_collapsed <- tm_map(corpus_collapsed, content_transformer(tolower))
 corpus_hybrid    <- tm_map(corpus_hybrid, content_transformer(tolower))
 
+# Rimozione della punteggiatura
+corpus           <- tm_map(corpus, removePunctuation)
+corpus_collapsed <- tm_map(corpus_collapsed, removePunctuation)
+corpus_hybrid <- tm_map(corpus_hybrid, removePunctuation)
 
-######################### Rimozione delle stop words############################
+corpus           <- tm_map(corpus, removeNumbers)
+corpus_collapsed <- tm_map(corpus_collapsed, removeNumbers)
+corpus_hybrid <- tm_map(corpus_hybrid, removeNumbers)
+
+# Rimozione delle spaziature extra
+corpus           <- tm_map(corpus, stripWhitespace)
+corpus_collapsed <- tm_map(corpus_collapsed, stripWhitespace)
+corpus_hybrid <- tm_map(corpus_hybrid, stripWhitespace)
+
+
+######################### Rimozione delle stop words ###########################
 corpus_clean           <- tm_map(corpus, content_transformer(removeWords), stopwords::stopwords(language = "it"))
 corpus_collapsed_clean <- tm_map(corpus_collapsed, content_transformer(removeWords), stopwords::stopwords(language = "it"))
 corpus_hybrid_clean    <- tm_map(corpus_hybrid, content_transformer(removeWords), stopwords::stopwords(language = "it"))
+
 ################################################################################
+#####                                Stemming                              #####
+whitelist <- c("alberto","anacleti","spadino","amedeo","cinaglia","aureliano","adami","gabriele","marchilli","samurai","valerio","sara","monaschi", "livia", "sveva", "angelica","sale", "manfredi")
 
-## Rimozione della punteggiatura
-#corpus           <- tm_map(corpus, removePunctuation)
-#corpus_collapsed <- tm_map(corpus_collapsed, removePunctuation)
-#corpus_hybrid <- tm_map(corpus_hybrid, removePunctuation)
-#
-#corpus           <- tm_map(corpus, removeNumbers)
-#corpus_collapsed <- tm_map(corpus_collapsed, removeNumbers)
-#corpus_hybrid <- tm_map(corpus_hybrid, removeNumbers)
-#
-## Rimozione delle spaziature extra
-#corpus           <- tm_map(corpus, stripWhitespace)
-#corpus_collapsed <- tm_map(corpus_collapsed, stripWhitespace)
-#corpus_hybrid <- tm_map(corpus_hybrid, stripWhitespace)
+custom_stemming <- function(corpus, whitelist) {
+  stemmed_corpus <- lapply(corpus, function(doc) {
+    words <- unlist(strsplit(as.character(doc), " "))
+    stemmed_words <- ifelse(words %in% whitelist, words, wordStem(words, language = "italian"))
+    PlainTextDocument(paste(stemmed_words, collapse = " "))
+  })
+  # Extract the content from each document in the stemmed_corpus list
+  texts <- sapply(stemmed_corpus, function(doc) doc$content)
+  corpus <- Corpus(VectorSource(texts))
+  dtm <- DocumentTermMatrix(corpus) # bag of words
+  sparse <- slam::as.simple_triplet_matrix(dtm)
+  df <- as.data.frame(as.matrix(sparse))
+  return(df)
+}
 
-rm(corpus, corpus_collapsed, corpus_hybrid)
+dtm.With_stopW           <- custom_stemming(corpus, whitelist)
+dtm_collapsed.With_stopW <- custom_stemming(corpus_collapsed, whitelist)
+dtm_hybrid.With_stopW    <- custom_stemming(corpus_hybrid, whitelist)
+
+dtm.No_stopW             <- custom_stemming(corpus_clean, whitelist)
+dtm_collapsed.No_stopW   <- custom_stemming(corpus_collapsed_clean, whitelist)
+dtm_hybrid.No_stopW      <- custom_stemming(corpus_hybrid_clean, whitelist)
+
+rm(corpus, corpus_collapsed, corpus_hybrid, corpus_clean, corpus_collapsed_clean, corpus_hybrid_clean)
 
 
+dtm.With_stopW$character           <- df.final$character
+dtm_collapsed.With_stopW$character <- df_collapsed.final$character
+dtm_hybrid.With_stopW$character    <- df_hybrid.final$character
 
+dtm.No_stopW$character             <- df.final$character
+dtm_collapsed.No_stopW$character   <- df_collapsed.final$character
+dtm_hybrid.No_stopW$character      <- df_hybrid.final$character
+
+rm(italian.vit, whitelist, allowed_characters)
 
 # Rimozione della punteggiatura
-corpus_clean           <- tm_map(corpus_clean, removePunctuation)
-corpus_collapsed_clean <- tm_map(corpus_collapsed_clean, removePunctuation)
-corpus_hybrid_clean    <- tm_map(corpus_hybrid_clean, removePunctuation)
-
-corpus_clean           <- tm_map(corpus_clean, removeNumbers)
-corpus_collapsed_clean <- tm_map(corpus_collapsed_clean, removeNumbers)
-corpus_hybrid_clean    <- tm_map(corpus_hybrid_clean, removeNumbers)
-
-# Rimozione delle spaziature extra
-corpus_clean           <- tm_map(corpus_clean, stripWhitespace)
-corpus_collapsed_clean <- tm_map(corpus_collapsed_clean, stripWhitespace)
-corpus_hybrid_clean    <- tm_map(corpus_hybrid_clean, stripWhitespace)
+#corpus_clean           <- tm_map(corpus_clean, removePunctuation)
+#corpus_collapsed_clean <- tm_map(corpus_collapsed_clean, removePunctuation)
+#corpus_hybrid_clean    <- tm_map(corpus_hybrid_clean, removePunctuation)
+#
+#corpus_clean           <- tm_map(corpus_clean, removeNumbers)
+#corpus_collapsed_clean <- tm_map(corpus_collapsed_clean, removeNumbers)
+#corpus_hybrid_clean    <- tm_map(corpus_hybrid_clean, removeNumbers)
+#
+## Rimozione delle spaziature extra
+#corpus_clean           <- tm_map(corpus_clean, stripWhitespace)
+#corpus_collapsed_clean <- tm_map(corpus_collapsed_clean, stripWhitespace)
+#corpus_hybrid_clean    <- tm_map(corpus_hybrid_clean, stripWhitespace)
 
 #inspect(corpus_collapsed)
 #inspect(corpus_collapsed_clean)
 
-# Applicazione dello stemming
-corpus_clean           <- tm_map(corpus_clean, stemDocument)
-corpus_collapsed_clean <- tm_map(corpus_collapsed_clean, stemDocument)
-corpus_hybrid_clean    <- tm_map(corpus_hybrid_clean, stemDocument)
-
-dtm           <- DocumentTermMatrix(corpus_clean)
-dtm_collapsed <- DocumentTermMatrix(corpus_collapsed_clean)
-dtm_hybrid    <- DocumentTermMatrix(corpus_hybrid_clean)
-
-
-# DTM a matrice sparsa
-# simplify_simple_sparse_array tries to reduce v
-sparse           <- slam::as.simple_triplet_matrix(dtm)
-sparse_collapsed <- slam::as.simple_triplet_matrix(dtm_collapsed)
-sparse_hybrid    <- slam::as.simple_triplet_matrix(dtm_hybrid)
-rm(dtm, dtm_collapsed, dtm_hybrid)
-
-labels           <- suburra$character
-labels_collapsed <- suburra_collapsed$character
-labels_hybrid    <- suburra_hybrid$character
-
-V3_normal    <- data.frame(sparse, labels, stringsAsFactors = F)
-V3_collapsed <- data.frame(sparse_collapsed, labels_collapsed, stringsAsFactors = F)
-v3_hybrid    <- data.frame(sparse_hybrid, labels_hybrid, stringsAsFactors = F)
+#dtm           <- DocumentTermMatrix(corpus_clean)
+#dtm_collapsed <- DocumentTermMatrix(corpus_collapsed_clean)
+#dtm_hybrid    <- DocumentTermMatrix(corpus_hybrid_clean)
+#
+#
+## DTM a matrice sparsa
+## simplify_simple_sparse_array tries to reduce v
+#sparse           <- slam::as.simple_triplet_matrix(dtm)
+#sparse_collapsed <- slam::as.simple_triplet_matrix(dtm_collapsed)
+#sparse_hybrid    <- slam::as.simple_triplet_matrix(dtm_hybrid)
+#rm(corpus_clean, corpus_collapsed, corpus_hybrid, dtm, dtm_collapsed, dtm_hybrid)
+#
+#labels           <- suburra$character
+#labels_collapsed <- suburra_collapsed$character
+#labels_hybrid    <- suburra_hybrid$character
+#
+#V3_normal    <- data.frame(sparse, stringsAsFactors = F)
+#V3_collapsed <- data.frame(sparse_collapsed, labels_collapsed, stringsAsFactors = F)
+#v3_hybrid    <- data.frame(sparse_hybrid, labels_hybrid, stringsAsFactors = F)

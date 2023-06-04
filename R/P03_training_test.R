@@ -1,11 +1,8 @@
-################################################################################
-#####                                                                      #####
-#####                                 Tuning                               #####
-#####                                                                      #####
-################################################################################
 installAndLoadPackages(c("caret", "smotefamily", "parallel", "doParallel"))
 library(languageserver)
-
+load("/home/smoxy/AIMLEA4Suburra/R/workspace.RData")
+#load("/home/smoxy/AIMLEA4Suburra/R/server_computation.RData")
+setwd("/home/smoxy/AIMLEA4Suburra/R/")
 
 # START CLUSTERS
 ifelse(detectCores() <= 12, cores<-(as.numeric(detectCores()-1)), cores<-12)
@@ -35,7 +32,13 @@ Index <- caret::createDataPartition(dtm_hybrid.No_stopW$character, p = .8, list 
 dtm_hybrid.No_stopW_TRAIN       <- dtm_hybrid.No_stopW[Index,]
 dtm_hybrid.No_stopW_TEST        <- dtm_hybrid.No_stopW[-Index,]
 
-# crea un oggetto di controllo per l'addestramento del modello.
+
+################################################################################
+#####                                                                      #####
+#####                                 Tuning                               #####
+#####                                                                      #####
+################################################################################
+                # crea un oggetto di controllo per l'addestramento del modello.
 ctrl <- caret::trainControl(method = "repeatedcv", # metodo di validazione incrociata da utilizzare
                      number = 10,         # il numero di fold nella validazione incrociata (10)
                      repeats = 5,        # il numero di ripetizioni per la validazione incrociata (10)
@@ -80,10 +83,16 @@ dtm.No_stopW_model <- caret::train(character ~ .,
                                trControl = ctrl,
                                allowParallel=TRUE)
 
-savehistory("server_computation.Rhistory")
+save(dtm_collapsed.With_stopW_model, dtm_collapsed.No_stopW_model,
+    dtm_hybrid.With_stopW_model,
+    file = "/home/smoxy/AIMLEA4Suburra/R/server_computation.RData")
+save(dtm_collapsed.With_stopW_model, dtm_collapsed.No_stopW_model,
+    dtm_hybrid.With_stopW_model, dtm_hybrid.No_stopW_model,
+    file = "/home/smoxy/AIMLEA4Suburra/R/server_computation.RData")
 
 ##STOP CLUSTER
 stopCluster(cl)
+rm(cl)
 registerDoSEQ()
 
 

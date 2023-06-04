@@ -186,6 +186,7 @@ character_speak_time
 
 ################################################################################
 #####                          Dataframe Settings                          #####
+setwd("/home/smoxy/AIMLEA4Suburra/R/")
 suburra <- read.csv("../DATA/01_Suburra_data.csv", stringsAsFactors = FALSE)
 suburra_collapsed <- read.csv("../DATA/02_Suburra_data_collapsed.csv", stringsAsFactors = FALSE)
 suburra_hybrid <- read.csv("../DATA/03_Suburra_data_hybrid.csv", stringsAsFactors = FALSE)

@@ -13,11 +13,8 @@ cl <- parallel::makePSOCKcluster(cores)
 doParallel::registerDoParallel(cl)
 
 
-##STOP CLUSTER
-#stopCluster(cl)
-#registerDoSEQ()
 ################################################################################
-#####                  Random Forest with SMOTE Oversampling               #####
+#####                  SUBSETTING IN TRAIN AND TEST  ->  DTM               #####
 set.seed(1234)  # For reproducibility
 Index <- caret::createDataPartition(dtm.With_stopW$character, p = .8, list = FALSE, times = 1)
 dtm.With_stopW_TRAIN            <- dtm.With_stopW[Index,]
@@ -45,6 +42,9 @@ ctrl <- caret::trainControl(method = "repeatedcv", # metodo di validazione incro
                      verboseIter = TRUE, # stampare o meno i messaggi iterativi durante l'addestramento
                      sampling = "smote")  # metodo di campionamento da utilizzare ("smote")
 
+
+################################################################################
+#####                  Random Forest with SMOTE Oversampling               #####
 dtm_collapsed.With_stopW_model <- caret::train(character ~ .,
                                data = dtm_collapsed.With_stopW_TRAIN,
                                method = "rf",
@@ -72,6 +72,19 @@ dtm_hybrid.No_stopW_model <- caret::train(character ~ .,
                                preProcess = c("scale", "center"),
                                trControl = ctrl,
                                allowParallel=TRUE)
+
+dtm.No_stopW_model <- caret::train(character ~ .,
+                               data = dtm.No_stopW_TRAIN,
+                               method = "rf",
+                               preProcess = c("scale", "center"),
+                               trControl = ctrl,
+                               allowParallel=TRUE)
+
+savehistory("server_computation.Rhistory")
+
+##STOP CLUSTER
+stopCluster(cl)
+registerDoSEQ()
 
 
 df_smote <- SMOTE(X = df[ , colnames(dtm.With_stopW) != "character"],

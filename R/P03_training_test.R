@@ -32,9 +32,19 @@ Index <- caret::createDataPartition(dtm_hybrid.No_stopW$character, p = .8, list 
 dtm_hybrid.No_stopW_TRAIN       <- dtm_hybrid.No_stopW[Index,]
 dtm_hybrid.No_stopW_TEST        <- dtm_hybrid.No_stopW[-Index,]
 
+Index <- caret::createDataPartition(df.final$character, p = .8, list = FALSE, times = 1)
+df.final_TRAIN           <- df.final[Index,]
+df.final_TEST          <- df.final[-Index,]
+Index <- caret::createDataPartition(df_collapsed.final$character, p = .8, list = FALSE, times = 1)
+df_collapsed.final_TRAIN <- df_collapsed.final[Index,]
+df_collapsed.final_TEST<- df_collapsed.final[-Index,]
+Index <- caret::createDataPartition(df_hybrid.final$character, p = .8, list = FALSE, times = 1)
+df_hybrid.final_TRAIN    <- df_hybrid.final[Index,]
+df_hybrid.final_TEST   <- df_hybrid.final[-Index,]
+
 
 ################################################################################
-#####                                                                      #####
+#####                                  CARET                               #####
 #####                                 Tuning                               #####
 #####                                                                      #####
 ################################################################################
@@ -119,22 +129,35 @@ model_rf <- caret::train(character ~ .,
 
 ################################################################################
 #####                                                                      #####
-#####                                 TESTING                              #####
+#####                                  C5.0                                #####
 #####                                                                      #####
 ################################################################################
 #####                             Decision tree                            #####
+installAndLoadPackages(c("C50", "xtable"))
+m <- C50::C5.0(dtm_collapsed.No_stopW_TRAIN[,-which(names(dtm_collapsed.No_stopW_TRAIN) == "character")], dtm_collapsed.No_stopW_TRAIN$character, costs=NULL)
+p <- C50::predict.C5.0(m, dtm_collapsed.No_stopW_TEST, type = "class")
+summary(m)
 
 
 
+m <- C50::C5.0(df.final_TRAIN[,-c(which(names(df.final_TRAIN) == "character"), which(names(df.final_TRAIN) == "script_line"))], df.final_TRAIN$character, trials = 10)
+summary(m)
+p.final <- C50::predict.C5.0(m, df.final_TEST, type = "class")
+# Create a confusion matrix
+confusion_matrix <- confusionMatrix(data = p.final, reference = df.final_TEST$character)
+# Extract the desired metrics
+accuracy <- confusion_matrix$overall['Accuracy']
+latex_table <- xtable(as.data.frame(round(confusion_matrix$byClass * 100, 2)), caption = "Metrics Table") # Sensitivity, Specificity, Precision+
+# Print the LaTeX code
+print(latex_table, include.rownames = F)
 
 
-
-
-
-
-
-
-
+m <- C50::C5.0(df_collapsed.final_TRAIN[,-c(which(names(df_collapsed.final_TRAIN) == "character"), which(names(df_collapsed.final_TRAIN) == "script_line"))], df_collapsed.final_TRAIN$character, df.final_TRAIN$character, trials = 10)
+summary(m)
+p_collapsed.final <- C50::predict.C5.0(m, df_collapsed.final_TEST, type = "class")
+m <- C50::C5.0(df_hybrid.final_TRAIN[,-c(which(names(df_hybrid.final_TRAIN) == "character"), which(names(df_hybrid.final_TRAIN) == "script_line"))], df_hybrid.final_TRAIN$character, df.final_TRAIN$character, trials = 10)
+summary(m)
+p_hybrid.final <- C50::predict.C5.0(m, df_hybrid.final_TEST, type = "class")
 
 
 

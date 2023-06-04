@@ -331,10 +331,10 @@ corpus           <- tm_map(corpus, content_transformer(tolower))
 corpus_collapsed <- tm_map(corpus_collapsed, content_transformer(tolower))
 corpus_hybrid    <- tm_map(corpus_hybrid, content_transformer(tolower))
 
-# Rimozione della punteggiatura
-corpus           <- tm_map(corpus, removePunctuation)
-corpus_collapsed <- tm_map(corpus_collapsed, removePunctuation)
-corpus_hybrid <- tm_map(corpus_hybrid, removePunctuation)
+# Rimozione della punteggiatura FATTA IN PYTHON PERCHé LE PAROLE ERANO CONCATENATE SENZA SPAZI
+#corpus           <- tm_map(corpus, removePunctuation)
+#corpus_collapsed <- tm_map(corpus_collapsed, removePunctuation)
+#corpus_hybrid <- tm_map(corpus_hybrid, removePunctuation)
 
 corpus           <- tm_map(corpus, removeNumbers)
 corpus_collapsed <- tm_map(corpus_collapsed, removeNumbers)

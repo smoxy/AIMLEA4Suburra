@@ -1,6 +1,6 @@
 installAndLoadPackages(c("caret", "smotefamily", "parallel", "doParallel", "bnclassify", "C50", "plyr"))
 library(languageserver)
-load("/home/smoxy/AIMLEA4Suburra/R/workspace.RData")
+load("P02.RData")
 load("/home/smoxy/AIMLEA4Suburra/R/server_computation.RData")
 setwd("/home/smoxy/AIMLEA4Suburra/R/")
 
@@ -201,3 +201,5 @@ p_hybrid.final <- C50::predict.C5.0(m, df_hybrid.final_TEST, type = "class")
 #####                   Model Averaged Naive Bayes Classifier              #####
 
 # <- 
+
+save.image(file = "P03.RData", compress=T)

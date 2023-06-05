@@ -37,9 +37,9 @@ installAndLoadPackages <- function(packageNames) {
   }
 }
 
-installAndLoadPackages(c("reshape2", "magrittr", "dplyr", "tidyr", "ggplot2", "tm", "SnowballC",
-                         "slam", "e1071", "stopwords", "koRpus", "koRpus.lang.it", "udpipe",
-                         "parallel", "httr", "stringr", "purrr"))
+installAndLoadPackages(c("reshape2", "magrittr", "plyr", "dplyr", "tidyr",
+                         "ggplot2", "tm", "SnowballC", "slam", "e1071",
+                         "stopwords", "udpipe", "parallel", "httr", "stringr", "purrr"))
 
 #library(readr)
 #library(lubridate)
@@ -66,7 +66,7 @@ suburra_collapsed <- read.csv("../DATA/02_Suburra_data_collapsed.csv", stringsAs
 suburra_hybrid <- read.csv("../DATA/03_Suburra_data_hybrid.csv", stringsAsFactors = FALSE)
 
 
-    
+
 ################################################################################
 #####                          Analisi dei dati                            #####
 #summary(suburra)
@@ -79,7 +79,7 @@ suburra_hybrid <- read.csv("../DATA/03_Suburra_data_hybrid.csv", stringsAsFactor
 
 normal <- suburra %>%
   group_by(character, is_male) %>%
-  summarise(
+  dplyr::summarize(
     original = n()
   ) %>%
   arrange(desc(original)) %>%
@@ -88,7 +88,7 @@ normal <- suburra %>%
 
 collapsed_df <- suburra_collapsed %>%
   group_by(character) %>%
-  summarise(
+  dplyr::summarize(
     collapsed = n()
   ) %>%
   arrange(desc(collapsed)) %>%
@@ -96,7 +96,7 @@ collapsed_df <- suburra_collapsed %>%
 
 hybrid_df <- suburra_hybrid %>%
   group_by(character, is_male) %>%
-  summarise(
+  dplyr::summarize(
     hybrid = n()
   ) %>%
   arrange(desc(hybrid)) %>%
@@ -173,10 +173,10 @@ convert_ticks_to_time <- function(ticks){
 
 character_speak_time <- suburra %>%
   group_by(character) %>%
-  summarise(
+  dplyr::summarize(
     speak_time = sum(duration),
     time = convert_ticks_to_time(speak_time)
-    ) %>%
+  ) %>%
   arrange(desc(speak_time)) %>%
   ungroup() %>%
   top_n(10, speak_time)
@@ -244,17 +244,17 @@ suburra_hybrid$character    <- droplevels(suburra_hybrid$character)
 
 
 get_badwords <- function(){
-    bad_w1 <- httr::content(httr::GET("https://raw.githubusercontent.com/LDNOOBW/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words/master/it"), "text")
-    bad_w2 <- httr::content(httr::GET("https://raw.githubusercontent.com/napolux/paroleitaliane/master/paroleitaliane/lista_badwords.txt"), "text")
-    badwords <- unique(c(stringr::str_split(bad_w1, "\n")[[1]], stringr::str_split(bad_w2, "\n")[[1]]))
-    return(badwords)
+  bad_w1 <- httr::content(httr::GET("https://raw.githubusercontent.com/LDNOOBW/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words/master/it"), "text")
+  bad_w2 <- httr::content(httr::GET("https://raw.githubusercontent.com/napolux/paroleitaliane/master/paroleitaliane/lista_badwords.txt"), "text")
+  badwords <- unique(c(stringr::str_split(bad_w1, "\n")[[1]], stringr::str_split(bad_w2, "\n")[[1]]))
+  return(badwords)
 }
 
 # 2 set bad words
 set_badwords <- function(df){
-    badwords <- get_badwords()
-    df <- df %>% mutate(bad_words = purrr::map_int(stringr::str_split(script_line, " "), ~ifelse(any(.x %in% badwords), 1, 0)))
-    return(df)
+  badwords <- get_badwords()
+  df <- df %>% mutate(bad_words = purrr::map_int(stringr::str_split(script_line, " "), ~ifelse(any(.x %in% badwords), 1, 0)))
+  return(df)
 }
 
 df <- set_badwords(suburra)
@@ -289,7 +289,7 @@ df.pos <- udpipe::udpipe(df$script_line, object = italian.vit, parallel.cores = 
 df.pos$doc_id <- as.integer(df.pos$doc_id)
 df.pos.counts <- df.pos %>%
   group_by(doc_id, upos) %>%
-  summarise(count = n())
+  dplyr::summarize(count = n())
 df.pos.matrix <- df.pos.counts %>%
   tidyr::pivot_wider(names_from = upos, values_from = count, values_fill = 0)
 
@@ -297,7 +297,7 @@ df_collapsed.pos <- udpipe::udpipe(df_collapsed$script_line, object = italian.vi
 df_collapsed.pos$doc_id <- as.integer(df_collapsed.pos$doc_id)
 df_collapsed.pos.counts <- df_collapsed.pos %>%
   group_by(doc_id, upos) %>%
-  summarise(count = n())
+  dplyr::summarize(count = n())
 df_collapsed.pos.matrix <- df_collapsed.pos.counts %>%
   tidyr::pivot_wider(names_from = upos, values_from = count, values_fill = 0)
 
@@ -305,7 +305,7 @@ df_hybrid.pos <- udpipe::udpipe(df_hybrid$script_line, object = italian.vit, par
 df_hybrid.pos$doc_id <- as.integer(df_hybrid.pos$doc_id)
 df_hybrid.pos.counts <- df_hybrid.pos %>%
   group_by(doc_id, upos) %>%
-  summarise(count = n())
+  dplyr::summarize(count = n())
 df_hybrid.pos.matrix <- df_hybrid.pos.counts %>%
   tidyr::pivot_wider(names_from = upos, values_from = count, values_fill = 0)
 

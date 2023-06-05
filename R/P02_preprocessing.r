@@ -427,3 +427,5 @@ rm(italian.vit, whitelist, allowed_characters)
 #V3_normal    <- data.frame(sparse, stringsAsFactors = F)
 #V3_collapsed <- data.frame(sparse_collapsed, labels_collapsed, stringsAsFactors = F)
 #v3_hybrid    <- data.frame(sparse_hybrid, labels_hybrid, stringsAsFactors = F)
+
+save.image(file = "P02.RData", compress=T)

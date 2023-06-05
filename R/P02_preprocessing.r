@@ -41,6 +41,7 @@ installAndLoadPackages(c("reshape2", "magrittr", "plyr", "dplyr", "tidyr",
                          "ggplot2", "tm", "SnowballC", "slam", "e1071",
                          "stopwords", "udpipe", "parallel", "httr", "stringr", "purrr"))
 
+library(languageserver)
 #library(readr)
 #library(lubridate)
 Sys.setenv(LANG = "en")
@@ -338,12 +339,12 @@ corpus_hybrid    <- tm_map(corpus_hybrid, content_transformer(tolower))
 
 corpus           <- tm_map(corpus, removeNumbers)
 corpus_collapsed <- tm_map(corpus_collapsed, removeNumbers)
-corpus_hybrid <- tm_map(corpus_hybrid, removeNumbers)
+corpus_hybrid    <- tm_map(corpus_hybrid, removeNumbers)
 
 # Rimozione delle spaziature extra
 corpus           <- tm_map(corpus, stripWhitespace)
 corpus_collapsed <- tm_map(corpus_collapsed, stripWhitespace)
-corpus_hybrid <- tm_map(corpus_hybrid, stripWhitespace)
+corpus_hybrid    <- tm_map(corpus_hybrid, stripWhitespace)
 
 
 ######################### Rimozione delle stop words ###########################
@@ -355,6 +356,10 @@ corpus_hybrid_clean    <- tm_map(corpus_hybrid, content_transformer(removeWords)
 #####                                Stemming                              #####
 whitelist <- c("alberto","anacleti","spadino","amedeo","cinaglia","aureliano","adami","gabriele","marchilli","samurai","valerio","sara","monaschi", "livia", "sveva", "angelica","sale", "manfredi")
 
+convert_counts <- function(x){
+  x <- ifelse(x>0, 1, 0)
+}
+
 custom_stemming <- function(corpus, whitelist) {
   stemmed_corpus <- lapply(corpus, function(doc) {
     words <- unlist(strsplit(as.character(doc), " "))
@@ -365,18 +370,21 @@ custom_stemming <- function(corpus, whitelist) {
   texts <- sapply(stemmed_corpus, function(doc) doc$content)
   corpus <- Corpus(VectorSource(texts))
   dtm <- DocumentTermMatrix(corpus) # bag of words
+  dtm_2 <- apply(dtm, MARGIN = 2, convert_counts)
   sparse <- slam::as.simple_triplet_matrix(dtm)
   df <- as.data.frame(as.matrix(sparse))
-  return(df)
+  return(list("dtm" = dtm,
+              "dtm_2" = dtm_2,
+              "df" = df))
 }
 
 dtm.With_stopW           <- custom_stemming(corpus, whitelist)
 dtm_collapsed.With_stopW <- custom_stemming(corpus_collapsed, whitelist)
 dtm_hybrid.With_stopW    <- custom_stemming(corpus_hybrid, whitelist)
 
-dtm.No_stopW             <- custom_stemming(corpus_clean, whitelist)
-dtm_collapsed.No_stopW   <- custom_stemming(corpus_collapsed_clean, whitelist)
-dtm_hybrid.No_stopW      <- custom_stemming(corpus_hybrid_clean, whitelist)
+dtm             <- custom_stemming(corpus_clean, whitelist)
+dtm_collapsed   <- custom_stemming(corpus_collapsed_clean, whitelist)
+dtm_hybrid      <- custom_stemming(corpus_hybrid_clean, whitelist)
 
 rm(corpus, corpus_collapsed, corpus_hybrid, corpus_clean, corpus_collapsed_clean, corpus_hybrid_clean)
 
@@ -385,9 +393,9 @@ dtm.With_stopW$character           <- df.final$character
 dtm_collapsed.With_stopW$character <- df_collapsed.final$character
 dtm_hybrid.With_stopW$character    <- df_hybrid.final$character
 
-dtm.No_stopW$character             <- df.final$character
-dtm_collapsed.No_stopW$character   <- df_collapsed.final$character
-dtm_hybrid.No_stopW$character      <- df_hybrid.final$character
+dtm$character             <- df.final$character
+dtm_collapsed$character   <- df_collapsed.final$character
+dtm_hybrid$character      <- df_hybrid.final$character
 
 rm(italian.vit, whitelist, allowed_characters)
 

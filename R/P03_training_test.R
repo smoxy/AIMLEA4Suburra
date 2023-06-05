@@ -1,11 +1,11 @@
-installAndLoadPackages(c("caret", "smotefamily", "parallel", "doParallel", "bnclassify", "C50", "plyr"))
+installAndLoadPackages(c("parallel", "caret", "smotefamily", "parallel", "doParallel", "bnclassify", "C50"))
+setwd("/home/smoxy/AIMLEA4Suburra/R/")
 library(languageserver)
 load("P02.RData")
-load("/home/smoxy/AIMLEA4Suburra/R/server_computation.RData")
-setwd("/home/smoxy/AIMLEA4Suburra/R/")
+load("server_computation.DTM_RF.RData")
 
 # START CLUSTERS
-ifelse(detectCores() <= 12, cores<-(as.numeric(detectCores()-1)), cores<-12)
+ifelse(parallel::detectCores() <= 12, cores<-(as.numeric(parallel::detectCores()-1)), cores<-12)
 cl <- parallel::makePSOCKcluster(cores)
 doParallel::registerDoParallel(cl)
 
@@ -13,24 +13,25 @@ doParallel::registerDoParallel(cl)
 ################################################################################
 #####                  SUBSETTING IN TRAIN AND TEST  ->  DTM               #####
 set.seed(1234)  # For reproducibility
-Index <- caret::createDataPartition(dtm.With_stopW$character, p = .8, list = FALSE, times = 1)
-dtm.With_stopW_TRAIN            <- dtm.With_stopW[Index,]
-dtm.With_stopW_TEST             <- dtm.With_stopW[-Index,]
-Index <- caret::createDataPartition(dtm_collapsed.With_stopW$character, p = .8, list = FALSE, times = 1)
-dtm_collapsed.With_stopW_TRAIN  <- dtm_collapsed.With_stopW[Index,]
-dtm_collapsed.With_stopW_TEST   <- dtm_collapsed.With_stopW[-Index,]
-Index <- caret::createDataPartition(dtm_hybrid.With_stopW$character, p = .8, list = FALSE, times = 1)
-dtm_hybrid.With_stopW_TRAIN     <- dtm_hybrid.With_stopW[Index,]
-dtm_hybrid.With_stopW_TEST      <- dtm_hybrid.With_stopW[-Index,]
-Index <- caret::createDataPartition(dtm.No_stopW$character, p = .8, list = FALSE, times = 1)
-dtm.No_stopW_TRAIN              <- dtm.No_stopW[Index,]
-dtm.No_stopW_TEST               <- dtm.No_stopW[-Index,]
-Index <- caret::createDataPartition(dtm_collapsed.No_stopW$character, p = .8, list = FALSE, times = 1)
-dtm_collapsed.No_stopW_TRAIN    <- dtm_collapsed.No_stopW[Index,]
-dtm_collapsed.No_stopW_TEST     <- dtm_collapsed.No_stopW[-Index,]
-Index <- caret::createDataPartition(dtm_hybrid.No_stopW$character, p = .8, list = FALSE, times = 1)
-dtm_hybrid.No_stopW_TRAIN       <- dtm_hybrid.No_stopW[Index,]
-dtm_hybrid.No_stopW_TEST        <- dtm_hybrid.No_stopW[-Index,]
+dtm.Index <- caret::createDataPartition(dtm$character, p = .75, list = FALSE, times = 1)
+dtm_TRAIN              <- dtm$dtm_2[dtm.Index,]
+dtm_TEST               <- dtm$dtm_2[-dtm.Index,]
+dtm_collapsed.Index <- caret::createDataPartition(dtm_collapsed$character, p = .75, list = FALSE, times = 1)
+dtm_collapsed_TRAIN    <- dtm_collapsed$dtm_2[dtm_collapsed.Index,]
+dtm_collapsed_TEST     <- dtm_collapsed$dtm_2[-dtm_collapsed.Index,]
+dtm_hybrid.Index <- caret::createDataPartition(dtm_hybrid$character, p = .75, list = FALSE, times = 1)
+dtm_hybrid_TRAIN       <- dtm_hybrid$dtm_2[dtm_hybrid.Index,]
+dtm_hybrid_TEST        <- dtm_hybrid$dtm_2[-dtm_hybrid.Index,]
+dtm.With_stopW.Index <- caret::createDataPartition(dtm.With_stopW$character, p = .75, list = FALSE, times = 1)
+dtm.With_stopW_TRAIN            <- dtm.With_stopW$dtm_2[dtm.With_stopW.Index,]
+dtm.With_stopW_TEST             <- dtm.With_stopW$dtm_2[-dtm.With_stopW.Index,]
+dtm_collapsed.With_stopW.Index <- caret::createDataPartition(dtm_collapsed.With_stopW$character, p = .75, list = FALSE, times = 1)
+dtm_collapsed.With_stopW_TRAIN  <- dtm_collapsed.With_stopW$dtm_2[dtm_collapsed.With_stopW.Index,]
+dtm_collapsed.With_stopW_TEST   <- dtm_collapsed.With_stopW$dtm_2[-dtm_collapsed.With_stopW.Index,]
+dtm_hybrid.With_stopW.Index <- caret::createDataPartition(dtm_hybrid.With_stopW$character, p = .75, list = FALSE, times = 1)
+dtm_hybrid.With_stopW_TRAIN     <- dtm_hybrid.With_stopW$dtm_2[dtm_hybrid.With_stopW.Index,]
+dtm_hybrid.With_stopW_TEST      <- dtm_hybrid.With_stopW$dtm_2[-dtm_hybrid.With_stopW.Index,]
+
 
 Index <- caret::createDataPartition(df.final$character, p = .75, list = FALSE, times = 1)
 df.final_TRAIN           <- df.final[Index,]
@@ -44,72 +45,60 @@ df_hybrid.final_TEST     <- df_hybrid.final[-Index,]
 
 
 ################################################################################
-#####                                  CARET                               #####
+#####                                                                      #####
 #####                                 Tuning                               #####
 #####                                                                      #####
 ################################################################################
-# crea un oggetto di controllo per l'addestramento del modello.
-ctrl_smote_repeatedCrossValidation <- caret::trainControl(method = "repeatedcv", # metodo di validazione incrociata da utilizzare
-                            number = 10,         # il numero di fold nella validazione incrociata (10)
-                            repeats = 10,        # il numero di ripetizioni per la validazione incrociata (10)
-                            verboseIter = TRUE, # stampare o meno i messaggi iterativi durante l'addestramento
-                            sampling = "smote")  # metodo di campionamento da utilizzare ("smote")
-
-
+# crea un oggetto di controllo per l'addestramento del modello
 ctrl <- caret::trainControl(method = "repeatedcv",
-                            number = 100,
+                            number = 10,
                             repeats = 5,
-                            search = "grid",
                             verboseIter = F)
 
 
 ################################################################################
 #####                  Random Forest with SMOTE Oversampling               #####
-dtm_collapsed.With_stopW_model <- caret::train(character ~ .,
-                                               data = dtm_collapsed.With_stopW_TRAIN,
+dtm_collapsed.With_stopW_model <- caret::train(x = dtm_collapsed.With_stopW_TRAIN,
+                                               y = dtm_collapsed.With_stopW$character[dtm_collapsed.With_stopW.Index],
                                                method = "rf",
-                                               preProcess = c("scale", "center"),
+                                               tuneGrid = expand.grid(mtry = seq(1, ncol(dtm_collapsed.With_stopW_TRAIN), by = 1)),
                                                trControl = ctrl,
                                                allowParallel=TRUE)
-
-dtm_collapsed.No_stopW_model <- caret::train(character ~ .,
-                                             data = dtm_collapsed.No_stopW_TRAIN,
-                                             method = "rf",
-                                             preProcess = c("scale", "center"),
-                                             trControl = ctrl,
-                                             allowParallel=TRUE)
-
-dtm_hybrid.With_stopW_model <- caret::train(character ~ .,
-                                            data = dtm_hybrid.With_stopW_TRAIN,
+dtm_collapsed.stopW_model <- dtm_collapsed.With_stopW_model
+dtm_collapsed.model         <- caret::train(x = dtm_collapsed_TRAIN,
+                                            y = dtm_collapsed$character[dtm_collapsed.Index],
                                             method = "rf",
-                                            preProcess = c("scale", "center"),
+                                            tuneGrid = expand.grid(mtry = seq(1, ncol(dtm_collapsed_TRAIN), by = 1)),
                                             trControl = ctrl,
                                             allowParallel=TRUE)
 
-dtm_hybrid.No_stopW_model <- caret::train(character ~ .,
-                                          data = dtm_hybrid.No_stopW_TRAIN,
-                                          method = "rf",
-                                          preProcess = c("scale", "center"),
-                                          trControl = ctrl,
-                                          allowParallel=TRUE)
+dtm_hybrid.stopW_model <- caret::train(x = dtm_hybrid.With_stopW_TRAIN,
+                                            y = dtm_hybrid.With_stopW$character[dtm_hybrid.With_stopW.Index],
+                                            method = "rf",
+                                            tuneGrid = expand.grid(mtry = seq(1, ncol(dtm_hybrid.With_stopW_TRAIN), by = 1)),
+                                            trControl = ctrl,
+                                            allowParallel=TRUE)
 
-dtm.No_stopW_model <- caret::train(character ~ .,
-                                   data = dtm.No_stopW_TRAIN,
-                                   method = "rf",
-                                   preProcess = c("scale", "center"),
-                                   trControl = ctrl,
-                                   allowParallel=TRUE)
+dtm_hybrid.model            <- caret::train(x = dtm_hybrid_TRAIN,
+                                            y = dtm_collapsed$character[dtm_collapsed.Index],
+                                            method = "rf",
+                                            tuneGrid = expand.grid(mtry = seq(1, ncol(dtm_hybrid_TRAIN), by = 1)),
+                                            trControl = ctrl,
+                                            allowParallel=TRUE)
 
-save(dtm_collapsed.With_stopW_model, dtm_collapsed.No_stopW_model,
-     dtm_hybrid.With_stopW_model,
-     file = "/home/smoxy/AIMLEA4Suburra/R/server_computation.RData")
+dtm.model                   <- caret::train(x = dtm_TRAIN,
+                                            y = dtm$character[dtm.Index],
+                                            method = "rf",
+                                            tuneGrid = expand.grid(mtry = seq(1, ncol(dtm_TRAIN), by = 1)),
+                                            trControl = ctrl,
+                                            allowParallel=TRUE)
 
 dtm_collapsed.With_stopW_PRED <- predict(dtm_collapsed.With_stopW_model, newdata = dtm_collapsed.With_stopW_TEST[, -which(names(dtm_collapsed.With_stopW_TEST) == "character")])
 dtm_collapsed.With_stopW_CONF <- caret::confusionMatrix(data = dtm_collapsed.With_stopW_PRED, reference = dtm_collapsed.With_stopW_TEST$character)
 
-save(dtm_collapsed.With_stopW_model, dtm_collapsed.No_stopW_model,
-     dtm_hybrid.With_stopW_model, dtm_hybrid.No_stopW_model, dtm.No_stopW_model,
-     file = "/home/smoxy/AIMLEA4Suburra/R/server_computation.RData")
+save(dtm_collapsed.stopW_model, dtm_collapsed.model,
+     dtm_hybrid.stopW_model, dtm_hybrid.model, dtm.model,
+     file = "server_computation.DTM_RF2.RData")
 
 
 dtm.With_stopW_TRAIN %>%
@@ -162,7 +151,8 @@ m <-caret::train(x = df.final_TRAIN[, -c(which(names(df.final_TRAIN) == "charact
                  y = df.final_TRAIN$character,
                  method = 'C5.0',
                  trControl = ctrl,
-                 tuneGrid = tuneGrid)
+                 tuneGrid = tuneGrid,
+                 allowParallel = T)
 mean(m$resample$Accuracy) #model accuracy
 summary(m)
 p.final <- predict(m, newdata = df.final_TEST[, -which(names(df.final_TEST) == "character")])

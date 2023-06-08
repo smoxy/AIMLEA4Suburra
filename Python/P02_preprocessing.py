@@ -16,7 +16,8 @@ import requests    # read file without download
 
 
 wd = os.getcwd()
-
+#nltk.download('stopwords')
+#nltk.download('wordnet')
 
 
 def convert_ticks_to_time(ticks):
@@ -35,7 +36,35 @@ def convert_ticks_to_time(ticks):
 # 1. Read data and setting up
 def get_data(fileName = "01_Suburra_data.csv"):
     sleep(0.5)
-    df = pd.read_csv(wd+os.sep+'DATA'+os.sep+fileName, encoding='UTF-8')
+    if fileName[fileName.rfind('.'):] == '.csv':
+        df = pd.read_csv(wd+os.sep+'DATA'+os.sep+fileName, encoding='UTF-8')
+    elif fileName[fileName.rfind('.'):] == '.pkl':
+        with open(wd+os.sep+'DATA'+os.sep+fileName, "rb") as file:
+            df = pickle.load(file)
+    try:
+        df["character"] = df["character"].astype("category")
+    except KeyError:
+        pass
+    try:
+        df["season"] = df["season"].astype("category")
+    except KeyError:
+        pass
+    try:
+        df["episode"] = df["episode"].astype("Int8")    
+    except KeyError:
+        pass
+    try:
+        df["bad_words"] = df["bad_words"].astype("Int8")
+    except KeyError:
+        pass
+    try:
+        df["is_male"] = df["is_male"].astype("Int8")
+    except KeyError:
+        pass
+    try:
+        df["is_character"] = df["is_character"].astype("Int8")
+    except KeyError:
+        pass
     return df
 
 
@@ -203,46 +232,36 @@ def remove_punctuation(fileName):
 def subset(fileName: str, allowed_characters: list = ["Alberto Anacleti", "Amedeo Cinaglia", "Aureliano Adami", "Gabriele Marchilli", "Samurai Valerio", "Sara Monaschi", "Livia Adami", "Contessa Sveva Della Rocca Croce", "Angelica Sale", "Manfredi Anacleti"]):
     df = get_data(fileName)
     new_df = df[df['character'].isin(allowed_characters)]
+    
+    new_df = new_df.drop(['season', 'is_character'], axis=1)        # dropping also the not needed columns
+
     fileName = fileName[:fileName.find('_')+1] + 'subset' + fileName[fileName.rfind('_'):]
     new_df.to_csv(wd+os.sep+'DATA'+os.sep+fileName, index=False, encoding='UTF-8')
     return new_df
 
 
-def token_and_stopword(df):
-    nltk.download('stopwords')
+def personal_tokenizer(df, fileName: str):
+    new_df = df
     stop_words = set(stopwords.words("italian"))
 
     tokenizer = RegexpTokenizer(r'\w+')  # Rimuove numeri e simboli, mantiene solo parole
-
-
-def test(df):
-    import nltk
-    from nltk.corpus import stopwords
-    from nltk.tokenize import RegexpTokenizer
-    from nltk.stem.snowball import SnowballStemmer
-
-    nltk.download('stopwords')
-    nltk.download('wordnet')
-
-    # Rimozione di numeri e simboli
-    tokenizer = RegexpTokenizer(r'\w+')
-    df["script_line"] = df["script_line"].apply(lambda x: tokenizer.tokenize(x))
-
-    # Rimozione delle stop words italiane
+    new_df["script_line"] = df["script_line"].apply(lambda x: tokenizer.tokenize(x))
+    df = new_df
+    
+    # Stopwords removing delle parole italiane
     stop_words = set(stopwords.words("italian"))
-    df["script_line"] = df["script_line"].apply(lambda x: [word for word in x if word.lower() not in stop_words])
-
+    new_df["script_line"] = new_df["script_line"].apply(lambda x: [word for word in x if word.lower() not in stop_words])
     # Stemming delle parole italiane
-    stemmer = SnowballStemmer("italian")
-    df["script_line"] = df["script_line"].apply(lambda x: [stemmer.stem(word) for word in x])
+    stemmer = nltk.stem.SnowballStemmer("italian")
+    new_df["script_line"] = new_df["script_line"].apply(lambda x: [stemmer.stem(word) for word in x])
+    
+    # Salva il dataframe
+    with open(wd+os.sep+'DATA'+os.sep+fileName+".pkl", "wb") as file:
+        pickle.dump(df, file)
+    with open(wd+os.sep+'DATA'+os.sep+fileName+"_stemStop.pkl", "wb") as file:
+        pickle.dump(new_df, file)
 
-    # Rappresentazione delle battute come vettori numerici (esempio con TF-IDF)
-    from sklearn.feature_extraction.text import TfidfVectorizer
 
-    tfidf = TfidfVectorizer()
-    X = tfidf.fit_transform(df["script_line"].apply(lambda x: " ".join(x)))
-
-    print(df.head())
 
 
 
@@ -277,9 +296,12 @@ if __name__ == "__main__":
     #remove_punctuation('02_Suburra_data_collapsed.csv')
     #remove_punctuation('03_Suburra_data_hybrid.csv')
 
-    #print('subsetting ...')
+    print('subsetting ...')
     df = subset('01_Suburra_data.csv')
-    #df_collapsed = subset('02_Suburra_data_collapsed.csv')
-    #df_hybrid = subset('03_Suburra_data_hybrid.csv')
+    df_collapsed = subset('02_Suburra_data_collapsed.csv')
+    df_hybrid = subset('03_Suburra_data_hybrid.csv')
 
-    test(df)
+    print("tokenizing ...")
+    personal_tokenizer(df, '04')
+    personal_tokenizer(df_collapsed, '05_collapsed')
+    personal_tokenizer(df_hybrid, '06_hybrid')

@@ -58,7 +58,8 @@ def get_data(fileName = "01_Suburra_data.csv"):
     except KeyError:
         pass
     try:
-        df["is_male"] = df["is_male"].astype("Int8")
+        df["is_male"] = df["is_male"].astype("Int32")
+        df["is_male"] = df["is_male"].astype("category")
     except KeyError:
         pass
     try:

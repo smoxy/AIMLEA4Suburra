@@ -58,13 +58,13 @@ ctrl <- caret::trainControl(method = "repeatedcv",
 
 ################################################################################
 #####                  Random Forest with SMOTE Oversampling               #####
-dtm_collapsed.With_stopW_model <- caret::train(x = dtm_collapsed.With_stopW_TRAIN,
+dtm_collapsed.stopW_model <- caret::train(x = dtm_collapsed.With_stopW_TRAIN,
                                                y = dtm_collapsed.With_stopW$character[dtm_collapsed.With_stopW.Index],
                                                method = "rf",
                                                tuneGrid = expand.grid(mtry = seq(1, ncol(dtm_collapsed.With_stopW_TRAIN), by = 1)),
                                                trControl = ctrl,
                                                allowParallel=TRUE)
-dtm_collapsed.stopW_model <- dtm_collapsed.With_stopW_model
+
 dtm_collapsed.model         <- caret::train(x = dtm_collapsed_TRAIN,
                                             y = dtm_collapsed$character[dtm_collapsed.Index],
                                             method = "rf",
@@ -93,8 +93,8 @@ dtm.model                   <- caret::train(x = dtm_TRAIN,
                                             trControl = ctrl,
                                             allowParallel=TRUE)
 
-dtm_collapsed.With_stopW_PRED <- predict(dtm_collapsed.With_stopW_model, newdata = dtm_collapsed.With_stopW_TEST[, -which(names(dtm_collapsed.With_stopW_TEST) == "character")])
-dtm_collapsed.With_stopW_CONF <- caret::confusionMatrix(data = dtm_collapsed.With_stopW_PRED, reference = dtm_collapsed.With_stopW_TEST$character)
+#dtm_collapsed.With_stopW_PRED <- predict(dtm_collapsed.With_stopW_model, newdata = dtm_collapsed.With_stopW_TEST[, -which(names(dtm_collapsed.With_stopW_TEST) == "character")])
+#dtm_collapsed.With_stopW_CONF <- caret::confusionMatrix(data = dtm_collapsed.With_stopW_PRED, reference = dtm_collapsed.With_stopW_TEST$character)
 
 save(dtm_collapsed.stopW_model, dtm_collapsed.model,
      dtm_hybrid.stopW_model, dtm_hybrid.model, dtm.model,

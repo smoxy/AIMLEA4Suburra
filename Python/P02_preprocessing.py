@@ -3,9 +3,13 @@ import numpy as np
 import os
 from time import sleep
 
-from nltk import word_tokenize
+import nltk
+from nltk.corpus import stopwords
+from nltk.tokenize import RegexpTokenizer
 
 import string
+
+import pickle
 
 import requests    # read file without download
 
@@ -195,44 +199,87 @@ def remove_punctuation(fileName):
     df.to_csv(wd+os.sep+'DATA'+os.sep+fileName, index=False, encoding='UTF-8')
 
 
+# 5.6 remove rows of not relevant characters
+def subset(fileName: str, allowed_characters: list = ["Alberto Anacleti", "Amedeo Cinaglia", "Aureliano Adami", "Gabriele Marchilli", "Samurai Valerio", "Sara Monaschi", "Livia Adami", "Contessa Sveva Della Rocca Croce", "Angelica Sale", "Manfredi Anacleti"]):
+    df = get_data(fileName)
+    new_df = df[df['character'].isin(allowed_characters)]
+    fileName = fileName[:fileName.find('_')+1] + 'subset' + fileName[fileName.rfind('_'):]
+    new_df.to_csv(wd+os.sep+'DATA'+os.sep+fileName, index=False, encoding='UTF-8')
+    return new_df
 
-# 5. tokenization
 
-# 5. remove stopwords
+def token_and_stopword(df):
+    nltk.download('stopwords')
+    stop_words = set(stopwords.words("italian"))
 
-# 6. remove accents
+    tokenizer = RegexpTokenizer(r'\w+')  # Rimuove numeri e simboli, mantiene solo parole
 
-# 7. remove special characters
+
+def test(df):
+    import nltk
+    from nltk.corpus import stopwords
+    from nltk.tokenize import RegexpTokenizer
+    from nltk.stem.snowball import SnowballStemmer
+
+    nltk.download('stopwords')
+    nltk.download('wordnet')
+
+    # Rimozione di numeri e simboli
+    tokenizer = RegexpTokenizer(r'\w+')
+    df["script_line"] = df["script_line"].apply(lambda x: tokenizer.tokenize(x))
+
+    # Rimozione delle stop words italiane
+    stop_words = set(stopwords.words("italian"))
+    df["script_line"] = df["script_line"].apply(lambda x: [word for word in x if word.lower() not in stop_words])
+
+    # Stemming delle parole italiane
+    stemmer = SnowballStemmer("italian")
+    df["script_line"] = df["script_line"].apply(lambda x: [stemmer.stem(word) for word in x])
+
+    # Rappresentazione delle battute come vettori numerici (esempio con TF-IDF)
+    from sklearn.feature_extraction.text import TfidfVectorizer
+
+    tfidf = TfidfVectorizer()
+    X = tfidf.fit_transform(df["script_line"].apply(lambda x: " ".join(x)))
+
+    print(df.head())
 
 
 
 if __name__ == "__main__":
-    print('dropping rows of non characters ...')
-    drop_not_characters('01_Suburra_data.csv')
+    #print('dropping rows of non characters ...')
+    #drop_not_characters('01_Suburra_data.csv')
 
-    print('lowering case ...')
-    lower_case(get_data())
-    
-    print('removing brackets from script lines...')
-    remove_brackets('01_Suburra_data.csv')
-    print('collapsing consecutive lines ...')
-    collapse_consecutive_lines(get_data())
-    collapse_consecutive_lines(get_data(), hybrid=True)
+    #print('lowering case ...')
+    #lower_case(get_data())
 
-    print('dropping rows of non characters ...')
-    drop_not_characters('02_Suburra_data_collapsed.csv')
-    drop_not_characters('02_Suburra_data_collapsed.csv')
+    #print('removing brackets from script lines...')
+    #remove_brackets('01_Suburra_data.csv')
+    #print('collapsing consecutive lines ...')
+    #collapse_consecutive_lines(get_data())
+    #collapse_consecutive_lines(get_data(), hybrid=True)
 
-    print('setting bad words ...')
-    set_badwords('01_Suburra_data.csv')
-    set_badwords('02_Suburra_data_collapsed.csv')
-    set_badwords('03_Suburra_data_hybrid.csv')
+    #print('dropping rows of non characters ...')
+    #drop_not_characters('02_Suburra_data_collapsed.csv')
+    #drop_not_characters('02_Suburra_data_collapsed.csv')
 
-    print('removing brackets from script lines...')
-    remove_brackets('02_Suburra_data_collapsed.csv')
-    remove_brackets('03_Suburra_data_hybrid.csv')
+    #print('setting bad words ...')
+    #set_badwords('01_Suburra_data.csv')
+    #set_badwords('02_Suburra_data_collapsed.csv')
+    #set_badwords('03_Suburra_data_hybrid.csv')
 
-    print('removing punctuation ...')
-    remove_punctuation('01_Suburra_data.csv')
-    remove_punctuation('02_Suburra_data_collapsed.csv')
-    remove_punctuation('03_Suburra_data_hybrid.csv')
+    #print('removing brackets from script lines...')
+    #remove_brackets('02_Suburra_data_collapsed.csv')
+    #remove_brackets('03_Suburra_data_hybrid.csv')
+
+    #print('removing punctuation ...')
+    #remove_punctuation('01_Suburra_data.csv')
+    #remove_punctuation('02_Suburra_data_collapsed.csv')
+    #remove_punctuation('03_Suburra_data_hybrid.csv')
+
+    #print('subsetting ...')
+    df = subset('01_Suburra_data.csv')
+    #df_collapsed = subset('02_Suburra_data_collapsed.csv')
+    #df_hybrid = subset('03_Suburra_data_hybrid.csv')
+
+    test(df)

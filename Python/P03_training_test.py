@@ -5,7 +5,7 @@ from sklearn.metrics import confusion_matrix, classification_report, accuracy_sc
 
 import tensorflow as tf
 from tensorflow.keras.models import Sequential, Model, save_model, load_model
-from tensorflow.keras.layers import Embedding, LSTM, Dense, Concatenate, Input
+from tensorflow.keras.layers import Embedding, LSTM, Dense, Concatenate, Input, Conv1D, Bidirectional, Dropout
 
 from P02_preprocessing import get_data, subset
 
@@ -71,20 +71,24 @@ def LSTM_model(df, fileName, epochs, load=False):
     if load:
         model = load_model(os.path.join(WD, 'DATA', 'LSTM_' + fileName + '.h5'))
     else:
-        def create_model(units=512, dropout=0.2, learning_rate=0.001):
+        def create_model(units=2048, dropout=0.2, learning_rate=0.001):
             from tensorflow.keras.optimizers import Adam
             input_text = Input(shape=(max_sequence_length,))
             embedding = Embedding(len(tokenizer.word_index) + 1, 100)(input_text)
-            lstm = LSTM(units, dropout=dropout)(embedding)
+            conv = Conv1D(int(units*1.5/4), 5, activation='relu')(embedding)
+            lstm = Bidirectional(LSTM(units, return_sequences=True, dropout=dropout))(conv)
+            #lstm = Bidirectional(LSTM(units, return_sequences=True, dropout=0.35))(lstm)
+            lstm = LSTM(int(units/2), dropout=dropout)(lstm)
 
             input_gender = Input(shape=(1,))
-            dense_gender = Dense(128, activation='relu')(input_gender)
+            dense_gender = Dense(int(units/16), activation='sigmoid')(input_gender)
+            dropout_gender = Dropout(dropout)(dense_gender)
 
             input_badword = Input(shape=(1,))
-            dense_badword = Dense(128, activation='relu')(input_badword)
+            dense_badword = Dense(int(units/4), activation='relu')(input_badword)
+            dropout_badword = Dropout(dropout)(dense_badword)
 
-            concatenated = Concatenate()([lstm, dense_gender, dense_badword])
-            #pre_out = Dense(100, activation='softmax')(concatenated)
+            concatenated = Concatenate()([lstm, dropout_gender, dropout_badword])
             output = Dense(10, activation='softmax')(concatenated)
             
             model = Model(inputs=[input_text, input_gender, input_badword], outputs=output)
@@ -94,7 +98,7 @@ def LSTM_model(df, fileName, epochs, load=False):
             return model
         
         model = create_model()
-        plot_model(model, to_file=os.path.join(WD, 'DATA',fileName + 'model.png'), show_shapes=True, show_layer_names=True)
+        plot_model(model, to_file=os.path.join(WD, 'DATA',fileName + '_model.png'), show_shapes=True, show_layer_names=True)
         history = model.fit([X_train_padded, is_male_train, is_badword_train], y_train, validation_data=([X_test_padded, is_male_test, is_badword_test], y_test), epochs=epochs, batch_size=32)
         with open(os.path.join(WD, 'DATA', 'history_' + fileName + '.pkl'), 'wb') as handle:
             pickle.dump(history, handle, protocol=pickle.HIGHEST_PROTOCOL)
@@ -112,6 +116,8 @@ def LSTM_model(df, fileName, epochs, load=False):
 
     print("Statistiche per classe:")
     print(classification_report(y_test_classes, y_pred_labels, target_names=label_encoder.classes_))
+    with open(os.path.join(WD, 'DATA', 'tokenizer_' + fileName + '.pkl'), 'wb') as handle:
+        pickle.dump(tokenizer, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
 
 
@@ -156,12 +162,12 @@ if __name__ == "__main__":
 
 
 
-    #LSTM_model(df, fileName = "normal", epochs=2000, load=False)
-    LSTM_model(df_collapsed, fileName = "collapsed", epochs=200, load=False)
-    LSTM_model(df_hybrid, fileName="hybrid", epochs=200, load=False)
-    #LSTM_model(tk_stemmed, fileName = "tk_stemmed", epochs=2000, load=False)
-    LSTM_model(tk_collapsed_stemmed, fileName = "tk_stemmed", epochs=200, load=False)
-    LSTM_model(tk_hybrid_stemmed, fileName = "tk_stemmed", epochs=200, load=False)
+    LSTM_model(df, fileName = "normal_v3_10000", epochs=10000, load=False)
+    #LSTM_model(tk_stemmed, fileName = "tk_stemmed", epochs=4000, load=False)
+    #LSTM_model(df_collapsed, fileName = "collapsed", epochs=4000, load=False)
+    #LSTM_model(tk_collapsed_stemmed, fileName = "tk_stemmed", epochs=4000, load=False)
+    #LSTM_model(df_hybrid, fileName="hybrid", epochs=4000, load=False)
+    #LSTM_model(tk_hybrid_stemmed, fileName = "tk_stemmed", epochs=4000, load=False)
     ################################################################################
     #####                           Dataset partioting                         #####
     #df_train_x, df_test_x, df_train_y, df_test_y = train_test_split(df.drop('character', axis=1), df["character"], train_size=TRAIN_SIZE, random_state=SEED, stratify=df["character"])

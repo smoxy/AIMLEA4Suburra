@@ -11,6 +11,7 @@ from P02_preprocessing import get_data, subset
 
 import os
 import pickle
+import lzma
 
 # Check if the GPU is working
 #print("TensorFlow version:", tf.__version__)
@@ -18,8 +19,20 @@ import pickle
 #print("GPU available:", tf.config.list_physical_devices("GPU"))
 
 SEED = 12345
-TRAIN_SIZE = 0.8
+TRAIN_SIZE = 0.75
 WD = os.getcwd()
+
+def compress_lzma(file_path):
+    with open(file_path, 'rb') as input:
+        with lzma.open(file_path + '.xz', 'wb') as output:
+            output.write(input.read())
+    os.remove(file_path)
+
+def decompress_lzma(file_path):
+    with lzma.open(file_path, 'rb') as input:
+        with open(file_path[:-3], 'wb') as output:  # remove '.xz' from the end
+            output.write(input.read())
+    os.remove(file_path)
 
 ################################################################################
 #####                                                                      #####
@@ -31,6 +44,14 @@ def LSTM_model(df, fileName, epochs, load=False):
     from tensorflow.keras.preprocessing.text import Tokenizer
     from tensorflow.keras.preprocessing.sequence import pad_sequences
     from tensorflow.keras.utils import to_categorical, plot_model
+
+    try:
+        os.chdir(os.path.join(WD, 'DATA', 'LSTM_' + fileName))
+        cwd = os.getcwd()
+    except FileNotFoundError:
+        os.mkdir(os.path.join(WD, 'DATA', 'LSTM_' + fileName))
+        os.chdir(os.path.join(WD, 'DATA', 'LSTM_' + fileName))
+        cwd = os.getcwd()
     
     X = df["script_line"]
     y = df["character"]
@@ -41,7 +62,7 @@ def LSTM_model(df, fileName, epochs, load=False):
     y_categorical = to_categorical(y_encoded)
 
     # per poterlo utilizzare in seguito
-    with open(os.path.join(WD, 'DATA', 'label_encoder_' + fileName + '.pkl'), 'wb') as f:
+    with lzma.open(os.path.join(cwd, 'label_encoder' + '.pkl.xz'), 'wb') as f:
         pickle.dump(label_encoder, f)
 
     tokenizer = Tokenizer()
@@ -69,15 +90,17 @@ def LSTM_model(df, fileName, epochs, load=False):
 
     # modello LSTM con strati intermedi per "is_male"
     if load:
-        model = load_model(os.path.join(WD, 'DATA', 'LSTM_' + fileName + '.h5'))
+        decompress_lzma(os.path.join(cwd, 'model' + '.h5.xz'))
+        model = load_model(os.path.join(cwd, 'model' + '.h5'))
     else:
-        def create_model(units=2048, dropout=0.2, learning_rate=0.001):
+        def create_model(units=512, dropout=0.4, learning_rate=0.001):
             from tensorflow.keras.optimizers import Adam
             input_text = Input(shape=(max_sequence_length,))
             embedding = Embedding(len(tokenizer.word_index) + 1, 100)(input_text)
-            conv = Conv1D(int(units*1.5/4), 5, activation='relu')(embedding)
+            conv = Conv1D(int(units/2), 5, activation='relu')(embedding)
             lstm = Bidirectional(LSTM(units, return_sequences=True, dropout=dropout))(conv)
-            #lstm = Bidirectional(LSTM(units, return_sequences=True, dropout=0.35))(lstm)
+            dropout_lstm = Dropout(0.5)(lstm)
+            lstm = Bidirectional(LSTM(units, return_sequences=True, dropout=0.35))(dropout_lstm)
             lstm = LSTM(int(units/2), dropout=dropout)(lstm)
 
             input_gender = Input(shape=(1,))
@@ -100,10 +123,11 @@ def LSTM_model(df, fileName, epochs, load=False):
         model = create_model()
         plot_model(model, to_file=os.path.join(WD, 'DATA',fileName + '_model.png'), show_shapes=True, show_layer_names=True)
         history = model.fit([X_train_padded, is_male_train, is_badword_train], y_train, validation_data=([X_test_padded, is_male_test, is_badword_test], y_test), epochs=epochs, batch_size=32)
-        with open(os.path.join(WD, 'DATA', 'history_' + fileName + '.pkl'), 'wb') as handle:
+        with lzma.open(os.path.join(cwd, 'history' + '.pkl.xz'), 'wb') as handle:
             pickle.dump(history, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
-        save_model(model, os.path.join(WD, 'DATA', 'LSTM_' + fileName + '.h5'))
+        save_model(model, os.path.join(cwd, 'model' + '.h5'))
+        compress_lzma(os.path.join(cwd, 'model' + '.h5'))
 
     y_pred = model.predict([X_test_padded, is_male_test, is_badword_test])
 
@@ -116,7 +140,7 @@ def LSTM_model(df, fileName, epochs, load=False):
 
     print("Statistiche per classe:")
     print(classification_report(y_test_classes, y_pred_labels, target_names=label_encoder.classes_))
-    with open(os.path.join(WD, 'DATA', 'tokenizer_' + fileName + '.pkl'), 'wb') as handle:
+    with lzma.open(os.path.join(cwd, 'tokenizer' + '.pkl.xz'), 'wb') as handle:
         pickle.dump(tokenizer, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
 
@@ -162,12 +186,12 @@ if __name__ == "__main__":
 
 
 
-    LSTM_model(df, fileName = "normal_v3_10000", epochs=10000, load=False)
+    LSTM_model(df, fileName = "normal_v4_500", epochs=200, load=False)
     #LSTM_model(tk_stemmed, fileName = "tk_stemmed", epochs=4000, load=False)
     #LSTM_model(df_collapsed, fileName = "collapsed", epochs=4000, load=False)
     #LSTM_model(tk_collapsed_stemmed, fileName = "tk_stemmed", epochs=4000, load=False)
     #LSTM_model(df_hybrid, fileName="hybrid", epochs=4000, load=False)
-    #LSTM_model(tk_hybrid_stemmed, fileName = "tk_stemmed", epochs=4000, load=False)
+    LSTM_model(tk_hybrid_stemmed, fileName = "tk_stemmed", epochs=200, load=False)
     ################################################################################
     #####                           Dataset partioting                         #####
     #df_train_x, df_test_x, df_train_y, df_test_y = train_test_split(df.drop('character', axis=1), df["character"], train_size=TRAIN_SIZE, random_state=SEED, stratify=df["character"])

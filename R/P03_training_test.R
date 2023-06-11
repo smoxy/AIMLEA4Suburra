@@ -1,12 +1,15 @@
-installAndLoadPackages(c("caret", "smotefamily", "parallel", "doParallel", "bnclassify", "C50", "xtable"))
-
-setwd("/home/smoxy/AIMLEA4Suburra/R/")
-load("P02.RData")
+install.packages("parallel",Ncpus = 4)
 library(parallel)
+cores<-(as.numeric(parallel::detectCores()-2))
+installAndLoadPackages(c("caret", "smotefamily", "parallel", "doParallel", "bnclassify", "C50", "xtable"), cores = cores)
+HOME <- "/mnt/volume_fra1_01/AIMLEA4Suburra/R"
+#HOME <- "/home/smoxy/AIMLEA4Suburra/R/"
+setwd(HOME)
+load("P02.RData")
 load("server_computation.DTM_RF.RData")
 
 # START CLUSTERS
-ifelse(parallel::detectCores() <= 12, cores<-(as.numeric(parallel::detectCores()-2)), cores<-12)
+#ifelse(parallel::detectCores() <= 32, cores<-(as.numeric(parallel::detectCores()-2)), cores<-32)
 cl <- parallel::makePSOCKcluster(cores)
 doParallel::registerDoParallel(cl)
 
@@ -137,7 +140,7 @@ tuneGrid <- expand.grid(trials = c(5, 10, 20, 30),
 ctrl <- caret::trainControl(method = "repeatedcv",
                             number = 10,
                             repeats = 1,
-                            verboseIter = TRUE)
+                            verboseIter = FALSE)
 
 caretC50 <- function(X_train, y_train, X_test, y_test, tuneControl, tuneGrid){
     model <- caret::train(x = X_train,
@@ -160,11 +163,6 @@ caretC50 <- function(X_train, y_train, X_test, y_test, tuneControl, tuneGrid){
         "confusion_matrix" = confusion_matrix,
         "latex_table" = latex_table))
 }
-
-X_train = dtm_TRAIN
-y_train = dtm$character[dtm.Index]
-X_test  = dtm_TEST
-y_test  = dtm$character[-dtm.Index]
 
 c50.final           <- caretC50(X_train = df.final_TRAIN[, -c(which(names(df.final_TRAIN) == 'character'),which(names(df.final_TRAIN) == 'script_line'))], y_train = df.final_TRAIN$character, X_test=df.final_TEST[, -c(which(names(df.final_TEST) == 'character'),which(names(df.final_TEST) == 'script_line'))], y_test=df.final_TEST$character, tuneControl = ctrl, tuneGrid=tuneGrid)
 

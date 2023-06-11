@@ -6,10 +6,12 @@
 install.packages("parallel",Ncpus = 4)
 library(parallel)
 cores<-(as.numeric(parallel::detectCores()-2))
+HOME <- "/mnt/volume_fra1_01/AIMLEA4Suburra/R"
+#HOME <- "/home/smoxy/AIMLEA4Suburra/R/"
 
 ################################################################################
 #####                        Functions for packages                        #####
-installAndLoadPackages <- function(packageNames) {
+installAndLoadPackages <- function(packageNames, cores) {
   # Convert packageNames to a character vector if it's a single package name
   if (is.character(packageNames)) {
     packageNames <- as.character(packageNames)
@@ -40,7 +42,7 @@ installAndLoadPackages <- function(packageNames) {
 
 installAndLoadPackages(c("reshape2", "magrittr", "plyr", "dplyr", "tidyr",
                          "ggplot2", "tm", "SnowballC", "slam", "e1071", "feather",
-                         "stopwords", "udpipe", "parallel", "httr", "stringr", "purrr"))
+                         "stopwords", "udpipe", "parallel", "httr", "stringr", "purrr"), cores = cores)
 
 library(languageserver)
 #library(readr)
@@ -188,7 +190,7 @@ character_speak_time
 
 ################################################################################
 #####                          Dataframe Settings                          #####
-setwd("/home/smoxy/AIMLEA4Suburra/R/")
+setwd(HOME)
 suburra <- read.csv("../DATA/01_Suburra_data.csv", stringsAsFactors = FALSE)
 suburra_collapsed <- read.csv("../DATA/02_Suburra_data_collapsed.csv", stringsAsFactors = FALSE)
 suburra_hybrid <- read.csv("../DATA/03_Suburra_data_hybrid.csv", stringsAsFactors = FALSE)

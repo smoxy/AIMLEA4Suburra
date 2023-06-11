@@ -63,26 +63,27 @@ df_hybrid.final_TEST     <- df_hybrid.final[-Index,]
 # crea un oggetto di controllo per l'addestramento del modello
 ctrl <- caret::trainControl(method = "repeatedcv",
                             number = 10,
-                            repeats = 3,
+                            repeats = 1,
                             verboseIter = F,
                             sampling = "smote")
 
 caretRF <- function(X_train, y_train, X_test, y_test, tuneControl){
-    tuneGrid <- expand.grid(mtry = seq(2, sqrt(ncol(X_train)), by = 2))
+    tuneGrid <- expand.grid(mtry = seq(2, sqrt(ncol(X_train)), by = 4))
     
     model <- caret::train(x = X_train,
                           y = y_train,
                           method = "rf",
-                          tuneGrid = tuneGrid,
+                          #tuneGrid = tuneGrid,
                           trControl = tuneControl,
                           allowParallel=TRUE)
     return(NULL)
     all_models_accuracy <- mean(model$resample$Accuracy)
     prediction <- predict(model, newdata = X_test)
     confusion_matrix <- caret::confusionMatrix(data = prediction, reference = y_test)
-    confusion_matrix <- round(confusion_matrix$byClass * 100, 2)  #"positive" "table" "overall" "byClass" "mode" "dots" 
+    confusion_matrix <- round(confusion_matrix$byClass * 100, 3)  #"positive" "table" "overall" "byClass" "mode" "dots" 
+    confusion_matrix <- confusion_matrix[,-6]
     latex_table <- xtable(as.data.frame(confusion_matrix), caption = "Metrics Table") # Sensitivity, Specificity, Precision
-    
+    gc()
     return(list(
         "model" = model,
         "average.accuracy.across.models" = all_models_accuracy,
@@ -110,25 +111,38 @@ save(RF.dtm, RF.dtm_collapsed, RF.dtm_hybrid, RF.dtm.With_stopW, RF.dtm_collapse
 
 rm(RF.final, RF.collapsed.final, RF.hybrid.final, RF.dtm, RF.dtm_collapsed, RF.dtm_hybrid, RF.dtm.With_stopW, RF.dtm_collapsed.With_stopW, RF.dtm_hybrid.With_stopW)
 
-# find the best model based on accuracy
+# find the best model based
 findBestModel <- function(models) {
     best_model <- NULL
+    best_specificity_model <- NULL
     best_accuracy <- 0
+    best_specificity <- 0
     best_model_name <- ""
   
     for (model_name in names(models)) {
         model <- models[[model_name]]
-        accuracy <- model$results$Accuracy[model$bestTune]
+        mean(c50.collapsed.final$confusion_matrix[,1])
+        avg_accuracy <- mean(model$confusion_matrix[,1])
+        avg_specificity <- mean(model$confusion_matrix[,2])
     
-        if (accuracy > best_accuracy) {
+        if (avg_accuracy > best_accuracy) {
             best_model <- model
-            best_accuracy <- accuracy
+            best_accuracy <- avg_accuracy
             best_model_name <- model_name
         }
+
+        if (avg_specificity > best_specificity) {
+            best_specificity_model <- model
+            best_specificity <- avg_specificity
+            best_model_name <- model_name
+        }
+
     } 
     return(list(
         "best_model" = best_model,
-        "best_accuracy" = best_accuracy
+        "best_accuracy" = best_accuracy,
+        "best_specificity_model" = best_specificity_model,
+        "best_specificity" = best_specificity
     ))
 }
 
@@ -199,9 +213,10 @@ caretC50 <- function(X_train, y_train, X_test, y_test, tuneControl, tuneGrid){
     all_models_accuracy <- mean(model$resample$Accuracy)
     prediction <- predict(model, newdata = X_test)
     confusion_matrix <- caret::confusionMatrix(data = prediction, reference = y_test)
-    confusion_matrix <- round(confusion_matrix$byClass * 100, 2)  #"positive" "table" "overall" "byClass" "mode" "dots" 
+    confusion_matrix <- round(confusion_matrix$byClass * 100, 3)  #"positive" "table" "overall" "byClass" "mode" "dots" 
+    confusion_matrix <- confusion_matrix[,-6] #ELIMINO RECALL (è uguale alla sensitivity)
     latex_table <- xtable(as.data.frame(confusion_matrix), caption = "Metrics Table") # Sensitivity, Specificity, Precision
-    
+    gc()
     return(list(
         "model" = model,
         "average.accuracy.across.models" = all_models_accuracy,

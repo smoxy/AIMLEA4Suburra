@@ -61,17 +61,19 @@ df_hybrid.final_TEST     <- df_hybrid.final[-Index,]
 ctrl <- caret::trainControl(method = "repeatedcv",
                             number = 10,
                             repeats = 3,
-                            verboseIter = F)
+                            verboseIter = F,
+                            sampling = "smote")
 
 caretRF <- function(X_train, y_train, X_test, y_test, tuneControl){
-    tuneGrid <- expand.grid(mtry = seq(1, ncol(X_train), by = 1))
+    tuneGrid <- expand.grid(mtry = seq(2, sqrt(ncol(X_train)), by = 2))
+    
     model <- caret::train(x = X_train,
                           y = y_train,
                           method = "rf",
                           tuneGrid = tuneGrid,
                           trControl = tuneControl,
                           allowParallel=TRUE)
-
+    return(NULL)
     all_models_accuracy <- mean(model$resample$Accuracy)
     prediction <- predict(model, newdata = X_test)
     confusion_matrix <- caret::confusionMatrix(data = prediction, reference = y_test)
@@ -88,40 +90,52 @@ caretRF <- function(X_train, y_train, X_test, y_test, tuneControl){
 
 ################################################################################
 #####                  Random Forest with SMOTE Oversampling               #####
-dtm_collapsed.stopW_model <- caret::train(x = dtm_collapsed.With_stopW_TRAIN,
-                                               y = dtm_collapsed.With_stopW$character[dtm_collapsed.With_stopW.Index],
-                                               method = "rf",
-                                               tuneGrid = expand.grid(mtry = seq(1, ncol(dtm_collapsed.With_stopW_TRAIN), by = 1)),
-                                               trControl = ctrl,
-                                               allowParallel=TRUE)
+RF.dtm              <- caretRF(X_train = dtm_TRAIN, y_train = dtm$character[dtm.Index], X_test=dtm_TEST, y_test=dtm$character[-dtm.Index], tuneControl = ctrl)
 
-dtm_collapsed.model         <- caret::train(x = dtm_collapsed_TRAIN,
-                                            y = dtm_collapsed$character[dtm_collapsed.Index],
-                                            method = "rf",
-                                            tuneGrid = expand.grid(mtry = seq(1, ncol(dtm_collapsed_TRAIN), by = 1)),
-                                            trControl = ctrl,
-                                            allowParallel=TRUE)
+RF.dtm_collapsed    <- caretRF(dtm_collapsed_TRAIN, dtm_collapsed$character[dtm_collapsed.Index], dtm_collapsed_TEST, dtm_collapsed$character[-dtm_collapsed.Index], ctrl)
 
-dtm_hybrid.stopW_model <- caret::train(x = dtm_hybrid.With_stopW_TRAIN,
-                                            y = dtm_hybrid.With_stopW$character[dtm_hybrid.With_stopW.Index],
-                                            method = "rf",
-                                            tuneGrid = expand.grid(mtry = seq(1, ncol(dtm_hybrid.With_stopW_TRAIN), by = 1)),
-                                            trControl = ctrl,
-                                            allowParallel=TRUE)
+RF.dtm_hybrid       <- caretRF0(dtm_hybrid_TRAIN, dtm_hybrid$character[dtm_hybrid.Index], dtm_hybrid_TEST, dtm_hybrid$character[-dtm_hybrid.Index], ctrl)
+save(RF.dtm, RF.dtm_collapsed, RF.dtm_hybrid, file = "server_computation.DTM_RF.RData")
 
-dtm_hybrid.model            <- caret::train(x = dtm_hybrid_TRAIN,
-                                            y = dtm_collapsed$character[dtm_collapsed.Index],
-                                            method = "rf",
-                                            tuneGrid = expand.grid(mtry = seq(1, ncol(dtm_hybrid_TRAIN), by = 1)),
-                                            trControl = ctrl,
-                                            allowParallel=TRUE)
+RF.dtm.With_stopW            <- caretRF(dtm.With_stopW_TRAIN, dtm.With_stopW$character[dtm.With_stopW.Index], dtm.With_stopW_TEST, dtm.With_stopW$character[-dtm.With_stopW.Index], ctrl)
 
-dtm.model                   <- caret::train(x = dtm_TRAIN,
-                                            y = dtm$character[dtm.Index],
-                                            method = "rf",
-                                            tuneGrid = expand.grid(mtry = seq(1, ncol(dtm_TRAIN), by = 1)),
-                                            trControl = ctrl,
-                                            allowParallel=TRUE)
+RF.dtm_collapsed.With_stopW  <- caretRF(dtm_collapsed.With_stopW_TRAIN, dtm_collapsed.With_stopW$character[dtm_collapsed.With_stopW.Index], dtm_collapsed.With_stopW_TEST, dtm_collapsed.With_stopW$character[-dtm_collapsed.With_stopW.Index], ctrl)
+
+RF.dtm_hybrid.With_stopW     <- caretRF(dtm_hybrid.With_stopW_TRAIN, dtm_hybrid.With_stopW$character[dtm_hybrid.With_stopW.Index], dtm_hybrid.With_stopW_TEST, dtm_hybrid.With_stopW$character[-dtm_hybrid.With_stopW.Index], ctrl)
+
+save(RF.dtm, RF.dtm_collapsed, RF.dtm_hybrid, RF.dtm.With_stopW, RF.dtm_collapsed.With_stopW, RF.dtm_hybrid.With_stopW, file = "server_computation.DTM_C50.RData")
+
+rm(RF.final, RF.collapsed.final, RF.hybrid.final, RF.dtm, RF.dtm_collapsed, RF.dtm_hybrid, RF.dtm.With_stopW, RF.dtm_collapsed.With_stopW, RF.dtm_hybrid.With_stopW)
+
+# find the best model based on accuracy
+findBestModel <- function(models) {
+    best_model <- NULL
+    best_accuracy <- 0
+    best_model_name <- ""
+  
+    for (model_name in names(models)) {
+        model <- models[[model_name]]
+        accuracy <- model$results$Accuracy[model$bestTune]
+    
+        if (accuracy > best_accuracy) {
+            best_model <- model
+            best_accuracy <- accuracy
+            best_model_name <- model_name
+        }
+    } 
+    return(list(
+        "best_model" = best_model,
+        "best_accuracy" = best_accuracy
+    ))
+}
+
+# Call the function with the models you want to compare
+best_model <- findBestModel(list(RF.dtm, RF.dtm_collapsed, RF.dtm_hybrid, RF.dtm.With_stopW, RF.dtm_collapsed.With_stopW, RF.dtm_hybrid.With_stopW))
+
+# Print the best model's accuracy
+print(best_model$results$Accuracy[best_model$bestTune])
+
+
 
 #dtm_collapsed.With_stopW_PRED <- predict(dtm_collapsed.With_stopW_model, newdata = dtm_collapsed.With_stopW_TEST[, -which(names(dtm_collapsed.With_stopW_TEST) == "character")])
 #dtm_collapsed.With_stopW_CONF <- caret::confusionMatrix(data = dtm_collapsed.With_stopW_PRED, reference = dtm_collapsed.With_stopW_TEST$character)

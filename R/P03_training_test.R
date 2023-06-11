@@ -274,12 +274,12 @@ save(c50.dtm, c50.dtm_collapsed, c50.dtm_hybrid, c50.dtm.With_stopW, c50.dtm_col
 
 
 best_c50 <- findBestModel(list(
-  c50.final = c50.final,
+  c50.final = c50.final,                        # BEST of DF
   c50.collapsed.final = c50.collapsed.final,
   c50.hybrid.final = c50.hybrid.final,
   c50.dtm = c50.dtm,
   c50.dtm_collapsed = c50.dtm_collapsed,
-  c50.dtm_hybrid = c50.dtm_hybrid,
+  c50.dtm_hybrid = c50.dtm_hybrid,              # BEST of DTM
   c50.dtm.With_stopW = c50.dtm.With_stopW,
   c50.dtm_collapsed.With_stopW = c50.dtm_collapsed.With_stopW,
   c50.dtm_hybrid.With_stopW = c50.dtm_hybrid.With_stopW
@@ -365,19 +365,17 @@ rm(RF.final, RF.collapsed.final, RF.hybrid.final, RF.dtm, RF.dtm_collapsed, RF.d
 #####                   Bayesian Regularized Neural Networks               #####
 tuneGrid <- expand.grid(neurons = c(10, 20, 30))
 
-# Configure trainControl with CUDA support
 ctrl <- trainControl(method = "cv",
-                     number = 5,
-                     allowParallel = TRUE,
+                     number = 3,
                      allowList = NULL,
                      savePredictions = "final",
                      classProbs = TRUE)
 
-# Train the BRNN model with CUDA
 model <- train(x = df.final_TRAIN[, -target_column],  # Features
                y = df.final_TRAIN$target_column,       # Target variable
                method = "brnn",
                tuneGrid = tuneGrid,
+               allowParallel = TRUE,
                trControl = ctrl)
 
 

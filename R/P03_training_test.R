@@ -4,9 +4,12 @@ cores<-(as.numeric(parallel::detectCores()-2))
 installAndLoadPackages(c("caret", "smotefamily", "parallel", "doParallel", "bnclassify", "C50", "xtable"), cores = cores)
 HOME <- "/mnt/volume_fra1_01/AIMLEA4Suburra/R"
 #HOME <- "/home/smoxy/AIMLEA4Suburra/R/"
+#HOME <- "C:/Users/smoxy/Documents/UNI/AIMLEA/AIMLEA4Suburra/R"
 setwd(HOME)
 load("P02.RData")
 load("server_computation.DTM_RF.RData")
+load("server_computation.DTM_C50.RData")
+load("server_computation.DF_C50.RData")
 
 # START CLUSTERS
 #ifelse(parallel::detectCores() <= 32, cores<-(as.numeric(parallel::detectCores()-2)), cores<-32)

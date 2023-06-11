@@ -3,8 +3,9 @@
 #####                             PRE-PROCESSING                           #####
 #####                                                                      #####
 ################################################################################
-
-
+install.packages("parallel",Ncpus = 4)
+library(parallel)
+cores<-(as.numeric(parallel::detectCores()-2))
 
 ################################################################################
 #####                        Functions for packages                        #####
@@ -19,7 +20,7 @@ installAndLoadPackages <- function(packageNames) {
   
   # Install any packages that are not already installed
   if (length(notInstalledPackages) > 0) {
-    install.packages(notInstalledPackages, dependencies = TRUE)
+    install.packages(notInstalledPackages, dependencies = TRUE, Ncpus = cores)
   }
   
   # Load all the packages

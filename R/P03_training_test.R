@@ -129,11 +129,18 @@ findBestModel <- function(models) {
     ))
 }
 
-# Call the function with the models you want to compare
-best_model <- findBestModel(list(RF.dtm, RF.dtm_collapsed, RF.dtm_hybrid, RF.dtm.With_stopW, RF.dtm_collapsed.With_stopW, RF.dtm_hybrid.With_stopW))
+result <- findBestModel(list(
+  RF.dtm = RF.dtm,
+  RF.dtm_collapsed = RF.dtm_collapsed,
+  RF.dtm_hybrid = RF.dtm_hybrid,
+  RF.dtm.With_stopW = RF.dtm.With_stopW,
+  RF.dtm_collapsed.With_stopW = RF.dtm_collapsed.With_stopW,
+  RF.dtm_hybrid.With_stopW = RF.dtm_hybrid.With_stopW
+))
 
-# Print the best model's accuracy
-print(best_model$results$Accuracy[best_model$bestTune])
+# Print the name and accuracy of the best model
+print(result$best_model_name)
+print(result$best_accuracy)
 
 
 
@@ -219,37 +226,26 @@ c50.dtm.With_stopW            <- caretC50(dtm.With_stopW_TRAIN, dtm.With_stopW$c
 c50.dtm_collapsed.With_stopW  <- caretC50(dtm_collapsed.With_stopW_TRAIN, dtm_collapsed.With_stopW$character[dtm_collapsed.With_stopW.Index], dtm_collapsed.With_stopW_TEST, dtm_collapsed.With_stopW$character[-dtm_collapsed.With_stopW.Index], ctrl, tuneGrid)
 
 c50.dtm_hybrid.With_stopW     <- caretC50(dtm_hybrid.With_stopW_TRAIN, dtm_hybrid.With_stopW$character[dtm_hybrid.With_stopW.Index], dtm_hybrid.With_stopW_TEST, dtm_hybrid.With_stopW$character[-dtm_hybrid.With_stopW.Index], ctrl, tuneGrid)
-
 save(c50.dtm, c50.dtm_collapsed, c50.dtm_hybrid, c50.dtm.With_stopW, c50.dtm_collapsed.With_stopW, c50.dtm_hybrid.With_stopW, file = "server_computation.DTM_C50.RData")
 
+
+result <- findBestModel(list(
+  c50.final = c50.final,
+  c50.collapsed.final = c50.collapsed.final,
+  c50.hybrid.final = c50.hybrid.final,
+  c50.dtm = c50.dtm,
+  c50.dtm_collapsed = c50.dtm_collapsed,
+  c50.dtm_hybrid = c50.dtm_hybrid,
+  c50.dtm.With_stopW = c50.dtm.With_stopW,
+  c50.dtm_collapsed.With_stopW = c50.dtm_collapsed.With_stopW,
+  c50.dtm_hybrid.With_stopW = c50.dtm_hybrid.With_stopW
+))
+
+# Print the name and accuracy of the best model
+print(result$best_model_name)
+print(result$best_accuracy)
+
 rm(c50.final, c50.collapsed.final, c50.hybrid.final, c50.dtm, c50.dtm_collapsed, c50.dtm_hybrid, c50.dtm.With_stopW, c50.dtm_collapsed.With_stopW, c50.dtm_hybrid.With_stopW)
-
-#model accuracy
-#p.final <- predict(m, newdata = df.final_TEST[, -which(names(df.final_TEST) == "character")])
-#confusion_matrix <- caret::confusionMatrix(data = p.final, reference = df.final_TEST$character)
-#round(confusion_matrix$byClass * 100, 2)
-
-#######################################
-
-m <- C50::C5.0(df.final_TRAIN[,-c(which(names(df.final_TRAIN) == "character"), which(names(df.final_TRAIN) == "script_line"))], df.final_TRAIN$character, trials = 10)
-summary(m)
-p.final <- C50::predict.C5.0(m, df.final_TEST, type = "class")
-# Create a confusion matrix
-confusion_matrix <- confusionMatrix(data = p.final, reference = df.final_TEST$character)
-# Extract the desired metrics
-accuracy <- confusion_matrix$overall['Accuracy']
-latex_table <- xtable(as.data.frame(round(confusion_matrix$byClass * 100, 2)), caption = "Metrics Table") # Sensitivity, Specificity, Precision+
-# Print the LaTeX code
-print(latex_table, include.rownames = F)
-
-
-m <- C50::C5.0(df_collapsed.final_TRAIN[,-c(which(names(df_collapsed.final_TRAIN) == "character"), which(names(df_collapsed.final_TRAIN) == "script_line"))], df_collapsed.final_TRAIN$character, df.final_TRAIN$character, trials = 10)
-summary(m)
-p_collapsed.final <- C50::predict.C5.0(m, df_collapsed.final_TEST, type = "class")
-m <- C50::C5.0(df_hybrid.final_TRAIN[,-c(which(names(df_hybrid.final_TRAIN) == "character"), which(names(df_hybrid.final_TRAIN) == "script_line"))], df_hybrid.final_TRAIN$character, df.final_TRAIN$character, trials = 10)
-summary(m)
-p_hybrid.final <- C50::predict.C5.0(m, df_hybrid.final_TEST, type = "class")
-
 
 ################################################################################
 #####                                                                      #####

@@ -5,7 +5,7 @@
 ################################################################################
 install.packages("parallel",Ncpus = 4)
 library(parallel)
-cores<-(as.numeric(parallel::detectCores()-2))
+cores<-(as.numeric(parallel::detectCores()-1))
 HOME <- "/mnt/volume_fra1_01/AIMLEA4Suburra/R"
 #HOME <- "/home/smoxy/AIMLEA4Suburra/R/"
 
@@ -40,9 +40,28 @@ installAndLoadPackages <- function(packageNames, cores) {
   }
 }
 
+find_unique_words <- function(df) {
+  # First, we convert the dataframe to a tidy text format
+  tidy_text <- df %>%
+    unnest_tokens(word, text) %>% # Tokenize the texts
+    group_by(character) %>% # Group by 'character' column
+    summarise(text = paste(word, collapse = ' ')) %>% # Collapse the words back into texts
+    unnest_tokens(word, text) %>% # Tokenize the texts again
+    distinct() # Remove duplicate words within each group
+
+  # Then, we find the unique words in each character class
+  unique_words <- tidy_text %>%
+    left_join(tidy_text %>% count(word), by = 'word') %>% # Count the total occurrence of each word
+    filter(n == 1) %>% # Filter for words that occur only once
+    select(-n) # Remove the 'n' column
+
+  return(unique_words)
+}
+
 installAndLoadPackages(c("reshape2", "magrittr", "plyr", "dplyr", "tidyr",
                          "ggplot2", "tm", "SnowballC", "slam", "e1071", "feather",
-                         "stopwords", "udpipe", "parallel", "httr", "stringr", "purrr"), cores = cores)
+                         "stopwords", "udpipe", "parallel", "httr", "stringr",
+                         "text2vec", "tidytext", "purrr"), cores = cores)
 
 library(languageserver)
 #library(readr)
@@ -364,7 +383,8 @@ whitelist <- c("alberto","anacleti","spadino","amedeo","cinaglia","aureliano","a
 convert_counts <- function(x){
   x <- ifelse(x>0, 1, 0)
 }
-
+################################################################################
+#####                             Bag of Words                             #####
 custom_stemming <- function(corpus, whitelist) {
   stemmed_corpus <- lapply(corpus, function(doc) {
     words <- unlist(strsplit(as.character(doc), " "))
@@ -391,7 +411,6 @@ dtm             <- custom_stemming(corpus_clean, whitelist)
 dtm_collapsed   <- custom_stemming(corpus_collapsed_clean, whitelist)
 dtm_hybrid      <- custom_stemming(corpus_hybrid_clean, whitelist)
 
-rm(corpus, corpus_collapsed, corpus_hybrid, corpus_clean, corpus_collapsed_clean, corpus_hybrid_clean)
 
 
 dtm.With_stopW$character           <- df.final$character
@@ -403,6 +422,43 @@ dtm_collapsed$character   <- df_collapsed.final$character
 dtm_hybrid$character      <- df_hybrid.final$character
 
 rm(italian.vit, whitelist, allowed_characters)
+
+
+
+################################################################################
+#####                                 Word2Vec                             #####
+# Splits it into individual words (tokens)
+tokens <- space_tokenizer(corpus)
+
+# Create vocabulary
+# Creates a vocabulary from tokens, which is a set of all unique words in this corpus
+it = itoken(tokens, progressbar = FALSE)
+vocab <- create_vocabulary(it)
+
+# Prune the vocabulary
+# This filters the vocabulary to only include words that appear at least 5 times in the corpus.
+# This is done because words that appear very infrequently can't be accurately represented as vectors.
+vocab <- prune_vocabulary(vocab, term_count_min = 5L)
+
+# Create the term-co-occurrence matrix (TCM)
+# This creates a matrix where each element represents how often a pair of words appear together in the corpus
+vectorizer <- vocab_vectorizer(vocab)
+tcm <- create_tcm(it, vectorizer, skip_grams_window = 5L)
+
+# Factorize the TCM matrix via the GloVe algorithm
+# This is the main step where the GloVe algorithm is used to generate the word vectors.
+# We specify the number of threads to be used as 8. You can adjust this to the number of cores you want to utilize.
+glove = GlobalVectors$new(rank = 50, x_max = 10)
+wv_main = glove$fit_transform(tcm, n_iter = 10, convergence_tol = 0.01, n_threads = 8)
+
+# Get the word vectors
+# Here, we add the main word vectors to the context word vectors to get the final word vectors
+wv_context = glove$components
+word_vectors = wv_main + t(wv_context)
+
+
+
+rm(corpus, corpus_collapsed, corpus_hybrid, corpus_clean, corpus_collapsed_clean, corpus_hybrid_clean)
 
 # Rimozione della punteggiatura
 #corpus_clean           <- tm_map(corpus_clean, removePunctuation)

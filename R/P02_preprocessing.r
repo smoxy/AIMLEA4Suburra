@@ -38,7 +38,7 @@ installAndLoadPackages <- function(packageNames) {
 }
 
 installAndLoadPackages(c("reshape2", "magrittr", "plyr", "dplyr", "tidyr",
-                         "ggplot2", "tm", "SnowballC", "slam", "e1071",
+                         "ggplot2", "tm", "SnowballC", "slam", "e1071", "feather",
                          "stopwords", "udpipe", "parallel", "httr", "stringr", "purrr"))
 
 library(languageserver)
@@ -321,7 +321,9 @@ rm(df, df_collapsed, df_hybrid)
 df.final           <- df.final[,-9]
 df_collapsed.final <- df_collapsed.final[,-9]
 df_hybrid.final    <- df_hybrid.final[,-9]
-
+write_feather(df.final, "df.final.feather")
+write_feather(df_collapsed.final, "df_collapsed.final.feather")
+write_feather(df_hybrid.final, "df_hybrid.final.feather")
 ################################################################################
 # Creazione di un Corpus a partire dal dataset
 corpus <- Corpus(VectorSource(df.final$script_line))

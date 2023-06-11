@@ -1,32 +1,47 @@
 import numpy as np
-from sklearn.model_selection import train_test_split
+from sklearn.model_selection import train_test_split, StratifiedKFold
+from sklearn.preprocessing import LabelEncoder
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics import confusion_matrix, classification_report, accuracy_score
 
 import tensorflow as tf
 from tensorflow.keras.models import Sequential, Model, save_model, load_model
 from tensorflow.keras.layers import Embedding, LSTM, Dense, Concatenate, Input, Conv1D, Bidirectional, Dropout
+from tensorflow.keras.preprocessing.text import Tokenizer
+from tensorflow.keras.preprocessing.sequence import pad_sequences
+from tensorflow.keras.utils import to_categorical, plot_model
+from tensorflow.keras import regularizers
 
-from P02_preprocessing import get_data, subset
+import keras_tuner as kt
+
+from P02_preprocessing import get_data
 
 import os
 import pickle
 import lzma
+from concurrent.futures import ThreadPoolExecutor
+
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'  # Set TensorFlow log level to suppress messages
 
 # Check if the GPU is working
 #print("TensorFlow version:", tf.__version__)
 #print("CUDA available:", tf.test.is_built_with_cuda())
 #print("GPU available:", tf.config.list_physical_devices("GPU"))
 
-SEED = 12345
+SEED = 54321
 TRAIN_SIZE = 0.75
 WD = os.getcwd()
 
+
 def compress_lzma(file_path):
-    with open(file_path, 'rb') as input:
-        with lzma.open(file_path + '.xz', 'wb') as output:
-            output.write(input.read())
-    os.remove(file_path)
+    def comp_lzma(file_path):
+        with open(file_path, 'rb') as input:
+            with lzma.open(file_path + '.xz', 'wb') as output:
+                output.write(input.read())
+        os.remove(file_path)
+    with ThreadPoolExecutor(max_workers=1) as executor:
+        future = executor.submit(comp_lzma, file_path)
+        return future
 
 def decompress_lzma(file_path):
     with lzma.open(file_path, 'rb') as input:
@@ -34,24 +49,33 @@ def decompress_lzma(file_path):
             output.write(input.read())
     os.remove(file_path)
 
+
+def change_dir(fileName, load):
+    try:
+        os.chdir(os.path.join(WD, 'DATA', 'MODELS', 'LSTM_' + fileName))
+        cwd = os.getcwd()
+    except FileNotFoundError:
+        try:
+            os.mkdir(os.path.join(WD, 'DATA', 'MODELS', 'LSTM_' + fileName))
+            os.chdir(os.path.join(WD, 'DATA', 'MODELS', 'LSTM_' + fileName))
+            cwd = os.getcwd()
+            load = False
+        except FileNotFoundError:
+            os.mkdir(os.path.join(WD, 'DATA', 'MODELS'))
+            os.mkdir(os.path.join(WD, 'DATA', 'MODELS', 'LSTM_' + fileName))
+            os.chdir(os.path.join(WD, 'DATA', 'MODELS', 'LSTM_' + fileName))
+            cwd = os.getcwd()
+            load = False
+    return cwd, load
+
+
 ################################################################################
 #####                                                                      #####
 #####                       Recurrent Neural Networks                      #####
 #####                                                                      #####
 ################################################################################
 def LSTM_model(df, fileName, epochs, load=False):
-    from sklearn.preprocessing import LabelEncoder
-    from tensorflow.keras.preprocessing.text import Tokenizer
-    from tensorflow.keras.preprocessing.sequence import pad_sequences
-    from tensorflow.keras.utils import to_categorical, plot_model
-
-    try:
-        os.chdir(os.path.join(WD, 'DATA', 'LSTM_' + fileName))
-        cwd = os.getcwd()
-    except FileNotFoundError:
-        os.mkdir(os.path.join(WD, 'DATA', 'LSTM_' + fileName))
-        os.chdir(os.path.join(WD, 'DATA', 'LSTM_' + fileName))
-        cwd = os.getcwd()
+    cwd, load = change_dir(fileName, load)
     
     X = df["script_line"]
     y = df["character"]
@@ -62,7 +86,7 @@ def LSTM_model(df, fileName, epochs, load=False):
     y_categorical = to_categorical(y_encoded)
 
     # per poterlo utilizzare in seguito
-    with lzma.open(os.path.join(cwd, 'label_encoder' + '.pkl.xz'), 'wb') as f:
+    with open(os.path.join(cwd, 'label_encoder' + '.pkl'), 'wb') as f:
         pickle.dump(label_encoder, f)
 
     tokenizer = Tokenizer()
@@ -90,29 +114,52 @@ def LSTM_model(df, fileName, epochs, load=False):
 
     # modello LSTM con strati intermedi per "is_male"
     if load:
-        decompress_lzma(os.path.join(cwd, 'model' + '.h5.xz'))
-        model = load_model(os.path.join(cwd, 'model' + '.h5'))
-    else:
-        def create_model(units=512, dropout=0.4, learning_rate=0.001):
+        try:
+            decompress_lzma(os.path.join(WD, 'DATA', 'MODELS', 'LSTM_' + fileName +'.xz'))
+        except FileNotFoundError:
+            pass
+        try:
+            model = load_model(os.path.join(cwd, 'model' + '.h5'))
+        except FileNotFoundError:
+            load = False
+    if not load:
+        def create_model(units=1024, dropout=0.4, learning_rate=0.001):
             from tensorflow.keras.optimizers import Adam
+            
             input_text = Input(shape=(max_sequence_length,))
             embedding = Embedding(len(tokenizer.word_index) + 1, 100)(input_text)
-            conv = Conv1D(int(units/2), 5, activation='relu')(embedding)
-            lstm = Bidirectional(LSTM(units, return_sequences=True, dropout=dropout))(conv)
-            dropout_lstm = Dropout(0.5)(lstm)
-            lstm = Bidirectional(LSTM(units, return_sequences=True, dropout=0.35))(dropout_lstm)
-            lstm = LSTM(int(units/2), dropout=dropout)(lstm)
+            #conv = Conv1D(int(units), 5, activation='relu', kernel_regularizer=regularizers.l2(0.01))(embedding)
+            #lstm = Bidirectional(LSTM(units, return_sequences=True, dropout=dropout))(conv)
+            lstm = Bidirectional(LSTM(units, return_sequences=True, dropout=dropout))(embedding)
+            conv = Conv1D(int(units), 5, activation='relu', kernel_regularizer=regularizers.l2(0.01))(lstm)
+            #lstm = Bidirectional(LSTM(units, return_sequences=True, dropout=dropout))(lstm)
+            #lstm = LSTM(int(units), dropout=dropout)(lstm)
+            lstm = LSTM(int(units), dropout=dropout)(conv)
 
             input_gender = Input(shape=(1,))
-            dense_gender = Dense(int(units/16), activation='sigmoid')(input_gender)
+            dense_gender = Dense(int(units/2), activation='relu', kernel_regularizer=regularizers.l2(0.01))(input_gender)
+            #dense_gender = Dense(int(units/8), activation='relu', kernel_regularizer=regularizers.l2(0.01))(dense_gender)
             dropout_gender = Dropout(dropout)(dense_gender)
 
             input_badword = Input(shape=(1,))
-            dense_badword = Dense(int(units/4), activation='relu')(input_badword)
+            dense_badword = Dense(int(units/2), activation='relu')(input_badword)
+            #dense_badword = Dense(int(units/8), activation='relu', kernel_regularizer=regularizers.l2(0.01))(dense_badword)
             dropout_badword = Dropout(dropout)(dense_badword)
 
             concatenated = Concatenate()([lstm, dropout_gender, dropout_badword])
-            output = Dense(10, activation='softmax')(concatenated)
+            dense_general = Dense(int(units), activation='relu')(concatenated)
+            dropout_general = Dropout(dropout)(dense_general)
+            dense_general = Dense(int(units), activation='relu')(dropout_general)
+            dropout_general = Dropout(dropout)(dense_general)
+            dense_general = Dense(int(units), activation='relu')(dropout_general)
+            dropout_general = Dropout(dropout)(dense_general)
+            #dense_general = Dense(int(units), activation='relu', kernel_regularizer=regularizers.l2(0.01))(dropout_general)
+            #dropout_general = Dropout(dropout)(dense_general)
+            dense_general = Dense(int(units), activation='relu')(dropout_general)
+            dropout_general = Dropout(dropout)(dense_general)
+            #dense_general = Dense(int(units), activation='relu', kernel_regularizer=regularizers.l2(0.01))(dropout_general)
+            #dropout_general = Dropout(0.3)(dense_general)
+            output = Dense(10, activation='softmax')(dense_general)
             
             model = Model(inputs=[input_text, input_gender, input_badword], outputs=output)
             optimizer = Adam(learning_rate=learning_rate)
@@ -121,13 +168,13 @@ def LSTM_model(df, fileName, epochs, load=False):
             return model
         
         model = create_model()
-        plot_model(model, to_file=os.path.join(WD, 'DATA',fileName + '_model.png'), show_shapes=True, show_layer_names=True)
+        plot_model(model, to_file=os.path.join(cwd, 'model.png'), show_shapes=True, show_layer_names=True)
         history = model.fit([X_train_padded, is_male_train, is_badword_train], y_train, validation_data=([X_test_padded, is_male_test, is_badword_test], y_test), epochs=epochs, batch_size=32)
-        with lzma.open(os.path.join(cwd, 'history' + '.pkl.xz'), 'wb') as handle:
-            pickle.dump(history, handle, protocol=pickle.HIGHEST_PROTOCOL)
+        with ThreadPoolExecutor(max_workers=1) as executor:
+            with open(os.path.join(cwd, 'history' + '.pkl'), 'wb') as handle:
+                future = executor.submit(pickle.dump,history, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
         save_model(model, os.path.join(cwd, 'model' + '.h5'))
-        compress_lzma(os.path.join(cwd, 'model' + '.h5'))
 
     y_pred = model.predict([X_test_padded, is_male_test, is_badword_test])
 
@@ -140,10 +187,9 @@ def LSTM_model(df, fileName, epochs, load=False):
 
     print("Statistiche per classe:")
     print(classification_report(y_test_classes, y_pred_labels, target_names=label_encoder.classes_))
-    with lzma.open(os.path.join(cwd, 'tokenizer' + '.pkl.xz'), 'wb') as handle:
+    with open(os.path.join(cwd, 'tokenizer' + '.pkl'), 'wb') as handle:
         pickle.dump(tokenizer, handle, protocol=pickle.HIGHEST_PROTOCOL)
-
-
+    compress_lzma(os.path.join(WD, 'DATA', 'MODELS', 'LSTM_' + fileName))
 
 
 
@@ -186,12 +232,12 @@ if __name__ == "__main__":
 
 
 
-    LSTM_model(df, fileName = "normal_v4_500", epochs=200, load=False)
-    #LSTM_model(tk_stemmed, fileName = "tk_stemmed", epochs=4000, load=False)
-    #LSTM_model(df_collapsed, fileName = "collapsed", epochs=4000, load=False)
-    #LSTM_model(tk_collapsed_stemmed, fileName = "tk_stemmed", epochs=4000, load=False)
-    #LSTM_model(df_hybrid, fileName="hybrid", epochs=4000, load=False)
-    LSTM_model(tk_hybrid_stemmed, fileName = "tk_stemmed", epochs=200, load=False)
+    #LSTM_model(df, fileName = "normal", epochs=100, load=True)
+    #LSTM_model(tk_stemmed, fileName = "tk_stemmed", epochs=100, load=True)
+    #LSTM_model(df_collapsed, fileName = "collapsed", epochs=100, load=True)
+    #LSTM_model(tk_collapsed_stemmed, fileName = "tk_collapsed_stemmed", epochs=100, load=True)
+    LSTM_model(df_hybrid, fileName="hybrid_16L_Reg", epochs=200, load=False)
+    #LSTM_model(tk_hybrid_stemmed, fileName = "tk_hybrid_stemmed_17L_Reg", epochs=50, load=False)
     ################################################################################
     #####                           Dataset partioting                         #####
     #df_train_x, df_test_x, df_train_y, df_test_y = train_test_split(df.drop('character', axis=1), df["character"], train_size=TRAIN_SIZE, random_state=SEED, stratify=df["character"])

@@ -136,30 +136,57 @@ registerDoSEQ()
 ################################################################################
 #####                             Decision tree                            #####
 installAndLoadPackages(c("C50", "xtable"))
-m <- C50::C5.0(dtm_collapsed.No_stopW_TRAIN[,-which(names(dtm_collapsed.No_stopW_TRAIN) == "character")], dtm_collapsed.No_stopW_TRAIN$character, costs=NULL)
-p <- C50::predict.C5.0(m, dtm_collapsed.No_stopW_TEST, type = "class")
-summary(m)
 
 ########## TEST with caret ############
-tuneGrid <- expand.grid(trials = c(10, 20, 30),
+tuneGrid <- expand.grid(trials = c(5, 10, 20, 30),
                         model = c("tree", "rules"),
                         winnow = c(TRUE, FALSE))
 
-df.final_TRAIN$script_line <- as.character(df.final_TRAIN$script_line)
+ctrl <- caret::trainControl(method = "repeatedcv",
+                            number = 10,
+                            repeats = 5,
+                            verboseIter = FALSE)
 
-m <-caret::train(x = df.final_TRAIN[, -c(which(names(df.final_TRAIN) == "character"),which(names(df.final_TRAIN) == "script_line"))], 
-                 y = df.final_TRAIN$character,
-                 method = 'C5.0',
-                 trControl = ctrl,
-                 tuneGrid = tuneGrid,
-                 allowParallel = T)
-mean(m$resample$Accuracy) #model accuracy
-summary(m)
-p.final <- predict(m, newdata = df.final_TEST[, -which(names(df.final_TEST) == "character")])
-confusion_matrix <- caret::confusionMatrix(data = p.final, reference = df.final_TEST$character)
-round(confusion_matrix$byClass * 100, 2)
-latex_table <- xtable(as.data.frame(round(confusion_matrix$byClass * 100, 2)), caption = "Metrics Table") # Sensitivity, Specificity, Precision+
-print(latex_table, include.rownames = F)
+caretC50 <- function(X_train, y_train, X_test, y_test, tuneControl, tuneGrid){
+    model <- caret::train(x = X_train,
+                          y = y_train,
+                          method = 'C5.0',
+                          trControl = tuneControl,
+                          tuneGrid = tuneGrid,
+                          allowParallel = T)
+
+    all_models_accuracy <- mean(model$resample$Accuracy)
+    prediction <- predict(model, newdata = X_test)
+    confusion_matrix <- caret::confusionMatrix(data = prediction, reference = y_test)
+    confusion_matrix <- round(confusion_matrix$byClass * 100, 2)
+    latex_table <- xtable(as.data.frame(round(confusion_matrix$byClass * 100, 2)), caption = "Metrics Table") # Sensitivity, Specificity, Precision
+    
+    return(list(
+        model <- model,
+        average.accuracy.across.models <- all_models_accuracy,
+        prediction <- prediction,
+        confusion_matrix <- confusion_matrix,
+        latex_table <- latex_table))
+}
+
+c50.dtm              <- caretC50(X_train = dtm_TRAIN[, -which(names(dtm_TRAIN) == 'character')], y_train = dtm_TRAIN['character'], X_test=dtm_TEST[, -which(names(dtm_TEST) == 'character')], y_test=dtm_TEST['character'], tuneControl = ctrl, tuneGrid)
+
+c50.dtm_collapsed    <- caretC50(dtm_collapsed_TRAIN[, -which(names(dtm_collapsed_TRAIN) == 'character')], dtm_collapsed_TRAIN['character'], dtm_collapsed_TEST[, -which(names(dtm_collapsed_TEST) == 'character')], dtm_collapsed_TEST['character'], ctrl, tuneGrid)
+
+c50.dtm_hybrid       <- caretC50(dtm_hybrid_TRAIN[, -which(names(dtm_hybrid_TRAIN) == 'character')], dtm_hybrid_TRAIN['character'], dtm_hybrid_TEST[, -which(names(dtm_hybrid_TEST) == 'character')], dtm_hybrid_TEST['character'], ctrl, tuneGrid)
+
+c50.dtm.With_stopW            <- caretC50(dtm.With_stopW_TRAIN[, -which(names(dtm.With_stopW_TRAIN) == 'character')], dtm.With_stopW_TRAIN['character'], dtm.With_stopW_TEST[, -which(names(dtm.With_stopW_TEST) == 'character')], dtm.With_stopW_TEST['character'], ctrl, tuneGrid)
+
+c50.dtm_collapsed.With_stopW  <- caretC50(dtm_collapsed.With_stopW_TRAIN[, -which(names(dtm_collapsed.With_stopW_TRAIN) == 'character')], dtm_collapsed.With_stopW_TRAIN['character'], dtm_collapsed.With_stopW_TEST[, -which(names(dtm_collapsed.With_stopW_TEST) == 'character')], dtm_collapsed.With_stopW_TEST['character'], ctrl, tuneGrid)
+
+c50.dtm_hybrid.With_stopW     <- caretC50(dtm_hybrid.With_stopW_TRAIN[, -which(names(dtm_hybrid.With_stopW_TRAIN) == 'character')], dtm_hybrid.With_stopW_TRAIN['character'], dtm_hybrid.With_stopW_TEST[, -which(names(dtm_hybrid.With_stopW_TEST) == 'character')], dtm_hybrid.With_stopW_TEST['character'], ctrl, tuneGrid)
+
+
+
+#model accuracy
+#p.final <- predict(m, newdata = df.final_TEST[, -which(names(df.final_TEST) == "character")])
+#confusion_matrix <- caret::confusionMatrix(data = p.final, reference = df.final_TEST$character)
+#round(confusion_matrix$byClass * 100, 2)
 
 #######################################
 

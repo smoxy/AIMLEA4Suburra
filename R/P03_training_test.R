@@ -1,4 +1,4 @@
-installAndLoadPackages(c("parallel", "caret", "smotefamily", "parallel", "doParallel", "bnclassify", "C50"))
+installAndLoadPackages(c("parallel", "caret", "smotefamily", "parallel", "doParallel", "bnclassify", "C50", "xtable"))
 setwd("/home/smoxy/AIMLEA4Suburra/R/")
 library(languageserver)
 load("P02.RData")
@@ -33,6 +33,10 @@ dtm_hybrid.With_stopW_TRAIN     <- dtm_hybrid.With_stopW$dtm_2[dtm_hybrid.With_s
 dtm_hybrid.With_stopW_TEST      <- dtm_hybrid.With_stopW$dtm_2[-dtm_hybrid.With_stopW.Index,]
 
 
+
+df.final['character'] <- as.factor(df.final['character'])
+df_collapsed.final['character'] <- as.factor(df_collapsed.final['character'])
+df_hybrid.final['character'] <- as.factor(df_hybrid.final['character'])
 Index <- caret::createDataPartition(df.final$character, p = .75, list = FALSE, times = 1)
 df.final_TRAIN           <- df.final[Index,]
 df.final_TEST            <- df.final[-Index,]
@@ -128,16 +132,8 @@ rm(cl)
 registerDoSEQ()
 
 
-
 ################################################################################
-#####                                                                      #####
 #####                                  C5.0                                #####
-#####                                                                      #####
-################################################################################
-#####                             Decision tree                            #####
-installAndLoadPackages(c("C50", "xtable"))
-
-########## TEST with caret ############
 tuneGrid <- expand.grid(trials = c(5, 10, 20, 30),
                         model = c("tree", "rules"),
                         winnow = c(TRUE, FALSE))
@@ -153,7 +149,7 @@ caretC50 <- function(X_train, y_train, X_test, y_test, tuneControl, tuneGrid){
                           method = 'C5.0',
                           trControl = tuneControl,
                           tuneGrid = tuneGrid,
-                          allowParallel = T)
+                          allowParallel = TRUE)
 
     all_models_accuracy <- mean(model$resample$Accuracy)
     prediction <- predict(model, newdata = X_test)
@@ -169,19 +165,28 @@ caretC50 <- function(X_train, y_train, X_test, y_test, tuneControl, tuneGrid){
         latex_table <- latex_table))
 }
 
-c50.dtm              <- caretC50(X_train = dtm_TRAIN[, -which(names(dtm_TRAIN) == 'character')], y_train = dtm_TRAIN['character'], X_test=dtm_TEST[, -which(names(dtm_TEST) == 'character')], y_test=dtm_TEST['character'], tuneControl = ctrl, tuneGrid)
+X_train = dtm_TRAIN
+y_train = dtm$character[dtm.Index]
+X_test  = dtm_TEST
+y_test  = dtm$character[-dtm.Index]
 
-c50.dtm_collapsed    <- caretC50(dtm_collapsed_TRAIN[, -which(names(dtm_collapsed_TRAIN) == 'character')], dtm_collapsed_TRAIN['character'], dtm_collapsed_TEST[, -which(names(dtm_collapsed_TEST) == 'character')], dtm_collapsed_TEST['character'], ctrl, tuneGrid)
+c50.dtm              <- caretC50(X_train = dtm_TRAIN, y_train = dtm$character[dtm.Index], X_test=dtm_TEST, y_test=dtm$character[-dtm.Index], tuneControl = ctrl, tuneGrid=tuneGrid)
 
-c50.dtm_hybrid       <- caretC50(dtm_hybrid_TRAIN[, -which(names(dtm_hybrid_TRAIN) == 'character')], dtm_hybrid_TRAIN['character'], dtm_hybrid_TEST[, -which(names(dtm_hybrid_TEST) == 'character')], dtm_hybrid_TEST['character'], ctrl, tuneGrid)
+c50.dtm_collapsed    <- caretC50(dtm_collapsed_TRAIN, dtm_collapsed$character[dtm_collapsed.Index], dtm_collapsed_TEST, dtm_collapsed$character[-dtm_collapsed.Index], ctrl, tuneGrid)
 
-c50.dtm.With_stopW            <- caretC50(dtm.With_stopW_TRAIN[, -which(names(dtm.With_stopW_TRAIN) == 'character')], dtm.With_stopW_TRAIN['character'], dtm.With_stopW_TEST[, -which(names(dtm.With_stopW_TEST) == 'character')], dtm.With_stopW_TEST['character'], ctrl, tuneGrid)
+c50.dtm_hybrid       <- caretC50(dtm_hybrid_TRAIN, dtm_hybrid$character[dtm_hybrid.Index], dtm_hybrid_TEST, dtm_hybrid$character[-dtm_hybrid.Index], ctrl, tuneGrid)
 
-c50.dtm_collapsed.With_stopW  <- caretC50(dtm_collapsed.With_stopW_TRAIN[, -which(names(dtm_collapsed.With_stopW_TRAIN) == 'character')], dtm_collapsed.With_stopW_TRAIN['character'], dtm_collapsed.With_stopW_TEST[, -which(names(dtm_collapsed.With_stopW_TEST) == 'character')], dtm_collapsed.With_stopW_TEST['character'], ctrl, tuneGrid)
+c50.dtm.With_stopW            <- caretC50(dtm.With_stopW_TRAIN, dtm.With_stopW$character[dtm.With_stopW.Index], dtm.With_stopW_TEST, dtm.With_stopW$character[-dtm.With_stopW.Index], ctrl, tuneGrid)
 
-c50.dtm_hybrid.With_stopW     <- caretC50(dtm_hybrid.With_stopW_TRAIN[, -which(names(dtm_hybrid.With_stopW_TRAIN) == 'character')], dtm_hybrid.With_stopW_TRAIN['character'], dtm_hybrid.With_stopW_TEST[, -which(names(dtm_hybrid.With_stopW_TEST) == 'character')], dtm_hybrid.With_stopW_TEST['character'], ctrl, tuneGrid)
+c50.dtm_collapsed.With_stopW  <- caretC50(dtm_collapsed.With_stopW_TRAIN, dtm_collapsed.With_stopW$character[dtm_collapsed.With_stopW.Index], dtm_collapsed.With_stopW_TEST, dtm_collapsed.With_stopW$character[-dtm_collapsed.With_stopW.Index], ctrl, tuneGrid)
 
+c50.dtm_hybrid.With_stopW     <- caretC50(dtm_hybrid.With_stopW_TRAIN, dtm_hybrid.With_stopW$character[dtm_hybrid.With_stopW.Index], dtm_hybrid.With_stopW_TEST, dtm_hybrid.With_stopW$character[-dtm_hybrid.With_stopW.Index], ctrl, tuneGrid)
 
+c50.final           <- caretC50(X_train = df.final_TRAIN[, -c(which(names(df.final_TRAIN) == 'character'),which(names(df.final_TRAIN) == 'script_line'))], y_train = df.final_TRAIN$character, X_test=df.final_TEST[, -c(which(names(df.final_TEST) == 'character'),which(names(df.final_TEST) == 'script_line'))], y_test=df.final_TEST$character, tuneControl = ctrl, tuneGrid=tuneGrid)
+
+c50.collapsed.final <- caretC50(X_train = df_collapsed.final_TRAIN[, -c(which(names(df_collapsed.final_TRAIN) == 'character'),which(names(df_collapsed.final_TRAIN) == 'script_line'))], y_train = df_collapsed.final_TRAIN$character, X_test=df_collapsed.final_TEST[, -c(which(names(df_collapsed.final_TEST) == 'character'),which(names(df_collapsed.final_TEST) == 'script_line'))], y_test=df_collapsed.final_TEST$character, tuneControl = ctrl, tuneGrid=tuneGrid)
+
+c50.hybrid.final    <- caretC50(X_train = df_hybrid.final_TRAIN[, -c(which(names(df_hybrid.final_TRAIN) == 'character'),which(names(df_hybrid.final_TRAIN) == 'script_line'))], y_train = df_hybrid.final_TRAIN$character, X_test=df_hybrid.final_TEST[, -c(which(names(df_hybrid.final_TEST) == 'character'),which(names(df_hybrid.final_TEST) == 'script_line'))], y_test=df_hybrid.final_TEST$character, tuneControl = ctrl, tuneGrid=tuneGrid)
 
 #model accuracy
 #p.final <- predict(m, newdata = df.final_TEST[, -which(names(df.final_TEST) == "character")])

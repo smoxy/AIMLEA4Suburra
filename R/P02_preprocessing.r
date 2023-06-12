@@ -412,66 +412,66 @@ convert_counts <- function(x){
 }
 ################################################################################
 #####                             Bag of Words                             #####
-#custom_stemming <- function(corpus, whitelist) {
-#  stemmed_corpus <- lapply(corpus, function(doc) {
-#    words <- unlist(strsplit(as.character(doc), " "))
-#    stemmed_words <- ifelse(words %in% whitelist, words, wordStem(words, language = "italian"))
-#    PlainTextDocument(paste(stemmed_words, collapse = " "))
-#  })
-#  # Extract the content from each document in the stemmed_corpus list
-#  texts <- sapply(stemmed_corpus, function(doc) doc$content)
-#  corpus <- Corpus(VectorSource(texts))
-#  dtm <- DocumentTermMatrix(corpus) # bag of words
-#  dtm_2 <- apply(dtm, MARGIN = 2, convert_counts)
-#  sparse <- slam::as.simple_triplet_matrix(dtm)
-#  df <- as.data.frame(as.matrix(sparse))
-#  return(list("dtm" = dtm,
-#              "dtm_2" = dtm_2,
-#              "df" = df))
-#}
-custom_stemming <- function(corpus, whitelist, df) {
-  # Create a frequency table of all the words in the corpus
-  word_freq <- table(unlist(strsplit(as.character(corpus), " ")))
-  
-  # Get the words that appear at least 5 times and are not in the whitelist
-  words_to_include <- names(word_freq[word_freq >= 5 & !(names(word_freq) %in% whitelist)])
-  
-  # Define a function to stem words
-  stem_word <- function(word) {
-    ifelse(word %in% whitelist, word, wordStem(word, language = "italian"))
-  }
-  words_to_include <- sapply(words_to_include, stem_word)
-  
-  # Apply stemming to each document in the corpus
+custom_stemming <- function(corpus, whitelist) {
   stemmed_corpus <- lapply(corpus, function(doc) {
     words <- unlist(strsplit(as.character(doc), " "))
-    stemmed_words <- sapply(words, stem_word)
+    stemmed_words <- ifelse(words %in% whitelist, words, wordStem(words, language = "italian"))
     PlainTextDocument(paste(stemmed_words, collapse = " "))
   })
-  
   # Extract the content from each document in the stemmed_corpus list
-  texts  <- sapply(stemmed_corpus, function(doc) doc$content)
+  texts <- sapply(stemmed_corpus, function(doc) doc$content)
   corpus <- Corpus(VectorSource(texts))
-  corpus <- tm_map(corpus, content_transformer(function(x) trim_spaces(x)))
-  corpus <- tm_map(corpus, stripWhitespace)
-  
-  # Create the dtm with only the included words
-  dtm <- DocumentTermMatrix(corpus, control = list(dictionary = words_to_include))
+  dtm <- DocumentTermMatrix(corpus) # bag of words
+  dtm_2 <- apply(dtm, MARGIN = 2, convert_counts)
   sparse <- slam::as.simple_triplet_matrix(dtm)
-  new_df <- as.data.frame(as.matrix(sparse))
-  columns_to_add <- c("episode", "duration", "bad_words", "is_male", "ADJ", "ADP",
-                "AUX", "CCONJ", "DET", "NOUN", "PRON", "INTJ", "VERB",
-                "NUM", "ADV", "SCONJ", "X", "NA", "PROPN", "PUNCT")
-  for (col in columns_to_add) {
-    new_df[col] <- df[col]
-  }
-  dtm <- apply(new_df, MARGIN = 2, convert_counts)
-  
+  df <- as.data.frame(as.matrix(sparse))
   return(list("dtm" = dtm,
-              "df" = new_df,
-              "character" = df$character))
+              "dtm_2" = dtm_2,
+              "df" = df))
 }
-
+#custom_stemming <- function(corpus, whitelist, df) {
+#  # Create a frequency table of all the words in the corpus
+#  word_freq <- table(unlist(strsplit(as.character(corpus), " ")))
+#  
+#  # Get the words that appear at least 5 times and are not in the whitelist
+#  words_to_include <- names(word_freq[word_freq >= 5 & !(names(word_freq) %in% whitelist)])
+#  
+#  # Define a function to stem words
+#  stem_word <- function(word) {
+#    ifelse(word %in% whitelist, word, wordStem(word, language = "italian"))
+#  }
+#  words_to_include <- sapply(words_to_include, stem_word)
+#  
+#  # Apply stemming to each document in the corpus
+#  stemmed_corpus <- lapply(corpus, function(doc) {
+#    words <- unlist(strsplit(as.character(doc), " "))
+#    stemmed_words <- sapply(words, stem_word)
+#    PlainTextDocument(paste(stemmed_words, collapse = " "))
+#  })
+#  
+#  # Extract the content from each document in the stemmed_corpus list
+#  texts  <- sapply(stemmed_corpus, function(doc) doc$content)
+#  corpus <- Corpus(VectorSource(texts))
+#  corpus <- tm_map(corpus, content_transformer(function(x) trim_spaces(x)))
+#  corpus <- tm_map(corpus, stripWhitespace)
+#  
+#  # Create the dtm with only the included words
+#  dtm <- DocumentTermMatrix(corpus, control = list(dictionary = words_to_include))
+#  sparse <- slam::as.simple_triplet_matrix(dtm)
+#  new_df <- as.data.frame(as.matrix(sparse))
+#  columns_to_add <- c("episode", "duration", "bad_words", "is_male", "ADJ", "ADP",
+#                "AUX", "CCONJ", "DET", "NOUN", "PRON", "INTJ", "VERB",
+#                "NUM", "ADV", "SCONJ", "X", "NA", "PROPN", "PUNCT")
+#  for (col in columns_to_add) {
+#    new_df[col] <- df[col]
+#  }
+#  dtm <- apply(new_df, MARGIN = 2, convert_counts)
+#  
+#  return(list("dtm" = dtm,
+#              "df" = new_df,
+#              "character" = df$character))
+#}
+#
 dtm.With_stopW           <- custom_stemming(corpus, whitelist, df.final)
 dtm_collapsed.With_stopW <- custom_stemming(corpus_collapsed, whitelist, df_collapsed.final)
 dtm_hybrid.With_stopW    <- custom_stemming(corpus_hybrid, whitelist, df_hybrid.final)

@@ -1,7 +1,7 @@
 #install.packages("parallel",Ncpus = 4)
 library(parallel)
 cores<-(as.numeric(parallel::detectCores()-1))
-installAndLoadPackages(c("caret", "smotefamily", "parallel", "doParallel", "bnclassify", "C50", "xtable", "dplyr", "magrittr"), cores = cores)
+installAndLoadPackages(c("caret", "xtable", "smotefamily", "parallel", "doParallel", "bnclassify", "C50", "xtable", "dplyr", "magrittr"), cores = cores)
 HOME <- "/mnt/volume_fra1_01/AIMLEA4Suburra/R"
 #HOME <- "/home/smoxy/AIMLEA4Suburra/R/"
 #HOME <- "C:/Users/smoxy/Documents/UNI/AIMLEA/AIMLEA4Suburra/R"
@@ -13,6 +13,7 @@ load("server_computation.DF_C50.RData")
 
 # START CLUSTERS
 #ifelse(parallel::detectCores() <= 32, cores<-(as.numeric(parallel::detectCores()-2)), cores<-32)
+cores<-(as.numeric(parallel::detectCores()-1))
 cl <- parallel::makePSOCKcluster(cores)
 doParallel::registerDoParallel(cl)
 
@@ -304,11 +305,12 @@ rm(c50.final, c50.collapsed.final, c50.hybrid.final, c50.dtm, c50.dtm_collapsed,
 #####                                                                      #####
 ################################################################################
 #####                   Model Averaged Naive Bayes Classifier              #####
-installAndLoadPackages(c("caret", "bartMachine", "bnclassify", "brnn"), cores = cores)
+installAndLoadPackages(c("caret", "bnclassify", "brnn"), cores = cores)
 
 
 ctrl <- caret::trainControl(method = "cv",
-                            number = 3,
+                            number = 10,
+                            classProbs = TRUE,
                             verboseIter = TRUE)
 
 caretMANB <- function(X_train, y_train, X_test, y_test, tuneControl){
@@ -317,6 +319,7 @@ caretMANB <- function(X_train, y_train, X_test, y_test, tuneControl){
     model <- caret::train(x = X_train,
                           y = y_train,
                           method = "manb",
+                          metric = "ROC",
                           trControl = tuneControl,
                           tuneGrid = tuneGrid,
                           allowParallel = TRUE)
@@ -336,25 +339,30 @@ caretMANB <- function(X_train, y_train, X_test, y_test, tuneControl){
         "latex_table" = latex_table))
 }
 
-c50.final           <- caretC50(X_train = df.final_TRAIN[, -c(which(names(df.final_TRAIN) == 'character'),which(names(df.final_TRAIN) == 'script_line'))], y_train = df.final_TRAIN$character, X_test=df.final_TEST[, -c(which(names(df.final_TEST) == 'character'),which(names(df.final_TEST) == 'script_line'))], y_test=df.final_TEST$character, tuneControl = ctrl, tuneGrid=tuneGrid)
-c50.collapsed.final <- caretC50(X_train = df_collapsed.final_TRAIN[, -c(which(names(df_collapsed.final_TRAIN) == 'character'),which(names(df_collapsed.final_TRAIN) == 'script_line'))], y_train = df_collapsed.final_TRAIN$character, X_test=df_collapsed.final_TEST[, -c(which(names(df_collapsed.final_TEST) == 'character'),which(names(df_collapsed.final_TEST) == 'script_line'))], y_test=df_collapsed.final_TEST$character, tuneControl = ctrl, tuneGrid=tuneGrid)
-c50.hybrid.final    <- caretC50(X_train = df_hybrid.final_TRAIN[, -c(which(names(df_hybrid.final_TRAIN) == 'character'),which(names(df_hybrid.final_TRAIN) == 'script_line'))], y_train = df_hybrid.final_TRAIN$character, X_test=df_hybrid.final_TEST[, -c(which(names(df_hybrid.final_TEST) == 'character'),which(names(df_hybrid.final_TEST) == 'script_line'))], y_test=df_hybrid.final_TEST$character, tuneControl = ctrl, tuneGrid=tuneGrid)
-save(c50.final, c50.collapsed.final, c50.hybrid.final, file = "server_computation.DF_C50.RData")
+MANB.final           <- caretMANB(X_train = df.final_TRAIN[, -c(which(names(df.final_TRAIN) == 'character'),which(names(df.final_TRAIN) == 'script_line'))], y_train = df.final_TRAIN$character, X_test=df.final_TEST[, -c(which(names(df.final_TEST) == 'character'),which(names(df.final_TEST) == 'script_line'))], y_test=df.final_TEST$character, tuneControl = ctrl)
+MANB.collapsed.final <- caretMANB(X_train = df_collapsed.final_TRAIN[, -c(which(names(df_collapsed.final_TRAIN) == 'character'),which(names(df_collapsed.final_TRAIN) == 'script_line'))], y_train = df_collapsed.final_TRAIN$character, X_test=df_collapsed.final_TEST[, -c(which(names(df_collapsed.final_TEST) == 'character'),which(names(df_collapsed.final_TEST) == 'script_line'))], y_test=df_collapsed.final_TEST$character, tuneControl = ctrl)
+MANB.hybrid.final    <- caretMANB(X_train = df_hybrid.final_TRAIN[, -c(which(names(df_hybrid.final_TRAIN) == 'character'),which(names(df_hybrid.final_TRAIN) == 'script_line'))], y_train = df_hybrid.final_TRAIN$character, X_test=df_hybrid.final_TEST[, -c(which(names(df_hybrid.final_TEST) == 'character'),which(names(df_hybrid.final_TEST) == 'script_line'))], y_test=df_hybrid.final_TEST$character, tuneControl = ctrl)
+save(MANB.final, MANB.collapsed.final, MANB.hybrid.final, file = "server_computation.DF_MANB.RData")
 
-MANB.dtm              <- caretRF(X_train = dtm_TRAIN, y_train = dtm$character[dtm.Index], X_test=dtm_TEST, y_test=dtm$character[-dtm.Index], tuneControl = ctrl)
-MANB.dtm_collapsed    <- caretRF(dtm_collapsed_TRAIN, dtm_collapsed$character[dtm_collapsed.Index], dtm_collapsed_TEST, dtm_collapsed$character[-dtm_collapsed.Index], ctrl)
-MANB.dtm_hybrid       <- caretRF0(dtm_hybrid_TRAIN, dtm_hybrid$character[dtm_hybrid.Index], dtm_hybrid_TEST, dtm_hybrid$character[-dtm_hybrid.Index], ctrl)
-save(RF.dtm, RF.dtm_collapsed, RF.dtm_hybrid, file = "server_computation.DTM_RF.RData")
+MANB.final.bis           <- caretMANB(X_train = df.final_TRAIN[, -which(names(df.final_TRAIN) == 'character')], y_train = df.final_TRAIN$character, X_test=df.final_TEST[, -which(names(df.final_TEST) == 'character')], y_test=df.final_TEST$character, tuneControl = ctrl)
+MANB.collapsed.final.bis <- caretMANB(X_train = df_collapsed.final_TRAIN[, -c(which(names(df_collapsed.final_TRAIN) == 'character'),which(names(df_collapsed.final_TRAIN) == 'script_line'))], y_train = df_collapsed.final_TRAIN$character, X_test=df_collapsed.final_TEST[, -c(which(names(df_collapsed.final_TEST) == 'character'),which(names(df_collapsed.final_TEST) == 'script_line'))], y_test=df_collapsed.final_TEST$character, tuneControl = ctrl)
+MANB.hybrid.final.bis    <- caretMANB(X_train = df_hybrid.final_TRAIN[, -c(which(names(df_hybrid.final_TRAIN) == 'character'),which(names(df_hybrid.final_TRAIN) == 'script_line'))], y_train = df_hybrid.final_TRAIN$character, X_test=df_hybrid.final_TEST[, -c(which(names(df_hybrid.final_TEST) == 'character'),which(names(df_hybrid.final_TEST) == 'script_line'))], y_test=df_hybrid.final_TEST$character, tuneControl = ctrl)
+save(MANB.final.bis, MANB.collapsed.final.bis, MANB.hybrid.final.bis, file = "server_computation.DF_MANB.bis.RData")
 
-MANB.dtm.With_stopW            <- caretRF(dtm.With_stopW_TRAIN, dtm.With_stopW$character[dtm.With_stopW.Index], dtm.With_stopW_TEST, dtm.With_stopW$character[-dtm.With_stopW.Index], ctrl)
-MANB.dtm_collapsed.With_stopW  <- caretRF(dtm_collapsed.With_stopW_TRAIN, dtm_collapsed.With_stopW$character[dtm_collapsed.With_stopW.Index], dtm_collapsed.With_stopW_TEST, dtm_collapsed.With_stopW$character[-dtm_collapsed.With_stopW.Index], ctrl)
-MANB.dtm_hybrid.With_stopW     <- caretRF(dtm_hybrid.With_stopW_TRAIN, dtm_hybrid.With_stopW$character[dtm_hybrid.With_stopW.Index], dtm_hybrid.With_stopW_TEST, dtm_hybrid.With_stopW$character[-dtm_hybrid.With_stopW.Index], ctrl)
-save(RF.dtm, RF.dtm_collapsed, RF.dtm_hybrid, RF.dtm.With_stopW, RF.dtm_collapsed.With_stopW, RF.dtm_hybrid.With_stopW, file = "server_computation.DTM_C50.RData")
+MANB.dtm              <- caretMANB(X_train = dtm_TRAIN, y_train = dtm$character[dtm.Index], X_test=dtm_TEST, y_test=dtm$character[-dtm.Index], tuneControl = ctrl)
+MANB.dtm_collapsed    <- caretMANB(dtm_collapsed_TRAIN, dtm_collapsed$character[dtm_collapsed.Index], dtm_collapsed_TEST, dtm_collapsed$character[-dtm_collapsed.Index], ctrl)
+MANB.dtm_hybrid       <- caretMANB(dtm_hybrid_TRAIN, dtm_hybrid$character[dtm_hybrid.Index], dtm_hybrid_TEST, dtm_hybrid$character[-dtm_hybrid.Index], ctrl)
+save(MANB.dtm, MANB.dtm_collapsed, MANB.dtm_hybrid, file = "server_computation.DTM_MANB.RData")
+
+MANB.dtm.With_stopW            <- caretMANB(dtm.With_stopW_TRAIN, dtm.With_stopW$character[dtm.With_stopW.Index], dtm.With_stopW_TEST, dtm.With_stopW$character[-dtm.With_stopW.Index], ctrl)
+MANB.dtm_collapsed.With_stopW  <- caretMANB(dtm_collapsed.With_stopW_TRAIN, dtm_collapsed.With_stopW$character[dtm_collapsed.With_stopW.Index], dtm_collapsed.With_stopW_TEST, dtm_collapsed.With_stopW$character[-dtm_collapsed.With_stopW.Index], ctrl)
+MANB.dtm_hybrid.With_stopW     <- caretMANB(dtm_hybrid.With_stopW_TRAIN, dtm_hybrid.With_stopW$character[dtm_hybrid.With_stopW.Index], dtm_hybrid.With_stopW_TEST, dtm_hybrid.With_stopW$character[-dtm_hybrid.With_stopW.Index], ctrl)
+save(MANB.dtm, MANB.dtm_collapsed, MANB.dtm_hybrid, MANB.dtm.With_stopW, MANB.dtm_collapsed.With_stopW, MANB.dtm_hybrid.With_stopW, file = "server_computation.DTM_MANB.RData")
 
 result <- findBestModel(list(
-  MANB.dtm = MANB.dtm,
-  MANB.dtm_collapsed = MANB.dtm_collapsed,
-  MANB.dtm_hybrid = MANB.dtm_hybrid,
+  c50.final = c50.final,
+  c50.collapsed.final = c50.collapsed.final,
+  c50.hybrid.final = c50.hybrid.final,
   MANB.dtm.With_stopW = MANB.dtm.With_stopW,
   MANB.dtm_collapsed.With_stopW = MANB.dtm_collapsed.With_stopW,
   MANB.dtm_hybrid.With_stopW = MANB.dtm_hybrid.With_stopW

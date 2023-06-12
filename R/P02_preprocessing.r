@@ -61,7 +61,7 @@ find_unique_words <- function(df) {
 installAndLoadPackages(c("reshape2", "magrittr", "plyr", "dplyr", "tidyr",
                          "ggplot2", "tm", "SnowballC", "slam", "e1071", "feather",
                          "stopwords", "udpipe", "parallel", "httr", "stringr",
-                         "text2vec", "tidytext", "purrr"), cores = cores)
+                         "stringr", "text2vec", "tidytext", "purrr"), cores = cores)
 
 library(languageserver)
 #library(readr)
@@ -210,9 +210,9 @@ character_speak_time
 ################################################################################
 #####                          Dataframe Settings                          #####
 setwd(HOME)
-suburra <- read.csv("../DATA/01_Suburra_data.csv", stringsAsFactors = FALSE)
-suburra_collapsed <- read.csv("../DATA/02_Suburra_data_collapsed.csv", stringsAsFactors = FALSE)
-suburra_hybrid <- read.csv("../DATA/03_Suburra_data_hybrid.csv", stringsAsFactors = FALSE)
+suburra <- read.csv("../DATA/01_Suburra_data.csv", stringsAsFactors = FALSE, encoding="UTF-8")
+suburra_collapsed <- read.csv("../DATA/02_Suburra_data_collapsed.csv", stringsAsFactors = FALSE, encoding="UTF-8")
+suburra_hybrid <- read.csv("../DATA/03_Suburra_data_hybrid.csv", stringsAsFactors = FALSE, encoding="UTF-8")
 
 suburra <- suburra[,-c(3, 8, 11)]
 suburra_collapsed <- suburra_collapsed[,-c(3, 8, 11)]
@@ -359,7 +359,11 @@ corpus_hybrid    <- tm_map(corpus_hybrid, content_transformer(tolower))
 # Rimozione della punteggiatura FATTA IN PYTHON PERCHé LE PAROLE ERANO CONCATENATE SENZA SPAZI
 #corpus           <- tm_map(corpus, removePunctuation)
 #corpus_collapsed <- tm_map(corpus_collapsed, removePunctuation)
-#corpus_hybrid <- tm_map(corpus_hybrid, removePunctuation)
+#corpus_hybrid    <- tm_map(corpus_hybrid, removePunctuation)
+
+corpus           <- tm_map(corpus, content_transformer(function(x) gsub("[^[:alpha:]]", " ", x)))
+corpus_collapsed <- tm_map(corpus_collapsed, content_transformer(function(x) gsub("[^[:alpha:]]", " ", x)))
+corpus_hybrid    <- tm_map(corpus_hybrid, content_transformer(function(x) gsub("[^[:alpha:]]", " ", x)))
 
 corpus           <- tm_map(corpus, removeNumbers)
 corpus_collapsed <- tm_map(corpus_collapsed, removeNumbers)
@@ -376,6 +380,18 @@ corpus_clean           <- tm_map(corpus, content_transformer(removeWords), stopw
 corpus_collapsed_clean <- tm_map(corpus_collapsed, content_transformer(removeWords), stopwords::stopwords(language = "it"))
 corpus_hybrid_clean    <- tm_map(corpus_hybrid, content_transformer(removeWords), stopwords::stopwords(language = "it"))
 
+trim_spaces <- function(x) {
+  stringr::str_trim(x, side = c("both", "left", "right"))
+}
+
+corpus_clean           <- tm_map(corpus_clean, content_transformer(function(x) trim_spaces(x)))
+corpus_collapsed_clean <- tm_map(corpus_collapsed_clean, content_transformer(function(x) trim_spaces(x)))
+corpus_hybrid_clean    <- tm_map(corpus_hybrid_clean, content_transformer(function(x) trim_spaces(x)))
+
+corpus_clean           <- tm_map(corpus_clean, stripWhitespace)
+corpus_collapsed_clean <- tm_map(corpus_collapsed_clean, stripWhitespace)
+corpus_hybrid_clean    <- tm_map(corpus_hybrid_clean, stripWhitespace)
+
 ################################################################################
 #####                                Stemming                              #####
 whitelist <- c("alberto","anacleti","spadino","amedeo","cinaglia","aureliano","adami","gabriele","marchilli","samurai","valerio","sara","monaschi", "livia", "sveva", "angelica","sale", "manfredi")
@@ -385,7 +401,83 @@ convert_counts <- function(x){
 }
 ################################################################################
 #####                             Bag of Words                             #####
-custom_stemming <- function(corpus, whitelist) {
+#custom_stemming <- function(corpus, whitelist) {
+#  stemmed_corpus <- lapply(corpus, function(doc) {
+#    words <- unlist(strsplit(as.character(doc), " "))
+#    stemmed_words <- ifelse(words %in% whitelist, words, wordStem(words, language = "italian"))
+#    PlainTextDocument(paste(stemmed_words, collapse = " "))
+#  })
+#  # Extract the content from each document in the stemmed_corpus list
+#  texts <- sapply(stemmed_corpus, function(doc) doc$content)
+#  corpus <- Corpus(VectorSource(texts))
+#  dtm <- DocumentTermMatrix(corpus) # bag of words
+#  dtm_2 <- apply(dtm, MARGIN = 2, convert_counts)
+#  sparse <- slam::as.simple_triplet_matrix(dtm)
+#  df <- as.data.frame(as.matrix(sparse))
+#  return(list("dtm" = dtm,
+#              "dtm_2" = dtm_2,
+#              "df" = df))
+#}
+custom_stemming <- function(corpus, whitelist, df) {
+  # Create a frequency table of all the words in the corpus
+  word_freq <- table(unlist(strsplit(as.character(corpus), " ")))
+  
+  # Get the words that appear at least 5 times and are not in the whitelist
+  words_to_include <- names(word_freq[word_freq >= 5 & !(names(word_freq) %in% whitelist)])
+  
+  # Define a function to stem words
+  stem_word <- function(word) {
+    ifelse(word %in% whitelist, word, wordStem(word, language = "italian"))
+  }
+  words_to_include <- sapply(words_to_include, stem_word)
+  
+  # Apply stemming to each document in the corpus
+  stemmed_corpus <- lapply(corpus, function(doc) {
+    words <- unlist(strsplit(as.character(doc), " "))
+    stemmed_words <- sapply(words, stem_word)
+    PlainTextDocument(paste(stemmed_words, collapse = " "))
+  })
+  
+  # Extract the content from each document in the stemmed_corpus list
+  texts  <- sapply(stemmed_corpus, function(doc) doc$content)
+  corpus <- Corpus(VectorSource(texts))
+  corpus <- tm_map(corpus, content_transformer(function(x) trim_spaces(x)))
+  corpus <- tm_map(corpus, stripWhitespace)
+  
+  # Create the dtm with only the included words
+  dtm <- DocumentTermMatrix(corpus, control = list(dictionary = words_to_include))
+  sparse <- slam::as.simple_triplet_matrix(dtm)
+  new_df <- as.data.frame(as.matrix(sparse))
+  columns_to_add <- c("episode", "duration", "bad_words", "is_male", "ADJ", "ADP",
+                "AUX", "CCONJ", "DET", "NOUN", "PRON", "INTJ", "VERB",
+                "NUM", "ADV", "SCONJ", "X", "NA", "PROPN", "PUNCT")
+  for (col in columns_to_add) {
+    new_df[col] <- df[col]
+  }
+  dtm <- apply(new_df, MARGIN = 2, convert_counts)
+  
+  return(list("dtm" = dtm,
+              "df" = new_df,
+              "character" = df$character))
+}
+
+dtm.With_stopW           <- custom_stemming(corpus, whitelist, df.final)
+dtm_collapsed.With_stopW <- custom_stemming(corpus_collapsed, whitelist, df_collapsed.final)
+dtm_hybrid.With_stopW    <- custom_stemming(corpus_hybrid, whitelist, df_hybrid.final)
+
+dtm             <- custom_stemming(corpus_clean, whitelist, df.final)
+dtm_collapsed   <- custom_stemming(corpus_collapsed_clean, whitelist, df_collapsed.final)
+dtm_hybrid      <- custom_stemming(corpus_hybrid_clean, whitelist, df_hybrid.final)
+
+rm(italian.vit, allowed_characters)
+
+
+
+################################################################################
+#####                                 Word2Vec                             #####
+#####                              Word Embedding                          #####
+
+my_stemming <- function(corpus, whitelist) {
   stemmed_corpus <- lapply(corpus, function(doc) {
     words <- unlist(strsplit(as.character(doc), " "))
     stemmed_words <- ifelse(words %in% whitelist, words, wordStem(words, language = "italian"))
@@ -394,40 +486,14 @@ custom_stemming <- function(corpus, whitelist) {
   # Extract the content from each document in the stemmed_corpus list
   texts <- sapply(stemmed_corpus, function(doc) doc$content)
   corpus <- Corpus(VectorSource(texts))
-  dtm <- DocumentTermMatrix(corpus) # bag of words
-  dtm_2 <- apply(dtm, MARGIN = 2, convert_counts)
-  sparse <- slam::as.simple_triplet_matrix(dtm)
-  df <- as.data.frame(as.matrix(sparse))
-  return(list("dtm" = dtm,
-              "dtm_2" = dtm_2,
-              "df" = df))
+ 
+  return(corpus) 
 }
 
-dtm.With_stopW           <- custom_stemming(corpus, whitelist)
-dtm_collapsed.With_stopW <- custom_stemming(corpus_collapsed, whitelist)
-dtm_hybrid.With_stopW    <- custom_stemming(corpus_hybrid, whitelist)
 
-dtm             <- custom_stemming(corpus_clean, whitelist)
-dtm_collapsed   <- custom_stemming(corpus_collapsed_clean, whitelist)
-dtm_hybrid      <- custom_stemming(corpus_hybrid_clean, whitelist)
-
-
-
-dtm.With_stopW$character           <- df.final$character
-dtm_collapsed.With_stopW$character <- df_collapsed.final$character
-dtm_hybrid.With_stopW$character    <- df_hybrid.final$character
-
-dtm$character             <- df.final$character
-dtm_collapsed$character   <- df_collapsed.final$character
-dtm_hybrid$character      <- df_hybrid.final$character
-
-rm(italian.vit, whitelist, allowed_characters)
-
-
-
-################################################################################
-#####                                 Word2Vec                             #####ù
 convert_word2vec <- function(corpus, cores){
+  if (!is.character(corpus))
+    corpus <- as.character(corpus)
   # Splits it into individual words (tokens)
   tokens <- text2vec::space_tokenizer(corpus)
 
@@ -448,27 +514,68 @@ convert_word2vec <- function(corpus, cores){
 
   # Factorize the TCM matrix via the GloVe algorithm
   # This is the main step where the GloVe algorithm is used to generate the word vectors.
-  glove = text2vec::GlobalVectors$new(rank = 50, x_max = 10)
-  wv_main = text2vec::glove$fit_transform(tcm, n_iter = 10, convergence_tol = 0.01, n_threads = cores)
+  glove = GlobalVectors$new(rank = 50, x_max = 10)
+  wv_main = glove$fit_transform(tcm, n_iter = 100, convergence_tol = 0.01, n_threads = cores)
 
   # Get the word vectors
   # Here, we add the main word vectors to the context word vectors to get the final word vectors
-  wv_context = text2vec::glove$components
+  wv_context = glove$components
   word_vectors = wv_main + t(wv_context)
-  
+  word_vectors = as.matrix(word_vectors)
 
   return(list(
     "vocabulary" = vocab,
-    "word_vectors" = word_vectors
+    "glove" = word_vectors
   ))
 }
+
+
+convert_document_to_vector <- function(document, word_vectors) {
+  tokens <- text2vec::space_tokenizer(document)
+  tokens <- unlist(tokens)  # Convert tokens to a character vector
+  tokens_n <- length(tokens)
+  tokens <- tokens[tokens %in% rownames(word_vectors)]  # Filter out tokens not in the vocabulary
+  #print(tokens)
+  
+  if (length(tokens) == 0) {
+    return(rep(0, ncol(word_vectors)))
+  }
+  
+  token_vectors <- word_vectors[tokens, ]
+  
+  if (length(token_vectors) == 0) {
+    return(rep(0, ncol(word_vectors)))
+  }
+  
+  if (length(token_vectors) == 1) {
+    return(token_vectors)
+  }
+  token_vectors = t(token_vectors)
+  return(rowMeans(token_vectors, na.rm = TRUE))
+}
+
 
 wv           <- convert_word2vec(corpus_clean, cores)
 wv_collapsed <- convert_word2vec(corpus_collapsed_clean, cores)
 wv_hybrid    <- convert_word2vec(corpus_hybrid_clean, cores)
 
+corpus_clean           <- my_stemming(corpus_clean, whitelist)
+corpus_collapsed_clean <- my_stemming(corpus_collapsed_clean, whitelist)
+corpus_hybrid_clean    <- my_stemming(corpus_hybrid_clean, whitelist)
 
-rm(corpus, corpus_collapsed, corpus_hybrid, corpus_clean, corpus_collapsed_clean, corpus_hybrid_clean)
+wv.stem           <- convert_word2vec(corpus_clean, cores)
+wv_collapsed.stem <- convert_word2vec(corpus_collapsed_clean, cores)
+wv_hybrid.stem    <- convert_word2vec(corpus_hybrid_clean, cores)
+
+# Apply the function to each document in your corpus
+document_vectors <- sapply(corpus_clean, convert_document_to_vector, word_vectors = wv$glove)
+document_vectors <- sapply(df.final$script_line, convert_document_to_vector, word_vectors = wv$glove)
+
+#Transpose the matrix so that documents are rows and dimensions are columns
+document_vectors <- t(document_vectors)
+
+
+rm(whitelist, corpus, corpus_collapsed, corpus_hybrid, corpus_clean, corpus_collapsed_clean, corpus_hybrid_clean)
 
 # Rimozione della punteggiatura
 #corpus_clean           <- tm_map(corpus_clean, removePunctuation)

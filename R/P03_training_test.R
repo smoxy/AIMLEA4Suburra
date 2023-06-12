@@ -18,36 +18,46 @@ doParallel::registerDoParallel(cl)
 
 
 ################################################################################
+#####                                                                      #####
 #####                  SUBSETTING IN TRAIN AND TEST  ->  DTM               #####
+
+
+
 set.seed(1234)  # For reproducibility
 dtm.Index <- caret::createDataPartition(dtm$character, p = .75, list = FALSE, times = 1)
-dtm_TRAIN              <- dtm$dtm_2[dtm.Index,]
-dtm_TEST               <- dtm$dtm_2[-dtm.Index,]
+dtm_TRAIN              <- dtm$dtm[dtm.Index,]
+dtm_TEST               <- dtm$dtm[-dtm.Index,]
 dtm_collapsed.Index <- caret::createDataPartition(dtm_collapsed$character, p = .75, list = FALSE, times = 1)
-dtm_collapsed_TRAIN    <- dtm_collapsed$dtm_2[dtm_collapsed.Index,]
-dtm_collapsed_TEST     <- dtm_collapsed$dtm_2[-dtm_collapsed.Index,]
+dtm_collapsed_TRAIN    <- dtm_collapsed$dtm[dtm_collapsed.Index,]
+dtm_collapsed_TEST     <- dtm_collapsed$dtm[-dtm_collapsed.Index,]
 dtm_hybrid.Index <- caret::createDataPartition(dtm_hybrid$character, p = .75, list = FALSE, times = 1)
-dtm_hybrid_TRAIN       <- dtm_hybrid$dtm_2[dtm_hybrid.Index,]
-dtm_hybrid_TEST        <- dtm_hybrid$dtm_2[-dtm_hybrid.Index,]
+dtm_hybrid_TRAIN       <- dtm_hybrid$dtm[dtm_hybrid.Index,]
+dtm_hybrid_TEST        <- dtm_hybrid$dtm[-dtm_hybrid.Index,]
 dtm.With_stopW.Index <- caret::createDataPartition(dtm.With_stopW$character, p = .75, list = FALSE, times = 1)
-dtm.With_stopW_TRAIN            <- dtm.With_stopW$dtm_2[dtm.With_stopW.Index,]
-dtm.With_stopW_TEST             <- dtm.With_stopW$dtm_2[-dtm.With_stopW.Index,]
+dtm.With_stopW_TRAIN            <- dtm.With_stopW$dtm[dtm.With_stopW.Index,]
+dtm.With_stopW_TEST             <- dtm.With_stopW$dtm[-dtm.With_stopW.Index,]
 dtm_collapsed.With_stopW.Index <- caret::createDataPartition(dtm_collapsed.With_stopW$character, p = .75, list = FALSE, times = 1)
-dtm_collapsed.With_stopW_TRAIN  <- dtm_collapsed.With_stopW$dtm_2[dtm_collapsed.With_stopW.Index,]
-dtm_collapsed.With_stopW_TEST   <- dtm_collapsed.With_stopW$dtm_2[-dtm_collapsed.With_stopW.Index,]
+dtm_collapsed.With_stopW_TRAIN  <- dtm_collapsed.With_stopW$dtm[dtm_collapsed.With_stopW.Index,]
+dtm_collapsed.With_stopW_TEST   <- dtm_collapsed.With_stopW$dtm[-dtm_collapsed.With_stopW.Index,]
 dtm_hybrid.With_stopW.Index <- caret::createDataPartition(dtm_hybrid.With_stopW$character, p = .75, list = FALSE, times = 1)
-dtm_hybrid.With_stopW_TRAIN     <- dtm_hybrid.With_stopW$dtm_2[dtm_hybrid.With_stopW.Index,]
-dtm_hybrid.With_stopW_TEST      <- dtm_hybrid.With_stopW$dtm_2[-dtm_hybrid.With_stopW.Index,]
+dtm_hybrid.With_stopW_TRAIN     <- dtm_hybrid.With_stopW$dtm[dtm_hybrid.With_stopW.Index,]
+dtm_hybrid.With_stopW_TEST      <- dtm_hybrid.With_stopW$dtm[-dtm_hybrid.With_stopW.Index,]
 
 Index <- caret::createDataPartition(df.final$character, p = .75, list = FALSE, times = 1)
 df.final_TRAIN           <- df.final[Index,]
 df.final_TEST            <- df.final[-Index,]
+wv_TRAIN           <- wv$word_vectors[Index,]
+wv_TEST            <- wv$word_vectors[-Index,]
 Index <- caret::createDataPartition(df_collapsed.final$character, p = .75, list = FALSE, times = 1)
 df_collapsed.final_TRAIN <- df_collapsed.final[Index,]
 df_collapsed.final_TEST  <- df_collapsed.final[-Index,]
+wv_collapsed_TRAIN <- wv_collapsed[Index,]
+wv_collapsed_TEST  <- wv_collapsed[-Index,]
 Index <- caret::createDataPartition(df_hybrid.final$character, p = .75, list = FALSE, times = 1)
 df_hybrid.final_TRAIN    <- df_hybrid.final[Index,]
 df_hybrid.final_TEST     <- df_hybrid.final[-Index,]
+wv_hybrid_TRAIN    <- wv_hybrid[Index,]
+wv_hybrid_TEST     <- wv_hybrid[-Index,]
 
 ################################################################################
 #####                                                                      #####
@@ -296,11 +306,6 @@ rm(c50.final, c50.collapsed.final, c50.hybrid.final, c50.dtm, c50.dtm_collapsed,
 #####                   Model Averaged Naive Bayes Classifier              #####
 installAndLoadPackages(c("caret", "bartMachine", "bnclassify", "brnn"), cores = cores)
 
-
-
-class_probabilities <- compute_class_probabilities(c(y_train,y_test)) # Definisci i dati delle classi e le relative percentuali
-
-tuneGrid <- expand.grid(smooth = c(0, 0.5, 1), prior = class_probabilities)
 
 ctrl <- caret::trainControl(method = "cv",
                             number = 3,

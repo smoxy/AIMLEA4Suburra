@@ -177,7 +177,7 @@ caretRF <- function(X_train, y_train, X_test, y_test, tuneControl){
     confusion_matrix <- round(confusion_matrix$byClass * 100, 3)  #"positive" "table" "overall" "byClass" "mode" "dots" 
     confusion_matrix <- confusion_matrix[,-6]
     latex_table <- xtable(as.data.frame(confusion_matrix), caption = "Metrics Table") # Sensitivity, Specificity, Precision
-    gc()
+    #gc()
     return(list(
         "model" = model,
         "average.accuracy.across.models" = all_models_accuracy,
@@ -327,7 +327,7 @@ caretMANB <- function(X_train, y_train, X_test, y_test, tuneControl){
     confusion_matrix <- round(confusion_matrix$byClass * 100, 3)  #"positive" "table" "overall" "byClass" "mode" "dots" 
     confusion_matrix <- confusion_matrix[,-6] #ELIMINO RECALL (è uguale alla sensitivity)
     latex_table <- xtable(as.data.frame(confusion_matrix), caption = "Metrics Table") # Sensitivity, Specificity, Precision
-    gc()
+    #gc()
     return(list(
         "model" = model,
         "average.accuracy.across.models" = all_models_accuracy,

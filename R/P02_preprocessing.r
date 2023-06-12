@@ -299,7 +299,7 @@ italian.vit <- udpipe::udpipe_download_model(language = "italian-vit",
 
 italian.vit <- udpipe::udpipe_load_model(italian.vit$file_model)
 
-ifelse(parallel::detectCores() <= 12, cores<-(as.numeric(parallel::detectCores()-1)), cores<-12)
+#ifelse(parallel::detectCores() <= 12, cores<-(as.numeric(parallel::detectCores()-1)), cores<-12)
 
 
 ## ABILITARE SE SI VUOLE IL POST TAGGING groupby character (IN ONE-HOT-ENCODE)
@@ -348,6 +348,10 @@ write_feather(df_collapsed.final, "df_collapsed.final.feather")
 write_feather(df_hybrid.final, "df_hybrid.final.feather")
 ################################################################################
 # Creazione di un Corpus a partire dal dataset
+trim_spaces <- function(x) {
+  stringr::str_trim(x, side = c("both", "left", "right"))
+}
+
 corpus <- Corpus(VectorSource(df.final$script_line))
 corpus_collapsed <- Corpus(VectorSource(df_collapsed.final$script_line))
 corpus_hybrid <- Corpus(VectorSource(df_hybrid.final$script_line))
@@ -374,15 +378,22 @@ corpus           <- tm_map(corpus, stripWhitespace)
 corpus_collapsed <- tm_map(corpus_collapsed, stripWhitespace)
 corpus_hybrid    <- tm_map(corpus_hybrid, stripWhitespace)
 
+corpus           <- tm_map(corpus, content_transformer(function(x) trim_spaces(x)))
+corpus_collapsed <- tm_map(corpus_collapsed, content_transformer(function(x) trim_spaces(x)))
+corpus_hybrid    <- tm_map(corpus_hybrid, content_transformer(function(x) trim_spaces(x)))
+
+corpus           <- tm_map(corpus, content_transformer(function(x) gsub("[^[:alpha:]]", " ", x)))
+corpus_collapsed <- tm_map(corpus_collapsed, content_transformer(function(x) gsub("[^[:alpha:]]", " ", x)))
+corpus_hybrid    <- tm_map(corpus_hybrid, content_transformer(function(x) gsub("[^[:alpha:]]", " ", x)))
+
+corpus           <- tm_map(corpus, stripWhitespace)
+corpus_collapsed <- tm_map(corpus_collapsed, stripWhitespace)
+corpus_hybrid    <- tm_map(corpus_hybrid, stripWhitespace)
 
 ######################### Rimozione delle stop words ###########################
 corpus_clean           <- tm_map(corpus, content_transformer(removeWords), stopwords::stopwords(language = "it"))
 corpus_collapsed_clean <- tm_map(corpus_collapsed, content_transformer(removeWords), stopwords::stopwords(language = "it"))
 corpus_hybrid_clean    <- tm_map(corpus_hybrid, content_transformer(removeWords), stopwords::stopwords(language = "it"))
-
-trim_spaces <- function(x) {
-  stringr::str_trim(x, side = c("both", "left", "right"))
-}
 
 corpus_clean           <- tm_map(corpus_clean, content_transformer(function(x) trim_spaces(x)))
 corpus_collapsed_clean <- tm_map(corpus_collapsed_clean, content_transformer(function(x) trim_spaces(x)))
@@ -468,6 +479,10 @@ dtm_hybrid.With_stopW    <- custom_stemming(corpus_hybrid, whitelist, df_hybrid.
 dtm             <- custom_stemming(corpus_clean, whitelist, df.final)
 dtm_collapsed   <- custom_stemming(corpus_collapsed_clean, whitelist, df_collapsed.final)
 dtm_hybrid      <- custom_stemming(corpus_hybrid_clean, whitelist, df_hybrid.final)
+
+save(dtm.With_stopW, dtm_collapsed.With_stopW, dtm_hybrid.With_stopW, dtm,
+      dtm_collapsed, dtm_hybrid, df.final, df_collapsed.final,
+      df_hybrid.final, file = "P02.RData", compress=TRUE)
 
 rm(italian.vit, allowed_characters)
 
@@ -573,45 +588,11 @@ document_vectors <- sapply(df.final$script_line, convert_document_to_vector, wor
 
 #Transpose the matrix so that documents are rows and dimensions are columns
 document_vectors <- t(document_vectors)
+load("P02.RData")
 
+save(dtm.With_stopW, dtm_collapsed.With_stopW, dtm_hybrid.With_stopW, dtm,
+      dtm_collapsed, dtm_hybrid, df.final, df_collapsed.final,
+      df_hybrid.final, wv, wv_collapsed, wv_hybrid, wv.stem,
+      wv_collapsed.stem, wv_hybrid.stem, file = "P02.RData", compress=TRUE)
 
 rm(whitelist, corpus, corpus_collapsed, corpus_hybrid, corpus_clean, corpus_collapsed_clean, corpus_hybrid_clean)
-
-# Rimozione della punteggiatura
-#corpus_clean           <- tm_map(corpus_clean, removePunctuation)
-#corpus_collapsed_clean <- tm_map(corpus_collapsed_clean, removePunctuation)
-#corpus_hybrid_clean    <- tm_map(corpus_hybrid_clean, removePunctuation)
-#
-#corpus_clean           <- tm_map(corpus_clean, removeNumbers)
-#corpus_collapsed_clean <- tm_map(corpus_collapsed_clean, removeNumbers)
-#corpus_hybrid_clean    <- tm_map(corpus_hybrid_clean, removeNumbers)
-#
-## Rimozione delle spaziature extra
-#corpus_clean           <- tm_map(corpus_clean, stripWhitespace)
-#corpus_collapsed_clean <- tm_map(corpus_collapsed_clean, stripWhitespace)
-#corpus_hybrid_clean    <- tm_map(corpus_hybrid_clean, stripWhitespace)
-
-#inspect(corpus_collapsed)
-#inspect(corpus_collapsed_clean)
-
-#dtm           <- DocumentTermMatrix(corpus_clean)
-#dtm_collapsed <- DocumentTermMatrix(corpus_collapsed_clean)
-#dtm_hybrid    <- DocumentTermMatrix(corpus_hybrid_clean)
-#
-#
-## DTM a matrice sparsa
-## simplify_simple_sparse_array tries to reduce v
-#sparse           <- slam::as.simple_triplet_matrix(dtm)
-#sparse_collapsed <- slam::as.simple_triplet_matrix(dtm_collapsed)
-#sparse_hybrid    <- slam::as.simple_triplet_matrix(dtm_hybrid)
-#rm(corpus_clean, corpus_collapsed, corpus_hybrid, dtm, dtm_collapsed, dtm_hybrid)
-#
-#labels           <- suburra$character
-#labels_collapsed <- suburra_collapsed$character
-#labels_hybrid    <- suburra_hybrid$character
-#
-#V3_normal    <- data.frame(sparse, stringsAsFactors = F)
-#V3_collapsed <- data.frame(sparse_collapsed, labels_collapsed, stringsAsFactors = F)
-#v3_hybrid    <- data.frame(sparse_hybrid, labels_hybrid, stringsAsFactors = F)
-
-save.image(file = "P02.RData", compress=T)
